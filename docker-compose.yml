@@ -1,0 +1,70 @@
+version: '3.8'
+
+services:
+  # Base de datos PostgreSQL
+  db:
+    image: postgres:13
+    container_name: odoo14_db
+    env_file:
+      - environment.env
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-odoo}
+      POSTGRES_USER: ${POSTGRES_USER:-odoo}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-odoo}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    networks:
+      - odoo_network
+
+  # Servicio Odoo 14
+  odoo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: odoo14_app
+    depends_on:
+      - db
+    env_file:
+      - environment.env
+    environment:
+      HOST: db
+      USER: ${POSTGRES_USER:-odoo}
+      PASSWORD: ${POSTGRES_PASSWORD:-odoo}
+    volumes:
+      - odoo_data:/var/lib/odoo
+      - ./config/odoo.conf:/etc/odoo/odoo.conf
+      - ./addons:/mnt/extra-addons
+      - ./logs:/var/log/odoo
+    restart: unless-stopped
+    networks:
+      - odoo_network
+    expose:
+      - "8069"
+
+  # Proxy reverso Caddy
+  caddy:
+    image: caddy:2-alpine
+    container_name: odoo14_caddy
+    depends_on:
+      - odoo
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+    restart: unless-stopped
+    networks:
+      - odoo_network
+
+volumes:
+  postgres_data:
+  odoo_data:
+  caddy_data:
+  caddy_config:
+
+networks:
+  odoo_network:
+    driver: bridge

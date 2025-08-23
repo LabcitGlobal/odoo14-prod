@@ -1,0 +1,46 @@
+# Configuración para producción con subdominio
+multiacceso.labcit.com {
+    reverse_proxy odoo:8069 {
+        header_up X-Real-IP {remote_host}
+        header_up X-Forwarded-For {remote_host}
+        header_up X-Forwarded-Proto {scheme}
+        header_up X-Forwarded-Host {host}
+    }
+    
+    # Configuración SSL automática
+    tls {
+        protocols tls1.2 tls1.3
+    }
+    
+    # Compresión
+    encode gzip
+    
+    # Headers de seguridad
+    header {
+        Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+        X-Content-Type-Options nosniff
+        X-Frame-Options SAMEORIGIN
+        X-XSS-Protection "1; mode=block"
+        Referrer-Policy strict-origin-when-cross-origin
+    }
+    
+    # Logs de acceso
+    log {
+        output file /var/log/caddy/access.log
+        format json
+    }
+}
+
+# Configuración adicional para desarrollo local (opcional)
+localhost {
+    reverse_proxy odoo:8069 {
+        header_up X-Real-IP {remote_host}
+        header_up X-Forwarded-For {remote_host}
+        header_up X-Forwarded-Proto {scheme}
+    }
+    
+    # Logs de acceso
+    log {
+        output file /var/log/caddy/access_local.log
+    }
+}

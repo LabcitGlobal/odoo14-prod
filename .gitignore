@@ -1,0 +1,39 @@
+# Variables de entorno
+.env
+*.env
+!environment.env
+
+# Logs
+logs/*.log
+logs/*.txt
+
+# Datos de volúmenes Docker
+postgres_data/
+odoo_data/
+
+# Archivos temporales
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Backup files
+*.bak
+*.backup
+*.sql
