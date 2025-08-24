@@ -1,4 +1,4 @@
-Configuración para desarrollo local - puerto 9080
+# Configuración para desarrollo local - puerto 9080
 :80 {
     reverse_proxy odoo:8014 {
         header_up X-Real-IP {remote_host}
@@ -20,36 +20,36 @@ Configuración para desarrollo local - puerto 9080
     }
 }
 
-Configuración para producción (comentada para desarrollo local)
-Descomenta y ajusta cuando migres al VPS
-multiacceso.labcit.com {
-    reverse_proxy odoo:8014 {
-        header_up X-Real-IP {remote_host}
-        header_up X-Forwarded-For {remote_host}
-        header_up X-Forwarded-Proto {scheme}
-        header_up X-Forwarded-Host {host}
-    }
-    
-    # Configuración SSL automática
-    tls {
-        protocols tls1.2 tls1.3
-    }
-    
-    # Compresión
-    encode gzip
-    
-    # Headers de seguridad para producción
-    header {
-        Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
-        X-Content-Type-Options nosniff
-        X-Frame-Options SAMEORIGIN
-        X-XSS-Protection "1; mode=block"
-        Referrer-Policy strict-origin-when-cross-origin
-    }
-    
-    # Logs de acceso para producción
-    log {
-        output file /var/log/caddy/access.log
-        format json
-    }
-}
+# Configuración para producción (comentada para desarrollo local)
+# Descomenta y ajusta cuando migres al VPS
+# multiacceso.labcit.com {
+#     reverse_proxy odoo:8014 {
+#         header_up X-Real-IP {remote_host}
+#         header_up X-Forwarded-For {remote_host}
+#         header_up X-Forwarded-Proto {scheme}
+#         header_up X-Forwarded-Host {host}
+#     }
+#     
+#     # Configuración SSL automática
+#     tls {
+#         protocols tls1.2 tls1.3
+#     }
+#     
+#     # Compresión
+#     encode gzip
+#     
+#     # Headers de seguridad para producción
+#     header {
+#         Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+#         X-Content-Type-Options nosniff
+#         X-Frame-Options SAMEORIGIN
+#         X-XSS-Protection "1; mode=block"
+#         Referrer-Policy strict-origin-when-cross-origin
+#     }
+#     
+#     # Logs de acceso para producción
+#     log {
+#         output file /var/log/caddy/access.log
+#         format json
+#     }
+# }
