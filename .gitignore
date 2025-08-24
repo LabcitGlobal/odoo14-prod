@@ -16,6 +16,7 @@ backups/*.tar.gz
 backups/*.sql.gz
 backups/*.sql
 migration_backup_*/
+migration_package_*.tar.gz
 odoo14-migration.tar.gz
 
 # Archivos temporales
