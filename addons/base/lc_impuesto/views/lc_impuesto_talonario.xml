@@ -1,0 +1,55 @@
+<odoo>
+  <data>
+    
+    <!-- Dosificacion -->
+    
+    <record model="ir.ui.view" id="lc_impuesto_talonario_tree">
+      <field name="name">lc_impuesto_talonario.tree</field>
+      <field name="model">lc.impuesto.talonario</field>
+      <field name="arch" type="xml">
+        <tree string="Datos de la talonario">          
+          <field name="dosificacion_id"/>
+          <field name="name"/>
+          <field name="desde"/>          
+          <field name="hasta"/>
+          <field name="fecha_activacion"/>    
+          <field name="habilitado"/>          
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="lc_impuesto_talonario_form">
+      <field name="name">lc_impuesto_talonario.form</field>
+      <field name="model">lc.impuesto.talonario</field>
+      <field name="arch" type="xml">
+      <form string="Datos de la talonario">      	
+      	<sheet>
+      		<group>      			            		
+              <field name="dosificacion_id"/>
+              <field name="name"/>
+              <field name="desde"/>          
+              <field name="hasta"/>
+              <field name="fecha_activacion"/>    
+              <field name="habilitado"/>
+              <field name="active"/>
+          </group>          	          	
+      	</sheet>
+      </form>        
+      </field>
+    </record>
+        
+    <!-- Acciones -->
+    
+    <record model="ir.actions.act_window" id="lc_impuesto_talonario_action_window">
+      <field name="name">Talonario</field>
+      <field name="res_model">lc.impuesto.talonario</field>    
+      <field name="view_mode">tree,form</field>            
+    </record>
+    
+    <!-- actions -->
+    
+	  <menuitem name="Talonario" id="lc_impuesto_menu_talonario" parent="lc_impuesto.menu_root"
+              action="lc_impuesto_talonario_action_window"/>
+    
+  </data>
+</odoo>

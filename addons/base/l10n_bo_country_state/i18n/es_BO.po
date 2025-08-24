@@ -1,0 +1,139 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_bo_country_state
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-17 22:37+0000\n"
+"PO-Revision-Date: 2021-11-17 22:37+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_bo_country_state
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_district__active
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_municipalities__active
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_province__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: l10n_bo_country_state
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_district__create_uid
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_municipalities__create_uid
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_province__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_bo_country_state
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_district__create_date
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_municipalities__create_date
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_province__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: l10n_bo_country_state
+#: model:ir.ui.menu,name:l10n_bo_country_state.res_country_menu
+msgid "Department"
+msgstr "Departamento"
+
+#. module: l10n_bo_country_state
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_province__department_id
+msgid "Departments"
+msgstr "Departamentos"
+
+#. module: l10n_bo_country_state
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_district__display_name
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_municipalities__display_name
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_province__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: l10n_bo_country_state
+#: model:ir.actions.act_window,name:l10n_bo_country_state.res_country_district_action
+#: model:ir.model,name:l10n_bo_country_state.model_res_country_district
+#: model:ir.ui.menu,name:l10n_bo_country_state.res_country_district_menu
+msgid "District"
+msgstr "Distrito"
+
+#. module: l10n_bo_country_state
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_district__code
+msgid "District Code"
+msgstr "Código de Distrito"
+
+#. module: l10n_bo_country_state
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_district__name
+msgid "District name"
+msgstr "Nombre de Distrito"
+
+#. module: l10n_bo_country_state
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_district__id
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_municipalities__id
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_province__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_bo_country_state
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_district____last_update
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_municipalities____last_update
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_province____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: l10n_bo_country_state
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_district__write_uid
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_municipalities__write_uid
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_province__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: l10n_bo_country_state
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_district__write_date
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_municipalities__write_date
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_province__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: l10n_bo_country_state
+#: model:ir.actions.act_window,name:l10n_bo_country_state.res_country_municipalities_action
+#: model:ir.model,name:l10n_bo_country_state.model_res_country_municipalities
+msgid "Municipalities"
+msgstr "Municipios"
+
+#. module: l10n_bo_country_state
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_district__municipality_id
+#: model:ir.ui.menu,name:l10n_bo_country_state.res_country_municipalities_menu
+msgid "Municipality"
+msgstr "Municipio"
+
+#. module: l10n_bo_country_state
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_municipalities__code
+msgid "Municipality Code"
+msgstr "Código de Municipio"
+
+#. module: l10n_bo_country_state
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_municipalities__name
+msgid "Municipality Name"
+msgstr "Nombre del Municipio"
+
+#. module: l10n_bo_country_state
+#: model:ir.actions.act_window,name:l10n_bo_country_state.res_country_province_action
+#: model:ir.model,name:l10n_bo_country_state.model_res_country_province
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_municipalities__province_id
+#: model:ir.ui.menu,name:l10n_bo_country_state.res_country_province_menu
+msgid "Province"
+msgstr "Provincia"
+
+#. module: l10n_bo_country_state
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_province__code
+msgid "Province Code"
+msgstr "Código de provincia"
+
+#. module: l10n_bo_country_state
+#: model:ir.model.fields,field_description:l10n_bo_country_state.field_res_country_province__name
+msgid "Province name"
+msgstr "Nombre de la provincia"

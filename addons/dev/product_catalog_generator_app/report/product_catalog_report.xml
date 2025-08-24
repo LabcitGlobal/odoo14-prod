@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="paperformat_product_catalog_generate" model="report.paperformat">
+            <field name="name">Product Catalog Report</field>
+            <field name="default" eval="True"/>
+            <field name="format">A4</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">45</field>
+            <field name="margin_bottom">15</field>
+            <field name="margin_left">5</field>
+            <field name="margin_right">5</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">40</field>
+            <field name="dpi">90</field>
+        </record>
+
+
+        <record id="action_report_product_catalog_style_1" model="ir.actions.report">
+            <field name="name">Product Catalog Report Style 1</field>
+            <field name="model">product.catalog</field>
+            <field name="binding_model_id" ref="model_product_catalog"/>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">product_catalog_generator_app.report_product_style_1</field>
+            <field name="report_file">product_catalog_generator_app.report_product_style_1</field>
+            <field name="paperformat_id" ref="paperformat_product_catalog_generate"/>
+            <field name="attachment_use">True</field>
+            <field name="binding_view_types">list</field>
+        </record>
+
+
+        <record id="action_report_product_catalog_style_2" model="ir.actions.report">
+            <field name="name">Product Catalog Report Style 2</field>
+            <field name="model">product.catalog</field>
+            <field name="binding_model_id" ref="model_product_catalog"/>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">product_catalog_generator_app.report_product_style_2</field>
+            <field name="report_file">product_catalog_generator_app.report_product_style_2</field>
+            <field name="paperformat_id" ref="paperformat_product_catalog_generate"/>
+            <field name="attachment_use">True</field>
+            <field name="binding_view_types">list</field>
+        </record>
+
+
+        <record id="action_report_product_catalog_style_3" model="ir.actions.report">
+            <field name="name">Product Catalog Report Style 3</field>
+            <field name="model">product.catalog</field>
+            <field name="binding_model_id" ref="model_product_catalog"/>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">product_catalog_generator_app.report_product_style_3</field>
+            <field name="report_file">product_catalog_generator_app.report_product_style_3</field>
+            <field name="paperformat_id" ref="paperformat_product_catalog_generate"/>
+            <field name="attachment_use">True</field>
+            <field name="binding_view_types">list</field>
+        </record>
+
+        <record id="action_report_product_catalog_style_4" model="ir.actions.report">
+            <field name="name">Product Catalog Report Style 4</field>
+            <field name="model">product.catalog</field>
+            <field name="binding_model_id" ref="model_product_catalog"/>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">product_catalog_generator_app.report_product_style_4</field>
+            <field name="report_file">product_catalog_generator_app.report_product_style_4</field>
+            <field name="paperformat_id" ref="paperformat_product_catalog_generate"/>
+            <field name="attachment_use">True</field>
+            <field name="binding_view_types">list</field>
+        </record>
+
+        <record id="action_report_product_catalog_style_5" model="ir.actions.report">
+            <field name="name">Product Catalog Report Style 5</field>
+            <field name="model">product.catalog</field>
+            <field name="binding_model_id" ref="model_product_catalog"/>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">product_catalog_generator_app.report_product_style_5</field>
+            <field name="report_file">product_catalog_generator_app.report_product_style_5</field>
+            <field name="paperformat_id" ref="paperformat_product_catalog_generate"/>
+            <field name="attachment_use">True</field>
+            <field name="binding_view_types">list</field>
+        </record>
+
+    </data>
+</odoo>

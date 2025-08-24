@@ -1,0 +1,48 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* lc_product_variant_pos
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20230430\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-02 03:15+0000\n"
+"PO-Revision-Date: 2024-09-02 03:15+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: lc_product_variant_pos
+#: model:ir.model.fields,field_description:lc_product_variant_pos.field_product_product__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: lc_product_variant_pos
+#: model:ir.model.fields,field_description:lc_product_variant_pos.field_product_product__product_pos_enabled
+msgid "Enable in POS"
+msgstr "Habilitar en POS"
+
+#. module: lc_product_variant_pos
+#: model:ir.model.fields,field_description:lc_product_variant_pos.field_product_product__id
+msgid "ID"
+msgstr ""
+
+#. module: lc_product_variant_pos
+#: model:ir.model.fields,field_description:lc_product_variant_pos.field_product_product____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: lc_product_variant_pos
+#. openerp-web
+#: code:addons/lc_product_variant_pos/static/src/xml/pos_view.xml:0
+#, python-format
+msgid "Out of Stock"
+msgstr "Agotado"
+
+#. module: lc_product_variant_pos
+#: model:ir.model,name:lc_product_variant_pos.model_product_product
+msgid "Product"
+msgstr "Producto"

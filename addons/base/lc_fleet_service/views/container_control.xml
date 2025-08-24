@@ -1,0 +1,150 @@
+<odoo>
+  <data>
+    
+    <!-- Container Control -->
+    
+    <record model="ir.ui.view" id="lc_container_control_tree">
+      <field name="name">Container Control Tree</field>
+      <field name="model">lc.container.control</field>
+      <field name="arch" type="xml">
+        <tree string="Container Control list">          
+          <field name="name"/>          
+          <field name="date_today"/>
+          <field name="customer_id"/>
+          <field name="date_of_assignment"/>
+          <field name="expiration_date"/>          
+          <field name="drop_off_location"/>
+          <field name="return_date"/>
+          <field name="user_id" optional="show" widget="many2one_avatar_user"/>
+          <field name="state" decoration-warning="state == 'service'" decoration-info="state == 'draft'" decoration-success="state == 'finished'" widget="badge" optional="show"/>
+        </tree>
+      </field>
+    </record>
+	
+    <record model="ir.ui.view" id="lc_containter_control_form">
+      <field name="name">Container Control Form</field>
+      <field name="model">lc.container.control</field>
+      <field name="arch" type="xml">
+      		<form string="Container Control">
+      			<header>
+      				<button name="action_confirm_container_control" id="action_confirm_container_control" 
+					  string="Confirm" class="btn-primary" type="object"
+					  attrs="{'invisible':['|', ('state','not in', ['draft']),('id','=',False)]}"/>
+              		<button name="action_finished_container_control" type="object" string="Finished" 
+					  attrs="{'invisible': ['|', ('state', 'not in', ['service']), ('id', '=', False)]}" groups="fleet.fleet_group_manager"/>
+      				<button name="action_draft_container_control" type="object" string="Set to Quotation" 
+					  attrs="{'invisible': ['|', ('state', 'in', ['draft']), ('id', '=', False)]}" groups="fleet.fleet_group_manager"/>
+      				<field name="state"  widget="statusbar" statusbar_visible="draft,service,finished"/>
+      			</header>
+      			<sheet>
+              		<div class="oe_button_box" name="button_box">
+					    <button name="open_container_control_file" type="object" class="oe_stat_button" icon="fa-list-alt">
+					  		<field name="container_control_file" string="Files" widget="statinfo"/>
+					    </button>					      
+					</div>
+      				<group>
+                		<group>
+      		    			<field name="name"/>
+      		    			<field name="date_today"/>      		    		
+      		    			<field name="customer_id"/>      		    		
+      		    			<field name="date_of_assignment"/>      		    		
+      		    			<field name="drop_off_location"/>      		    		
+                		</group>
+                		<group>
+      		    			<field name="expiration_date"/>      		    		
+      		    			<field name="expires_in"/>      		    		
+                		</group>                
+      		    	</group>                        	
+      		    	<notebook>      	
+                		<page string="Vehicle and Driver">
+      		    			<group>          		
+      		    				<field name="vehicle_ids">
+          		    				<tree string="Vehicles" editable="bottom">          				
+	          	    					<field name="vehicle_id"/>
+    	      	    					<field name="driver_id"/>        	  					
+          		    				</tree>
+          		    			</field>
+      		    			</group>
+      		    		</page>
+                		<page string="Routes">
+          		   			<group>           
+          		   				<field name="route_ids">
+          		   					<tree string="Route" editable="bottom">          				
+	          	   						<field name="source"/>
+    	      	   						<field name="destination"/>        	  					
+          		   					</tree>
+          		   				</field>
+          		   			</group>          			
+          		  		</page>
+                		<page string="Container Files">
+          		   			<group>           
+          		   				<field name="container_file_ids">
+          		   					<tree string="Documents" editable="bottom">          				
+	          	   						<field name="file_category_id"/>
+    	      	   						<field name="name"/>        	  					
+    	      	   						<field name="quantity"/>        	  					
+    	      	   						<field name="type"/>        	  					
+    	      	   						<field name="photo"/>        	  					
+    	      	   						<field name="file1" widget="binary"/>        	  					
+    	      	   						<field name="file2" widget="binary"/>        	  					
+    	      	   						<field name="file3" widget="binary"/>        	  					
+          		   					</tree>
+          		   				</field>
+          		   			</group>          			
+          		  		</page>      		    			    		
+                		<page string="Detail">
+                  			<group>
+      		      			  	<field name="notes"/>      		    		
+                  			</group>
+                		</page>
+      		    		<page string="Return Date">
+						    <group>    		      		    	    			
+							    <field name="return_date"/>
+							    <field name="return_note"/>								      
+      		        		</group>
+      		    		</page>                        		          		
+						<page string="Other (Security)">
+							<group>    		      		    	    			
+					   			<field name="user_id"/>
+					   			<field name="create_uid"/>								      
+					   			<field name="create_date"/>								      
+					   			<field name="write_uid"/>								      
+					   			<field name="write_date"/>								      
+      		    			</group>
+      		    		</page>
+					</notebook>			
+      			</sheet>
+      		</form>        
+      </field>
+    </record>
+
+  <!-- ir.sequence -->
+
+    <record id="container_sequence_code" model="ir.sequence">
+      <field name="name">Container Control Sequence</field>
+      <field name="code">container.control.code</field>
+      <field name="active">TRUE</field>
+      <field name="prefix">CON</field>
+      <field name="suffix">/%(year)s</field>
+      <field name="padding">3</field>
+      <field name="number_next">1</field>
+      <field name="number_increment">1</field>
+      <field name="use_date_range">TRUE</field>
+      <field name="range_reset">yearly</field>
+    </record>
+  
+  <!-- end ir.sequence -->
+
+	<record id="lc_fleet_container_control_action" model="ir.actions.act_window">
+            <field name="name">Container Control</field>
+            <field name="res_model">lc.container.control</field>
+            <field name="view_mode">tree,form</field>
+  </record>
+
+  
+  <menuitem id="menu_lc_container_control" sequence="1" name="Container" parent="fleet.menu_root"/>
+	<menuitem id="submenu_lc_container_control" parent="menu_lc_container_control" name="Container Control"
+                  action="lc_fleet_container_control_action" sequence="1"/>
+	
+  </data>
+</odoo>

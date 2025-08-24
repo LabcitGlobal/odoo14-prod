@@ -1,0 +1,34 @@
+<openerp>
+    <data>
+        <record id="lc_fleet_remission_document_type_1" model="lc.fleet.remission.document.type">
+	    	<field name="name">Factura</field>
+	    </record>
+        <record id="lc_fleet_remission_document_type_2" model="lc.fleet.remission.document.type">
+	    	<field name="name">MIC</field>
+	    </record>
+        <record id="lc_fleet_remission_document_type_3" model="lc.fleet.remission.document.type">
+	    	<field name="name">CRT</field>
+	    </record>
+        <record id="lc_fleet_remission_document_type_4" model="lc.fleet.remission.document.type">
+	    	<field name="name">Factura Com. de Exportación</field>
+	    </record>
+        <record id="lc_fleet_remission_document_type_5" model="lc.fleet.remission.document.type">
+	    	<field name="name">Lista de Empaque</field>
+	    </record>
+        <record id="lc_fleet_remission_document_type_6" model="lc.fleet.remission.document.type">
+	    	<field name="name">Fitosan</field>
+	    </record>
+        <record id="lc_fleet_remission_document_type_7" model="lc.fleet.remission.document.type">
+	    	<field name="name">Inocuidad</field>
+	    </record>
+        <record id="lc_fleet_remission_document_type_8" model="lc.fleet.remission.document.type">
+	    	<field name="name">CEFO</field>
+	    </record>
+        <record id="lc_fleet_remission_document_type_9" model="lc.fleet.remission.document.type">
+	    	<field name="name">DEX</field>
+	    </record>
+        <record id="lc_fleet_remission_document_type_10" model="lc.fleet.remission.document.type">
+	    	<field name="name">N/D</field>
+	    </record>
+    </data>
+</openerp>

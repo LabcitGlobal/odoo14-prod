@@ -1,0 +1,40 @@
+<odoo>
+  <data>    
+    <record model="ir.ui.view" id="lc_stock_employee_view">
+      <field name="name">lc_stock_employee_tree</field>
+      <field name="model">lc_stock_employee</field>
+      <field name="arch" type="xml">
+        <tree>          
+          <field name="name"/>
+          <field name="categ_id"/>          
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="lc_stock_employee_form">
+      <field name="name">lc_stock_employee_form</field>
+      <field name="model">lc_stock_employee</field>
+      <field name="arch" type="xml">
+      <form string="Categoria">        
+      	<sheet>
+      		<group>      			
+          		<field name="name"/>
+          		<field name="categ_id"/>          		
+          </group>          	
+        </sheet>
+      </form>
+      </field>
+    </record> 
+            
+    <record model="ir.actions.act_window" id="lc_stock_employee_action_window">
+      <field name="name">Stock por Usuario</field>
+      <field name="res_model">lc_stock_employee</field>
+      <field name="view_mode">tree,form</field>
+      <field name="domain">[('company_id','=',allowed_company_ids[0])]</field>
+    </record>
+
+    <menuitem name="Responsables" id="menu_stock_employee_action" parent="stock.menu_stock_warehouse_mgmt"
+              action="lc_stock_employee_action_window" sequence="150"/>
+
+  </data>
+</odoo>

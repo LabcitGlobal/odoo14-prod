@@ -1,0 +1,11 @@
+# Este directorio almacena los backups de Odoo
+# Los archivos de backup se excluyen del control de versiones por seguridad
+
+# Estructura típica de backups:
+# - odoo_full_backup_YYYYMMDD_HHMMSS.tar.gz (backup completo)
+# - db_quick_backup_YYYYMMDD_HHMMSS.sql.gz (solo base de datos)
+
+# IMPORTANTE: 
+# - Configura backups regulares a ubicación externa
+# - Los backups locales son solo para recuperación rápida
+# - No subas backups con datos sensibles al repositorio

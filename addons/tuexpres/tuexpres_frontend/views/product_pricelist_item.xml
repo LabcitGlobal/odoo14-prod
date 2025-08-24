@@ -1,0 +1,13 @@
+<odoo>
+  <data>    
+    <record model="ir.ui.view" id="view_lc_product_pricelist_item_tree">      
+      <field name="model">product.pricelist.item</field>
+      <field name="inherit_id" ref="product.product_pricelist_item_tree_view_from_product"/>
+      <field name="arch" type="xml">      		
+      		<xpath expr="//field[@name='applied_on']" position="before">            	
+          	<field name="web_enabled" optional="hide"/>
+          </xpath>          
+      </field>
+    </record>
+  </data>
+</odoo>

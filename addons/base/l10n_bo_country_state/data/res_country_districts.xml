@@ -1,0 +1,88 @@
+<openerp>
+  <data>
+    <record id="res_country_district_20105_1" model="res.country.district">
+    	<field model="res.country.municipalities" name="municipality_id" search="[('name','=','El Alto'),('code','=','05')]" />
+		<field name="name">Distrito 1</field>
+		<field name="code">1</field>
+		<field name="active" eval="True"/>		
+	</record>		
+	<record id="res_country_district_20105_2" model="res.country.district">
+    	<field model="res.country.municipalities" name="municipality_id" search="[('name','=','El Alto'),('code','=','05')]" />
+		<field name="name">Distrito 2</field>
+		<field name="code">2</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_district_20105_3" model="res.country.district">
+    	<field model="res.country.municipalities" name="municipality_id" search="[('name','=','El Alto'),('code','=','05')]" />
+		<field name="name">Distrito 3</field>
+		<field name="code">3</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_district_20105_4" model="res.country.district">
+    	<field model="res.country.municipalities" name="municipality_id" search="[('name','=','El Alto'),('code','=','05')]" />
+		<field name="name">Distrito 4</field>
+		<field name="code">4</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_district_20105_5" model="res.country.district">
+    	<field model="res.country.municipalities" name="municipality_id" search="[('name','=','El Alto'),('code','=','05')]" />
+		<field name="name">Distrito 5</field>
+		<field name="code">5</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_district_20105_6" model="res.country.district">
+    	<field model="res.country.municipalities" name="municipality_id" search="[('name','=','El Alto'),('code','=','05')]" />
+		<field name="name">Distrito 6</field>
+		<field name="code">6</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_district_20105_7" model="res.country.district">
+    	<field model="res.country.municipalities" name="municipality_id" search="[('name','=','El Alto'),('code','=','05')]" />
+		<field name="name">Distrito 7</field>
+		<field name="code">7</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_district_20105_8" model="res.country.district">
+    	<field model="res.country.municipalities" name="municipality_id" search="[('name','=','El Alto'),('code','=','05')]" />
+		<field name="name">Distrito 8</field>
+		<field name="code">8</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_district_20105_9" model="res.country.district">
+    	<field model="res.country.municipalities" name="municipality_id" search="[('name','=','El Alto'),('code','=','05')]" />
+		<field name="name">Distrito 9</field>
+		<field name="code">9</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_district_20105_10" model="res.country.district">
+    	<field model="res.country.municipalities" name="municipality_id" search="[('name','=','El Alto'),('code','=','05')]" />
+		<field name="name">Distrito 10</field>
+		<field name="code">10</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_district_20105_11" model="res.country.district">
+    	<field model="res.country.municipalities" name="municipality_id" search="[('name','=','El Alto'),('code','=','05')]" />
+		<field name="name">Distrito 11</field>
+		<field name="code">11</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_district_20105_12" model="res.country.district">
+    	<field model="res.country.municipalities" name="municipality_id" search="[('name','=','El Alto'),('code','=','05')]" />
+		<field name="name">Distrito 12</field>
+		<field name="code">12</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_district_20105_13" model="res.country.district">
+    	<field model="res.country.municipalities" name="municipality_id" search="[('name','=','El Alto'),('code','=','05')]" />
+		<field name="name">Distrito 13</field>
+		<field name="code">13</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_district_20105_14" model="res.country.district">
+    	<field model="res.country.municipalities" name="municipality_id" search="[('name','=','El Alto'),('code','=','05')]" />
+		<field name="name">Distrito 14</field>
+		<field name="code">14</field>
+		<field name="active" eval="True"/>		
+	</record>	
+  </data>
+</openerp>

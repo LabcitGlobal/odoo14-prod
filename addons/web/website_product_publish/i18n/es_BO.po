@@ -1,0 +1,151 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_product_publish
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-12 15:37+0000\n"
+"PO-Revision-Date: 2022-02-12 15:37+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: website_product_publish
+#: model_terms:ir.ui.view,arch_db:website_product_publish.view_product_publish_form
+msgid ""
+"<span>The selected products will be published/unpublished from "
+"website</span>"
+msgstr ""
+"<span>Los productos seleccionados serán publicados/despublicados desde el "
+"sitio web</span>"
+
+#. module: website_product_publish
+#: model_terms:ir.ui.view,arch_db:website_product_publish.view_product_publish_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: website_product_publish
+#: model:ir.model.fields,field_description:website_product_publish.field_product_publish_wizard__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: website_product_publish
+#: model:ir.model.fields,field_description:website_product_publish.field_product_publish_wizard__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: website_product_publish
+#: model:ir.model.fields,field_description:website_product_publish.field_product_category__display_name
+#: model:ir.model.fields,field_description:website_product_publish.field_product_publish_wizard__display_name
+#: model:ir.model.fields,field_description:website_product_publish.field_product_template__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: website_product_publish
+#: model:ir.model.fields,field_description:website_product_publish.field_product_category__id
+#: model:ir.model.fields,field_description:website_product_publish.field_product_publish_wizard__id
+#: model:ir.model.fields,field_description:website_product_publish.field_product_template__id
+msgid "ID"
+msgstr ""
+
+#. module: website_product_publish
+#: model:ir.model.fields,field_description:website_product_publish.field_product_category____last_update
+#: model:ir.model.fields,field_description:website_product_publish.field_product_publish_wizard____last_update
+#: model:ir.model.fields,field_description:website_product_publish.field_product_template____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: website_product_publish
+#: model:ir.model.fields,field_description:website_product_publish.field_product_publish_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Modificado por"
+
+#. module: website_product_publish
+#: model:ir.model.fields,field_description:website_product_publish.field_product_publish_wizard__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: website_product_publish
+#: model:ir.model,name:website_product_publish.model_product_category
+msgid "Product Category"
+msgstr "Categoría de producto"
+
+#. module: website_product_publish
+#: model:ir.model,name:website_product_publish.model_product_publish_wizard
+msgid "Product Publish/Unpublish"
+msgstr "Producto Publicar/Despublicar"
+
+#. module: website_product_publish
+#: model:ir.model,name:website_product_publish.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: website_product_publish
+#. openerp-web
+#: code:addons/website_product_publish/static/src/xml/website_backend_quick_publish.xml:0
+#: model_terms:ir.ui.view,arch_db:website_product_publish.view_product_publish_form
+#, python-format
+msgid "Publish"
+msgstr "Publicar"
+
+#. module: website_product_publish
+#: model_terms:ir.ui.view,arch_db:website_product_publish.product_category_form_view_inherit
+msgid "Publish All Products"
+msgstr "Publicar todos los productos"
+
+#. module: website_product_publish
+#: model:ir.actions.act_window,name:website_product_publish.action_product_multi_publish
+msgid "Publish/Unpublish"
+msgstr "Publicar/Despublicar"
+
+#. module: website_product_publish
+#: model_terms:ir.ui.view,arch_db:website_product_publish.view_product_publish_form
+msgid "Publish/Unpublish Products"
+msgstr "Publicar/Despublicar productos"
+
+#. module: website_product_publish
+#. openerp-web
+#: code:addons/website_product_publish/static/src/js/quick_button.js:0
+#: model:ir.model.fields,field_description:website_product_publish.field_product_category__published_count
+#, python-format
+msgid "Published"
+msgstr "Publicado"
+
+#. module: website_product_publish
+#: model_terms:ir.ui.view,arch_db:website_product_publish.product_category_form_view_inherit
+msgid "Published  &amp;nbsp;&amp;nbsp;:"
+msgstr "Publicado  &amp;nbsp;&amp;nbsp;:"
+
+#. module: website_product_publish
+#. openerp-web
+#: code:addons/website_product_publish/static/src/xml/website_backend_quick_publish.xml:0
+#: code:addons/website_product_publish/static/src/xml/website_backend_quick_publish.xml:0
+#, python-format
+msgid "Quick"
+msgstr "Rápido"
+
+#. module: website_product_publish
+#. openerp-web
+#: code:addons/website_product_publish/static/src/xml/website_backend_quick_publish.xml:0
+#: model_terms:ir.ui.view,arch_db:website_product_publish.view_product_publish_form
+#, python-format
+msgid "Unpublish"
+msgstr "Despublicar"
+
+#. module: website_product_publish
+#. openerp-web
+#: code:addons/website_product_publish/static/src/js/quick_button.js:0
+#: model:ir.model.fields,field_description:website_product_publish.field_product_category__unpublished_count
+#, python-format
+msgid "Unpublished"
+msgstr "Sin publicar"
+
+#. module: website_product_publish
+#: model_terms:ir.ui.view,arch_db:website_product_publish.product_category_form_view_inherit
+msgid "Unublished :"
+msgstr "Sin publicar :"

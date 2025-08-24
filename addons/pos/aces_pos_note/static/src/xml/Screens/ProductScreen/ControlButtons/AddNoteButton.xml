@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+
+    <t t-name="AddNoteButton" owl="1">
+        <span class="control-button custom_product_note">
+            <i class="fa fa-sticky-note"></i>
+            <span> </span>
+            <span> Nota </span>
+        </span>
+    </t>
+
+</templates>

@@ -1,0 +1,8 @@
+.last-cost-field {
+    background-color: #ecffeb; /* Color por defecto */
+}
+
+.last-cost-field.different-cost {
+    background-color: #facfcf; /* Color si es diferente */
+    color: red;
+}

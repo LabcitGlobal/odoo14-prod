@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="report_service_order">
+    	<t t-call="web.html_container">                
+        	<div class="page">
+            	<div class="oe_structure"/>         		
+            		<div style="font-size: 12px !important;font-family:Helvetica,Verdana,Arial,sans,Lucida Grande,Calibri;">                		
+                		<h2><span t-field="res_company.name"/></h2>
+                	</div>	
+					<div style="font-size: 12px !important;font-family:Helvetica,Verdana,Arial,sans,Lucida Grande,Calibri;line-height: 5pt;">                		
+                		<p><span t-field="res_company.street"/></p>                	
+                		<p>Teléfonos: <span t-field="res_company.phone"/></p>
+                		<p><span t-field="res_company.website"/></p>                		             		
+                	</div>
+                	<div style="font-size: 13px !important;font-family:Helvetica,Verdana,Arial,sans,Lucida Grande,Calibri;line-height: 10pt;">
+                		<center><h2>Proforma de Recepción</h2></center>
+                    	<t t-foreach="docs" t-as="o">
+                    		                            		
+								<p style="line-height: 5pt;"><strong>Numero de Caso:</strong> <span t-field="o.id"/></p>
+    		                	<p style="line-height: 10pt;"><strong>Maquina:</strong> <span t-field="o.machine_id"/></p>
+    		                	<p style="line-height: 5pt;"><strong>Serie:</strong> <span t-field="o.machine_id.factory_series"/></p>
+    	    	            	<p style="line-height: 5pt;"><strong>Código:</strong> <span t-field="o.machine_id.machine_code"/></p>
+        	    	        	<p style="line-height: 5pt;"><strong>Nombre:</strong> <span t-field="o.name"/></p>
+            	    	    	<p style="line-height: 5pt;"><strong>Técnico:</strong> <span t-field="o.employee_id"/></p>
+                	    		<p style="line-height: 5pt;"><strong>Recepción:</strong> <span t-field="o.date_reception"/></p>
+	                    		<p style="line-height: 5pt;"><strong>Entrega:</strong> <span t-field="o.date_delivery"/></p>
+    	                		<p style="line-height: 10pt;"><strong>Problema/Cliente:</strong> <span t-field="o.customer_problem"/></p>
+        	            		<p style="line-height: 10pt;"><strong>Diagnostico/Tecnico:</strong> <span t-field="o.technical_diagnosis"/></p>
+	        	            	<p style="line-height: 10pt;"><strong>Accesorios:</strong> <span t-field="o.accessories"/></p>
+    	        	        	<p style="line-height: 5pt;"><strong>Precio:</strong> <span t-field="o.price"/></p>    	                	
+        	            </t>
+                    </div>                    				
+			</div>                
+        </t>
+    </template>
+    
+    <template id="report_service_order_two">
+    	<t t-call="web.html_container">                
+        	<div class="page">
+            	<div class="oe_structure"/>         		
+            		<div style="font-size: 11px !important;font-family:Helvetica,Verdana,Arial,sans,Lucida Grande,Calibri;">                		
+                		<h2><span t-field="res_company.name"/></h2>
+                	</div>	
+					<div style="font-size: 11px !important;font-family:Helvetica,Verdana,Arial,sans,Lucida Grande,Calibri;line-height: 5pt;">                		
+                		<p><span t-field="res_company.street"/></p>                	
+                		<p>Teléfonos: <span t-field="res_company.phone"/></p>
+                		<p><span t-field="res_company.website"/></p>                		             		
+                	</div>
+                	<div style="font-size: 12px !important;font-family:Helvetica,Verdana,Arial,sans,Lucida Grande,Calibri;line-height: 10pt;">
+                		<center><h2>Proforma de Recepción</h2></center>
+                    	<t t-foreach="docs" t-as="o">
+                    		                            		
+								<p style="line-height: 4pt;"><strong>Numero de Caso:</strong> <span t-field="o.id"/></p>
+    		                	<p style="line-height: 8pt;"><strong>Maquina:</strong> <span t-field="o.machine_id"/></p>
+    		                	<p style="line-height: 4pt;"><strong>Serie:</strong> <span t-field="o.machine_id.factory_series"/></p>
+    	    	            	<p style="line-height: 4pt;"><strong>Código:</strong> <span t-field="o.machine_id.machine_code"/></p>
+        	    	        	<p style="line-height: 4pt;"><strong>Nombre:</strong> <span t-field="o.name"/></p>
+            	    	    	<p style="line-height: 4pt;"><strong>Técnico:</strong> <span t-field="o.employee_id"/></p>
+                	    		<p style="line-height: 4pt;"><strong>Recepción:</strong> <span t-field="o.date_reception"/></p>
+	                    		<p style="line-height: 4pt;"><strong>Entrega:</strong> <span t-field="o.date_delivery"/></p>
+    	                		<p style="line-height: 8pt;"><strong>Problema/Cliente:</strong> <span t-field="o.customer_problem"/></p>
+        	            		<p style="line-height: 8pt;"><strong>Diagnostico/Tecnico:</strong> <span t-field="o.technical_diagnosis"/></p>
+	        	            	<p style="line-height: 8pt;"><strong>Accesorios:</strong> <span t-field="o.accessories"/></p>
+    	        	        	<p style="line-height: 4pt;"><strong>Precio:</strong> <span t-field="o.price"/></p>    	                	
+        	            </t>
+                    </div>
+                    <div style="font-size: 40px"><p> </p></div>
+                    <div style="font-size: 11px !important;font-family:Helvetica,Verdana,Arial,sans,Lucida Grande,Calibri;">                		
+                		<h2><span t-field="res_company.name"/> - FICHA TECNICA</h2>
+                	</div>
+                    <div style="font-size: 12px !important;font-family:Helvetica,Verdana,Arial,sans,Lucida Grande,Calibri;line-height: 10pt;">                		
+                    	<t t-foreach="docs" t-as="o">
+                    		                            		
+								<p style="line-height: 4pt;"><strong>Numero de Caso:</strong> <span t-field="o.id"/></p>
+    		                	<p style="line-height: 8pt;"><strong>Maquina:</strong> <span t-field="o.machine_id"/></p>
+    		                	<p style="line-height: 4pt;"><strong>Serie:</strong> <span t-field="o.machine_id.factory_series"/></p>
+    	    	            	<p style="line-height: 4pt;"><strong>Código:</strong> <span t-field="o.machine_id.machine_code"/></p>
+        	    	        	<p style="line-height: 4pt;"><strong>Nombre:</strong> <span t-field="o.name"/></p>
+            	    	    	<p style="line-height: 4pt;"><strong>Técnico:</strong> <span t-field="o.employee_id"/></p>
+                	    		<p style="line-height: 4pt;"><strong>Recepción:</strong> <span t-field="o.date_reception"/></p>
+	                    		<p style="line-height: 4pt;"><strong>Entrega:</strong> <span t-field="o.date_delivery"/></p>
+    	                		<p style="line-height: 8pt;"><strong>Problema/Cliente:</strong> <span t-field="o.customer_problem"/></p>
+        	            		<p style="line-height: 8pt;"><strong>Diagnostico/Tecnico:</strong> <span t-field="o.technical_diagnosis"/></p>
+	        	            	<p style="line-height: 8pt;"><strong>Accesorios:</strong> <span t-field="o.accessories"/></p>
+    	        	        	<p style="line-height: 4pt;"><strong>Precio:</strong> <span t-field="o.price"/></p>    	                	
+        	            </t>
+                    </div>                                        				
+			</div>                
+        </t>
+    </template>
+</odoo>

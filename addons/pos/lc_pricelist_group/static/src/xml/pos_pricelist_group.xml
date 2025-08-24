@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+    <t t-name="PricelistGroupPopup" owl="1">
+        <div class="modal-dialog">
+            <div class="popup popup-text">
+                <header class="title">
+                    <p class="title">Aviso Importante</p>
+                </header>
+
+                <div class="main-body touch-scrollable scrollable-y" style="max-height: 305px;">
+                    <t t-set="product" t-value="props.product"/>
+                    <t t-set="fixed_price" t-value="0"/>
+                    <t t-if="product">
+                        <t t-set="fixed_price" t-value="product.fixed_price"/>
+                        <table style="width: 98%; border: 1px solid black; margin: 8px; font-size:14px;">
+                            <tr style="border:1px solid black;">
+                                <td style="border:1px solid black;">Producto:</td>
+                                <td style="border:1px solid black;"><t t-esc="product.product_tmpl_name"/></td>
+                            </tr>
+                            <tr style="border:1px solid black;">
+                                <td style="border:1px solid black;">Pedido Actual:</td>
+                                <td style="border:1px solid black;"><t t-esc="product.product_tmpl_total"/></td>
+                            </tr>
+                        </table>
+                        <t t-if="product.pricelist">
+                            <p>Lista de Precios de <span t-esc="product.pricelist_name"/></p>
+                            <table style="width: 90%; border: 1px solid black; margin: 8px; font-size:12px;">
+                                <thead style="border:1px solid black;">
+                                    <th>Cantidad Minima</th>
+                                    <th>Precio</th>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="product.pricelist" t-as="line" style="border:1px solid black">
+                                        <td><t t-esc="line.min_quantity"/></td>
+                                        <td><t t-esc="line.fixed_price"/></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </t>
+                        <p>Cambiar el precio a <span t-esc="product.fixed_price"/> Bs.?</p>
+                    </t>
+                </div>
+
+                <footer class="footer">
+                    <div class="button confirm" t-on-click="click_on_confirm">
+                        Modificar
+                    </div>
+                    <div class="button cancel" t-on-click="cancel">
+                        No modificar
+                    </div>
+                </footer>                
+            </div>
+        </div>
+    </t>
+
+</templates>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="paperformat_portrait" model="report.paperformat">
+        <field name="name">Custom</field>
+        <field name="default" eval="True" />
+        <field name="format">custom</field>
+        <field name="page_height">210</field>
+        <field name="page_width">140</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">30</field>
+        <field name="margin_bottom">12</field>
+        <field name="margin_left">14</field>
+        <field name="margin_right">14</field>
+        <field name="header_line" eval="False" />
+        <field name="header_spacing">32</field>
+        <field name="dpi">200</field>
+    </record>
+
+    	<record id="paperformat_lowmargin" model="report.paperformat">
+    		<field name="name">European A4 low margin</field>
+    		<field name="default" eval="True" />
+    		<field name="format">Letter</field>
+    		<field name="page_height">0</field>
+    		<field name="page_width">0</field>
+    		<field name="orientation">Portrait</field>
+    		<field name="margin_top">30</field>
+    		<field name="margin_bottom">15</field>
+    		<field name="margin_left">14</field>
+    		<field name="margin_right">14</field>
+    		<field name="header_line" eval="False" />
+    		<field name="header_spacing">25</field>
+    		<field name="dpi">90</field>
+		</record>
+		
+        <report
+            id="lc_fleet_service_quotation_reports"
+            model="lc.fleet.service"
+            string="Quotation Order"
+            report_type="qweb-pdf"
+            name="lc_fleet_service.lc_fleet_service_quotation_report"
+            file="lc_fleet_service.lc_fleet_service_quotation_report"
+            paperformat="paperformat_lowmargin"
+        />
+
+        <report
+            id="lc_fleet_service_reports"
+            model="lc.fleet.service"
+            string="Debit Note"
+            report_type="qweb-pdf"
+            name="lc_fleet_service.lc_fleet_service_report"
+            file="lc_fleet_service.fleet_service_report"
+            paperformat="paperformat_lowmargin"
+        />
+
+		<report
+            id="lc_fleet_remission_reports"
+            model="lc.fleet.remission"
+            string="Referral Note"
+            report_type="qweb-pdf"
+            name="lc_fleet_service.lc_fleet_remission_report"
+            file="lc_fleet_service.fleet_remission_report"
+            paperformat="paperformat_lowmargin"
+        />
+
+        <report
+            id="lc_container_control_reports"
+            model="lc.container.control"
+            string="Container Control"
+            report_type="qweb-pdf"
+            name="lc_fleet_service.lc_container_control_report"
+            file="lc_fleet_service.container_control_report"
+            paperformat="paperformat_lowmargin"
+        />
+
+        <report
+            id="lc_vehicle_parts_inventory_reports"
+            model="lc.vehicle.parts.inventory"
+            string="Vehicle Inventory"
+            report_type="qweb-pdf"
+            name="lc_fleet_service.lc_vehicle_parts_inventory_report"
+            file="lc_fleet_service.vehicle_parts_inventory_report"
+            paperformat="paperformat_lowmargin"
+        />        
+        
+    </data>
+</odoo>

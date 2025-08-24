@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+    	<!-- POS module -->
+        <record model="ir.ui.view" id="view_pos_margin_form_hide_cost">
+            <field name="name">pos.order.margin</field>
+            <field name="model">pos.order</field>
+            <field name="inherit_id" ref="point_of_sale.view_pos_pos_form"/>
+            <field name="arch" type="xml">                
+                 <xpath expr="//group[@name='margin']" position="attributes">
+                    <attribute name="groups">lc_hide_margin_pos.sec_lc_hide_margin_pos</attribute>
+                 </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_pos_margin_detail_tree_hide_cost">
+            <field name="name">pos.order.purchase_price</field>
+            <field name="model">pos.order</field>
+            <field name="inherit_id" ref="point_of_sale.view_pos_pos_form"/>
+            <field name="arch" type="xml">
+                 <xpath expr="//field[@name='purchase_price']" position="attributes">
+                    <attribute name="groups">lc_hide_margin_pos.sec_lc_hide_margin_pos</attribute>
+                 </xpath>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="view_pos_margin_tree_hide_cost">      
+      	<field name="model">pos.order</field>
+      	<field name="inherit_id" ref="point_of_sale.view_pos_order_tree"/>
+      	<field name="arch" type="xml">
+      		<xpath expr="//field[@name='margin']" position="attributes">
+      			<attribute name="groups">lc_hide_margin_pos.sec_lc_hide_margin_pos</attribute>            	                
+            </xpath>        	
+      	</field>
+    </record>
+       
+    </data>
+</odoo>

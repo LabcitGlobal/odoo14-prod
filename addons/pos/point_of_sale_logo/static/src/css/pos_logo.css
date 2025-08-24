@@ -1,0 +1,14 @@
+@media screen and (max-width: 768px) {
+    
+    .pos .pos-topheader .pos-logo{
+        display: none;
+    }
+
+    .pos .pos-topheader .ticket-button{
+        display: none;
+    }
+
+    .pos .pos-topheader .pos-rightheader .ticket-button{
+        display: flex;
+    }
+}

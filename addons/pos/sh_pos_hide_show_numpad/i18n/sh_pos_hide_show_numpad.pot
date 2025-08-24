@@ -1,0 +1,42 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_pos_hide_show_numpad
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-25 05:37+0000\n"
+"PO-Revision-Date: 2021-06-25 05:37+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sh_pos_hide_show_numpad
+#: model:ir.model.fields,field_description:sh_pos_hide_show_numpad.field_pos_config__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: sh_pos_hide_show_numpad
+#: model:ir.model.fields,field_description:sh_pos_hide_show_numpad.field_pos_config__enable_numpad
+#: model_terms:ir.ui.view,arch_db:sh_pos_hide_show_numpad.sh_pos_hide_show_numpad_config
+msgid "Hide/Show Numpad"
+msgstr ""
+
+#. module: sh_pos_hide_show_numpad
+#: model:ir.model.fields,field_description:sh_pos_hide_show_numpad.field_pos_config__id
+msgid "ID"
+msgstr ""
+
+#. module: sh_pos_hide_show_numpad
+#: model:ir.model.fields,field_description:sh_pos_hide_show_numpad.field_pos_config____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: sh_pos_hide_show_numpad
+#: model:ir.model,name:sh_pos_hide_show_numpad.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr ""

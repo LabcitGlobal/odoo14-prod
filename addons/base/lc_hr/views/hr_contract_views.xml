@@ -1,0 +1,29 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="view_hr_contract_form">      
+      <field name="model">hr.contract</field>
+      <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+      <field name="arch" type="xml">      		
+      		<xpath expr="//page[@name='information']" position="after">
+            <page string="Vehicle Data" name="vehicle">
+              <group name="vehicle_data_group" string="Vehicle">
+                <field name="driver_license"/>
+                <field name="vehicle_model"/>
+                <field name="vehicle_license_plate"/>
+                <field name="chassis"/>
+                <field name="color"/>
+              </group>
+            </page>
+            <page string="Contract Backup File" name="file">
+              <group name="file_group" string="Files">
+          	    <field name="photo"/>
+          	    <field name="file1"/>
+          	    <field name="file2"/>
+          	    <field name="file3"/>              
+              </group>
+            </page>
+          </xpath>          
+      </field>
+    </record>
+  </data>
+</odoo>

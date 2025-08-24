@@ -1,0 +1,50 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="lcsupport_tracking_form_view">
+    	<field name="name">Support Tracking</field>
+        <field name="model">lcsupport.service</field>
+        <field name="inherit_id" ref="lcsupport.lcsupport_service_form"/>
+        <field name="arch" type="xml">
+          <xpath expr="//page[@name='final']" position="after">                                 
+          	<page string="Seguimiento">
+              <group>           
+                <field name="trackingservice_ids">
+                  <tree string="Estado del Equipo" editable="bottom">          				
+                    <field name="create_date" string="Fecha"/>
+                    <field name="create_uid" string="Usuario"/>
+                    <field name="issue_description" string="Nota"/>    	      					
+                  </tree>
+                </field>
+              </group>          			
+            </page>
+          </xpath>                
+        </field>
+    </record>
+    
+    <!-- Tracking -->
+    
+    <record model="ir.ui.view" id="lcsupport_tracking_tree">
+      <field name="name">lcsupport.tracking.tree</field>
+      <field name="model">lcsupport.tracking</field>
+      <field name="arch" type="xml">
+        <tree string="Lista de Categorias">
+          <field name="service_id" string="Cliente"/>
+          <field name="create_date" string="Fecha"/>
+          <field name="create_uid" string="Usuario"/>
+          <field name="issue_description" string="Nota"/>          
+        </tree>
+      </field>
+    </record>
+       
+    <!-- Acciones -->
+    
+    <record model="ir.actions.act_window" id="lcsupport_tracking_action_window">
+      <field name="name">Seguimiento</field>
+      <field name="res_model">lcsupport.tracking</field>
+      <field name="view_mode">tree</field>            
+    </record>
+   
+    <menuitem name="Seguimiento" id="lcsupport_menu_tracking" parent="lcsupport.menu_root" action="lcsupport_tracking_action_window" sequence="10"/>    
+   
+  </data>
+</odoo>

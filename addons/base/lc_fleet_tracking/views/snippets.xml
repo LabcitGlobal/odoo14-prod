@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>    
+    <template id="lc_fleet_tracking_snippet" name="Fleet Tracking Form">
+        <section>
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-lg-12 t_text_title_center">
+                        <h2 class="s_title_thin t_text_small_title" style="text-align:center;">
+                            <b>¿FLEET TRACKING?</b>
+                        </h2>
+                    </div>
+                    <div class="col-lg-12 pt16 pb16">
+                        <p style="text-align: center;">
+                            <font style="color: rgb(0, 0, 0); font-size: 18px;">Ingrese su numero de seguimiento</font>
+                        </p>
+                    </div>                    
+                </div>
+                <form method="get" action="/rastreo/">                    
+                        <center>
+                            <div class="form-row align-items-center">                    
+                                <div class="col-md-4 mb-3"></div>
+                                <div class="col-md-4 mb-3">
+                                    <input name="tracking_id" class="form-control" type="text" placeholder="Ingrese su número de Seguimiento..." size="10"/>
+                                </div>                        
+                                <div class="col-md-4 mb-3"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-theme">Rastrear</button>
+                        </center>
+                    </form>
+            </div>
+        </section>
+    </template>
+    <template id="lc_fleet_service_tracking_snippet" inherit_id="website.snippets" name="Fleet Service Tracking Snippet">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+            <t t-snippet="lc_fleet_tracking.lc_fleet_tracking_snippet"
+             t-thumbnail="/lc_fleet_tracking/static/description/icon.png" />
+        </xpath>
+    </template>        
+</odoo>

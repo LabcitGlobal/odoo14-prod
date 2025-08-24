@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="lc_pos_image_label_qw" inherit_id="point_of_sale.template" xml:space="preserve">
+
+    <t t-name="ProductItem" t-inherit="point_of_sale.ProductItem" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('product-img')]" position="inside">
+            <t t-if="props.product.label1">            
+               <div class="product_label1">
+           	   		<t t-esc="props.product.label1"/>
+           	   </div>
+            </t>
+            <t t-if="props.product.label2">
+            	<div class="product_label2">                   	
+                   	<t t-esc="props.product.label2"/>                   	
+               </div>
+            </t>
+            <t t-if="props.product.top == 1">
+            	<div class="product_top1">
+                    <span class="product_top1_span">Liquidación</span>
+               </div>
+            </t>
+            <t t-if="props.product.top == 2">
+            	<div class="product_top2">
+                    <span class="product_top2_span">Promoción</span>
+               </div>
+            </t>
+            <t t-if="props.product.top == 3">
+            	<div class="product_top3">
+                    <span class="product_top3_span">Paquete</span>
+               </div>
+            </t>
+            <t t-if="props.product.top == 4">
+            	<div class="product_top4">
+                    <span class="product_top4_span">Unidad</span>
+               </div>
+            </t>
+        </xpath>
+    </t>
+</templates>

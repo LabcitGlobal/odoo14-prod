@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="lc_container_control_report">
+        	<t t-foreach="docs" t-as="doc">            
+				<t t-call="web.html_container">
+					<t t-call="web.external_layout">
+						<div style="font:17px Helvetica,Arial !important;">
+            				<div class="page">   
+								<table style="width:100%">                    				
+                    				<tbody>
+                        				<tr>                        					
+                        					<td style="width:50%, text-align:left">
+                            					El Alto, <span t-esc="doc.date_today.strftime('%d de %B del %Y')"/>												
+                            				</td>
+                            				<td style="text-align:right">
+                            					<strong>CODE: <span t-field="doc.name"/></strong>                                			
+	                        				</td>                            				
+    	                    			</tr>
+        	            			</tbody>                    			
+            	    			</table>
+								<br/><br/>
+								<p>Sirs:</p>
+								<p><strong><span t-field="doc.customer_id"/></strong></p>
+								<p>Present.-</p>
+								<p style="text-align:right"><strong>Ref.: Remission and Delivery of Documents</strong></p>								
+								<p><span t-field="doc.notes"/></p>
+
+								<table class="table">
+									<tbody>
+										<tr>
+											<td><strong>Customer:</strong></td>
+											<td><span t-field="doc.customer_id"/></td>
+											<td><strong>Date of Assignment:</strong></td>
+											<td><span t-field="doc.date_of_assignment" /></td>
+										</tr>
+										<tr>
+											<td><strong>Expiration Date:</strong></td>
+											<td><span t-field="doc.expiration_date"/></td>
+											<td><strong>Drop off location:</strong></td>
+											<td><span t-field="doc.drop_off_location" /></td>
+										</tr>
+									</tbody>
+								</table>
+
+								<table class="table table-bordered">
+									<tbody>
+										<t t-if="doc.route_ids">
+											<tr>
+												<td style="width:35%"><strong>ROUTE</strong></td>
+												<td>											
+													<table class="table table-sm o_main_table">
+                    									<thead>
+                        									<tr>
+                            									<th class="text-center">Source</th>
+    	                        								<th class="text-center">Destination</th>
+            	            								</tr>
+                	    								</thead>
+                    									<tbody>
+                        									<tr t-foreach="doc.route_ids" t-as="line">                        					
+                        	    								<td class="text-center">
+                            										<span t-field="line.source" />
+                            									</td>
+                            									<td class="text-center">
+                            										<span t-field="line.destination" />                                			
+	                            								</td>
+    	                    								</tr>
+        	            								</tbody>                    			
+            	    								</table>
+												</td>									
+											</tr>
+										</t>										
+										<tr>
+											<td><strong>LICENSE PLATE</strong></td>
+											<td>
+												<t t-foreach="doc.vehicle_ids" t-as="vehicle">
+													<span t-field="vehicle.vehicle_id.license_plate"/><span> </span>
+												</t>
+											</td>
+										</tr>										
+									</tbody>
+								</table>
+								<table class="table table-bordered table-sm o_main_table">
+                    				<thead>
+                        				<tr>
+                            				<th class="text-center">DOCUMENT</th>
+    	                    				<th class="text-center">No. Document</th>
+    	                    				<th class="text-center">Qty.</th>
+											<th class="text-center">Observation</th>
+            	            			</tr>
+                	    			</thead>
+                    				<tbody>
+                        				<tr t-foreach="doc.container_file_ids" t-as="line">                        					
+                        					<td>
+                            					<span t-field="line.file_category_id" />
+                            				</td>
+                            				<td class="text-center">
+                            					<span t-field="line.name" />                                			
+	                        				</td>
+                            				<td class="text-center">
+                            					<span t-field="line.quantity" />                                			
+	                        				</td>
+                            				<td class="text-center">
+                            					<span t-field="line.type" />                                			
+	                        				</td>
+    	                    			</tr>
+        	            			</tbody>                    			
+            	    			</table>
+								<p><strong>Return Date: </strong><span t-field="doc.return_date"/></p>
+								<p><strong>Return Note: </strong><span t-field="doc.return_note"/></p>
+							</div>
+            			</div>
+            		</t>
+            	</t>          		
+            </t>
+        </template>
+    </data>
+</odoo>

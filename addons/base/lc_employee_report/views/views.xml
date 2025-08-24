@@ -1,0 +1,35 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="lc_employee_report_form">
+    	<field name="name">lc.employee.report.form</field>
+        <field name="model">lc.employee.report</field>
+        <field name="arch" type="xml">
+        	<form>
+            	<group>
+                	<field name="from_date" string="Desde"/>
+                    <field name="to_date" string="Hasta"/>
+                    <field name="employee_id" string="Empleado"/>
+                </group>
+                <footer>
+                	<button name="print_report" string="Imprimir" type="object" class="btn-success"/>
+                    <button name="print_report_detail" string="Imprimir Detallado" type="object" class="btn-danger" groups="hr.group_hr_manager"/>
+                    <button string="Cerrar" class="btn-primary" special="cancel"/>                    
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="lc_employee_report_action_window">
+    	<field name="name">Reporte de asistencia de Empleado</field>
+        <field name="res_model">lc.employee.report</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <!-- <field name="view_type">form</field> -->
+    </record>
+
+    <menuitem id="menu_hr_lc_employee_manage_report" name="Reporte de Empleado"
+    	parent="hr_attendance.menu_hr_attendance_manage_attendances" action="lc_employee_report_action_window"
+        sequence="100"/>
+    
+  </data>
+</odoo>

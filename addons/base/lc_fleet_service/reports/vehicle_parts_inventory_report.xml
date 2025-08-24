@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="lc_vehicle_parts_inventory_report">
+        	<t t-foreach="docs" t-as="doc">            
+				<t t-call="web.html_container">
+					<t t-call="web.external_layout">
+						<div style="font:17px Helvetica,Arial !important;">
+            				<div class="page">
+								<center><h4><strong>DELIVERY AND RECEPTION INVENTORY OF TRANSPORT UNIT</strong></h4></center>
+								<table style="width:100%">                    				
+                    				<tbody>
+                        				<tr>                        					
+                        					<td style="width:33%, text-align:left">
+                            					<strong>Date:</strong> <span t-esc="doc.date_today.strftime('%d de %B del %Y')"/>												
+                            				</td>
+                            				<td style="width:33%, text-align:left">
+                            					<strong>Vehicle:</strong> <span t-field="doc.name.model_id"/>                                			
+	                        				</td>                            				
+                            				<td>
+                            					<strong>License Plate:</strong> <span t-field="doc.name.license_plate"/>                                			
+	                        				</td>                            				
+    	                    			</tr>
+        	            			</tbody>                    			
+            	    			</table>
+								<br/>
+								<table class="table table-bordered table-sm o_main_table">                    				
+									<thead>
+                        				<tr>
+                            				<th class="text-center">Category</th>
+                            				<th class="text-center">Part</th>
+                            				<th class="text-center">Quantity</th>
+                            				<th class="text-center">Note</th>
+            	            			</tr>
+                	    			</thead>
+                    				<tbody>
+                        				<tr t-foreach="doc.part_list_ids" t-as="line">                        					                        					
+                            				<td>
+                            					<span t-field="line.part_id.parent_id" />                                			
+	                        				</td>
+                            				<td>
+                            					<span t-field="line.part_id" />                                			
+	                        				</td>
+                            				<td class="text-center">
+                            					<span t-field="line.quantity_parts" />                                			
+	                        				</td>											
+                            				<td>
+                            					<span t-field="line.part_note" />                                			
+	                        				</td>											
+    	                    			</tr>
+        	            			</tbody>                    			
+            	    			</table>
+
+								<p t-if="doc.note"><strong>Note:</strong> <span t-field="doc.note"/></p>
+								<br/>
+								<br/>
+								<br/>								
+								<table style="width:100%; align:center">
+									<tr>									
+										<td style="width:50%"><center>I received as (Driver)</center></td>
+										<td style="width:50%"><center>Delivery as (Administrator)</center></td>
+									</tr>
+									<tr>									
+										<td><center>Name: <span t-field="doc.name.driver_id"/></center></td>
+										<td><center>Name: <span t-field="doc.name.manager_id"/></center></td>
+									</tr>
+									<tr>									
+										<td><center>No Identification: <span t-field="doc.name.driver_id.vat"/></center></td>
+										<td><center>No Identification: <span t-field="doc.name.manager_id.vat"/></center></td>
+									</tr>
+								</table>
+								
+							</div>
+            			</div>
+            		</t>
+            	</t>          		
+            </t>
+        </template>
+    </data>
+</odoo>

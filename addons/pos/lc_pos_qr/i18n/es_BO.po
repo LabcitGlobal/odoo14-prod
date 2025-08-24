@@ -1,0 +1,241 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* lc_pos_qr
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-15 02:17+0000\n"
+"PO-Revision-Date: 2021-09-15 02:17+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: lc_pos_qr
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.pos_qr_print_report_template
+msgid "- Web:"
+msgstr ""
+
+#. module: lc_pos_qr
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.pos_qr_print_report_template
+msgid ""
+"<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t<strong>Bank:</strong>"
+msgstr ""
+"<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t<strong>Banco:</strong>"
+
+#. module: lc_pos_qr
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.pos_qr_print_report_template
+msgid ""
+"<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t  \t\t<strong>Account name:</strong>"
+msgstr ""
+"<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t  \t\t<strong>Nombre de la Cuenta:</strong>"
+
+#. module: lc_pos_qr
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.pos_qr_print_report_template
+msgid ""
+"<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t  \t\t<strong>Account number:</strong>"
+msgstr ""
+"<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t  \t\t<strong>Número de Cuenta:</strong>"
+
+#. module: lc_pos_qr
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.pos_qr_print_report_template
+msgid ""
+"<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t  \t\t<strong>Currency:</strong>"
+msgstr ""
+"<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t  \t\t<strong>Moneda:</strong>"
+
+#. module: lc_pos_qr
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.pos_qr_print_report_template
+msgid "<strong>Date:</strong>"
+msgstr "<strong>Fecha:</strong>"
+
+#. module: lc_pos_qr
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.pos_qr_print_report_template
+msgid "<strong>IVA</strong>"
+msgstr ""
+
+#. module: lc_pos_qr
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.pos_qr_print_report_template
+msgid "<strong>NOTE:</strong>"
+msgstr "<strong>NOTA:</strong>"
+
+#. module: lc_pos_qr
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.pos_qr_print_report_template
+msgid "<strong>Partner:</strong>"
+msgstr "<strong>Cliente:</strong>"
+
+#. module: lc_pos_qr
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.pos_qr_print_report_template
+msgid "<strong>Phone:</strong>"
+msgstr "<strong>Teléfono:</strong>"
+
+#. module: lc_pos_qr
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.pos_qr_print_report_template
+msgid "<strong>Total</strong>"
+msgstr ""
+
+#. module: lc_pos_qr
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.pos_qr_print_report_template
+msgid "<strong>User:</strong>"
+msgstr "<strong>Usuario:</strong>"
+
+#. module: lc_pos_qr
+#: model:ir.model.fields,field_description:lc_pos_qr.field_lc_pos_qr__name
+msgid "Account name"
+msgstr "Nombre de la Cuenta"
+
+#. module: lc_pos_qr
+#: model:ir.model.fields,field_description:lc_pos_qr.field_lc_pos_qr__number_account
+msgid "Account number"
+msgstr "Número de Cuenta"
+
+#. module: lc_pos_qr
+#: model:ir.model.fields,field_description:lc_pos_qr.field_lc_pos_qr__bank_id
+msgid "Bank"
+msgstr "Banco"
+
+#. module: lc_pos_qr
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.lc_pos_qr_code_form
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.lc_pos_qr_code_tree
+msgid "Code"
+msgstr "Codigo"
+
+#. module: lc_pos_qr
+#: model:ir.model.fields,field_description:lc_pos_qr.field_lc_pos_qr__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: lc_pos_qr
+#: model:ir.model.fields,field_description:lc_pos_qr.field_lc_pos_qr__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: lc_pos_qr
+#: model:ir.model.fields,field_description:lc_pos_qr.field_lc_pos_qr__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: lc_pos_qr
+#: model:ir.model.fields,field_description:lc_pos_qr.field_lc_pos_qr__date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: lc_pos_qr
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.pos_qr_print_report_template
+msgid "Description"
+msgstr "Descripción"
+
+#. module: lc_pos_qr
+#: model:ir.model.fields.selection,name:lc_pos_qr.selection__lc_pos_qr__state__disable
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.lc_pos_qr_code_form
+msgid "Disable"
+msgstr "Deshabilitado"
+
+#. module: lc_pos_qr
+#: model:ir.model.fields,field_description:lc_pos_qr.field_lc_pos_qr__display_name
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: lc_pos_qr
+#: model:ir.model.fields.selection,name:lc_pos_qr.selection__lc_pos_qr__state__enable
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.lc_pos_qr_code_form
+msgid "Enable"
+msgstr "Habilitado"
+
+#. module: lc_pos_qr
+#: model:ir.model.fields,field_description:lc_pos_qr.field_lc_pos_qr__id
+msgid "ID"
+msgstr ""
+
+#. module: lc_pos_qr
+#: model:ir.model.fields,field_description:lc_pos_qr.field_lc_pos_qr____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: lc_pos_qr
+#: model:ir.model.fields,field_description:lc_pos_qr.field_lc_pos_qr__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: lc_pos_qr
+#: model:ir.model.fields,field_description:lc_pos_qr.field_lc_pos_qr__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: lc_pos_qr
+#: model:ir.model.fields,field_description:lc_pos_qr.field_lc_pos_qr__note
+msgid "Note"
+msgstr "Nota"
+
+#. module: lc_pos_qr
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.pos_qr_print_report_template
+msgid "Note:"
+msgstr "Nota"
+
+#. module: lc_pos_qr
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.pos_qr_print_report_template
+msgid "Page: <span class=\"page\"/>/<span class=\"topage\"/>"
+msgstr "Página: <span class=\"page\"/>/<span class=\"topage\"/>"
+
+#. module: lc_pos_qr
+#: model:ir.model,name:lc_pos_qr.model_lc_pos_qr
+msgid "Payment in POS by QR"
+msgstr "Pago en TPV por QR"
+
+#. module: lc_pos_qr
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.pos_qr_print_report_template
+msgid "Phone:"
+msgstr "Teléfono:"
+
+#. module: lc_pos_qr
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.pos_qr_print_report_template
+msgid "Price"
+msgstr "Precio"
+
+#. module: lc_pos_qr
+#: model:ir.actions.report,name:lc_pos_qr.lc_pos_qr_print_report
+msgid "Print Order with QR"
+msgstr "Imprimir Orden con QR"
+
+#. module: lc_pos_qr
+#: model:ir.actions.act_window,name:lc_pos_qr.lc_pos_qr_code_action
+#: model:ir.ui.menu,name:lc_pos_qr.menu_lc_pos_qr_code
+msgid "QR Code"
+msgstr "Codigo QR"
+
+#. module: lc_pos_qr
+#: model:ir.model.fields,field_description:lc_pos_qr.field_lc_pos_qr__qr_code_image
+msgid "Qr Image"
+msgstr "Imagen QR"
+
+#. module: lc_pos_qr
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.pos_qr_print_report_template
+msgid "Qty."
+msgstr "Cant."
+
+#. module: lc_pos_qr
+#: model:ir.model.fields,field_description:lc_pos_qr.field_lc_pos_qr__state
+msgid "State"
+msgstr "Estado"
+
+#. module: lc_pos_qr
+#: model_terms:ir.ui.view,arch_db:lc_pos_qr.pos_qr_print_report_template
+msgid "Total"
+msgstr ""
+
+#. module: lc_pos_qr
+#: model:ir.model.fields,field_description:lc_pos_qr.field_lc_pos_qr__user_id
+msgid "User"
+msgstr "Usuario"

@@ -1,0 +1,41 @@
+<odoo>
+  <data>
+
+    <record id="view_stock_quant_multicompany_tree" model="ir.ui.view">
+      <field name="name">view.stock.quant.multicompany.tree</field>
+      <field name="model">view.stock.quant.multicompany</field>
+      <field name="arch" type="xml">
+          <tree>
+              <field name="name"/>                            
+              <field name="default_code"/>                            
+              <field name="company_name"/>                            
+              <field name="location_name"/>                            
+              <field name="quantity"/>                            
+          </tree>
+      </field>
+    </record>   
+
+    <record id="search_all_view_stock_quant" model="ir.ui.view">
+      <field name="model">view.stock.quant.multicompany</field>
+      <field name="arch" type="xml">
+        <search>
+          <field name="name"/>          
+          <field name="default_code"/>
+          <field name="company_name"/>
+          <field name="location_name"/>
+        </search>
+      </field>
+    </record> 
+
+    <record id='view_stock_quant_multicompany_action' model='ir.actions.act_window'>
+      <field name="name">View Stock Multicompany</field>
+      <field name="res_model">view.stock.quant.multicompany</field>      
+      <field name="view_mode">tree</field>
+      <field name="search_view_id" ref="search_all_view_stock_quant"/>
+    </record>
+    
+    <menuitem name="Stock Quant Multicompany" id="menu_view_stock_quant_multicompany" parent="stock.menu_stock_inventory_control"
+                action="view_stock_quant_multicompany_action" groups="lc_stock_quant_multicompany.group_show_stock_quantity_per_multicompany" sequence="10"/>
+
+  </data>
+</odoo>

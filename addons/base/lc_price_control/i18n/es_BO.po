@@ -1,0 +1,68 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* lc_price_control
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-20 21:38+0000\n"
+"PO-Revision-Date: 2021-12-20 21:38+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: lc_price_control
+#: model:ir.model.fields,field_description:lc_price_control.field_lc_product_price_error_view__cost
+msgid "Cost"
+msgstr "Coste"
+
+#. module: lc_price_control
+#: model:ir.model.fields,field_description:lc_price_control.field_lc_product_price_error_view__display_name
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: lc_price_control
+#: model:ir.model.fields,field_description:lc_price_control.field_lc_product_price_error_view__fixed_price
+msgid "Fixed Price"
+msgstr "Precios Extras"
+
+#. module: lc_price_control
+#: model:ir.model.fields,field_description:lc_price_control.field_lc_product_price_error_view__id
+msgid "ID"
+msgstr ""
+
+#. module: lc_price_control
+#: model:ir.model.fields,field_description:lc_price_control.field_lc_product_price_error_view____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: lc_price_control
+#: model:ir.model.fields,field_description:lc_price_control.field_lc_product_price_error_view__price
+msgid "Price"
+msgstr "Precio Venta"
+
+#. module: lc_price_control
+#: model:ir.model.fields,field_description:lc_price_control.field_lc_product_price_error_view__name
+#: model_terms:ir.ui.view,arch_db:lc_price_control.lc_product_price_error_view_form
+msgid "Product"
+msgstr "Producto"
+
+#. module: lc_price_control
+#: model:ir.model.fields,field_description:lc_price_control.field_lc_product_price_error_view__product_tmpl_id
+msgid "Product ID"
+msgstr "Producto"
+
+#. module: lc_price_control
+#: model:ir.actions.act_window,name:lc_price_control.lc_product_price_error_view_action
+#: model:ir.ui.menu,name:lc_price_control.lc_product_price_error_view_menu
+msgid "Product Price Error"
+msgstr "Error de Precio en Productos"
+
+#. module: lc_price_control
+#: model:ir.model,name:lc_price_control.model_lc_product_price_error_view
+msgid "lc.product.price.error.view"
+msgstr ""

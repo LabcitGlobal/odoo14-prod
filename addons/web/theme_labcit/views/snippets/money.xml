@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="money_index" inherit_id="website.snippets" name="Index Money">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+            <t t-snippet="theme_labcit.lc_money"
+             t-thumbnail="/theme_labcit/static/src/img/snippets/money.png" />
+        </xpath>
+    </template>
+    <template id="lc_money" name="Labcit Money">
+        <section class="section-money">
+            <div class="inversion">                                
+                <h2>Inversión</h2>                
+                <br/>
+                <p>Alguna vez se ha preguntado: ¿Cuánto costaría contar con un equipo de ingenieros, diseñadores, publicistas, comunicadores y tecnología de punta?</p>
+                <p>Seguramente el elevado costo es por lo que muchos dejan de innovar, perdiendo competitividad y oportunidades en el mercado.</p>
+                <p>Tras diez años de experiencia, sabemos cuales son sus problemas y por que no pueden alcanzar sus metas y objetivos.</p>
+            </div>
+        </section>
+    </template>
+</odoo>

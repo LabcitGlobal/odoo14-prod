@@ -1,0 +1,8 @@
+.o_mega_menu {
+    width: auto;
+}
+
+/* Color de Ingco Bolivia */
+header nav.navbar .header_middle .middle_first .navbar-toggler .navbar-toggler-icon .inner_bar, header nav.navbar .header_middle .middle_first .navbar-toggler .navbar-toggler-icon:before, header nav.navbar .header_middle .middle_first .navbar-toggler .navbar-toggler-icon:after{
+    background-color: #000000;
+}

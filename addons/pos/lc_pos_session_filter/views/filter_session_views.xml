@@ -1,0 +1,13 @@
+<odoo>
+  <data>
+        
+    <record id="point_of_sale.action_pos_session" model="ir.actions.act_window">
+      <field name="domain">[('user_id', '!=', 18)]</field>
+    </record>
+
+    <!-- <record id="point_of_sale.action_pos_config_kanban" model="ir.actions.act_window">
+      <field name="domain">[('name', '!=', 'FreddyFM')]</field>
+    </record> -->
+
+  </data>
+</odoo>

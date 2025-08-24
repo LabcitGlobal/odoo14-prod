@@ -1,0 +1,14 @@
+<odoo>
+  <data>  
+    <record model="ir.ui.view" id="view_pos_order_margin_form">      
+      <field name="model">pos.order</field>
+      <field name="inherit_id" ref="point_of_sale.view_pos_pos_form"/>
+      <field name="arch" type="xml">      		
+      		<xpath expr="//button[@name='refund']" position="after">            	
+            	<button name="action_recalculate_margin" string="Recalculate Margin" type="object" groups="point_of_sale.group_pos_manager"/>
+            	<button name="action_restore_margin" string="Restore Margin" type="object" groups="point_of_sale.group_pos_manager"/>
+          </xpath>
+      </field>
+    </record>    
+  </data>
+</odoo>

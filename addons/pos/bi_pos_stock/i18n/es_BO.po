@@ -1,0 +1,314 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bi_pos_stock
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-04 13:25+0000\n"
+"PO-Revision-Date: 2021-10-04 13:25+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bi_pos_stock
+#. openerp-web
+#: code:addons/bi_pos_stock/static/src/js/Screens/ProductScreen.js:0
+#: code:addons/bi_pos_stock/static/src/js/Screens/ProductScreen.js:0
+#, python-format
+msgid "() is Out of Stock."
+msgstr "() está agotado"
+
+#. module: bi_pos_stock
+#: model_terms:ir.ui.view,arch_db:bi_pos_stock.custom_pos_config_extended_form_view
+msgid "(Overlay) Block out of stock products."
+msgstr "(Superposición) Bloquear productos agotados."
+
+#. module: bi_pos_stock
+#: model:ir.model.fields.selection,name:bi_pos_stock.selection__pos_config__show_stock_location__all
+msgid "All Warehouse"
+msgstr "Todos Almacenes"
+
+#. module: bi_pos_stock
+#: model:ir.model.fields,field_description:bi_pos_stock.field_pos_config__pos_allow_order
+msgid "Allow POS Order When Product is Out of Stock"
+msgstr "Permitir pedido en punto de venta cuando el producto está agotado"
+
+#. module: bi_pos_stock
+#: model_terms:ir.ui.view,arch_db:bi_pos_stock.custom_pos_config_extended_form_view
+msgid "Allow pos order when product is out of stock stock."
+msgstr "Permitir pedido pos cuando el producto esté agotado."
+
+#. module: bi_pos_stock
+#: model:ir.model.fields,field_description:bi_pos_stock.field_product_product__available_quantity
+msgid "Available Quantity"
+msgstr "Cantidad disponible"
+
+#. module: bi_pos_stock
+#: model:ir.model.fields,field_description:bi_pos_stock.field_pos_config__pos_overlay_order
+msgid "Block out of stock products"
+msgstr "Bloquear productos agotados"
+
+#. module: bi_pos_stock
+#. openerp-web
+#: code:addons/bi_pos_stock/static/src/xml/product_popup.xml:0
+#, python-format
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: bi_pos_stock
+#: model:ir.model.fields,field_description:bi_pos_stock.field_pos_config__pos_sync
+msgid "Carry Stock Synchronization in real time"
+msgstr "Llevar sincronización de stock en tiempo real"
+
+#. module: bi_pos_stock
+#: model:ir.model.fields,field_description:bi_pos_stock.field_pos_config__pos_online_check_stock
+msgid "Check the stock online before paying"
+msgstr "Verifique el stock en tiempo real antes de pagar"
+
+#. module: bi_pos_stock
+#: model_terms:ir.ui.view,arch_db:bi_pos_stock.custom_pos_config_extended_form_view
+msgid "Check the stock online before paying."
+msgstr "Verifique las existencias en tiempo real antes de pagar."
+
+#. module: bi_pos_stock
+#: model_terms:ir.ui.view,arch_db:bi_pos_stock.custom_pos_config_extended_form_view
+msgid "Check this to display stock in pos screen."
+msgstr "Marque esto para mostrar el stock en la pantalla de pos."
+
+#. module: bi_pos_stock
+#: model:ir.model.fields.selection,name:bi_pos_stock.selection__pos_config__show_stock_location__specific
+msgid "Current Session Warehouse"
+msgstr "Almacén de sesiones actuales"
+
+#. module: bi_pos_stock
+#. openerp-web
+#: code:addons/bi_pos_stock/static/src/js/Screens/ProductScreen.js:0
+#: code:addons/bi_pos_stock/static/src/js/Screens/ProductScreen.js:0
+#: code:addons/bi_pos_stock/static/src/js/Screens/ProductScreen.js:0
+#, python-format
+msgid "Denied Order"
+msgstr "Orden denegada"
+
+#. module: bi_pos_stock
+#. openerp-web
+#: code:addons/bi_pos_stock/static/src/js/Screens/ProductScreen.js:0
+#: code:addons/bi_pos_stock/static/src/js/Screens/ProductScreen.js:0
+#: code:addons/bi_pos_stock/static/src/js/Screens/ProductScreen.js:0
+#, python-format
+msgid "Deny Order"
+msgstr "Denegar orden"
+
+#. module: bi_pos_stock
+#. openerp-web
+#: code:addons/bi_pos_stock/static/src/js/Screens/ProductScreen.js:0
+#: code:addons/bi_pos_stock/static/src/js/Screens/ProductScreen.js:0
+#: code:addons/bi_pos_stock/static/src/js/Screens/ProductScreen.js:0
+#, python-format
+msgid "Deny Order() is Out of Stock."
+msgstr "Denegar Pedido() está agotado."
+
+#. module: bi_pos_stock
+#: model:ir.model.fields,field_description:bi_pos_stock.field_pos_config__pos_deny_order
+msgid "Deny POS Order When Product Qty is goes down to"
+msgstr ""
+"Denegar pedido de punto de venta cuando la cantidad de producto se menor a"
+
+#. module: bi_pos_stock
+#: model_terms:ir.ui.view,arch_db:bi_pos_stock.custom_pos_config_extended_form_view
+msgid "Deny pos order"
+msgstr "Denegar orden POS"
+
+#. module: bi_pos_stock
+#: model_terms:ir.ui.view,arch_db:bi_pos_stock.custom_pos_config_extended_form_view
+msgid "Deny pos order when product quanity goes down to the entered quantity."
+msgstr ""
+"Rechazar pedido pos cuando la cantidad de producto desciende a la cantidad "
+"ingresada."
+
+#. module: bi_pos_stock
+#: model:ir.model.fields,field_description:bi_pos_stock.field_pos_config__display_name
+#: model:ir.model.fields,field_description:bi_pos_stock.field_pos_order__display_name
+#: model:ir.model.fields,field_description:bi_pos_stock.field_product_product__display_name
+#: model:ir.model.fields,field_description:bi_pos_stock.field_stock_picking__display_name
+#: model:ir.model.fields,field_description:bi_pos_stock.field_stock_quant__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: bi_pos_stock
+#: model:ir.model.fields,field_description:bi_pos_stock.field_pos_config__pos_display_stock
+msgid "Display Stock in POS"
+msgstr "Exhibir Stock en POS"
+
+#. module: bi_pos_stock
+#: model_terms:ir.ui.view,arch_db:bi_pos_stock.custom_pos_config_extended_form_view
+msgid "Enable manual synchronization of Stock in real time."
+msgstr "Habilite la sincronización manual de Stock en tiempo real."
+
+#. module: bi_pos_stock
+#. openerp-web
+#: code:addons/bi_pos_stock/static/src/js/Screens/ProductScreen.js:0
+#: code:addons/bi_pos_stock/static/src/js/Screens/ProductScreen.js:0
+#: code:addons/bi_pos_stock/static/src/xml/product_popup.xml:0
+#, python-format
+msgid "Error: Out of Stock"
+msgstr "Error: Stock Agotado"
+
+#. module: bi_pos_stock
+#: model:ir.model.fields,field_description:bi_pos_stock.field_pos_config__id
+#: model:ir.model.fields,field_description:bi_pos_stock.field_pos_order__id
+#: model:ir.model.fields,field_description:bi_pos_stock.field_product_product__id
+#: model:ir.model.fields,field_description:bi_pos_stock.field_stock_picking__id
+#: model:ir.model.fields,field_description:bi_pos_stock.field_stock_quant__id
+msgid "ID"
+msgstr ""
+
+#. module: bi_pos_stock
+#: model:ir.model.fields.selection,name:bi_pos_stock.selection__pos_config__pos_stock_type__incoming
+msgid "Incoming Qty"
+msgstr "Cantidad Entrante"
+
+#. module: bi_pos_stock
+#: model:ir.model.fields,field_description:bi_pos_stock.field_pos_config____last_update
+#: model:ir.model.fields,field_description:bi_pos_stock.field_pos_order____last_update
+#: model:ir.model.fields,field_description:bi_pos_stock.field_product_product____last_update
+#: model:ir.model.fields,field_description:bi_pos_stock.field_stock_picking____last_update
+#: model:ir.model.fields,field_description:bi_pos_stock.field_stock_quant____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: bi_pos_stock
+#: model:ir.model.fields,field_description:bi_pos_stock.field_pos_order__location_id
+msgid "Location"
+msgstr "Localización"
+
+#. module: bi_pos_stock
+#. openerp-web
+#: code:addons/bi_pos_stock/static/src/xml/product_popup.xml:0
+#, python-format
+msgid "Order"
+msgstr "Pedido"
+
+#. module: bi_pos_stock
+#. openerp-web
+#: code:addons/bi_pos_stock/static/src/js/Screens/ProductScreen.js:0
+#, python-format
+msgid "Ordered qty of One or more product(s) is more than available qty."
+msgstr ""
+"La cantidad pedida de Uno o más productos es mayor que la cantidad "
+"disponible."
+
+#. module: bi_pos_stock
+#. openerp-web
+#: code:addons/bi_pos_stock/static/src/xml/bi_pos_stock.xml:0
+#, python-format
+msgid "Out of Stock"
+msgstr "Agotado"
+
+#. module: bi_pos_stock
+#: model:ir.model.fields.selection,name:bi_pos_stock.selection__pos_config__pos_stock_type__outgoing
+msgid "Outgoing Qty"
+msgstr "Cant. Saliente"
+
+#. module: bi_pos_stock
+#: model:ir.model,name:bi_pos_stock.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "Configuración del PdV"
+
+#. module: bi_pos_stock
+#: model:ir.model,name:bi_pos_stock.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "Órdenes PdV"
+
+#. module: bi_pos_stock
+#. openerp-web
+#: code:addons/bi_pos_stock/static/src/xml/product_popup.xml:0
+#: model:ir.model,name:bi_pos_stock.model_product_product
+#, python-format
+msgid "Product"
+msgstr "Producto"
+
+#. module: bi_pos_stock
+#: model_terms:ir.ui.view,arch_db:bi_pos_stock.custom_pos_config_extended_form_view
+msgid "Product stock location type"
+msgstr "Tipo de ubicación de stock del producto"
+
+#. module: bi_pos_stock
+#: model:ir.model.fields.selection,name:bi_pos_stock.selection__pos_config__pos_stock_type__available
+msgid "Qty Available"
+msgstr "Cantidad disponible"
+
+#. module: bi_pos_stock
+#. openerp-web
+#: code:addons/bi_pos_stock/static/src/xml/product_popup.xml:0
+#: model:ir.model.fields.selection,name:bi_pos_stock.selection__pos_config__pos_stock_type__onhand
+#, python-format
+msgid "Qty on Hand"
+msgstr "Cantidad en Mano"
+
+#. module: bi_pos_stock
+#: model:ir.model,name:bi_pos_stock.model_stock_quant
+msgid "Quants"
+msgstr "Cantidad"
+
+#. module: bi_pos_stock
+#: model:ir.model.fields,help:bi_pos_stock.field_pos_config__pos_stock_type
+msgid "Seller can display Different stock type in POS."
+msgstr "El vendedor puede mostrar diferentes tipos de stock en POS."
+
+#. module: bi_pos_stock
+#: model:ir.model.fields,field_description:bi_pos_stock.field_pos_config__show_stock_location
+msgid "Show Stock Of"
+msgstr "Mostrar stock de"
+
+#. module: bi_pos_stock
+#: model_terms:ir.ui.view,arch_db:bi_pos_stock.custom_pos_config_extended_form_view
+msgid "Stock Configuration in POS"
+msgstr "Configuración de stock en POS"
+
+#. module: bi_pos_stock
+#: model:ir.model.fields,field_description:bi_pos_stock.field_pos_config__stock_location_id
+msgid "Stock Location"
+msgstr "Ubicación de stock"
+
+#. module: bi_pos_stock
+#: model_terms:ir.ui.view,arch_db:bi_pos_stock.custom_pos_config_extended_form_view
+msgid "Stock Location Configuration"
+msgstr "Configuración de ubicación de stock"
+
+#. module: bi_pos_stock
+#: model:ir.model.fields,field_description:bi_pos_stock.field_pos_config__pos_stock_type
+#: model_terms:ir.ui.view,arch_db:bi_pos_stock.custom_pos_config_extended_form_view
+msgid "Stock Type"
+msgstr "Tipo de stock"
+
+#. module: bi_pos_stock
+#: model_terms:ir.ui.view,arch_db:bi_pos_stock.custom_pos_config_extended_form_view
+msgid "Stock location used for inventory"
+msgstr "Ubicación de stock utilizada para inventario"
+
+#. module: bi_pos_stock
+#: model_terms:ir.ui.view,arch_db:bi_pos_stock.custom_pos_config_extended_form_view
+msgid "Stock online"
+msgstr "Stock en tiempo Real"
+
+#. module: bi_pos_stock
+#: model_terms:ir.ui.view,arch_db:bi_pos_stock.custom_pos_config_extended_form_view
+msgid "Stock type show up in POS screen."
+msgstr "El tipo de stock aparece en la pantalla POS."
+
+#. module: bi_pos_stock
+#. openerp-web
+#: code:addons/bi_pos_stock/static/src/xml/bi_pos_stock.xml:0
+#, python-format
+msgid "Sync"
+msgstr "Sinc"
+
+#. module: bi_pos_stock
+#: model:ir.model,name:bi_pos_stock.model_stock_picking
+msgid "Transfer"
+msgstr "Transferir"

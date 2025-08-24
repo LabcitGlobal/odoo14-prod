@@ -1,0 +1,68 @@
+<odoo>
+  <data>
+    
+    <!-- Nit -->
+    
+    <record model="ir.ui.view" id="lc_impuesto_nit_tree">
+      <field name="name">lc_impuesto_nit.tree</field>
+      <field name="model">lc.impuesto.nit</field>
+      <field name="arch" type="xml">
+        <tree string="Numero de Identificacion Tributaria">          
+          <field name="name"/>
+          <field name="nit"/>
+          <field name="domicilio_tributario"/>
+          <field name="gran_actividad"/>    
+          <field name="actividad_principal"/>
+          <field name="tipo_contribuyente"/>
+          <field name="ubicacion"/>          
+          <field name="active"/>          
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="lc_impuesto_nit_form">
+      <field name="name">lc_impuesto_nit.form</field>
+      <field name="model">lc.impuesto.nit</field>
+      <field name="arch" type="xml">
+      <form string="Numero de Identificacion Tributaria">      	
+      	<sheet>
+      		<group>      			  
+          		<field name="name"/>
+          		<field name="nit"/>
+              <field name="domicilio_tributario"/>
+              <field name="gran_actividad"/>    
+              <field name="actividad_principal"/>
+              <field name="tipo_contribuyente"/>
+              <field name="ubicacion"/>
+              <field name="certificado" widget="image"/>
+              <field name="active"/>
+          </group>          	          	
+      	</sheet>
+      </form>        
+      </field>
+    </record>
+        
+    <!-- Acciones -->
+    
+    <record model="ir.actions.act_window" id="lc_impuesto_nit_action_window">
+      <field name="name">Nit</field>
+      <field name="res_model">lc.impuesto.nit</field>    
+      <field name="view_mode">tree,form</field>            
+    </record>
+
+    <!-- Top menu item -->
+    
+    <!-- <menuitem name="Soporte" id="lcsupport.menu_root"/> -->
+    
+    <!-- menu categories -->
+    
+    <menuitem name="Impuestos" id="lc_impuesto.menu_root" parent="account.menu_finance"/>
+
+    
+    <!-- actions -->
+    
+	  <menuitem name="Nit" id="lc_impuesto_menu_nit" parent="lc_impuesto.menu_root"
+              action="lc_impuesto_nit_action_window"/>
+    
+  </data>
+</odoo>

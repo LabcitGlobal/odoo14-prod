@@ -1,0 +1,46 @@
+<odoo>
+  <data>
+    
+  <!-- Bank Account -->
+    
+    <record model="ir.ui.view" id="lc_fleet_bank_account_tree">
+      <field name="name">Fleet Bank Account Tree</field>
+      <field name="model">lc.fleet.bank.account</field>
+      <field name="arch" type="xml">
+        <tree string="Category">
+          <field name="name"/>          
+          <field name="name_account"/>          
+          <field name="number_account"/>          
+          <field name="currency_id"/>          
+        </tree>
+      </field>
+    </record>
+	
+    <record model="ir.ui.view" id="lc_fleet_bank_account_form">
+      <field name="name">Fleet Bank Account Form</field>
+      <field name="model">lc.fleet.bank.account</field>
+      <field name="arch" type="xml">
+      		<form string="Category">      			
+      			<sheet>
+      				<group>
+      		    	<field name="name"/>      		    		
+                <field name="name_account"/>          
+                <field name="number_account"/>          
+                <field name="currency_id"/>          
+      		    </group>          	      		    			
+      			</sheet>
+      		</form>        
+      </field>
+    </record>
+
+	<record id="lc_fleet_bank_account_action" model="ir.actions.act_window">
+            <field name="name">Fleet Bank Account</field>
+            <field name="res_model">lc.fleet.bank.account</field>
+            <field name="view_mode">tree,form</field>
+    </record>
+
+  <menuitem id="menu_lc_fleet_bank_account" parent="fleet.fleet_configuration" name="Bank Account"
+                  action="lc_fleet_bank_account_action" groups="base.group_no_one" sequence="20"/>
+
+  </data>
+</odoo>

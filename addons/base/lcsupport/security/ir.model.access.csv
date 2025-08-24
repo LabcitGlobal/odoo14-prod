@@ -1,0 +1,17 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_lcsupport_service,lcsupport.service,model_lcsupport_service,lcsupport.lc_group_manager,1,1,1,1
+access_lcsupport_servicetype,lcsupport.servicetype,model_lcsupport_servicetype,lcsupport.lc_group_manager,1,1,1,1
+access_lcsupport_servicecategory,lcsupport.servicecategory,model_lcsupport_servicecategory,lcsupport.lc_group_manager,1,1,1,1
+access_lcsupport_machine,lcsupport.machine,model_lcsupport_machine,lcsupport.lc_group_manager,1,1,1,1
+access_lcsupport_brand,lcsupport.brand,model_lcsupport_brand,lcsupport.lc_group_manager,1,1,1,1
+access_lcsupport_unit,lcsupport.unit,model_lcsupport_unit,lcsupport.lc_group_manager,1,1,1,1
+access_lcsupport_detailmachine,lcsupport.detailmachine,model_lcsupport_detailmachine,lcsupport.lc_group_manager,1,1,1,1
+access_lcsupport_detailservice,lcsupport.detailservice,model_lcsupport_detailservice,lcsupport.lc_group_manager,1,1,1,1
+access_lcsupport_service,lcsupport.service,model_lcsupport_service,lcsupport.lc_group_user,1,1,1,0
+access_lcsupport_servicetype,lcsupport.servicetype,model_lcsupport_servicetype,lcsupport.lc_group_user,1,1,1,0
+access_lcsupport_servicecategory,lcsupport.servicecategory,model_lcsupport_servicecategory,lcsupport.lc_group_user,1,1,1,0
+access_lcsupport_machine,lcsupport.machine,model_lcsupport_machine,lcsupport.lc_group_user,1,1,1,0
+access_lcsupport_brand,lcsupport.brand,model_lcsupport_brand,lcsupport.lc_group_user,1,1,1,0
+access_lcsupport_unit,lcsupport.unit,model_lcsupport_unit,lcsupport.lc_group_user,1,1,1,0
+access_lcsupport_detailmachine,lcsupport.detailmachine,model_lcsupport_detailmachine,lcsupport.lc_group_user,1,1,1,0
+access_lcsupport_detailservice,lcsupport.detailservice,model_lcsupport_detailservice,lcsupport.lc_group_user,1,1,1,0

@@ -1,0 +1,331 @@
+<odoo>
+  <data>
+    
+    <!-- Services -->
+    
+    <record model="ir.ui.view" id="lc_fleet_service_tree">
+      <field name="name">Fleet Service Tree</field>
+      <field name="model">lc.fleet.service</field>
+      <field name="arch" type="xml">
+        <tree string="List of Services">
+          <field name="name"/>
+          <field name="date_today"/>
+          <field name="customer_id"/>          
+          <field name="amount"/>
+          <field name="currency_id"/>
+		  <field name="user_id" optional="show" widget="many2one_avatar_user"/>
+          <field name="state" decoration-warning="state == 'service'" decoration-info="state == 'draft'" decoration-danger="state == 'cancel'" decoration-success="state == 'payed'" widget="badge" optional="show"/>
+        </tree>
+      </field>
+    </record>
+	
+    <record model="ir.ui.view" id="lc_fleet_service_form">
+      <field name="name">Fleet Service Form</field>
+      <field name="model">lc.fleet.service</field>
+      <field name="arch" type="xml">
+      		<form string="Services">
+      			<header>
+      				<button name="action_confirm_fleet_service" id="action_confirm_fleet_service" 
+					  string="Confirm" class="btn-primary" type="object"
+					  attrs="{'invisible':['|', ('state','not in', ['draft']),('id','=',False)]}"/>
+					<button name="action_cancel_fleet_service" type="object" string="Cancel" attrs="{'invisible': ['|', ('state', 'not in', ['draft']), ('id', '=', False)]}"/>      				
+      				<button name="action_draft_fleet_service" type="object" string="Set to Quotation" 
+					  attrs="{'invisible': ['|', ('state', 'in', ['draft']), ('id', '=', False)]}" groups="fleet.fleet_group_manager"/>
+      				<field name="state"  widget="statusbar" statusbar_visible="draft,service"/>
+      			</header>
+      			<sheet>
+				  	<div class="oe_button_box" name="button_box">
+					  <button name="open_fleet_remission" type="object" class="oe_stat_button" icon="fa-list-alt">
+					  		<field name="fleet_remission_count" string="Remission" widget="statinfo"/>
+					  </button>
+					  <button name="open_driver_expenses" type="object" class="oe_stat_button" icon="fa-money">
+					  		<field name="driver_expenses_total" string="Expenses" widget="statinfo"/>
+					  </button>
+					  <button name="open_tracking" type="object" class="oe_stat_button" icon="fa-map-o">
+					  		<field name="fleet_tracking_count" string="Tracking" widget="statinfo"/>
+					  </button>
+					</div>				  	
+      				<group>
+      		    		<field name="date_today"/>
+      		    	</group>          	
+      		    	<notebook>
+                  		<page string="Routes">
+          			    	<group>           
+          			    		<field name="route_ids">
+          			    			<tree string="Route" editable="bottom">          				
+	          		    				<field name="source"/>
+    	      		    				<field name="destination"/>        	  					
+          			    			</tree>
+          			    		</field>
+          			    	</group>          			
+          		    	</page>
+      		    		<page string="Vehicle and Driver">
+      		    			<group>          		
+      		    				<field name="vehicle_ids">
+          			    		<tree string="Vehicles" editable="bottom">          				
+	          		    			<field name="vehicle_id"/>
+    	      		    			<field name="driver_id"/>        	  					
+          			    		</tree>
+          			    		</field>
+      		    			</group>
+      		    		</page>
+      		    		<page string="Debit Note">
+						    <group>    		
+      		    				<field name="name" domain="[('state','=','enable')]"
+                                   options="{'no_create': True}"/>
+								<field name="customer_id"/>
+								<field name="invoice_number"/>
+								<field name="amount"/>
+								<field name="currency_id" options="{'no_create': True, 'no_open': True}"/>
+      		    				<field name="notes"/>
+      		    			</group>
+      		    		</page>
+						<page string="Expenses">
+						    <group>
+								<field name="expenses_ids">
+          			    		<tree string="Expenses" editable="bottom">          				
+	          		    			<field name="date"/>
+    	      		    			<field name="category_expenses_id"/>        	  					
+    	      		    			<field name="name"/>        	  					
+    	      		    			<field name="amount"/>
+									<field name="currency_id" options="{'no_create': True, 'no_open': True}"/>          	  					
+    	      		    			<field name="photo"/>        	  					
+    	      		    			<field name="file" widget="binary"/>        	  					
+          			    		</tree>
+								</field>
+      		    			</group>
+      		    		</page>
+						<page string="Apportionment">
+						    <group>
+								<field name="parent_id"/>
+								<field name="proration_percentage"/>
+      		    			</group>
+      		    		</page>
+						<page string="Other (Security)">
+							<group>    		      		    	    			
+					   			<field name="user_id"/>
+					   			<field name="create_uid"/>								      
+					   			<field name="create_date"/>								      
+					   			<field name="write_uid"/>								      
+					   			<field name="write_date"/>								      
+      		    			</group>
+      		    		</page>          		          		
+					</notebook>			
+      			</sheet>
+      		</form>        
+      </field>
+    </record>
+
+	<record id="lc_fleet_service_action" model="ir.actions.act_window">
+            <field name="name">Fleet Service</field>			
+            <field name="res_model">lc.fleet.service</field>			
+            <field name="view_mode">tree,form</field>			
+    </record>
+	<record id="lc_fleet_service_action_view_tree" model="ir.actions.act_window.view">
+			<field name="sequence" eval="1"/>
+            <field name="view_mode">tree</field>
+			<field name="view_id" ref="lc_fleet_service.lc_fleet_service_tree"/>
+			<field name="act_window_id" ref="lc_fleet_service_action"/>            
+    </record>
+	<record id="lc_fleet_service_action_view_form" model="ir.actions.act_window.view">
+			<field name="sequence" eval="2"/>
+            <field name="view_mode">form</field>
+			<field name="view_id" ref="lc_fleet_service.lc_fleet_service_form"/>
+			<field name="act_window_id" ref="lc_fleet_service_action"/>            
+    </record>	
+
+	<!-- Service Debit Note -->
+
+	<record model="ir.ui.view" id="lc_fleet_service_debit_note_tree">
+      <field name="name">Fleet Service Debit Note Tree</field>
+      <field name="model">lc.fleet.service</field>
+      <field name="arch" type="xml">
+        <tree decoration-success="amount == payment" decoration-danger="amount != payment">			  	
+          <field name="name"/>
+          <field name="debit_date"/>
+          <field name="customer_id"/>          
+		  <field name="invoice_number"/>		  
+          <field name="amount"/>
+          <field name="currency_id"/>
+		  <field name="user_id" optional="show" widget="many2one_avatar_user"/>
+		  <field name="payment"/>
+          <field name="state" decoration-warning="state == 'service'" decoration-info="state == 'draft'" decoration-danger="state == 'cancel'" decoration-success="state == 'payed'" widget="badge" optional="show"/>
+        </tree>
+      </field>
+    </record>
+
+	<record model="ir.ui.view" id="lc_fleet_service_debit_note_form">
+      <field name="name">Fleet Service Debit Note Form</field>
+      <field name="model">lc.fleet.service</field>
+      <field name="arch" type="xml">
+      		<form string="Services">
+      			<header>
+      				<button name="action_confirm_fleet_service" id="action_confirm_fleet_service" 
+					  string="Confirm" class="btn-primary" type="object"
+					  attrs="{'invisible':['|', ('state','not in', ['draft']),('id','=',False)]}"/>
+					<button name="action_cancel_fleet_service" type="object" string="Cancel" attrs="{'invisible': ['|', ('state', 'not in', ['draft']), ('id', '=', False)]}"/>      				
+      				<button name="action_draft_fleet_service" type="object" string="Set to Quotation" 
+					  attrs="{'invisible': ['|', ('state', 'in', ['draft']), ('id', '=', False)]}" groups="fleet.fleet_group_manager"/>
+					<button name="action_payed_fleet_service" type="object" string="Payed" 
+					  attrs="{'invisible': [('state', 'not in', ['service'])]}" groups="fleet.fleet_group_manager"/>
+					<button name="action_prorate_now" type="object" string="Prorate Now" 
+					  attrs="{'invisible': ['|', ('state', 'not in', ['service']), ('apportionment','=',True)]}" groups="fleet.fleet_group_manager"/>
+      				<field name="state"  widget="statusbar" statusbar_visible="draft,service,payed"/>
+      			</header>
+      			<sheet>
+				  	<div class="oe_button_box" name="button_box">
+					  <button name="open_fleet_remission" type="object" class="oe_stat_button" icon="fa-list-alt">
+					  		<field name="fleet_remission_count" string="Remission" widget="statinfo"/>
+					  </button>
+					  <button name="open_driver_expenses" type="object" class="oe_stat_button" icon="fa-money">
+					  		<field name="driver_expenses_total" string="Expenses" widget="statinfo"/>
+					  </button>
+					  <button name="open_tracking" type="object" class="oe_stat_button" icon="fa-map-o">
+					  		<field name="fleet_tracking_count" string="Tracking" widget="statinfo"/>
+					  </button>					  
+					</div>
+					<group>
+      					<group>
+							<field name="name" 
+								   domain="[('state','=','enable')]"
+                    	           options="{'no_create': True}"/>
+      		    			<field name="debit_date"/>
+							<field name="customer_id"/>
+							<field name="invoice_number"/>
+							<field name="amount"/>
+							<field name="currency_id" options="{'no_create': True, 'no_open': True}"/>
+      		    		</group>					          	
+						<group>
+							<field name="margin" groups="fleet.fleet_group_manager"/>
+						</group>
+					</group>				  	
+      		    	<notebook>
+      		    		<page string="Description">
+						    <group>    		
+      		    				
+      		    				<field name="notes"/>
+      		    			</group>
+      		    		</page>          		          		
+                  		<page string="Routes">
+          			    	<group>           
+          			    		<field name="route_ids">
+          			    			<tree string="Route" editable="bottom">          				
+	          		    				<field name="source"/>
+    	      		    				<field name="destination"/>        	  					
+          			    			</tree>
+          			    		</field>
+          			    	</group>          			
+          		    	</page>
+      		    		<page string="Vehicle and Driver">
+      		    			<group>          		
+      		    				<field name="vehicle_ids">
+          			    		<tree string="Vehicles" editable="bottom">          				
+	          		    			<field name="vehicle_id"/>
+    	      		    			<field name="driver_id"/>        	  					
+          			    		</tree>
+          			    	</field>
+      		    			</group>
+      		    		</page>
+						<page string="Expenses">
+						    <group>
+								<field name="expenses_ids">
+          			    			<tree string="Expenses" editable="bottom">          				
+	          		    				<field name="date"/>
+    	      		    				<field name="category_expenses_id"/>        	  					
+    	      		    				<field name="name"/>        	  					
+    	      		    				<field name="amount"/>
+										<field name="currency_id" options="{'no_create': True, 'no_open': True}"/>          	  					
+    	      		    				<field name="photo"/>        	  					
+    	      		    				<field name="file" widget="binary"/>        	  					
+          			    			</tree>
+								</field>
+      		    			</group>
+      		    		</page>
+						<page string="Apportionment">
+						    <group>
+								<field name="parent_id"/>
+								<field name="proration_percentage"/>
+								<field name="apportionment"/>
+      		    			</group>
+      		    		</page>						
+						<page string="Other (Security)">
+							<group>    		      		    	    			
+					   			<field name="user_id"/>
+					   			<field name="create_uid"/>								      
+					   			<field name="create_date"/>								      
+					   			<field name="write_uid"/>								      
+					   			<field name="write_date"/>								      
+      		    			</group>
+      		    		</page>
+					</notebook>			
+      			</sheet>
+      		</form>        
+      </field>
+    </record>
+
+	<record id="lc_fleet_service_debit_note_action" model="ir.actions.act_window">
+            <field name="name">Fleet Service Debit Note</field>
+			<field name="type">ir.actions.act_window</field>
+            <field name="res_model">lc.fleet.service</field>
+            <field name="view_mode">tree,form</field>
+			<!-- <field name="search_view_id" ref=""/> -->
+			<field name="context">{}</field>
+			<field name="domain">[('state','not in',('draft','cancel'))]</field>
+    </record>
+
+	<record id="lc_fleet_service_debit_action_view_tree" model="ir.actions.act_window.view">
+			<field name="sequence" eval="1"/>
+            <field name="view_mode">tree</field>
+			<field name="view_id" ref="lc_fleet_service.lc_fleet_service_debit_note_tree"/>
+			<field name="act_window_id" ref="lc_fleet_service_debit_note_action"/>            
+    </record>
+	<record id="lc_fleet_service_debit_action_view_form" model="ir.actions.act_window.view">
+			<field name="sequence" eval="2"/>
+            <field name="view_mode">form</field>
+			<field name="view_id" ref="lc_fleet_service.lc_fleet_service_debit_note_form"/>
+			<field name="act_window_id" ref="lc_fleet_service_debit_note_action"/>            
+    </record>
+
+	<!-- Localization -->
+
+	<record model="ir.ui.view" id="lc_fleet_localization_tree">
+      <field name="name">Fleet Localization Tree</field>
+      <field name="model">lc.fleet.localization</field>
+      <field name="arch" type="xml">
+        <tree string="Localizations">
+          <field name="name"/>          
+        </tree>
+      </field>
+    </record>
+	
+    <record model="ir.ui.view" id="lc_fleet_localization_form">
+      <field name="name">Fleet Localization Form</field>
+      <field name="model">lc.fleet.localization</field>
+      <field name="arch" type="xml">
+      		<form string="Localizations">      			
+      			<sheet>
+      				<group>
+      		    		<field name="name"/>      		    		
+      		    	</group>          	      		    			
+      			</sheet>
+      		</form>        
+      </field>
+    </record>
+
+	<record id="lc_fleet_localization_action" model="ir.actions.act_window">
+            <field name="name">Localizations</field>
+            <field name="res_model">lc.fleet.localization</field>
+            <field name="view_mode">tree,form</field>
+	</record>
+
+	<menuitem id="menu_lc_fleet_service" sequence="1" name="Services" parent="fleet.menu_root"/>
+	<menuitem id="menu_lc_fleet_service_contract" parent="menu_lc_fleet_service" name="Fleet Services"
+                  action="lc_fleet_service_action" sequence="1"/>
+	<menuitem id="menu_lc_fleet_service_debit" parent="menu_lc_fleet_service" name="Services Debit Note"
+                  action="lc_fleet_service_debit_note_action" sequence="1"/>
+	
+	<menuitem id="menu_lc_fleet_localizations" parent="fleet.fleet_configuration" name="Localizations"
+                  action="lc_fleet_localization_action" groups="base.group_no_one" sequence="20"/>
+
+  </data>
+</odoo>

@@ -1,0 +1,3 @@
+@media screen and (max-width: 768px){
+	.pos .product:active{border-width: 3px;}
+}

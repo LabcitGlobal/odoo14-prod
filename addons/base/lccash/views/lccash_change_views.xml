@@ -1,0 +1,128 @@
+<odoo>
+  <data>
+    <!-- CASH CHANGE -->
+    <record model="ir.ui.view" id="lccash_change_view">
+      <field name="name">lccash.change.tree</field>
+      <field name="model">lccash.change</field>
+      <field name="arch" type="xml">
+        <tree>          
+          <field name="name"/>
+          <field name="date"/>
+          <field name="create_uid" string="Cajero"/>
+          <field name="mount"/>
+          <field name="note"/>
+          <field name="state"/>
+          <field name="create_date" string="Creacion"/>
+          <field name="write_uid" string="Modificado"/>
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="lccash_change_form">
+      <field name="name">lccash.change.form</field>
+      <field name="model">lccash.change</field>
+      <field name="arch" type="xml">
+      <form string="Cambio">
+        <header>
+      		<button name="pending" string="Pendiente" state="closed" type="object" />
+      		<button name="closed" string="Finalizar" state="pending" type="object" />      		      		
+      		<field name="state"  widget="statusbar" clickable="True"/>
+      	</header>
+      	<sheet>
+      		<group>      			
+          		<field name="name"/>
+          		<field name="create_uid" string="Cajero"/>
+          		<field name="date"/>
+          		<field name="mount"/>
+          		<field name="note"/>
+          		<field name="active"/>          		
+          	</group>
+          	<notebook>
+          		<page string="Detalle del Ingreso">
+          			<group>           
+          				<field name="detailchange_ids">
+          					<tree string="Detalle" editable="bottom">          				
+	          					<field name="name"/>
+    	      					<field name="cant"/>        	  					
+    	      					<field name="note"/>
+          					</tree>
+          				</field>
+          			</group>          			
+          		</page>
+          		<page string="Seguridad">
+          			<group>           
+          				<field name="create_uid" string="Creado por"/>
+          				<field name="create_date" string="Fecha de Creacion"/>
+          				<field name="write_uid" string="Actualizado por"/>
+          				<field name="write_date" string="Fecha de Actualizacion"/>
+          			</group>
+          		</page>
+          	</notebook>     
+        </sheet>
+      </form>
+      </field>
+    </record> 
+     
+    <!-- FRAC MONEY -->
+    
+    <record model="ir.ui.view" id="lccash_money_view">
+      <field name="name">lccash.money.tree</field>
+      <field name="model">lccash.money</field>
+      <field name="arch" type="xml">
+        <tree>          
+          <field name="currency_id"/>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="lccash_money_form">
+      <field name="name">lccash.money.form</field>
+      <field name="model">lccash.money</field>
+      <field name="arch" type="xml">
+      <form string="Monedas">        
+      	<sheet>
+      		<group>      			
+          		<field name="currency_id"/>
+          		<field name="name"/>
+          		<field name="active"/>          		
+          	</group> 
+        </sheet>
+      </form>
+      </field>
+    </record>  
+
+    <!-- actions opening views on models -->
+    
+    <record model="ir.actions.act_window" id="lccash_money_action_window">
+      <field name="name">Monedas</field>
+      <field name="res_model">lccash.money</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+      
+
+    <!-- actions opening views on models -->
+    
+    <record model="ir.actions.act_window" id="lccash_change_action_window">
+      <field name="name">Dia</field>
+      <field name="res_model">lccash.change</field>
+      <field name="view_mode">tree,form</field>
+      <field name="domain">[('company_id','=',allowed_company_ids[0])]</field>
+    </record>
+
+    <!-- Menu -->
+    
+    <menuitem name="Cajas" id="lccash.menu_root" web_icon="lccash,static/description/lccash.png"/>
+    
+    <menuitem name="Cajas" id="lccash.submenu" parent="lccash.menu_root" sequence="1"/>    
+    
+    <menuitem name="Dia" id="lccash.change" parent="lccash.submenu"
+              action="lccash_change_action_window" sequence="2"/>
+                
+    <menuitem name="Configuracion" id="lccash.configuracion" parent="lccash.menu_root"/>    
+    
+    <menuitem name="Monedas" id="lccash.money" parent="lccash.configuracion"
+              action="lccash_money_action_window" sequence="10"/>
+    
+  </data>
+</odoo>

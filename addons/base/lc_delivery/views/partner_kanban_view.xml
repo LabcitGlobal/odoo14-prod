@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>    
+
+    <record id="view_res_partner_form" model="ir.ui.view">
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside" >            
+                <button name="open_delivery_pending" type="object" class="oe_stat_button" icon="fa-taxi">
+					<field name="delivery_count" string="Deliverys" widget="statinfo"/>
+				</button>
+            </div>   
+        </field>
+    </record>
+
+</odoo>
+
+

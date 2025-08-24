@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    	<record id="paperformat_lowmargin" model="report.paperformat">
+    		<field name="name">Letter Medium</field>
+    		<field name="default" eval="True" />
+    		<field name="format">custom</field>
+    		<field name="page_height">210</field>
+    		<field name="page_width">140</field>
+    		<field name="orientation">Landscape</field>
+    		<field name="margin_top">3</field>
+    		<field name="margin_bottom">3</field>
+    		<field name="margin_left">3</field>
+    		<field name="margin_right">3</field>
+    		<field name="header_line" eval="False" />
+    		<field name="header_spacing">5</field>
+    		<field name="dpi">100</field>
+		</record>    
+    
+        <report
+            id="lc_posprint_report"
+            model="pos.order"
+            string="Imprimir Etiqueta"
+            report_type="qweb-pdf"
+            name="lc_posorder_delivery.pos_print_label_template"
+            file="lc_posorder_delivery.pos_print_label_template"
+            paperformat="paperformat_lowmargin"
+        />        
+    </data>
+</odoo>

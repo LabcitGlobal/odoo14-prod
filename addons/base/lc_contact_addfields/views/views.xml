@@ -1,0 +1,30 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="partner_dni_bo_form_view">
+    	<field name="name">partner.dni.bo</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+        <xpath expr="//field[@name='parent_id']" position="before">                                 
+        	<field name="ci" placeholder="Identity card"/>
+        	<field name="emision"/>   	        	           
+        </xpath>        
+        <xpath expr="//field[@name='street']" position="before">                                        	
+        	<field name="district_id" placeholder="District..."/>        	   	        	           
+        </xpath>
+        <xpath expr="//field[@name='vat']" position="after">
+          <field name="date_birth"/>
+        </xpath>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_lc_contact_list_tree">      
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="base.view_partner_tree"/>
+      <field name="arch" type="xml">      		
+      		<xpath expr="//field[@name='active']" position="before">            	
+          	<field name="district_id" optional="hide"/>
+          </xpath>          
+      </field>
+    </record>
+  </data>
+</odoo>

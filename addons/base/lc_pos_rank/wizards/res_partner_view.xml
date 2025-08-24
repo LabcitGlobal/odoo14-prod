@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record model="ir.ui.view" id="lc_partner_pos_rank_orders_form">
+    	<field name="name">Set POS Partner Rank</field>
+        <field name="model">lc.partner.pos.orders</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+        	<form>
+            	<group>
+                	<field name="from_date"/>
+                    <field name="to_date"/>
+                </group>
+                <footer>
+                    <button name="set_pos_partner_rank" string="Set POS Order Partner Rank" type="object" class="btn-success"/>
+                    <button name="reset_pos_partner_rank" string="Reset Rank" type="object" class="btn-danger"/>
+                    <button string="Close" class="btn-primary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="lc_partner_pos_orders_rank_action_window">
+    	<field name="name">Set POS Partner Rank</field>
+        <field name="res_model">lc.partner.pos.orders</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>        
+    </record>
+    
+    <menuitem id="menu_lc_pos_order_partner_rank" name="Pos Order Rank"
+    	parent="contacts.menu_contacts"
+        sequence="10"/>
+
+    <menuitem id="menu_pos_order_rank_wizard" name="Set Pos Order Rank"  groups="base.user_admin"
+    	parent="menu_lc_pos_order_partner_rank" action="lc_partner_pos_orders_rank_action_window"
+        sequence="11"/>
+    
+</odoo>

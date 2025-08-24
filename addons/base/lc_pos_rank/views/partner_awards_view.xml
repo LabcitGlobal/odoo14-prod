@@ -1,0 +1,42 @@
+<odoo>
+  <data>
+    
+    <record model="ir.ui.view" id="lc_partner_awards_tree">
+      <field name="name">Partner Awards Tree</field>
+      <field name="model">lc.partner.awards</field>
+      <field name="arch" type="xml">
+        <tree string="Partner Awards">
+          <field name="name"/>
+          <field name="pos_order_id"/>
+          <field name="note"/>
+        </tree>
+      </field>
+    </record>
+	
+    <record model="ir.ui.view" id="lc_partner_awards_form">
+      <field name="name">Partner Awards Form</field>
+      <field name="model">lc.partner.awards</field>
+      <field name="arch" type="xml">
+      		<form string="Partner Awards">
+      			<sheet>              
+      				<group>
+      		    		<field name="name"/>
+                  <field name="pos_order_id"/>
+                  <field name="note"/>
+      		    </group>          	      		    			
+      			</sheet>
+      		</form>        
+      </field>
+    </record>
+
+	<record id="lc_partner_awards_action" model="ir.actions.act_window">
+            <field name="name">Partner Awards</field>
+            <field name="res_model">lc.partner.awards</field>
+            <field name="view_mode">tree,form</field>
+    </record>
+	
+	<menuitem id="menu_lc_partner_awards" parent="menu_lc_pos_order_partner_rank" name="Partner Awards"
+                  action="lc_partner_awards_action" sequence="15"/>
+
+  </data>
+</odoo>

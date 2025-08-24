@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="lc_fleet_service_quotation_report">
+        	<t t-foreach="docs" t-as="doc">            
+				<t t-call="web.html_container">
+					<t t-call="web.external_layout">
+						<div style="font:17px Helvetica,Arial !important;">
+            				<div class="page">    
+	            				<center><h2>QUOTATION ORDER</h2></center>        				
+								<br/>
+								<hr style="height:2px;border-width:0;color:gray;background-color:gray"/>
+    	        				<table style="width:100%">
+        	    					<tbody>
+            							<tr>											
+            								<td style="width:50%, text-align:left">El Alto, <span t-esc="doc.date_today.strftime('%d de %B del %Y')"/></td>											
+											<td style="text-align:right"></td>            								        								
+            							</tr>            							
+            						</tbody>            					
+            					</table>								
+								<br/>
+								<p><strong>SIRS: </strong><span t-field="doc.customer_id"/></p>
+            					<center><h5><strong>DETAIL</strong></h5></center>        				
+            					<strong><span>BY THE GROUND TRANSPORTATION SERVICE OF:</span></strong> <span t-field="doc.notes"/>            					
+								<br/>
+								<p><strong>CONSIGNEE:</strong></p>
+								
+								<!-- Consignatario -->
+								<table class="table table-bordered">
+									<tbody>
+										<tr>
+											<td style="width:35%"><strong>ROUTE</strong></td>
+											<td>											
+												<table class="table table-sm o_main_table">
+                    								<thead>
+                        								<tr>
+                            								<th class="text-center">Source</th>
+    	                        							<th class="text-center">Destination</th>
+            	            							</tr>
+                	    							</thead>
+                    								<tbody>
+                        								<tr t-foreach="doc.route_ids" t-as="line">                        					
+                        	    							<td class="text-center">
+                            									<span t-field="line.source" />
+                            								</td>
+                            								<td class="text-center">
+                            									<span t-field="line.destination" />                                			
+	                            							</td>
+    	                    							</tr>
+        	            							</tbody>                    			
+            	    							</table>
+											</td>									
+										</tr>
+										<tr>
+											<td><strong>LICENSE PLATE</strong></td>
+											<td>
+												<t t-foreach="doc.vehicle_ids" t-as="vehicle">
+													<span t-field="vehicle.vehicle_id.license_plate"/><span> </span>
+												</t>
+											</td>									
+										</tr>
+										<tr>
+											<td><strong>AMOUNT</strong></td>
+											<td><span t-esc="round(doc.amount,2)"/> <span t-field="doc.currency_id"/></td>									
+										</tr>
+										<tr>
+											<td><strong>TOTAL</strong></td>
+											<td style="text-transform: uppercase;"><span t-esc="doc.amount_to_tex(doc.amount)"/> 00/100 <span t-field="doc.currency_id"/></td>									
+										</tr>
+									</tbody>
+								</table>																
+							</div>
+            			</div>
+            		</t>
+            	</t>          		
+            </t>
+        </template>
+    </data>
+</odoo>

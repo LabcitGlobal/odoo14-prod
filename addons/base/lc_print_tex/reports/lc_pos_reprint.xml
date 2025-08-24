@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    	<record id="paperformat_lowmargin" model="report.paperformat">
+    		<field name="name">Letter Medium</field>
+    		<field name="default" eval="True" />
+    		<field name="format">custom</field>
+    		<field name="page_height">210</field>
+    		<field name="page_width">140</field>
+    		<field name="orientation">Portrait</field>
+    		<field name="margin_top">35</field>
+    		<field name="margin_bottom">12</field>
+    		<field name="margin_left">4</field>
+    		<field name="margin_right">4</field>
+    		<field name="header_line" eval="False" />
+    		<field name="header_spacing">32</field>
+    		<field name="dpi">115</field>
+		</record>    
+    
+        <report
+            id="lc_posreprint_report_tex"
+            model="pos.order"
+            string="Imprimir Precios"
+            report_type="qweb-pdf"
+            name="lc_print_tex.pos_report_template_tex"
+            file="lc_print_tex.pos_report_template_tex"
+            paperformat="paperformat_lowmargin"
+            groups="lc_print_tex.group_show_t_ex"
+        />
+        
+        <report
+            id="lc_posreprint_report_tex_water"
+            model="pos.order"
+            string="Imprimir Precios + Fondo"
+            report_type="qweb-pdf"
+            name="lc_print_tex.pos_report_template_tex_water"
+            file="lc_print_tex.pos_report_template_tex"
+            paperformat="paperformat_lowmargin"
+            groups="lc_print_tex.group_show_t_ex"
+        />
+
+        <report
+            id="lc_posreprint_report_tex_b2b"
+            model="pos.order"
+            string="Imprimir Precios Costo"
+            report_type="qweb-pdf"
+            name="lc_print_tex.pos_report_template_tex_b2b"
+            file="lc_print_tex.pos_report_template_tex"
+            paperformat="paperformat_lowmargin"
+            groups="lc_print_tex.group_show_t_ex"
+        />        
+        
+		<report
+            id="lc_posreprint_report_tex_img"
+            model="pos.order"
+            string="Imprimir + Imagen"
+            report_type="qweb-pdf"
+            name="lc_print_tex.pos_report_template_tex_img"
+            file="lc_print_tex.pos_report_template_tex"
+            paperformat="paperformat_lowmargin"
+            groups="lc_print_tex.group_show_t_ex"
+        />        
+		
+        <report
+            id="lc_posreprint_report_tex_img_water"
+            model="pos.order"
+            string="Imprimir + Imagen + Fondo"
+            report_type="qweb-pdf"
+            name="lc_print_tex.pos_report_template_tex_img_water"
+            file="lc_print_tex.pos_report_template_tex"
+            paperformat="paperformat_lowmargin"
+            groups="lc_print_tex.group_show_t_ex"
+        />        
+
+		<report
+            id="lc_salereprint_report_tex"
+            model="sale.order"
+            string="Imprimir Precios"
+            report_type="qweb-pdf"
+            name="lc_print_tex.sale_report_template_tex"
+            file="lc_print_tex.sale_report_template_tex"
+            paperformat="paperformat_lowmargin"
+            groups="lc_print_tex.group_show_t_ex"
+        />
+		
+        <report
+            id="lc_salereprint_report_tex_water"
+            model="sale.order"
+            string="Imprimir Precios + Fondo"
+            report_type="qweb-pdf"
+            name="lc_print_tex.sale_report_template_tex_water"
+            file="lc_print_tex.sale_report_template_tex"
+            paperformat="paperformat_lowmargin"
+            groups="lc_print_tex.group_show_t_ex"
+        />
+		
+        <report
+            id="lc_salereprint_report_tex_img"
+            model="sale.order"
+            string="Imprimir Precios + Imagen"
+            report_type="qweb-pdf"
+            name="lc_print_tex.sale_report_template_tex_img"
+            file="lc_print_tex.sale_report_template_tex"
+            paperformat="paperformat_lowmargin"
+            groups="lc_print_tex.group_show_t_ex"
+        />
+        
+        <report
+            id="lc_salereprint_report_tex_img_water"
+            model="sale.order"
+            string="Imprimir + Imagen + Fondo"
+            report_type="qweb-pdf"
+            name="lc_print_tex.sale_report_template_tex_img_water"
+            file="lc_print_tex.sale_report_template_tex"
+            paperformat="paperformat_lowmargin"
+            groups="lc_print_tex.group_show_t_ex"
+        />
+
+		<report
+            id="lc_salereprint_report_tex_b2b"
+            model="sale.order"
+            string="Imprimir Costos"
+            report_type="qweb-pdf"
+            name="lc_print_tex.sale_report_template_tex_b2b"
+            file="lc_print_tex.sale_report_template_tex"
+            paperformat="paperformat_lowmargin"
+            groups="lc_print_tex.group_show_t_ex"
+        />
+    </data>
+</odoo>

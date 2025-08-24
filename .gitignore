@@ -11,6 +11,13 @@ logs/*.txt
 postgres_data/
 odoo_data/
 
+# Backups (excluir del repositorio por seguridad)
+backups/*.tar.gz
+backups/*.sql.gz
+backups/*.sql
+migration_backup_*/
+odoo14-migration.tar.gz
+
 # Archivos temporales
 *.tmp
 *.temp
@@ -33,7 +40,7 @@ env/
 venv/
 ENV/
 
-# Backup files
-*.bak
-*.backup
-*.sql
+# SSH keys (por seguridad)
+*.pub
+*.pem
+*.key

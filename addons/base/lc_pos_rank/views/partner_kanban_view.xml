@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record model="ir.ui.view" id="view_partner_rank_tree">      
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="base.view_partner_tree"/>
+      <field name="arch" type="xml">
+      		<xpath expr="//field[@name='city']" position="after">            	
+            	<field name="number_pos_rank" optional="hide"/>
+                <field name="orders_pos_rank" optional="hide" groups="lccash.group_manager"/>
+                <field name="amount_pos_rank" optional="hide" groups="lccash.group_manager"/>
+                <field name="margin_pos_rank" optional="hide" groups="base.user_admin"/>
+            </xpath>        	
+      </field>
+    </record>
+
+    <record id="view_res_partner_form" model="ir.ui.view">
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside" >            
+                <button name="open_awards" type="object" class="oe_stat_button" icon="fa-trophy">
+					<field name="awards_count" string="Awards" widget="statinfo"/>
+				</button>
+            </div>            
+            <xpath expr="//page[@name='internal_notes']" position="after">
+                <page name="rank" string="Rank">
+                    <group name="container_row_2">
+                        <group string="Total" name="total" priority="1">
+                            <field name="number_pos_rank"/>
+                            <field name="orders_pos_rank" groups="lccash.group_manager"/>
+                        </group>
+                        <group string="Amount" name="amount" priority="2">
+                            <field name="amount_pos_rank" groups="lccash.group_manager"/>
+                            <field name="margin_pos_rank" groups="base.user_admin"/>
+                        </group>                        
+                    </group>
+                </page>
+            </xpath>            
+        </field>
+    </record>
+
+    <!-- Add two fields for display Rank and Amount in existing model 'hr.employee' kanban view-->
+    <record id="hr_kanban_view_partner_pos_rank_inherited" model="ir.ui.view" >
+        <field name="name">res.partner.kanban</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.res_partner_kanban_view"/>
+        <field name="arch" type="xml">                        
+            <xpath expr="//div[@class='o_row']" position="inside">
+                <ul>
+                    <li><i class="fa fa-trophy fa-fw"></i> <field name="number_pos_rank"/></li>                    
+                </ul>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
+
+

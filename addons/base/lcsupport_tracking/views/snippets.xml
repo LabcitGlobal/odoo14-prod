@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>    
+    <template id="lcsupport_service_snippet" name="Tracking Form">
+        <section>
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-lg-12 t_text_title_center">
+                        <h2 class="s_title_thin t_text_small_title" style="text-align:center;">
+                            <b>¿COMO ESTA MI EQUIPO?</b>
+                        </h2>
+                    </div>
+                    <div class="col-lg-12 pt16 pb16">
+                        <p style="text-align: center;">
+                            <font style="color: rgb(0, 0, 0); font-size: 18px;">Ingrese su numero de caso, o numero de Guía para que nuestro sistema rastree el estado de su equipo</font>
+                        </p>
+                    </div>                    
+                </div>
+                <form method="get" action="/services/">                    
+                        <center>
+                            <div class="form-row align-items-center">                    
+                                <div class="col-md-4 mb-3"></div>
+                                <div class="col-md-4 mb-3">
+                                    <input name="case_number" class="form-control" type="text" placeholder="Ingrese su número de Caso..." size="10"/>
+                                </div>                        
+                                <div class="col-md-4 mb-3"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-theme">Rastrear</button>
+                        </center>
+                    </form>
+            </div>
+        </section>
+    </template>
+    <template id="lcsupport_tracking_snippet" inherit_id="website.snippets" name="Service Tracking Snippet">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+            <t t-snippet="lcsupport_tracking.lcsupport_service_snippet"
+             t-thumbnail="/lcsupport_tracking/static/description/icon.png" />
+        </xpath>
+    </template>        
+</odoo>

@@ -1,0 +1,21 @@
+<odoo>
+	<data>
+    	<report id="lc_stock_data_cost_report_print"
+                model="lc.stock.data.report"
+                string="Print Inventory Report"
+                name="lc_stock_data.print_lc_stock_data_cost_report_template"
+                file="lc_stock_data.print_lc_stock_data_cost_report_template"
+                report_type="qweb-pdf"
+                menu="False"
+        />
+    	
+        <report id="lc_stock_data_report_print"
+                model="lc.stock.data.report"
+                string="Print Inventory Report"
+                name="lc_stock_data.print_lc_stock_data_report_template"
+                file="lc_stock_data.print_lc_stock_data_report_template"
+                report_type="qweb-pdf"
+                menu="False"
+        />
+    </data>
+</odoo>

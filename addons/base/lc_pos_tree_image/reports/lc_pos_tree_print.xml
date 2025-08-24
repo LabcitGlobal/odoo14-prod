@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    	<record id="paperformat_lowmargin" model="report.paperformat">
+    		<field name="name">Letter Medium</field>
+    		<field name="default" eval="True" />
+    		<field name="format">custom</field>
+    		<field name="page_height">210</field>
+    		<field name="page_width">140</field>
+    		<field name="orientation">Portrait</field>
+    		<field name="margin_top">35</field>
+    		<field name="margin_bottom">12</field>
+    		<field name="margin_left">4</field>
+    		<field name="margin_right">4</field>
+    		<field name="header_line" eval="False" />
+    		<field name="header_spacing">32</field>
+    		<field name="dpi">100</field>
+		</record>    
+        
+        <report
+            id="lc_tree_pos_image_128_report"
+            model="pos.order"
+            string="Imprimir Detalle Imagen Pequeño"
+            report_type="qweb-pdf"
+            name="lc_pos_tree_image.pos_print_image_128_template"
+            file="lc_pos_tree_image.pos_print_image_template"
+            paperformat="paperformat_lowmargin"
+        />
+        
+        <report
+            id="lc_tree_pos_image_256_report"
+            model="pos.order"
+            string="Imprimir Detalle Imagen Mediano"
+            report_type="qweb-pdf"
+            name="lc_pos_tree_image.pos_print_image_256_template"
+            file="lc_pos_tree_image.pos_print_image_template"
+            paperformat="paperformat_lowmargin"
+        />
+                
+    </data>
+</odoo>

@@ -1,0 +1,99 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* lc_contact_addfields
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-17 22:28+0000\n"
+"PO-Revision-Date: 2021-11-17 22:28+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: lc_contact_addfields
+#: model:ir.model.fields,field_description:lc_contact_addfields.field_res_partner__ci
+#: model:ir.model.fields,field_description:lc_contact_addfields.field_res_users__ci
+msgid "CI"
+msgstr ""
+
+#. module: lc_contact_addfields
+#: model:ir.model.fields,field_description:lc_contact_addfields.field_res_partner__city
+#: model:ir.model.fields,field_description:lc_contact_addfields.field_res_users__city
+msgid "City"
+msgstr "Ciudad"
+
+#. module: lc_contact_addfields
+#: model:ir.model,name:lc_contact_addfields.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: lc_contact_addfields
+#: model:ir.model.fields,field_description:lc_contact_addfields.field_res_partner__country_id
+#: model:ir.model.fields,field_description:lc_contact_addfields.field_res_users__country_id
+msgid "Country"
+msgstr "País"
+
+#. module: lc_contact_addfields
+#: model:ir.model.fields,field_description:lc_contact_addfields.field_res_partner__date_birth
+#: model:ir.model.fields,field_description:lc_contact_addfields.field_res_users__date_birth
+msgid "Date of Birth"
+msgstr "Fecha de Nacimiento"
+
+#. module: lc_contact_addfields
+#: model:ir.model.fields,field_description:lc_contact_addfields.field_res_partner__state_id
+#: model:ir.model.fields,field_description:lc_contact_addfields.field_res_users__state_id
+msgid "Department"
+msgstr "Departamento"
+
+#. module: lc_contact_addfields
+#: model:ir.model.fields,field_description:lc_contact_addfields.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: lc_contact_addfields
+#: model:ir.model.fields,field_description:lc_contact_addfields.field_res_partner__district_id
+#: model:ir.model.fields,field_description:lc_contact_addfields.field_res_users__district_id
+msgid "District"
+msgstr "Distrito"
+
+#. module: lc_contact_addfields
+#: model_terms:ir.ui.view,arch_db:lc_contact_addfields.partner_dni_bo_form_view
+msgid "District..."
+msgstr "Distrito..."
+
+#. module: lc_contact_addfields
+#: model:ir.model.constraint,message:lc_contact_addfields.constraint_res_partner_ci_emision_unique
+msgid "Error: Already registered customer!"
+msgstr "Error: Cliente ya registrado!"
+
+#. module: lc_contact_addfields
+#: model:ir.model.fields,field_description:lc_contact_addfields.field_res_partner__id
+msgid "ID"
+msgstr ""
+
+#. module: lc_contact_addfields
+#: model_terms:ir.ui.view,arch_db:lc_contact_addfields.partner_dni_bo_form_view
+msgid "Identity card"
+msgstr "Carnet de Identidad"
+
+#. module: lc_contact_addfields
+#: model:ir.model.fields,field_description:lc_contact_addfields.field_res_partner__emision
+#: model:ir.model.fields,field_description:lc_contact_addfields.field_res_users__emision
+msgid "Issued"
+msgstr "Emitido"
+
+#. module: lc_contact_addfields
+#: model:ir.model.fields,field_description:lc_contact_addfields.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: lc_contact_addfields
+#: model:ir.model.fields,field_description:lc_contact_addfields.field_res_partner__zip
+#: model:ir.model.fields,field_description:lc_contact_addfields.field_res_users__zip
+msgid "Zip"
+msgstr "C.P."

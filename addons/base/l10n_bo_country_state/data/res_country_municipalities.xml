@@ -1,0 +1,2145 @@
+<openerp>
+  <data>
+
+  	<!-- Chuquisaca State -->
+
+	<record id="res_country_municipalities_101_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','101')]" />
+		<field name="name">Sucre</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_101_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','101')]" />
+		<field name="name">Yotala</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_101_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','101')]" />
+		<field name="name">Poroma</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_102_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','102')]" />
+		<field name="name">Villa Azurduy</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_102_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','102')]" />
+		<field name="name">Tarvita</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_103_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','103')]" />
+		<field name="name">Villa Zudañez</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_103_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','103')]" />
+		<field name="name">Presto</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_103_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','103')]" />
+		<field name="name">Villa Mojocoya</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_103_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','103')]" />
+		<field name="name">Icla</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_104_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','104')]" />
+		<field name="name">Padilla</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_104_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','104')]" />
+		<field name="name">Tomina</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_104_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','104')]" />
+		<field name="name">Sopachuy</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_104_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','104')]" />
+		<field name="name">Villa Alcalá</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_104_05" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','104')]" />
+		<field name="name">El Villar</field>
+		<field name="code">05</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_105_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','105')]" />
+		<field name="name">Monteagudo</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_105_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','105')]" />
+		<field name="name">San Pablo de Huacareta</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_106_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','106')]" />
+		<field name="name">Tarabuco</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_106_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','106')]" />
+		<field name="name">Yamparáez</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_107_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','107')]" />
+		<field name="name">Camargo</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_107_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','107')]" />
+		<field name="name">San Lucas</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_107_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','107')]" />
+		<field name="name">Incahuasi</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_107_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','107')]" />
+		<field name="name">Villa Charcas</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_108_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','108')]" />
+		<field name="name">Villa Serrano</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_109_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','109')]" />
+		<field name="name">Camataqui (Villa Abecia)</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_109_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','109')]" />
+		<field name="name">Culpina</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_109_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','109')]" />
+		<field name="name">Las Carreras</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_110_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','110')]" />
+		<field name="name">Villa Vaca Guzmán (Muyupampa)</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_110_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','110')]" />
+		<field name="name">Huacaya</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_110_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','110')]" />
+		<field name="name">Macharetí</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<!-- La Paz State -->
+
+    <record id="res_country_municipalities_201_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','201')]" />
+		<field name="name">La Paz</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_201_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','201')]" />
+		<field name="name">Palca</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_201_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','201')]" />
+		<field name="name">Mecapaca</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_201_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','201')]" />
+		<field name="name">Achocalla</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_201_05" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','201')]" />
+		<field name="name">El Alto</field>
+		<field name="code">05</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_202_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','202')]" />
+		<field name="name">Achacachi</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_202_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','202')]" />
+		<field name="name">Ancoraimes</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_202_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','202')]" />
+		<field name="name">Chua Cocani</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_202_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','202')]" />
+		<field name="name">Huarina</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_202_05" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','202')]" />
+		<field name="name">Santiago de Huata</field>
+		<field name="code">05</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_202_06" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','202')]" />
+		<field name="name">Huatajata</field>
+		<field name="code">06</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_203_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','203')]" />
+		<field name="name">Coro Coro</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_203_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','203')]" />
+		<field name="name">Caquiaviri</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_203_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','203')]" />
+		<field name="name">Calacoto</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_203_05" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','203')]" />
+		<field name="name">Charaña</field>
+		<field name="code">05</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_203_06" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','203')]" />
+		<field name="name">Waldo Ballivian</field>
+		<field name="code">06</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_203_07" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','203')]" />
+		<field name="name">Nazacara de Pacajes</field>
+		<field name="code">07</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_203_08" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','203')]" />
+		<field name="name">Santiago de Callapa</field>
+		<field name="code">08</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_204_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','204')]" />
+		<field name="name">Puerto Acosta</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_204_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','204')]" />
+		<field name="name">Puerto Carabuco</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_204_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','204')]" />
+		<field name="name">Humanata</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_204_05" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','204')]" />
+		<field name="name">Escoma</field>
+		<field name="code">05</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_205_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','205')]" />
+		<field name="name">Chuma</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_205_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','205')]" />
+		<field name="name">Ayta</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_205_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','205')]" />
+		<field name="name">Aucapata</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_206_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','206')]" />
+		<field name="name">Sorata</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_206_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','206')]" />
+		<field name="name">Guanay</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_206_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','206')]" />
+		<field name="name">Tacacoma</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_206_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','206')]" />
+		<field name="name">Quiabaya</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_206_05" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','206')]" />
+		<field name="name">Combaya</field>
+		<field name="code">05</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_206_06" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','206')]" />
+		<field name="name">Tipuani</field>
+		<field name="code">06</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_206_07" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','206')]" />
+		<field name="name">Mapiri</field>
+		<field name="code">07</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_206_08" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','206')]" />
+		<field name="name">Teoponte</field>
+		<field name="code">08</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_207_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','207')]" />
+		<field name="name">Apolo</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_207_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','207')]" />
+		<field name="name">Pelechuco</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_208_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','208')]" />
+		<field name="name">Viacha</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_208_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','208')]" />
+		<field name="name">Guaqui</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_208_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','208')]" />
+		<field name="name">Tiahuanacu</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_208_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','208')]" />
+		<field name="name">Desaguadero</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_208_05" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','208')]" />
+		<field name="name">San Andres de Machaca</field>
+		<field name="code">05</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_208_06" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','208')]" />
+		<field name="name">Jesus de Machaca</field>
+		<field name="code">06</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_208_07" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','208')]" />
+		<field name="name">Taraco</field>
+		<field name="code">07</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_209_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','209')]" />
+		<field name="name">Luribay</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_209_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','209')]" />
+		<field name="name">Sapahaqui</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_209_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','209')]" />
+		<field name="name">Yaco</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_209_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','209')]" />
+		<field name="name">Malla</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_209_05" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','209')]" />
+		<field name="name">Cairoma</field>
+		<field name="code">05</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_210_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','210')]" />
+		<field name="name">Inquisivi</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_210_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','210')]" />
+		<field name="name">Quime</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_210_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','210')]" />
+		<field name="name">Cajuata</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_210_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','210')]" />
+		<field name="name">Colquiri</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_210_05" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','210')]" />
+		<field name="name">Ichoca</field>
+		<field name="code">05</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_210_06" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','210')]" />
+		<field name="name">Licoma Pampa</field>
+		<field name="code">06</field>
+		<field name="active" eval="True"/>		
+	</record>
+	
+	<record id="res_country_municipalities_211_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','211')]" />
+		<field name="name">Chulumani</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_211_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','211')]" />
+		<field name="name">Irupana</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_211_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','211')]" />
+		<field name="name">Yanacachi</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_211_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','211')]" />
+		<field name="name">Palos Blancos</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_211_05" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','211')]" />
+		<field name="name">La Asunta</field>
+		<field name="code">05</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_212_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','212')]" />
+		<field name="name">Pucarani</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_212_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','212')]" />
+		<field name="name">Laja</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_212_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','212')]" />
+		<field name="name">Batallas</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_212_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','212')]" />
+		<field name="name">Puerto Perez</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_213_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','213')]" />
+		<field name="name">Sica Sica</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_213_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','213')]" />
+		<field name="name">Umala</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_213_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','213')]" />
+		<field name="name">Ayo Ayo</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_213_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','213')]" />
+		<field name="name">Calamarca</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_213_05" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','213')]" />
+		<field name="name">Patacamaya</field>
+		<field name="code">05</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_213_06" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','213')]" />
+		<field name="name">Colquencha</field>
+		<field name="code">06</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_213_07" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','213')]" />
+		<field name="name">Collana</field>
+		<field name="code">07</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_214_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','214')]" />
+		<field name="name">Coroico</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_214_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','214')]" />
+		<field name="name">Coripata</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_215_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','215')]" />
+		<field name="name">Ixiamas</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_215_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','215')]" />
+		<field name="name">San Buenaventura</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_216_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','216')]" />
+		<field name="name">Gral. Juan Jose Perez(Charazani)</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_216_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','216')]" />
+		<field name="name">Curva</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_217_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','217')]" />
+		<field name="name">Copacabana</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_217_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','217')]" />
+		<field name="name">San Pedro de Tiquina</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_217_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','217')]" />
+		<field name="name">Tito Yupanqui</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_218_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','218')]" />
+		<field name="name">San Pedro de Curahuara</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_218_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','218')]" />
+		<field name="name">Papel Pampa</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_218_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','218')]" />
+		<field name="name">Chacarilla</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	
+	<record id="res_country_municipalities_219_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','219')]" />
+		<field name="name">Santiago de Machaca</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_219_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','219')]" />
+		<field name="name">Catacora</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_220_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','220')]" />
+		<field name="name">Caranavi</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_220_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','220')]" />
+		<field name="name">Alto Beni</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<!-- Cochabamba State -->
+
+	<record id="res_country_municipalities_301_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','301')]" />
+		<field name="name">Cochabamba</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_302_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','302')]" />
+		<field name="name">Aiquile</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_302_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','302')]" />
+		<field name="name">Pasorapa</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_302_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','302')]" />
+		<field name="name">Omereque</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_303_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','303')]" />
+		<field name="name">Independencia</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_303_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','303')]" />
+		<field name="name">Morochata</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_303_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','303')]" />
+		<field name="name">Cocapata</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_304_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','304')]" />
+		<field name="name">Tarata</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_304_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','304')]" />
+		<field name="name">Anzaldo</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_304_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','304')]" />
+		<field name="name">Arbieto</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_304_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','304')]" />
+		<field name="name">Sacabamba</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_305_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','305')]" />
+		<field name="name">Arani</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_305_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','305')]" />
+		<field name="name">Vacas</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_306_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','306')]" />
+		<field name="name">Arque</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_306_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','306')]" />
+		<field name="name">Tacopaya</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_307_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','307')]" />
+		<field name="name">Capinota</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_307_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','307')]" />
+		<field name="name">Santivañez</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_307_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','307')]" />
+		<field name="name">Sicaya</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_308_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','308')]" />
+		<field name="name">Cliza</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_308_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','308')]" />
+		<field name="name">Toco</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_308_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','308')]" />
+		<field name="name">Tolata</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_309_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','309')]" />
+		<field name="name">Quillacollo</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_309_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','309')]" />
+		<field name="name">Sipe Sipe</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_309_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','309')]" />
+		<field name="name">Tiquipaya</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_309_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','309')]" />
+		<field name="name">Vinto</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_309_05" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','309')]" />
+		<field name="name">Colcapirhua</field>
+		<field name="code">05</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_310_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','310')]" />
+		<field name="name">Sacaba</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_310_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','310')]" />
+		<field name="name">Colomi</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_310_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','310')]" />
+		<field name="name">Villa Tunari</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_311_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','311')]" />
+		<field name="name">Tapacarí</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_312_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','312')]" />
+		<field name="name">Totora</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_312_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','312')]" />
+		<field name="name">Pojo</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_312_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','312')]" />
+		<field name="name">Pocona</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_312_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','312')]" />
+		<field name="name">Chimoré</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_312_05" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','312')]" />
+		<field name="name">Puerto Villarroel</field>
+		<field name="code">05</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_312_06" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','312')]" />
+		<field name="name">Entre Riós (Bulo Bulo)</field>
+		<field name="code">06</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_313_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','313')]" />
+		<field name="name">Mizque</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_313_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','313')]" />
+		<field name="name">Vila Vila</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_313_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','313')]" />
+		<field name="name">Alalay</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_314_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','314')]" />
+		<field name="name">Punata</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_314_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','314')]" />
+		<field name="name">Villa Rivero</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_314_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','314')]" />
+		<field name="name">San Benito</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_314_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','314')]" />
+		<field name="name">Tacachi</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_314_05" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','314')]" />
+		<field name="name">Cuchumuela (Villa Gualberto Villarroel)</field>
+		<field name="code">05</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_315_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','315')]" />
+		<field name="name">Bolívar</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_316_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','316')]" />
+		<field name="name">Tiraque</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_316_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','316')]" />
+		<field name="name">Shinahota</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<!-- Oruro State -->
+
+	<record id="res_country_municipalities_401_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','401')]" />
+		<field name="name">Oruro</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_401_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','401')]" />
+		<field name="name">Caracollo</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_401_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','401')]" />
+		<field name="name">El Choro</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_401_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','401')]" />
+		<field name="name">Soracachi (Paria)</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_402_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','402')]" />
+		<field name="name">Challapata</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_402_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','402')]" />
+		<field name="name">Santuario de Quillacas</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_403_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','403')]" />
+		<field name="name">Choquecota</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_404_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','404')]" />
+		<field name="name">Curahuara de Carangas</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_404_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','404')]" />
+		<field name="name">Turco</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_405_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','405')]" />
+		<field name="name">Huachalla</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_405_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','405')]" />
+		<field name="name">Escara</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_405_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','405')]" />
+		<field name="name">Cruz de Machacamarca</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_405_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','405')]" />
+		<field name="name">Yunguyo del Litoral</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_405_05" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','405')]" />
+		<field name="name">Esmeralda</field>
+		<field name="code">05</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_406_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','406')]" />
+		<field name="name">Villa Poopo</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_406_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','406')]" />
+		<field name="name">Pazña</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_406_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','406')]" />
+		<field name="name">Antequera</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_407_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','407')]" />
+		<field name="name">Villa Huanuni</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_407_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','407')]" />
+		<field name="name">Machacamarca</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_408_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','408')]" />
+		<field name="name">Salinas de Garci Mendoza</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_408_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','408')]" />
+		<field name="name">Pampa aullagas</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_409_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','409')]" />
+		<field name="name">Sabaya</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_409_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','409')]" />
+		<field name="name">Coipasa</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_409_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','409')]" />
+		<field name="name">Chipaya</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_410_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','410')]" />
+		<field name="name">Toledo</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_411_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','411')]" />
+		<field name="name">Eucaliptus</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_412_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','412')]" />
+		<field name="name">Andamarca</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_412_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','412')]" />
+		<field name="name">Belen de Andamarca</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_413_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','413')]" />
+		<field name="name">Totora</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_414_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','414')]" />
+		<field name="name">Santiago de Huari</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_415_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','415')]" />
+		<field name="name">La Rivera</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_415_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','415')]" />
+		<field name="name">Todos Santos</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_415_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','415')]" />
+		<field name="name">Carangas</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_416_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','416')]" />
+		<field name="name">Santiago de Huayllamarca</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<!-- Potosi State -->
+
+	<record id="res_country_municipalities_501_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','501')]" />
+		<field name="name">Potosi</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_501_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','501')]" />
+		<field name="name">Tinguipaya</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_501_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','501')]" />
+		<field name="name">Villa de Yocalla</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_501_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','501')]" />
+		<field name="name">Belén de Urmiri</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_502_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','502')]" />
+		<field name="name">Uncía</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_502_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','502')]" />
+		<field name="name">Chayanta</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_502_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','502')]" />
+		<field name="name">Llallagua</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_502_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','502')]" />
+		<field name="name">Chuquihuta Ayllu Jucumani</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_503_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','503')]" />
+		<field name="name">Betanzos</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_503_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','503')]" />
+		<field name="name">Chaquí</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_503_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','503')]" />
+		<field name="name">Tacobamba</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_504_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','504')]" />
+		<field name="name">Colquechaca</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_504_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','504')]" />
+		<field name="name">Ravelo</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_504_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','504')]" />
+		<field name="name">Pocoata</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_504_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','504')]" />
+		<field name="name">Ocurí</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_505_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','505')]" />
+		<field name="name">San Pedro de Buena Vista</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_505_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','505')]" />
+		<field name="name">Toro Toro</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_506_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','506')]" />
+		<field name="name">Cotagaita</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_506_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','506')]" />
+		<field name="name">Vitichi</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_507_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','507')]" />
+		<field name="name">Sacaca</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_507_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','507')]" />
+		<field name="name">Capiruyo</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_508_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','508')]" />
+		<field name="name">Tupiza</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_508_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','508')]" />
+		<field name="name">Atocha</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_509_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','509')]" />
+		<field name="name">Colcha "K"</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_509_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','509')]" />
+		<field name="name">San Pedro de Quemes</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_510_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','510')]" />
+		<field name="name">San Pablo de Lipez</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_510_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','510')]" />
+		<field name="name">Mojinete</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_510_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','510')]" />
+		<field name="name">San Antonio de Esmoruco</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_511_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','511')]" />
+		<field name="name">Puna</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_511_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','511')]" />
+		<field name="name">Caiza "D"</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_511_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','511')]" />
+		<field name="name">Ckochas</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_512_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','512')]" />
+		<field name="name">Uyuni</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_512_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','512')]" />
+		<field name="name">Tomave</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_512_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','512')]" />
+		<field name="name">Porco</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_513_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','513')]" />
+		<field name="name">Arampampa</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_513_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','513')]" />
+		<field name="name">Acasio</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_514_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','514')]" />
+		<field name="name">Llica</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_514_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','514')]" />
+		<field name="name">Tahua</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_515_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','515')]" />
+		<field name="name">Villazón</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_516_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','516')]" />
+		<field name="name">San Agustín</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<!-- Tarija State -->
+
+	<record id="res_country_municipalities_601_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','601')]" />
+		<field name="name">Tarija</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_602_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','602')]" />
+		<field name="name">Padcaya</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_602_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','602')]" />
+		<field name="name">Bermejo</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_603_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','603')]" />
+		<field name="name">Yacuiba</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_603_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','603')]" />
+		<field name="name">Caraparí</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_603_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','603')]" />
+		<field name="name">Villamontes</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_604_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','604')]" />
+		<field name="name">Uriondo (Concepción)</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_604_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','604')]" />
+		<field name="name">Yunchara</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_605_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','605')]" />
+		<field name="name">San Lorenzo</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_605_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','605')]" />
+		<field name="name">El Puente</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_606_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','606')]" />
+		<field name="name">Entre Riós</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<!-- Santa Cruz State -->
+
+	<record id="res_country_municipalities_701_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','701')]" />
+		<field name="name">Santa Cruz de la Sierra</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_701_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','701')]" />
+		<field name="name">Cotoca</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_701_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','701')]" />
+		<field name="name">Porongo (Ayacucho)</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_701_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','701')]" />
+		<field name="name">La Guardia</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_701_05" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','701')]" />
+		<field name="name">El Torno</field>
+		<field name="code">05</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_702_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','702')]" />
+		<field name="name">Warnes</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_702_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','702')]" />
+		<field name="name">Okinawa</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_703_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','703')]" />
+		<field name="name">San Ignacio</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_703_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','703')]" />
+		<field name="name">San Miguel</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_703_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','703')]" />
+		<field name="name">San Rafael</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_704_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','704')]" />
+		<field name="name">Buena Vista</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_704_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','704')]" />
+		<field name="name">San Carlos</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_704_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','704')]" />
+		<field name="name">Yapacaní</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_704_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','704')]" />
+		<field name="name">San Juan</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_705_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','705')]" />
+		<field name="name">San José</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_705_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','705')]" />
+		<field name="name">Pailón</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_705_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','705')]" />
+		<field name="name">Roboré</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_706_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','706')]" />
+		<field name="name">Portachuelo</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_706_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','706')]" />
+		<field name="name">Santa Rosa del Sara</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_706_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','706')]" />
+		<field name="name">Colpa Bélgica</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_707_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','707')]" />
+		<field name="name">Lagunillas</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_707_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','707')]" />
+		<field name="name">Charagua</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_707_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','707')]" />
+		<field name="name">Cabezas</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_707_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','707')]" />
+		<field name="name">Cuevo</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_707_05" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','707')]" />
+		<field name="name">Gutiérrez</field>
+		<field name="code">05</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_707_06" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','707')]" />
+		<field name="name">Camiri</field>
+		<field name="code">06</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_707_07" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','707')]" />
+		<field name="name">Boyuibe</field>
+		<field name="code">07</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_708_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','708')]" />
+		<field name="name">Vallegrande</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_708_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','708')]" />
+		<field name="name">El Trigal</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_708_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','708')]" />
+		<field name="name">Moro Moro</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_708_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','708')]" />
+		<field name="name">Postrervalle</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_708_05" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','708')]" />
+		<field name="name">Pucará</field>
+		<field name="code">05</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_709_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','709')]" />
+		<field name="name">Samaipata</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_709_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','709')]" />
+		<field name="name">Pampa Grande</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_709_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','709')]" />
+		<field name="name">Mairana</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_709_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','709')]" />
+		<field name="name">Quirusillas</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_710_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','710')]" />
+		<field name="name">Montero</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_710_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','710')]" />
+		<field name="name">Gral. Saavedra</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_710_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','710')]" />
+		<field name="name">Mineros</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_710_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','710')]" />
+		<field name="name">Puerto Fernández Alonso</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_710_05" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','710')]" />
+		<field name="name">San Pedro</field>
+		<field name="code">05</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_711_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','711')]" />
+		<field name="name">Concepción</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_711_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','711')]" />
+		<field name="name">San Javier</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_711_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','711')]" />
+		<field name="name">San Ramón</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_711_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','711')]" />
+		<field name="name">San Julián</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_711_05" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','711')]" />
+		<field name="name">San Antonio de Lomerío</field>
+		<field name="code">05</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_711_06" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','711')]" />
+		<field name="name">Cuatro Cañadas</field>
+		<field name="code">06</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_712_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','712')]" />
+		<field name="name">San Matías</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_713_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','713')]" />
+		<field name="name">Comarapa</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_713_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','713')]" />
+		<field name="name">Saipina</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_714_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','714')]" />
+		<field name="name">Puerto Suárez</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_714_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','714')]" />
+		<field name="name">Puerto Quijarro</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_714_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','714')]" />
+		<field name="name">Carmen Rivero Torres</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_715_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','715')]" />
+		<field name="name">Ascencion de Guarayos</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_715_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','715')]" />
+		<field name="name">Urubichá</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_715_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','715')]" />
+		<field name="name">El Puente</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	
+	<!-- Beni State -->
+
+	<record id="res_country_municipalities_801_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','801')]" />
+		<field name="name">Trinidad</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_801_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','801')]" />
+		<field name="name">San Javier</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_802_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','802')]" />
+		<field name="name">Riberalta</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_802_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','802')]" />
+		<field name="name">Guayaramerin</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_803_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','803')]" />
+		<field name="name">Reyes</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_803_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','803')]" />
+		<field name="name">San Borja</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_803_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','803')]" />
+		<field name="name">Santa Rosa</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_803_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','803')]" />
+		<field name="name">Rurrenabaque</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_804_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','804')]" />
+		<field name="name">Santa Ana</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_804_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','804')]" />
+		<field name="name">Exaltacion</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_805_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','805')]" />
+		<field name="name">San Ignacio</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_806_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','806')]" />
+		<field name="name">Loreto</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_807_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','807')]" />
+		<field name="name">San Joaquin</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_807_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','807')]" />
+		<field name="name">San Ramon</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_807_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','807')]" />
+		<field name="name">Puerto Siles</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_808_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','808')]" />
+		<field name="name">Magdalena</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_808_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','808')]" />
+		<field name="name">Baures</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_808_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','808')]" />
+		<field name="name">Huacaraje</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<!-- Pando State -->
+
+	<record id="res_country_municipalities_901_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','901')]" />
+		<field name="name">Cobija</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_901_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','901')]" />
+		<field name="name">Porvenir</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_901_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','901')]" />
+		<field name="name">Bolpebra</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_901_04" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','901')]" />
+		<field name="name">Bella Flor</field>
+		<field name="code">04</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_902_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','902')]" />
+		<field name="name">Puerto Rico</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_902_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','902')]" />
+		<field name="name">San Pedro</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_902_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','902')]" />
+		<field name="name">Filadelfia</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_903_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','903')]" />
+		<field name="name">Puerto Gonzalo Moreno</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_903_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','903')]" />
+		<field name="name">Blanca Flor (San Lorenzo)</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_903_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','903')]" />
+		<field name="name">El Sena</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_904_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','904')]" />
+		<field name="name">Santa Rosa del Abuna</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_904_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','904')]" />
+		<field name="name">Humaita (Ingavi)</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_municipalities_905_01" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','905')]" />
+		<field name="name">Nueva Esperanza</field>
+		<field name="code">01</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_905_02" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','905')]" />
+		<field name="name">Villa Nueva (Loma Alta)</field>
+		<field name="code">02</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_municipalities_905_03" model="res.country.municipalities">
+    	<field model="res.country.province" name="province_id" search="[('code','=','905')]" />
+		<field name="name">Santos Mercado (Reserva)</field>
+		<field name="code">03</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+  </data>
+</openerp>

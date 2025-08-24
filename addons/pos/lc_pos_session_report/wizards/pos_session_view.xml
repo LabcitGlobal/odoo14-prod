@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record model="ir.ui.view" id="lc_pos_session_report_form">
+    	<field name="name">Pos Session Report</field>
+        <field name="model">lc.pos.session.report</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+        	<form>
+            	<group>
+                	<field name="from_date" string="Desde"/>
+                    <field name="to_date" string="Hasta"/>
+                    <field name="user_id" string="Empleado"/>
+                    <field name="delivery_id" string="Chofer"/>
+                </group>
+                <footer>
+                	<button name="print_session_report" string="Imprimir" type="object" class="highlight"/>
+                    <button string="Cerrar" class="btn-primary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="lc_pos_session_report_action_window">
+    	<field name="name">Reporte de ventas de Empleado</field>
+        <field name="res_model">lc.pos.session.report</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>        
+    </record> 
+    
+    <menuitem id="menu_lc_pos_session_report" name="Reporte de Ventas"
+    	parent="point_of_sale.menu_point_rep" action="lc_pos_session_report_action_window"
+        sequence="100"/>    
+  
+</odoo>

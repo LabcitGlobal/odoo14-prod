@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="about_index" inherit_id="website.snippets" name="Index About">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+            <t t-snippet="theme_labcit.lc_about"
+             t-thumbnail="/theme_labcit/static/src/img/snippets/about.png" />
+        </xpath>
+    </template>
+    <template id="lc_about" name="Labcit About">
+        <section class="section-about">
+            <div class="about-text">
+                <h2>La empresa</h2>
+                <br/>
+                <p>Somos un equipo multidisciplinario de expertos en diferentes áreas tecnológicas. Conformamos un paquete completo para las empresas que desean innovar en el mercado.</p>
+                <p>Nos apoyamos en modelos y tecnologías disruptivas destinadas a revolucionar el mercado. Analizando y desarrollando estrategias y productos, permitiendo a las empresas escalar y crecer de forma sostenible y segura.</p>
+                <p>Tenemos más de una decada trabajando en el mercado y sabemos de las principales dificultades y necesidades dentro de una empresa.</p>
+                <p>Al establecer una alianza con nosotros, le permitirá contar con el asesoramiento de todo un equipo de profesionales para resolver los problemas de su empresa.</p>
+            </div>
+            <div class="about-image">
+                <div id="slider-about" class="owl-carousel">
+                    <div><img src="/theme_labcit/static/src/img/gmarketing.svg" alt="Marketing"/></div>
+                    <div><img src="/theme_labcit/static/src/img/gsistemas2.svg" alt="Sistemas"/></div>
+                    <div><img src="/theme_labcit/static/src/img/gdiseno.svg" alt="Diseño"/></div>
+                    <div><img src="/theme_labcit/static/src/img/gcomunicacion.svg" alt="Comunicación"/></div>
+                    <div><img src="/theme_labcit/static/src/img/gsistemas.svg" alt="Sistemas"/></div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

@@ -1,0 +1,56 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="lc_stock_data_report_form">
+    	<field name="name">lc.stock.data.report.form</field>
+        <field name="model">lc.stock.data.report</field>
+        <field name="arch" type="xml">
+        	<form>            	
+            <footer>
+            	<button name="print_stock_report" string="Print" type="object" class="btn-success"/>
+              <button name="print_stock_cost_report" string="Print + Cost" type="object" class="btn-danger" groups="hr.group_hr_manager"/>
+              <button string="Close" class="btn-primary" special="cancel"/>                    
+            </footer>
+          </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="lc_admin_view_stock_data_tree">
+      <field name="name">lc_view_stock_data_tree</field>
+      <field name="model">lc.view.stock.data</field>
+      <field name="arch" type="xml">
+        <tree>          
+          <field name="category"/>          
+          <field name="product_name"/>
+          <field name="default_code"/>
+          <field name="list_price"/>
+          <field name="quantity"/>
+          <field name="cost" groups="hr.group_hr_manager"/>
+          <field name="total" groups="hr.group_hr_manager"/>
+        </tree>
+      </field>
+    </record>
+            
+    <record model="ir.actions.act_window" id="lc_view_stock_data_action_window">
+      <field name="name">Inventory List</field>
+      <field name="res_model">lc.view.stock.data</field>
+      <field name="view_mode">tree</field>
+      <field name="domain">[('company_id','=',allowed_company_ids[0])]</field>
+    </record>
+        
+    <menuitem name="Inventory List" id="menu_stock_data_action" parent="stock.menu_stock_warehouse_mgmt"
+              action="lc_view_stock_data_action_window" sequence="151"/>
+    
+    <record model="ir.actions.act_window" id="lc_stock_data_report_action_window">
+    	<field name="name">Print Inventory</field>
+        <field name="res_model">lc.stock.data.report</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <!-- <field name="view_type">form</field> -->
+    </record>
+        
+    <menuitem id="menu_lc_stock_data_manage_report" name="Print Inventory" 
+    	parent="stock.menu_stock_warehouse_mgmt" action="lc_stock_data_report_action_window"
+        sequence="100"/>
+
+  </data>
+</odoo>

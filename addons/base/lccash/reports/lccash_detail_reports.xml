@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="lccash_detail_reports">
+        	<t t-foreach="docs" t-as="doc">            
+				<t t-call="web.html_container">
+					<t t-call="web.external_layout">
+						<div style="font:17px Helvetica,Arial !important;">
+            				<div class="page">    
+	            				<center><h2>Detalle de Reporte de Caja<span t-field="doc.date"/></h2></center>
+    	        				<table class="table table-bordered">
+        	    					<tbody>
+            							<tr>
+            								<td><strong>Administrador:</strong></td>
+            								<td><span t-field="doc.name"/></td>
+            								<td><strong>Cajero:</strong></td>
+            								<td><span t-field="doc.create_uid"/></td>
+            							</tr>
+            								<tr>
+            								<td><strong>Cambio:</strong></td>
+	            							<td><span t-field="doc.mount"/></td>
+    	        							<td><strong>Nota:</strong></td>
+        	    							<td><span t-field="doc.note"/></td>
+            							</tr>
+            						</tbody>            					
+            					</table>            				
+            					<h3>Detalle de Depositos</h3>        				
+            					<table class="table table-condensed table-striped">
+	            					<thead>
+    	        						<tr>                                    
+        	                           		<th>Fecha</th>
+            	                       		<th>POS</th>                                    
+                	                   		<th>POS Fecha</th>                                    
+                    	               		<th>Cliente</th>
+                        	           		<th>Empleado</th>
+                            	       		<th>Monto</th>
+                                	   		<th>Pago</th>
+                                   			<th>Cambio</th>
+                                		</tr>
+            						</thead>
+	            					<span t-set="total_payment_mount" t-value="0"/>
+    	        					<span t-set="total_payment_paid" t-value="0"/>
+        	    					<span t-set="total_payment_change" t-value="0"/>
+									<tbody>
+										<t t-foreach="request.env['lccash.payment'].search([('date','=',doc.date),('company_id','=',int(doc.company_id)),('create_uid','=',int(str(doc.create_uid)[str(doc.create_uid).find('(')+1:str(doc.create_uid).find(',')]))])" t-as="objPayment">
+	            							<span t-set="total_payment_mount" t-value="total_payment_mount + objPayment.mount"/>
+    	        							<span t-set="total_payment_paid" t-value="total_payment_paid + objPayment.paid"/>
+        	    							<span t-set="total_payment_change" t-value="total_payment_change + objPayment.change"/>
+											<t t-if="objPayment.mount == objPayment.paid">
+												<t t-set="style" t-value="'color:black'"/>
+											</t>
+											<t t-else="">
+												<t t-set="style" t-value="'color:red'"/>
+											</t>
+											<tr>
+												<td><span t-field="objPayment.write_date"/></td>
+												<td><span t-field="objPayment.name"/></td>
+												<td><span t-field="objPayment.name.date_order"/></td>
+												<td><span t-field="objPayment.name.partner_id"/></td>
+												<!-- <td><span t-field="objPayment.sale_id"/></td> -->
+												<!-- <td><span t-field="objPayment.partner_id"/></td> -->
+												<td><span t-field="objPayment.employee_id"/></td>
+												<td class="text-right"><span t-att-style="style" t-field="objPayment.mount"/></td>
+												<td class="text-right"><span t-att-style="style" t-field="objPayment.paid"/></td>
+												<td class="text-right"><span t-field="objPayment.change"/></td>
+											</tr>
+										</t>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td><strong>TOTAL</strong></td>
+											<td class="text-right"><strong><span t-esc="round(total_payment_mount,2)"/></strong></td>
+											<td class="text-right"><strong><span t-esc="round(total_payment_paid,2)"/></strong></td>
+											<td class="text-right"><strong><span t-esc="round(total_payment_change,2)"/></strong></td>
+										</tr>
+									</tfoot>
+								</table>
+								<h3>Detalle de Retiros</h3>        				
+    	        				<table class="table table-condensed table-striped">
+        	    					<thead>
+            							<tr>                                    
+                	                   		<th>Fecha</th>                    	               		
+                    	               		<th>Compras</th>                                    
+                        	           		<th>Proveedor/Cliente</th>
+                        	           		<th>Devolucion</th>                                    
+                            	       		<th>Empleado</th>                                   		
+                                	   		<th>Monto</th>
+                                   			<th>Nota</th>
+                                		</tr>
+            						</thead>            					
+									<tbody>
+										<span t-set="total_withdraw_mount" t-value="0"/>
+    	        						<t t-foreach="request.env['lccash.withdraw'].search([('date','=',doc.date),('company_id','=',int(doc.company_id)),('create_uid','=',int(str(doc.create_uid)[str(doc.create_uid).find('(')+1:str(doc.create_uid).find(',')]))])" t-as="objWithdraw">
+	        	    						<span t-set="total_withdraw_mount" t-value="total_withdraw_mount + objWithdraw.name"/>
+											<tr>												
+												<td><span t-field="objWithdraw.write_date"/></td>										
+												<td><span t-field="objWithdraw.purchase_id"/></td>
+												<td><span t-field="objWithdraw.partner_id"/></td>
+												<td><span t-field="objWithdraw.pos_id"/></td>
+												<td><span t-field="objWithdraw.employee_id"/></td>												
+												<td class="text-right"><span t-field="objWithdraw.name"/></td>
+												<td><span t-field="objWithdraw.note"/></td>
+											</tr>
+										</t>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td><strong>TOTAL</strong></td>
+											<td class="text-right"><strong><span t-esc="round(total_withdraw_mount,2)"/></strong></td>
+											<td></td>
+										</tr>
+									</tfoot>
+								</table>
+								<center><h2>RESUMEN FINAL</h2></center>
+								<span t-set="total_mount" t-value="doc.mount + total_payment_paid - total_payment_change - total_withdraw_mount"/>
+								<table class="table table-bordered">
+									<tbody>
+										<tr>
+											<td><strong>Cambio</strong></td>
+											<td><span t-field="doc.mount"/></td>									
+										</tr>
+										<tr>
+											<td><strong>Total Depositos</strong></td>
+											<td><span t-esc="round(total_payment_paid - total_payment_change,2)"/></td>									
+										</tr>
+										<tr>
+											<td><strong>Total Retiros</strong></td>
+											<td><span t-esc="round(total_withdraw_mount,2)"/></td>									
+										</tr>
+										<tr>
+											<td><strong>SALDO TOTAL</strong></td>
+											<td><span t-esc="round(total_mount,2)"/></td>									
+										</tr>
+									</tbody>
+								</table>
+							</div>
+            			</div>
+            		</t>
+            	</t>          		
+            </t>
+        </template>
+    </data>
+</odoo>

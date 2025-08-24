@@ -1,0 +1,19 @@
+<openerp>
+    <data>
+        <record id="lc_file_category_1" model="lc.file.category">
+	    	<field name="name">BL</field>
+	    </record>
+        <record id="lc_file_category_2" model="lc.file.category">
+	    	<field name="name">ASPB</field>
+	    </record>
+        <record id="lc_file_category_3" model="lc.file.category">
+	    	<field name="name">Interchen</field>
+	    </record>
+        <record id="lc_file_category_4" model="lc.file.category">
+	    	<field name="name">Boleta de Devolución</field>
+	    </record>
+        <record id="lc_file_category_5" model="lc.file.category">
+	    	<field name="name">Carta de Liberación</field>
+	    </record>
+    </data>
+</openerp>

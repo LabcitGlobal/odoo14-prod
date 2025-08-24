@@ -1,0 +1,274 @@
+<odoo>
+    <data>
+        <template id="print_lc_employee_report_template">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                	<h2 class="text-center">REPORTE DE ASISTENCIA</h2>                    
+                    <h3 class="text-center"><span t-esc="form.get('employee')"/></h3>
+                    <h3 class="text-center">Desde <span t-esc="form.get('start_date')"/> Hasta <span t-esc="form.get('end_date')"/></h3>
+                    <table class="table table-sm">
+                        <tbody>
+                            <tr>
+                                 <td style="font-weight:bold;">
+                                 	Cargo: 
+                                 </td>
+                                 <td>
+                                 	<span t-esc="form.get('job_title')"/>
+                                 </td>
+                                 <td style="font-weight:bold;">
+                                 	Pago Total: 
+                                 </td>
+                                 <td>
+                                 	<span t-esc="form.get('total')"/> Bs.
+                                 </td>
+                            </tr>                            
+                            <tr>
+                                 <td style="font-weight:bold;">
+                                 	Total Horas Extras: 
+                                 </td>
+                                 <td>
+                                 	<span t-esc="form.get('total_additional_value')"/> Bs.
+                                 </td>
+                                 <td style="font-weight:bold;">
+                                 	Descuento Total:
+                                 </td>
+                                 <td>
+                                 	<span t-esc="form.get('total_discount_value')"/> Bs.
+                                 </td>
+                            </tr>                            
+                        </tbody>
+                    </table>
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>                                                                                  
+                                <th class="text-center">
+                                    <strong>Fecha</strong>
+                                </th>                                
+                                <th class="text-center">
+                                    <strong>Ingreso</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>Salida</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>Horas Extras</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>Descuento</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>Atrasos</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>Comentario</strong>
+                                </th>                                                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="form.get('attendances')" t-as="l">
+                                <td class="text-right">
+                                    <span t-esc="l.get('dates')"/>
+                                </td>                                
+                                <td class="text-right">
+                                    <span t-esc="l.get('check_in')"/>
+                                </td>
+                                <td class="text-right">
+                                    <span t-esc="l.get('check_out')"/>
+                                </td>
+                                <td class="text-right">
+                                    <span t-esc="l.get('additional_hour')"/>
+                                </td>
+                                <td class="text-right">
+                                    <span t-esc="l.get('discount')"/>
+                                </td>
+                                <td class="text-right">
+                                    <span t-esc="l.get('hours_late')"/>
+                                </td>
+                                <td class="text-right">
+                                    <span t-esc="l.get('comment')"/>
+                                </td>                                
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr style="font-weight:bold;">
+                                <td class="text-right">
+                                    TOTAL
+                                </td>                                
+                                <td class="text-right">                                    
+                                </td>
+                                <td class="text-right">                                    
+                                </td>
+                                <td class="text-right">
+                                    <span t-esc="form.get('total_additional_hour')"/>
+                                </td>
+                                <td class="text-right">
+                                    <span t-esc="form.get('total_discount')"/>
+                                </td>
+                                <td class="text-right">
+                                    <span t-esc="form.get('total_hours_late')"/>
+                                </td>                                
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="footer">
+        				<div class="text-center" style="border-top: 1px solid black;">        
+							<ul class="list-inline">
+                				<li>Página: <span class="page"/>/<span class="topage"/></li>
+                				<li>Teléfonos: <span t-field="res_company.phone"/><t t-if="res_company.website"> - Web: <span t-field="res_company.website"/></t></li>
+            				</ul>
+        				</div>
+    				</div>
+                </t>
+            </t>
+        </template>
+        <template id="lc_employee_report_detail_template">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                	<h2 class="text-center">REPORTE DE ASISTENCIA</h2>                    
+                    <h3 class="text-center"><span t-esc="form.get('employee')"/></h3>
+                    <h3 class="text-center">Desde <span t-esc="form.get('start_date')"/> Hasta <span t-esc="form.get('end_date')"/></h3>
+                    <table class="table table-sm">
+                        <tbody>
+                            <tr>
+                                 <td style="font-weight:bold;">
+                                 	Cargo: 
+                                 </td>
+                                 <td>
+                                 	<span t-esc="form.get('job_title')"/>
+                                 </td>
+                                 <td style="font-weight:bold;">
+                                 	Salario por 240 Horas/Mensual
+                                 </td>
+                                 <td>
+                                 	<span t-esc="form.get('wage')"/> Bs.
+                                 </td>
+                            </tr>
+                            <tr>
+                                 <td style="font-weight:bold;">
+                                 	Salario/Hora: 
+                                 </td>
+                                 <td>
+                                 	<span t-esc="form.get('wage_hour')"/> Bs.
+                                 </td>
+                                 <td style="font-weight:bold;">
+                                 	Salario Extra:
+                                 </td>
+                                 <td>
+                                 	<span t-esc="form.get('wage_extra_hour')"/> Bs.
+                                 </td>
+                            </tr>
+                            <tr>
+                                 <td style="font-weight:bold;">
+                                 	Total Horas Extras: 
+                                 </td>
+                                 <td>
+                                 	<span t-esc="form.get('total_additional_value')"/> Bs.
+                                 </td>
+                                 <td style="font-weight:bold;">
+                                 	Descuento Total:
+                                 </td>
+                                 <td>
+                                 	<span t-esc="form.get('total_discount_value')"/> Bs.
+                                 </td>
+                            </tr>
+                            <tr>
+                                 <td style="font-weight:bold;">
+                                 	Pago Total: 
+                                 </td>
+                                 <td>
+                                 	<span t-esc="form.get('total')"/> Bs.
+                                 </td>
+                                 <td style="font-weight:bold;">
+                                 	Total horas trabajadas:
+                                 </td>
+                                 <td>
+                                 	<span t-esc="form.get('total_worked_hours')"/>
+                                 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>                                                                                  
+                                <th class="text-center">
+                                    <strong>Fecha</strong>
+                                </th>                                
+                                <th class="text-center">
+                                    <strong>Ingreso</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>Salida</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>Horas Extras</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>Descuento</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>Atrasos</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>Comentario</strong>
+                                </th>                                                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="form.get('attendances')" t-as="l">
+                                <td class="text-right">
+                                    <span t-esc="l.get('dates')"/>
+                                </td>                                
+                                <td class="text-right">
+                                    <span t-esc="l.get('check_in')"/>
+                                </td>
+                                <td class="text-right">
+                                    <span t-esc="l.get('check_out')"/>
+                                </td>
+                                <td class="text-right">
+                                    <span t-esc="l.get('additional_hour')"/>
+                                </td>
+                                <td class="text-right">
+                                    <span t-esc="l.get('discount')"/>
+                                </td>
+                                <td class="text-right">
+                                    <span t-esc="l.get('hours_late')"/>
+                                </td>
+                                <td class="text-right">
+                                    <span t-esc="l.get('comment')"/>
+                                </td>                                
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr style="font-weight:bold;">
+                                <td class="text-right">
+                                    TOTAL
+                                </td>                                
+                                <td class="text-right">                                    
+                                </td>
+                                <td class="text-right">                                    
+                                </td>
+                                <td class="text-right">
+                                    <span t-esc="form.get('total_additional_hour')"/>
+                                </td>
+                                <td class="text-right">
+                                    <span t-esc="form.get('total_discount')"/>
+                                </td>
+                                <td class="text-right">
+                                    <span t-esc="form.get('total_hours_late')"/>
+                                </td>                                
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="footer">
+        				<div class="text-center" style="border-top: 1px solid black;">        
+							<ul class="list-inline">
+                				<li>Página: <span class="page"/>/<span class="topage"/></li>
+                				<li>Teléfonos: <span t-field="res_company.phone"/><t t-if="res_company.website"> - Web: <span t-field="res_company.website"/></t></li>
+            				</ul>
+        				</div>
+    				</div>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,157 @@
+<odoo>
+    <data>
+        <!-- Equipo Electronico -->
+    
+    <record model="ir.ui.view" id="lcsupport_machine_tree">
+      <field name="name">lcsupport.machine.tree</field>
+      <field name="model">lcsupport.machine</field>
+      <field name="arch" type="xml">
+        <tree string="Lista de Equipos">
+          <field name="client_id"/>
+          <field name="category_id"/>
+          <field name="brand_id"/>
+          <field name="name"/>
+          <field name="model"/>
+          <field name="factory_series"/>
+          <field name="machine_code"/>
+          <field name="observation"/>
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="lcsupport_machine_form">
+      <field name="name">lcsupport.machine.form</field>
+      <field name="model">lcsupport.machine</field>
+      <field name="arch" type="xml">
+      <form string="Equipo Electronico">
+      	<sheet>
+      		<group>        
+          		<field name="client_id"/>
+          		<field name="category_id"/>
+          		<field name="brand_id"/>
+          		<field name="name"/>
+          		<field name="model"/>
+          		<field name="factory_series"/>          		
+          	</group>
+          	<notebook>
+          		<page string="Caracteristicas">
+          			<group>           
+          				<field name="detailmachine_ids">
+          					<tree string="Partes" editable="bottom">          				
+	          					<field name="name"/>
+    	      					<field name="capacity"/>
+        	  					<field name="unit_id"/>
+          						<field name="serie"/>
+          					</tree>
+          				</field>
+          			</group>          			
+          		</page>
+          		<page string="Observaciones">
+          			<group>           
+          				<field name="observation"/>
+          			</group>
+          		</page>
+          	</notebook>                                        
+        </sheet>
+        
+      </form>
+      </field>
+    </record>
+    
+    
+    
+    <!-- Auto Secuencia -->
+        <record id="seq_machine_code" model="ir.sequence">
+            <field name="name">Machine Code</field>
+            <field name="code">machine.code</field>
+            <field name="prefix">E-</field>
+            <field name="padding">8</field>
+        </record>
+    
+    <!-- Marca -->
+    
+    <record model="ir.ui.view" id="lcsupport_brand_tree">
+      <field name="name">lcsupport.brand.tree</field>
+      <field name="model">lcsupport.brand</field>
+      <field name="arch" type="xml">
+        <tree string="Lista de Marcas">
+          <field name="name"/>          
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="lcsupport_brand_form">
+      <field name="name">lcsupport.brand.form</field>
+      <field name="model">lcsupport.brand</field>
+      <field name="arch" type="xml">
+        <tree string="Lista de Marcas">
+          <field name="name"/>          
+        </tree>
+      </field>
+    </record>
+    
+    <!-- Unit -->
+    
+    <record model="ir.ui.view" id="lcsupport_unit_tree">
+      <field name="name">lcsupport.unit.tree</field>
+      <field name="model">lcsupport.unit</field>
+      <field name="arch" type="xml">
+        <tree string="Lista de Unidades">
+          <field name="name"/>          
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="lcsupport_unit_form">
+      <field name="name">lcsupport.unit.form</field>
+      <field name="model">lcsupport.unit</field>
+      <field name="arch" type="xml">
+        <tree string="Lista de Unidades">
+          <field name="name"/>          
+        </tree>
+      </field>
+    </record>
+
+    <!-- Acciones -->
+    
+    <record model="ir.actions.act_window" id="lcsupport_brand_action_window">
+      <field name="name">Marcas</field>
+      <field name="res_model">lcsupport.brand</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="lcsupport_unit_action_window">
+      <field name="name">Unidades</field>
+      <field name="res_model">lcsupport.unit</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="lcsupport_machine_action_window">
+      <field name="name">Equipos</field>
+      <field name="res_model">lcsupport.machine</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Top menu item -->
+    
+    <menuitem name="Soporte" id="lcsupport.menu_root" web_icon="lcsupport,static/description/icon.png"/>
+    
+    <!-- menu categories -->
+    
+    <menuitem name="Equipo" id="lcsupport.machine" parent="lcsupport.menu_root" sequence="2"/>
+    <menuitem name="Configuracion" id="lcsupport.config" parent="lcsupport.menu_root" sequence="3"/>    
+    <!-- <menuitem name="Marca" id="lcsupport.brand" parent="lcsupport.config"/>
+    <menuitem name="Unidades" id="lcsupport.unit" parent="lcsupport.config"/> -->
+    
+    <!-- actions -->
+    
+	<menuitem name="Equipos" id="lcsupport.menu_machine" parent="lcsupport.machine"
+              action="lcsupport_machine_action_window"/>              
+    <!-- <menuitem name="Categoria" id="lcsupport.menu_category" parent="lcsupport.config"
+              action="lcsupport_category_action_window"/>-->
+    <menuitem name="Marca" id="lcsupport.menu_brand" parent="lcsupport.config"
+              action="lcsupport_brand_action_window"/>
+    <menuitem name="Unidades" id="lcsupport.menu_unit" parent="lcsupport.config"
+              action="lcsupport_unit_action_window"/>
+    </data>
+</odoo>

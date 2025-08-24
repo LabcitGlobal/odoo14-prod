@@ -8,34 +8,44 @@ Este proyecto configura un entorno completo de Odoo 14 usando Docker Compose con
 
 ## 🚀 Inicio Rápido
 
-### Prerrequisitos
-- Docker
-- Docker Compose
+### **🏠 Para Desarrollo Local:**
 
-### Instalación y Ejecución
-
-1. **Clona o descarga este proyecto**
+1. **Clonar el repositorio:**
    ```bash
-   git clone <tu-repo>
+   git clone https://github.com/tu-usuario/odoo14-prod.git
    cd odoo14-prod
    ```
 
-2. **Configura las variables de entorno**
+2. **Iniciar entorno de desarrollo:**
    ```bash
-   cp environment.env .env
-   # Edita .env con tus valores personalizados
+   ./scripts/start-local.sh
    ```
 
-3. **Construye y ejecuta los contenedores**
+3. **Acceder a Odoo:**
+   - URL: http://localhost:8014
+   - Crear base de datos desde la interfaz web
+
+### **🌐 Para Despliegue en VPS (Producción):**
+
+1. **En el VPS, instalar dependencias:**
    ```bash
-   docker-compose up -d --build
+   # Instalar Docker y dependencias
+   wget https://raw.githubusercontent.com/tu-usuario/odoo14-prod/main/install-ubuntu.sh
+   chmod +x install-ubuntu.sh
+   ./install-ubuntu.sh
+   sudo reboot
    ```
 
-4. **Accede a Odoo**
-   - URL Producción: https://multiacceso.labcit.com
-   - URL Desarrollo: http://localhost
-   - Usuario: admin
-   - Contraseña: admin (configurable en `config/odoo.conf`)
+2. **Clonar y desplegar:**
+   ```bash
+   git clone https://github.com/tu-usuario/odoo14-prod.git
+   cd odoo14-prod
+   ./scripts/deploy-vps.sh
+   ```
+
+3. **Acceder a producción:**
+   - **URL:** https://multiacceso.labcit.com
+   - **Admin:** MultiAcceso2024!AdminVPS#Secure
 
 ## 📁 Estructura del Proyecto
 
@@ -50,6 +60,16 @@ odoo14-prod/
 │   └── odoo.conf         # Configuración de Odoo
 ├── addons/               # Módulos personalizados
 ├── logs/                 # Logs de aplicación
+├── backups/              # Backups automáticos
+├── scripts/              # Scripts de backup y mantenimiento
+│   ├── backup.sh         # Backup completo
+│   ├── backup-db-only.sh # Backup solo BD
+│   ├── restore.sh        # Restauración
+│   ├── backup-scheduler.sh # Programador automático
+│   ├── start-local.sh    # Iniciar desarrollo local
+│   ├── stop-local.sh     # Detener desarrollo local
+│   └── migrate-to-production.sh # Migración a producción
+├── BACKUP-GUIDE.md       # Guía completa de backups
 └── README.md            # Este archivo
 ```
 
@@ -83,6 +103,9 @@ La configuración está lista para el subdominio `multiacceso.labcit.com`:
 
 ### Gestión de Contenedores
 ```bash
+# Verificar puertos antes de iniciar
+./scripts/check-ports.sh
+
 # Iniciar servicios
 docker-compose up -d
 
@@ -96,14 +119,42 @@ docker-compose down
 docker-compose build --no-cache odoo
 ```
 
-### Base de Datos
+### Base de Datos y Backups
 ```bash
-# Backup de base de datos
-docker-compose exec db pg_dump -U odoo odoo > backup.sql
+# Backup completo (recomendado)
+./scripts/backup.sh
 
-# Restaurar base de datos
-docker-compose exec -T db psql -U odoo odoo < backup.sql
+# Backup rápido solo de BD
+./scripts/backup-db-only.sh
+
+# Restaurar backup completo
+./scripts/restore.sh odoo_full_backup_FECHA.tar.gz
+
+# Configurar backups automáticos
+./scripts/backup-scheduler.sh install
+
+# Ver estado de backups
+./scripts/backup-scheduler.sh status
 ```
+
+📖 **Ver [BACKUP-GUIDE.md](BACKUP-GUIDE.md) para guía completa de backups**
+
+## 🔄 Migración a Producción
+
+Este proyecto está configurado para desarrollo local. Para migrar a producción:
+
+```bash
+# Preparar configuración para producción
+./scripts/migrate-to-production.sh prepare
+
+# Crear paquete de migración
+./scripts/migrate-to-production.sh backup
+
+# Ver comandos de despliegue
+./scripts/migrate-to-production.sh deploy
+```
+
+📖 **Ver [MIGRATION-GUIDE.md](MIGRATION-GUIDE.md) para guía completa de migración**
 
 ### Desarrollo
 ```bash

@@ -1,0 +1,65 @@
+<odoo>
+    <data>
+                
+        <template id="services">
+            <t t-call="website.layout">                
+            </t>          
+        </template>
+
+        <template id="service_detail" name="Service Detail">
+            <t t-call="website.layout">
+                
+                <div class="oe_structure">
+                    <section class="pt32 pb32">                        
+                    </section>
+                </div>
+
+                <div class="container mt32" contenteditable="False">
+                    <div class="row mt16">          
+                        <center><h1>Número de Caso: <b>SR-<span t-field="service.id"/></b></h1></center>              
+                        <div class="offset-1 col-6">                            
+                            <h3 class="mt8">DETALLE</h3>                                                        
+    		                <p><strong>Maquina:</strong> <span t-field="service.machine_id"/></p>
+    		                <p><strong>Serie:</strong> <span t-field="service.machine_id.factory_series"/></p>
+    	    	            <p><strong>Código:</strong> <span t-field="service.machine_id.machine_code"/></p>
+        	    	        <p><strong>Nombre:</strong> <span t-field="service.name"/></p>
+            	    	    <p><strong>Técnico:</strong> <span t-field="service.employee_id"/></p>
+                	    	<p><strong>Recepción:</strong> <span t-field="service.date_reception"/></p>
+	                    	<p><strong>Entrega:</strong> <span t-field="service.date_delivery"/></p>
+    	                	<p><strong>Problema/Cliente:</strong> <span t-field="service.customer_problem"/></p>
+        	            	<p><strong>Diagnostico/Tecnico:</strong> <span t-field="service.technical_diagnosis"/></p>
+                            <p><strong>Accesorios:</strong> <span t-field="service.accessories"/></p>
+                            <p><strong>Estado:</strong> <span t-field="service.state"/></p>
+    	        	        
+                            <h3 class="mt8">SEGUIMIENTO</h3>
+
+                            <table class="table">
+                                <thead>
+                                  <tr>                                    
+                                    <th scope="col">Fecha</th>
+                                    <th scope="col">Usuario</th>
+                                    <th scope="col">Descripcion</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="service.trackingservice_ids" t-as="detail_tracking">
+                                        <td><span t-field="detail_tracking.create_date"/></td>
+                                        <td><span t-field="detail_tracking.create_uid"/></td>
+                                        <td><span t-field="detail_tracking.issue_description"/></td>
+                                    </tr>
+                                  
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="oe_structure">
+                    <section class="pt32 pb32">                        
+                    </section>
+                </div>
+
+            </t>
+        </template>       
+    </data>
+</odoo>

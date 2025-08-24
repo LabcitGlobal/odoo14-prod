@@ -1,0 +1,136 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* attendance_geolocation_log
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-02 02:09+0000\n"
+"PO-Revision-Date: 2022-04-02 02:09+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: attendance_geolocation_log
+#: model:ir.model,name:attendance_geolocation_log.model_hr_attendance
+msgid "Attendance"
+msgstr "Asistencia"
+
+#. module: attendance_geolocation_log
+#. openerp-web
+#: code:addons/attendance_geolocation_log/static/src/xml/user_menu.xml:0
+#, python-format
+msgid "Attendance Geolocation"
+msgstr "Asistencia por Geolocalización"
+
+#. module: attendance_geolocation_log
+#: model:ir.actions.act_window,name:attendance_geolocation_log.action_simple_attendance_geolocation_log
+msgid "Attendance Geolocation Log"
+msgstr "Registro de geolocalización de asistencia"
+
+#. module: attendance_geolocation_log
+#: model_terms:ir.ui.view,arch_db:attendance_geolocation_log.view_simple_attendance_geolocation_log
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: attendance_geolocation_log
+#: model:ir.model.fields,field_description:attendance_geolocation_log.field_hr_attendance__check_in_location_link
+msgid "Check In Location"
+msgstr "Ubicación de entrada"
+
+#. module: attendance_geolocation_log
+#: model:ir.model.fields,field_description:attendance_geolocation_log.field_hr_attendance__check_out_location_link
+msgid "Check Out Location"
+msgstr "Ubicación de salida"
+
+#. module: attendance_geolocation_log
+#: model:ir.model.fields,field_description:attendance_geolocation_log.field_hr_attendance__check_in_latitude
+msgid "Check-in Latitude"
+msgstr "Latitud de Entrada"
+
+#. module: attendance_geolocation_log
+#: model_terms:ir.ui.view,arch_db:attendance_geolocation_log.hr_attendance_view_form
+msgid "Check-in Location"
+msgstr "Ubicación de entrada"
+
+#. module: attendance_geolocation_log
+#: model:ir.model.fields,field_description:attendance_geolocation_log.field_hr_attendance__check_in_longitude
+msgid "Check-in Longitude"
+msgstr "Longitud de Entrada"
+
+#. module: attendance_geolocation_log
+#: model_terms:ir.ui.view,arch_db:attendance_geolocation_log.hr_attendance_view_form
+msgid "Check-ou Location"
+msgstr "Ubicación de salida"
+
+#. module: attendance_geolocation_log
+#: model:ir.model.fields,field_description:attendance_geolocation_log.field_hr_attendance__check_out_latitude
+msgid "Check-out Latitude"
+msgstr "Latitud de Salida"
+
+#. module: attendance_geolocation_log
+#: model:ir.model.fields,field_description:attendance_geolocation_log.field_hr_attendance__check_out_longitude
+msgid "Check-out Longitude"
+msgstr "Longitud de Salida"
+
+#. module: attendance_geolocation_log
+#: model:ir.model.fields,field_description:attendance_geolocation_log.field_hr_attendance__display_name
+#: model:ir.model.fields,field_description:attendance_geolocation_log.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:attendance_geolocation_log.field_ir_http__display_name
+#: model:ir.model.fields,field_description:attendance_geolocation_log.field_res_users__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: attendance_geolocation_log
+#: model:ir.model,name:attendance_geolocation_log.model_hr_employee
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: attendance_geolocation_log
+#. openerp-web
+#: code:addons/attendance_geolocation_log/static/src/js/kiosk_confirm.js:0
+#: code:addons/attendance_geolocation_log/static/src/js/my_attendances.js:0
+#, python-format
+msgid "GEOLOCATION API MAY ONLY WORKS WITH HTTPS CONNECTIONS."
+msgstr "LA API DE GEOLOCALIZACIÓN SOLO PUEDE FUNCIONAR CON CONEXIONES HTTPS."
+
+#. module: attendance_geolocation_log
+#: model:ir.model,name:attendance_geolocation_log.model_ir_http
+msgid "HTTP Routing"
+msgstr "Ruta HTTP "
+
+#. module: attendance_geolocation_log
+#: model:ir.model.fields,field_description:attendance_geolocation_log.field_hr_attendance__id
+#: model:ir.model.fields,field_description:attendance_geolocation_log.field_hr_employee__id
+#: model:ir.model.fields,field_description:attendance_geolocation_log.field_ir_http__id
+#: model:ir.model.fields,field_description:attendance_geolocation_log.field_res_users__id
+msgid "ID"
+msgstr ""
+
+#. module: attendance_geolocation_log
+#: model:ir.model.fields,field_description:attendance_geolocation_log.field_hr_attendance____last_update
+#: model:ir.model.fields,field_description:attendance_geolocation_log.field_hr_employee____last_update
+#: model:ir.model.fields,field_description:attendance_geolocation_log.field_ir_http____last_update
+#: model:ir.model.fields,field_description:attendance_geolocation_log.field_res_users____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: attendance_geolocation_log
+#: model:ir.model.fields,field_description:attendance_geolocation_log.field_res_users__log_attendance_geolocation
+msgid "Log Attendances Geolocation"
+msgstr "Registro de Asistencias Geolocalización"
+
+#. module: attendance_geolocation_log
+#: model_terms:ir.ui.view,arch_db:attendance_geolocation_log.view_simple_attendance_geolocation_log
+msgid "Save"
+msgstr "Guardar"
+
+#. module: attendance_geolocation_log
+#: model:ir.model,name:attendance_geolocation_log.model_res_users
+#: model_terms:ir.ui.view,arch_db:attendance_geolocation_log.view_simple_attendance_geolocation_log
+msgid "Users"
+msgstr "Usuarios"

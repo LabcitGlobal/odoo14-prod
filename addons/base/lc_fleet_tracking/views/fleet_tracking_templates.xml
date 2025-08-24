@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+                
+        <template id="rastreo">
+            <t t-call="website.layout">                
+            </t>          
+        </template>
+
+        <template id="fleet_service_detail" name="Fleet Service Detail">
+            <t t-call="website.layout">
+                <!-- Formulario de Busqueda para seguimiento -->
+                <div id="wrap" class="oe_structure oe_empty">
+                  <section data-snippet="lc_fleet_tracking_snippet" class="o_colored_level pt72 pb64 oe_img_bg" data-name="Fleet Tracking Form" style="position: relative; background-image: url(&quot;/web/image/1061-78513e58/banner_servicio.jpg&quot;);" data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Airy/13&quot;,&quot;flip&quot;:[]}" data-original-id="608" data-original-src="/web/image/608-45598f48/banner_servicio.jpg" data-mimetype="image/jpeg" data-resize-width="1920" data-gl-filter="blur">
+                    <div class="o_we_shape o_web_editor_Airy_13"/>
+                    <div class="container">
+                      <div class="row s_nb_column_fixed">
+                        <div class="col-lg-12 t_text_title_center o_colored_level">
+                          <h2 class="s_title_thin t_text_small_title" style="text-align:center;">
+                            <b>Rastree su Carga</b>
+                          </h2>
+                        </div>
+                        <div class="col-lg-12 pt16 pb16 o_colored_level">
+                          <p style="text-align: center;">
+                            <font style="color: rgb(0, 0, 0); font-size: 18px;">&amp;nbsp;</font>
+                          </p>
+                        </div>
+                      </div>
+                      <form method="get" action="/rastreo/">
+                        <center>
+                          <div class="form-row align-items-center">
+                            <div class="col-md-4 mb-3"/>
+                            <div class="col-md-4 mb-3">
+                              <input name="tracking_id" class="form-control" type="text" placeholder="Ingrese su número de Seguimiento..." size="10"/>
+                            </div>
+                            <div class="col-md-4 mb-3"/>
+                          </div>
+                          <button type="submit" class="btn btn-primary rounded-circle" data-original-title="" title="" aria-describedby="tooltip395873">Seguir Envió</button>
+                        </center>
+                      </form>
+                    </div>
+                  </section>
+                </div>
+                <!-- Fin Formulario de Busqueda para seguimiento -->                                
+                <div class="container mt32" contenteditable="False">
+                </div>
+                <div class="oe_structure">
+                    <!-- Tarjeta de Informacion del Registro -->
+                    <div class="card">
+                        <div class="card-header">
+                          Servicio: <b><span t-field="tracking[0].service_id"/></b>
+                          <p><span t-esc="tracking[0].service_id.date_today.strftime('%d de %B del %Y')"/></p>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title" align="center">
+                          <span class="fa fa-2x fa-group" style="color: rgb(8, 82, 148);"/>
+                          <font style="color: rgb(0, 49, 99); font-size: 36px;">
+                              <b><span t-field="tracking[0].service_id.customer_id"/></b>
+                          </font>
+                          </h5>                    
+                          <table class="table table-borderless">
+				        		<tbody>
+                                  <tr t-foreach="tracking[0].service_id.route_ids" t-as="route">
+				        				<td width="45%" align="right"><span class="fa fa-2x fa-map-marker text-o-color-1" style=""/> <span t-field="route.source"/></td>
+                                      <td width="10%" align="center"><span class="fa fa-2x fa-arrow-right" style="color: rgb(99, 0, 0);"/></td>
+                                      <td width="45%" align="left"><span class="fa fa-2x fa-map-marker text-o-color-1" style=""/> <span t-field="route.destination"/></td>
+				        			</tr>
+                              </tbody>
+                          </table>                    
+                        </div>
+                    </div>
+                    <!-- Fin Tarjeta de Informacion del Registro -->
+                    
+                    <!-- Linea de Registros de Estado -->
+                    <section class="te_timeline_s2 pt32 pb32 o_colored_level" data-snippet="timeline_style_2" data-name="Style 2">
+                        <div class="container-fluid">
+                            <t t-foreach="tracking" t-as="track">
+                                <section class="te_timeline_item o_colored_level">
+                                    <div class="te_timeline_content">
+                                        <h2><span t-field="track.localization"/></h2>
+                                        <div class="te_timeline_date"><span t-field="track.date"/></div>
+                                        <p><span style="font-size: 16px; background-color: rgb(255, 255, 255);"><t t-esc="track.name"/></span>. </p>
+                                    </div>
+                                </section>                                
+                            </t>                                                    
+                        </div>
+                    </section>
+                    <!-- Fin Linea de Registros de Estado -->
+                    <!-- Preguntas Frecuentes -->
+                    <section data-snippet="s_title" class="o_colored_level pt48 pb56" data-name="Title">
+                        <div class="container">
+                            <div class="row s_nb_column_fixed">
+                              <div class="col-lg-12 s_title o_colored_level" style="text-align: center;">
+                                <h4 class="te_s_title_default">
+                                  <b>Preguntas Frecuentes</b>
+                                </h4>
+                                <h4 class="te_s_title_default">
+                                  <font style="font-size: 18px;">¿Tiene alguna pregunta con respecto al servicio?</font>
+                                </h4>
+                              </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_faq_collapse o_colored_level" data-snippet="s_faq_collapse" data-name="Accordion">
+                        <div class="container te_section_accordion">
+                            <div class="row s_nb_column_fixed">
+                            </div>
+                            <div class="row s_col_no_bgcolor">
+                                <div class="col-lg-12 pt16 pb16">
+                                  <div id="myCollapse1626302436637" class="accordion" role="tablist">
+                                    <div class="card bg-white">
+                                      <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-target="#myCollapseTab1626302436638" data-original-title="" title="" aria-describedby="tooltip705541">&amp;nbsp;Por que todavía no se ha concluido con el servicio</a>
+                                      <div class="collapse" role="tabpanel" data-parent="#myCollapse1626302436637" id="myCollapseTab1626302436638" style="">
+                                        <div class="card-body">
+                                          <p class="card-text">Existe la posibilidad de que se extienda el tiempo de entrega por varios factores, como problemas con el proceso de aduanas, problemas en frontera, problemas climáticos. Si después de que transcurridos 5 días de la fecha de entrega estipulada en la entrega, por favor, póngase en contacto con nuestro departamento de atención al cliente +591 (2) 71516563.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="card bg-white">
+                                      <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-target="#myCollapseTab1626302436639" data-original-title="" title="" aria-describedby="tooltip14262">Por que la aduana a retenido mi carga</a>
+                                      <div class="collapse" role="tabpanel" data-parent="#myCollapse1626302436637" id="myCollapseTab1626302436639" style="">
+                                        <div class="card-body">
+                                          <p class="card-text">Los tiempos de procesamiento son establecidos por la aduana de cada país, es posible que no se disponga con toda la información necesaria para su procesamiento, en caso de falta de documentación o alguna observación nos comunicaremos con usted.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="card bg-white">
+                                      <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-target="#myCollapseTab1626302436640" data-original-title="" title="" aria-describedby="tooltip198646">Que son los aranceles e impuestos</a>
+                                      <div class="collapse" role="tabpanel" data-parent="#myCollapse1626302436637" id="myCollapseTab1626302436640" style="">
+                                        <div class="card-body">
+                                          <p class="card-text">Los aranceles e impuestos son derechos que se aplican a cierto tipo de producto y varían según el país. estos se cancelan en la oficina postal o en la oficina de aduana. </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_call_to_action o_colored_level undefined pt96 pb32" data-snippet="s_call_to_action" data-name="Call to Action" style="background-color: rgb(181, 214, 165) !important; position: relative;" data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Airy/12&quot;,&quot;colors&quot;:{&quot;c1&quot;:&quot;#295218&quot;,&quot;c3&quot;:&quot;#FFFFFF&quot;},&quot;flip&quot;:[]}">
+                        <div class="o_we_shape o_web_editor_Airy_12" style="background-image: url(&quot;/web_editor/shape/web_editor/Airy/12.svg?c1=%23295218&amp;c3=%23FFFFFF&quot;);"/>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-9 pb24 o_colored_level">
+                                  <h3>
+                                    <b>Si tiene alguna pregunta</b>
+                                  </h3>
+                                  <p class="lead">Comuníquese con nosotros o visite nuestro centro de atención al cliente</p>
+                                </div>
+                                <div class="col-lg-3 s_btn text-right pt8 pb24 o_colored_level">
+                                  <a href="/atencion-al-cliente" class="btn btn-primary rounded-circle btn-lg" data-original-title="" title="">Preguntas&amp;nbsp;<span class="fa fa-1x fa-fw fa-arrow-circle-right ml-1"/> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Fin de Preguntas Frecuentes -->
+                </div>
+            </t>
+        </template>
+
+        <template id="fleet_service_search" name="Fleet Service Search">
+            <t t-call="website.layout">
+                <!-- Formulario de Busqueda para seguimiento -->
+                <div id="wrap" class="oe_structure oe_empty">
+                  <section data-snippet="lc_fleet_tracking_snippet" class="o_colored_level pt72 pb64 oe_img_bg" data-name="Fleet Tracking Form" style="position: relative; background-image: url(&quot;/web/image/1061-78513e58/banner_servicio.jpg&quot;);" data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Airy/13&quot;,&quot;flip&quot;:[]}" data-original-id="608" data-original-src="/web/image/608-45598f48/banner_servicio.jpg" data-mimetype="image/jpeg" data-resize-width="1920" data-gl-filter="blur">
+                    <div class="o_we_shape o_web_editor_Airy_13"/>
+                    <div class="container">
+                      <div class="row s_nb_column_fixed">
+                        <div class="col-lg-12 t_text_title_center o_colored_level">
+                          <h2 class="s_title_thin t_text_small_title" style="text-align:center;">
+                            <b>Rastree su Carga</b>
+                          </h2>
+                        </div>
+                        <div class="col-lg-12 pt16 pb16 o_colored_level">
+                          <p style="text-align: center;">
+                            <font style="color: rgb(0, 0, 0); font-size: 18px;">&amp;nbsp;</font>
+                          </p>
+                        </div>
+                      </div>
+                      <form method="get" action="/rastreo/">
+                        <center>
+                          <div class="form-row align-items-center">
+                            <div class="col-md-4 mb-3"/>
+                            <div class="col-md-4 mb-3">
+                              <input name="tracking_id" class="form-control" type="text" placeholder="Ingrese su número de Seguimiento..." size="10"/>
+                            </div>
+                            <div class="col-md-4 mb-3"/>
+                          </div>
+                          <button type="submit" class="btn btn-primary rounded-circle" data-original-title="" title="" aria-describedby="tooltip395873">Seguir Envió</button>
+                        </center>
+                      </form>
+                    </div>
+                  </section>
+                </div>
+                <!-- Fin Formulario de Busqueda para seguimiento -->                                
+                <div class="container mt32" contenteditable="False">
+                </div>
+                <div class="oe_structure">                    
+                    <!-- Error in Search -->
+                    <t t-if="error == '1'">
+                      <section data-snippet="s_title" class="o_colored_level pb56 pt56" data-name="Title">
+                        <div class="container">
+                          <div class="row s_nb_column_fixed">
+                            <div class="col-lg-12 s_title o_colored_level undefined" style="text-align: center; background-color: rgba(230, 162, 162, 0.89) !important;">
+                              <h4 class="te_s_title_default"><span class="fa fa-info-circle" data-original-title="" title="" aria-describedby="tooltip242463" style="color: rgb(99, 0, 0);"/>&amp;nbsp;<font style="font-size: 18px;">Numero de seguimiento invalido, verifique su numero de seguimiento.</font></h4>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </t>
+                    <!-- Fin Error in Search -->
+                    <!-- Preguntas Frecuentes -->
+                    <section data-snippet="s_title" class="o_colored_level pt48 pb56" data-name="Title">
+                        <div class="container">
+                            <div class="row s_nb_column_fixed">
+                              <div class="col-lg-12 s_title o_colored_level" style="text-align: center;">
+                                <h4 class="te_s_title_default">
+                                  <b>Preguntas Frecuentes</b>
+                                </h4>
+                                <h4 class="te_s_title_default">
+                                  <font style="font-size: 18px;">¿Tiene alguna pregunta con respecto al servicio?</font>
+                                </h4>
+                              </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_faq_collapse o_colored_level" data-snippet="s_faq_collapse" data-name="Accordion">
+                        <div class="container te_section_accordion">
+                            <div class="row s_nb_column_fixed">
+                            </div>
+                            <div class="row s_col_no_bgcolor">
+                                <div class="col-lg-12 pt16 pb16">
+                                  <div id="myCollapse1626302436637" class="accordion" role="tablist">
+                                    <div class="card bg-white">
+                                      <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-target="#myCollapseTab1626302436638" data-original-title="" title="" aria-describedby="tooltip705541">&amp;nbsp;Por que todavía no se ha concluido con el servicio</a>
+                                      <div class="collapse" role="tabpanel" data-parent="#myCollapse1626302436637" id="myCollapseTab1626302436638" style="">
+                                        <div class="card-body">
+                                          <p class="card-text">Existe la posibilidad de que se extienda el tiempo de entrega por varios factores, como problemas con el proceso de aduanas, problemas en frontera, problemas climáticos. Si después de que transcurridos 5 días de la fecha de entrega estipulada en la entrega, por favor, póngase en contacto con nuestro departamento de atención al cliente +591 (2) 71516563.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="card bg-white">
+                                      <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-target="#myCollapseTab1626302436639" data-original-title="" title="" aria-describedby="tooltip14262">Por que la aduana a retenido mi carga</a>
+                                      <div class="collapse" role="tabpanel" data-parent="#myCollapse1626302436637" id="myCollapseTab1626302436639" style="">
+                                        <div class="card-body">
+                                          <p class="card-text">Los tiempos de procesamiento son establecidos por la aduana de cada país, es posible que no se disponga con toda la información necesaria para su procesamiento, en caso de falta de documentación o alguna observación nos comunicaremos con usted.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="card bg-white">
+                                      <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-target="#myCollapseTab1626302436640" data-original-title="" title="" aria-describedby="tooltip198646">Que son los aranceles e impuestos</a>
+                                      <div class="collapse" role="tabpanel" data-parent="#myCollapse1626302436637" id="myCollapseTab1626302436640" style="">
+                                        <div class="card-body">
+                                          <p class="card-text">Los aranceles e impuestos son derechos que se aplican a cierto tipo de producto y varían según el país. estos se cancelan en la oficina postal o en la oficina de aduana. </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_call_to_action o_colored_level undefined pt96 pb32" data-snippet="s_call_to_action" data-name="Call to Action" style="background-color: rgb(181, 214, 165) !important; position: relative;" data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Airy/12&quot;,&quot;colors&quot;:{&quot;c1&quot;:&quot;#295218&quot;,&quot;c3&quot;:&quot;#FFFFFF&quot;},&quot;flip&quot;:[]}">
+                        <div class="o_we_shape o_web_editor_Airy_12" style="background-image: url(&quot;/web_editor/shape/web_editor/Airy/12.svg?c1=%23295218&amp;c3=%23FFFFFF&quot;);"/>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-9 pb24 o_colored_level">
+                                  <h3>
+                                    <b>Si tiene alguna pregunta</b>
+                                  </h3>
+                                  <p class="lead">Comuníquese con nosotros o visite nuestro centro de atención al cliente</p>
+                                </div>
+                                <div class="col-lg-3 s_btn text-right pt8 pb24 o_colored_level">
+                                  <a href="/atencion-al-cliente" class="btn btn-primary rounded-circle btn-lg" data-original-title="" title="">Preguntas&amp;nbsp;<span class="fa fa-1x fa-fw fa-arrow-circle-right ml-1"/> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Fin de Preguntas Frecuentes -->
+                </div>
+            </t>
+        </template>
+
+    </data>
+</odoo>

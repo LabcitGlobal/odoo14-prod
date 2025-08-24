@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   # Base de datos PostgreSQL
   db:
@@ -30,7 +28,13 @@ services:
     environment:
       HOST: db
       USER: ${POSTGRES_USER:-odoo}
-      PASSWORD: ${POSTGRES_PASSWORD:-odoo}
+      PASSWORD: ${POSTGRES_PASSWORD:-odoo_password_seguro}
+      # Variables para pg_dump y herramientas PostgreSQL
+      PGHOST: db
+      PGUSER: ${POSTGRES_USER:-odoo}
+      PGPASSWORD: ${POSTGRES_PASSWORD:-odoo_password_seguro}
+      PGPORT: 5432
+      PGDATABASE: multiacceso
     volumes:
       - odoo_data:/var/lib/odoo
       - ./config/odoo.conf:/etc/odoo/odoo.conf
@@ -39,8 +43,8 @@ services:
     restart: unless-stopped
     networks:
       - odoo_network
-    expose:
-      - "8069"
+    ports:
+      - "8014:8014"
 
   # Proxy reverso Caddy
   caddy:
@@ -49,8 +53,8 @@ services:
     depends_on:
       - odoo
     ports:
-      - "80:80"
-      - "443:443"
+      - "9080:80"
+      - "9443:443"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
       - caddy_data:/data
@@ -58,6 +62,34 @@ services:
     restart: unless-stopped
     networks:
       - odoo_network
+
+  # Servicio opcional para backups automáticos
+  # Descomenta si quieres backups automáticos via Docker
+  # backup:
+  #   image: alpine:latest
+  #   container_name: odoo14_backup
+  #   depends_on:
+  #     - db
+  #     - odoo
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data:ro
+  #     - odoo_data:/var/lib/odoo:ro
+  #     - ./backups:/backups
+  #     - ./scripts:/scripts:ro
+  #   environment:
+  #     - BACKUP_SCHEDULE=0 2 * * *  # Diario a las 2 AM
+  #     - POSTGRES_USER=${POSTGRES_USER:-odoo}
+  #     - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-odoo}
+  #     - POSTGRES_DB=${POSTGRES_DB:-odoo}
+  #   command: |
+  #     sh -c '
+  #       apk add --no-cache postgresql-client gzip tar &&
+  #       echo "$BACKUP_SCHEDULE /scripts/backup.sh" > /etc/crontabs/root &&
+  #       crond -f -l 2
+  #     '
+  #   restart: unless-stopped
+  #   networks:
+  #     - odoo_network
 
 volumes:
   postgres_data:

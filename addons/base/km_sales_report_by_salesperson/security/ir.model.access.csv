@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sale_salesperson_report,sale_salesperson_report,model_sale_salesperson_report,,1,1,1,1
+access_report_km_sales_report_by_salesperson_sale_report_view,report_km_sales_report_by_salesperson_sale_report_view,model_report_km_sales_report_by_salesperson_sale_report_view,,1,1,1,1

@@ -1,0 +1,98 @@
+<odoo>
+  <data>
+    
+    <record model="ir.ui.view" id="lccash_withdraw_view">
+      <field name="name">lccash.withdraw.tree</field>
+      <field name="model">lccash.withdraw</field>
+      <field name="arch" type="xml">
+        <tree decoration-success="mount == name" decoration-danger="mount != name">
+          <field name="date"/>            
+          <field name="purchase_id"/>          
+		  <field name="mount"/>
+		  <field name="name"/>
+		  <field name="partner_id"/>
+		  <field name="pos_id"/>                              
+          <field name="note"/>
+		  <field name="payment_type" string="Tipo de pago"/>
+          <field name="state"/>
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="lccash_withdraw_form">
+      <field name="name">lccash.withdraw.form</field>
+      <field name="model">lccash.withdraw</field>
+      <field name="arch" type="xml">
+      <form string="Cambio">
+      	<sheet>
+      		<group>      			
+          		<field name="purchase_id"/>
+      			<field name="mount"/>      			   		
+      			<field name="name"/>      			   		
+          		<field name="date"/>  
+          		<field name="note"/>
+          		<field name="active"/>          		          		
+          	</group>
+          	<notebook>
+			    <page string="Detalle del Retiro">
+          			<group>
+          				<field name="payment_type" string="Tipo de Pago"/>
+          				<field name="bank" string="Banco"/>
+          				<field name="payment_date" string="Fecha de Pago"/>
+          				<field name="transaction_code" string="No. Transaccion"/>
+          			</group>
+          		</page>         		
+				<page string="Respaldo">
+          			<group>
+          				<field name="photo" widget="image"/>          				
+          				<field name="file" widget="binary"/>          				
+          			</group>          			
+          		</page>
+          		<page string="Otros motivos del Retiro">
+          			<group>
+          				<field name="pos_id"/>
+          				<field name="partner_id"/>
+          				<field name="employee_id"/>
+          			</group>
+          		</page>
+          		<page string="Detalle del Retiro">
+          			<group>           
+          				<field name="detailwithdraw_ids">
+          					<tree string="Detalle" editable="bottom">          				
+	          					<field name="name"/>
+    	      					<field name="cant"/>        	  					
+    	      					<field name="note"/>
+          					</tree>
+          				</field>
+          			</group>          			
+          		</page>
+          		<page string="Seguridad">
+          			<group>           
+          				<field name="create_uid" string="Creado por"/>
+          				<field name="create_date" string="Fecha de Creacion"/>
+          				<field name="write_uid" string="Actualizado por"/>
+          				<field name="write_date" string="Fecha de Actualizacion"/>
+          			</group>
+          		</page>
+          	</notebook>                                        
+        </sheet>
+      </form>
+      </field>
+    </record>    
+
+    <!-- actions opening views on models -->
+    
+    <record model="ir.actions.act_window" id="lccash_withdraw_action_window">
+      <field name="name">Retiros</field>
+      <field name="res_model">lccash.withdraw</field>
+      <field name="view_mode">tree,form</field>
+	  <field name="domain">[('company_id','=',allowed_company_ids[0])]</field>
+    </record>
+
+    <!-- Menu -->
+    
+    <menuitem name="Retiros" id="lccash.withdraw" parent="lccash.submenu"
+              action="lccash_withdraw_action_window" sequence="5"/>
+    
+  </data>
+</odoo>

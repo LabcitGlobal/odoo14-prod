@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <template id="lc_product_variant_pos.assets" inherit_id="point_of_sale.assets">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/lc_product_variant_pos/static/src/css/product_product_pos.css"/>
+                <script type="text/javascript" src="/lc_product_variant_pos/static/src/js/product_item.js"></script>
+                <script type="text/javascript" src="/lc_product_variant_pos/static/src/js/product_product.js"></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>

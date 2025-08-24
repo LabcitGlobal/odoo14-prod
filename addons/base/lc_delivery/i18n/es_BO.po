@@ -1,0 +1,232 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* lc_delivery
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-06 04:00+0000\n"
+"PO-Revision-Date: 2022-05-06 04:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_lc_delivery_cost__agency
+msgid "Agency"
+msgstr "Agencia"
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_lc_delivery_cost__bank
+#: model:ir.model.fields.selection,name:lc_delivery.selection__lc_delivery_cost__payment_type__bank
+msgid "Bank"
+msgstr "Banco"
+
+#. module: lc_delivery
+#: model:ir.model.fields.selection,name:lc_delivery.selection__lc_delivery_cost__payment_type__cash
+msgid "Cash"
+msgstr "Efectivo"
+
+#. module: lc_delivery
+#: model:ir.model.fields.selection,name:lc_delivery.selection__lc_delivery_cost__payment_type__check
+msgid "Check"
+msgstr "Cheque"
+
+#. module: lc_delivery
+#: model:ir.model,name:lc_delivery.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: lc_delivery
+#: model_terms:ir.ui.view,arch_db:lc_delivery.lc_delivery_cost_form
+msgid "Create Date"
+msgstr "Fecha de Creación"
+
+#. module: lc_delivery
+#: model_terms:ir.ui.view,arch_db:lc_delivery.lc_delivery_cost_form
+msgid "Create UID"
+msgstr "Creado UID"
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_lc_delivery_cost__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_lc_delivery_cost__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_lc_delivery_cost__date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_res_partner__delivery_count
+#: model:ir.model.fields,field_description:lc_delivery.field_res_users__delivery_count
+#: model:ir.ui.menu,name:lc_delivery.lc_delivery_cost
+msgid "Delivery"
+msgstr "Envio"
+
+#. module: lc_delivery
+#: model_terms:ir.ui.view,arch_db:lc_delivery.view_res_partner_form
+msgid "Deliverys"
+msgstr "Envios"
+
+#. module: lc_delivery
+#: model_terms:ir.ui.view,arch_db:lc_delivery.lc_delivery_cost_form
+msgid "Payment Detail"
+msgstr "Detalle de Pago"
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_lc_delivery_cost__display_name
+#: model:ir.model.fields,field_description:lc_delivery.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_lc_delivery_cost__file
+msgid "File"
+msgstr "Archivo"
+
+#. module: lc_delivery
+#: model_terms:ir.ui.view,arch_db:lc_delivery.lc_delivery_cost_form
+msgid "Files"
+msgstr "Archivos"
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_lc_delivery_cost__id
+#: model:ir.model.fields,field_description:lc_delivery.field_res_partner__id
+msgid "ID"
+msgstr ""
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_lc_delivery_cost____last_update
+#: model:ir.model.fields,field_description:lc_delivery.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_lc_delivery_cost__write_uid
+msgid "Last Updated by"
+msgstr "Ultima actualización por"
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_lc_delivery_cost__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_lc_delivery_cost__mount
+msgid "Mount"
+msgstr "Monto"
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_lc_delivery_cost__note
+msgid "Note"
+msgstr "Nota"
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_lc_delivery_cost__number_of_boxes
+msgid "Number Of Boxes"
+msgstr "Número de Paquetes"
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_lc_delivery_cost__name
+msgid "Partner"
+msgstr "Cliente"
+
+#. module: lc_delivery
+#: model:ir.model.fields.selection,name:lc_delivery.selection__lc_delivery_cost__state__payment
+#: model_terms:ir.ui.view,arch_db:lc_delivery.lc_delivery_cost_form
+msgid "Payment"
+msgstr "Pagado"
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_lc_delivery_cost__payment_date
+msgid "Payment Date"
+msgstr "Fecha de pago"
+
+#. module: lc_delivery
+#: model:ir.actions.act_window,name:lc_delivery.lc_delivery_cost_action_window
+msgid "Transportation Payment"
+msgstr "Pago de Transporte"
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_lc_delivery_cost__payment_type
+msgid "Payment Type"
+msgstr "Tipo de pago"
+
+#. module: lc_delivery
+#: model:ir.model.fields.selection,name:lc_delivery.selection__lc_delivery_cost__state__pending
+msgid "Pending"
+msgstr "Pendiente"
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_lc_delivery_cost__photo
+msgid "Photo"
+msgstr "Foto"
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_lc_delivery_cost__pos_id
+msgid "Point Of Sale"
+msgstr "Punto de Venta"
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_lc_delivery_cost__sale_id
+msgid "Sales"
+msgstr "Ventas"
+
+#. module: lc_delivery
+#: model_terms:ir.ui.view,arch_db:lc_delivery.lc_delivery_cost_form
+msgid "Security"
+msgstr "Seguridad"
+
+#. module: lc_delivery
+#: model_terms:ir.ui.view,arch_db:lc_delivery.lc_delivery_cost_form
+msgid "Set to Pending"
+msgstr "Establecer como Pendiente"
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_lc_delivery_cost__state
+msgid "State"
+msgstr "Estado"
+
+#. module: lc_delivery
+#: code:addons/lc_delivery/models/delivery_cost.py:0
+#, python-format
+msgid ""
+"The following fields are required to set payment.\n"
+"Complete the data the detail payment tab.\n"
+"- Payment Type\n"
+"- Payment Date"
+msgstr ""
+"Los siguientes campos son obligatorios para establecer el pago.\n"
+"Complete los datos en la pestaña de detalle de pago.\n"
+"- Tipo de Pago\n"
+"- Fecha de Pago"
+
+#. module: lc_delivery
+#: model:ir.model.fields,field_description:lc_delivery.field_lc_delivery_cost__transaction_code
+msgid "Transaction"
+msgstr "Transacción"
+
+#. module: lc_delivery
+#: model_terms:ir.ui.view,arch_db:lc_delivery.lc_delivery_cost_form
+msgid "Update UID"
+msgstr "Actualización UID"
+
+#. module: lc_delivery
+#: model_terms:ir.ui.view,arch_db:lc_delivery.lc_delivery_cost_form
+msgid "Write Date"
+msgstr "Fecha de Actualización"
+
+#. module: lc_delivery
+#: model:ir.model,name:lc_delivery.model_lc_delivery_cost
+msgid "lc.delivery.cost"
+msgstr "Costo de Envios"

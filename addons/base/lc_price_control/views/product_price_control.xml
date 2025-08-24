@@ -1,0 +1,40 @@
+<odoo>
+  <data>
+    <record id="lc_product_price_error_view_tree" model="ir.ui.view">
+      <field name="name">lc_product_price_error_view.tree</field>
+      <field name="model">lc.product.price.error.view</field>
+      <field name="arch" type="xml">
+          <tree decoration-danger="(cost > price) or (cost > fixed_price)" decoration-warning="(cost == price) or (cost == fixed_price)">
+              <field name="name"/>
+              <field name="cost"/>
+              <field name="price"/>
+              <field name="fixed_price"/>
+          </tree>
+      </field>
+    </record>
+
+    <record id="lc_product_price_error_view_form" model="ir.ui.view">
+      <field name="name">lc_product_price_error_view.form</field>
+      <field name="model">lc.product.price.error.view</field>
+      <field name="arch" type="xml">
+      <form string="Product">      	
+      	<sheet>
+      		<group>
+              <field name="product_tmpl_id"/>                            
+              <field name="cost"/>
+              <field name="price"/>
+              <field name="fixed_price"/>              
+          </group>          	          	
+      	</sheet>
+      </form>
+      </field>
+    </record>
+
+    <record id='lc_product_price_error_view_action' model='ir.actions.act_window'>
+      <field name="name">Product Price Error</field>
+      <field name="res_model">lc.product.price.error.view</field>      
+      <field name="view_mode">tree,form</field>
+    </record>
+  </data>  
+  <menuitem id="lc_product_price_error_view_menu" name="Product Price Error" parent="stock.menu_stock_config_settings" action="lc_product_price_error_view_action" sequence="20" groups="base.user_admin"/>
+</odoo>

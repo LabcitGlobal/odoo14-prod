@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template id="pos_session_hoja_ruta">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                	<div style="font:17px Helvetica,Arial !important; ">
+                    <div class="page">
+                        <div class="oe_structure"/>
+                        <h2 class="text-center">
+                            Hoja de Ruta: <span t-field="doc.name"/>                            
+                        </h2>                               
+                        <div class="row mt32 mb32">
+                            <div class="col-xs-3">
+                                <strong>Punto de Venta:</strong>
+                                <p t-field="doc.config_id"/>
+                            </div>
+                            <div class="col-xs-3">
+                                <strong>Responsable:</strong>
+                                <p t-field="doc.user_id"/>
+                            </div>
+                            <div class="col-xs-3">
+                                <strong>Fecha de Apertura:</strong>
+                                <p t-field="doc.start_at"/>
+                            </div>
+                            <div class="col-xs-3">
+                                <strong>Fecha de Cierre:</strong>
+                                <p t-field="doc.stop_at"/>
+                            </div>
+                        </div>						
+                        <!-- <h2 class="text-center">Hoja de Ruta - Resumen por Cliente</h2>-->
+                        <table class="table table-condensed table-striped">
+                            <thead>
+                                <tr>                                    
+                                    <th width='30%'>Cliente</th>                                    
+                                    <th width='10%' class="text-right">Total</th>
+                                    <th width='10%'>Cobrado</th>
+                                    <th>Observacion</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <t t-foreach="doc.statement_ids" t-as="statement">
+                                    <t t-if="statement.journal_id.type == 'cash'">
+                                        <span t-set="total_cash" t-value="0"/>
+                                        <tr>
+                                            <td>
+                                                <b>Efectivo</b>
+                                            </td>
+                                            <td colspan='3'><t t-esc="statement.name"/></td>
+                                        </tr>
+                                        <tr t-foreach="statement.line_ids" t-as="line">                                            
+                                            <td>
+                                                <span t-field="line.partner_id.name"/> [<strong><span t-field="line.partner_id.phone"/> <span t-field="line.partner_id.mobile"/></strong>]
+                                            </td>                                            
+                                            <td class="text-right">
+                                                <span t-field="line.amount"/>
+                                                <t t-set="total_cash" t-value="total_cash + line.amount"/>
+                                            </td>
+                                            <td>                                                
+                                            </td>
+                                            <td>                                                
+                                            </td>
+                                        </tr>
+                                    </t>
+                                    <t t-if='total_cash'>
+                                        <tr>
+                                            <td colspan='3'></td>
+                                            <strong>
+                                                <td class="text-right">
+                                                    Subtotal:
+                                                    <strong>
+                                                        <span t-esc='total_cash'
+                                                              t-options='{"widget": "monetary", "display_currency": doc.currency_id}'/>
+                                                    </strong>
+                                                </td>
+                                            </strong>
+                                        </tr>
+                                        <span t-set="total_cash" t-value="0"/>
+                                    </t>
+                                    <t t-if="statement.journal_id.type == 'bank'">
+                                        <span t-set="total_credit" t-value="0"/>
+                                        <tr>
+                                            <td>
+                                                <b>Credito</b>
+                                            </td>
+                                            <strong>
+                                                <td colspan='3'></td>
+                                            </strong>
+                                        </tr>
+                                        <tr t-foreach="statement.line_ids" t-as="line">
+                                            <td>
+                                                <span t-field="line.ref"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="line.date"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="line.partner_id.name"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="line.name"/>
+                                            </td>
+                                            <td class="text-right">
+                                                <span t-field="line.amount"/>
+                                                <t t-set="total_credit" t-value="total_credit + line.amount"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                    <t t-if='total_credit'>
+                                        <tr>
+                                            <td colspan='3'></td>
+                                            <strong>
+                                                <td class="text-right">
+                                                    Subtotal:
+                                                    <strong>
+                                                        <span t-esc='total_credit'
+                                                              t-options='{"widget": "monetary", "display_currency": doc.currency_id}'/>
+                                                    </strong>
+                                                </td>
+                                            </strong>
+                                        </tr>
+                                        <span t-set="total_credit" t-value="0"/>
+                                    </t>
+                                </t>
+                            </tbody>
+                        </table>
+                    </div>
+                	</div>
+                </t>
+                </t>
+            </t>
+        </template>
+        
+        <template id="pos_session_hoja_ruta_noprecio">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                	<div style="font:17px Helvetica,Arial !important; ">
+                    <div class="page">
+                        <div class="oe_structure"/>
+                        <h2 class="text-center">
+                            Hoja de Ruta: <span t-field="doc.name"/>                            
+                        </h2>                               
+                        <div class="row mt32 mb32">
+                            <div class="col-xs-3">
+                                <strong>Punto de Venta:</strong>
+                                <p t-field="doc.config_id"/>
+                            </div>
+                            <div class="col-xs-3">
+                                <strong>Responsable:</strong>
+                                <p t-field="doc.user_id"/>
+                            </div>
+                            <div class="col-xs-3">
+                                <strong>Fecha de Apertura:</strong>
+                                <p t-field="doc.start_at"/>
+                            </div>
+                            <div class="col-xs-3">
+                                <strong>Fecha de Cierre:</strong>
+                                <p t-field="doc.stop_at"/>
+                            </div>
+                        </div>						
+                        <!-- <h2 class="text-center">Hoja de Ruta - Resumen por Cliente</h2>-->
+                        <table class="table table-condensed table-striped">
+                            <thead>
+                                <tr>                                    
+                                    <th width='30%'>Cliente</th>
+                                    <th>Observacion</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <t t-foreach="doc.statement_ids" t-as="statement">
+                                    <t t-if="statement.journal_id.type == 'cash'">
+                                        <tr t-foreach="statement.line_ids" t-as="line">                                            
+                                            <td>
+                                                <span t-field="line.partner_id.name"/> [<strong><span t-field="line.partner_id.phone"/> <span t-field="line.partner_id.mobile"/></strong>]
+                                            </td>
+                                            <td>                                                
+                                            </td>
+                                            <td>                                                
+                                            </td>
+                                        </tr>
+                                    </t>                                
+                                </t>
+                            </tbody>
+                        </table>
+                    </div>
+                	</div>
+                </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

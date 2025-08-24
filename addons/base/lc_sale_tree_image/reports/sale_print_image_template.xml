@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+		
+		<template id="sale_print_image_128_template">
+			<t t-foreach="docs" t-as="o">
+    			<t t-call="web.html_container">        		
+            		<t t-call="web.external_layout">
+						<t t-set="o" t-value="o.with_context(lang=o.partner_id.lang)" />
+
+                		<div class="page">
+                			<div class="oe_structure" style="font:14px Helvetica,Arial !important; "/>
+                				<a2>
+								
+								<h2 class="col-xs-12 text-center">
+                					<t t-if="not (env.context.get('proforma', False) or is_pro_forma)">
+                    					<span t-if="o.state not in ['draft','sent']">Orden # </span>
+                    					<span t-if="o.state in ['draft','sent']">Cotizacion # </span>
+					                </t>
+					                <t t-if="env.context.get('proforma', False) or is_pro_forma">
+					                    <span>Pro-Forma Invoice # </span>
+					                </t>
+					                <span t-field="o.name"/>
+					            </h2>
+
+								<div class="table">
+                    				<div class="col-xs-12 text-center">                        		
+                        				<a1><strong>Cliente:</strong> <span t-field="o.partner_id"/></a1><br/>                        		
+                        				<a1><strong>Telefonos:</strong> <span t-field="o.partner_id.mobile"/> - <span t-field="o.partner_id.phone"/></a1><br/>                        		
+                    				</div>
+                				</div>
+
+					            <div class="row mt32 mb32" id="informations">
+					                <div t-if="o.client_order_ref" class="col-auto col-3 mw-100 mb-2">
+					                    <strong>Referencia:</strong>
+					                    <p class="m-0" t-field="o.client_order_ref"/>
+					                </div>
+					                <div t-if="o.date_order and o.state not in ['draft','sent']" class="col-auto col-3 mw-100 mb-2">
+					                    <strong>Fecha de Orden:</strong>
+					                    <p class="m-0" t-field="o.date_order"/>
+					                </div>
+					                <div t-if="o.date_order and o.state in ['draft','sent']" class="col-auto col-3 mw-100 mb-2">
+					                    <strong>Fecha de Presupuesto:</strong>
+					                    <p class="m-0" t-field="o.date_order" t-options='{"widget": "date"}'/>
+					                </div>
+					                <div t-if="o.validity_date and o.state in ['draft', 'sent']" class="col-auto col-3 mw-100 mb-2" name="expiration_date">
+					                    <strong>Expiracion:</strong>
+					                    <p class="m-0" t-field="o.validity_date"/>
+					                </div>
+					                <div t-if="o.user_id.name" class="col-auto col-3 mw-100 mb-2">
+					                    <!-- <strong>Usuario:</strong>
+					                    <p class="m-0" t-field="o.user_id"/> -->
+					                </div>
+					            </div>         
+                    			
+                				<div class="row">
+                				</div>
+                				<table class="table table-sm o_main_table">
+                    				<thead>
+                        				<tr>
+                            				<th style="width:18%" class="text-right">Imagen</th>
+                            				<th style="width:7%" class="text-right">Cant.</th>
+	                            			<th style="width:55%" >Descripcion</th>             
+    	                        			<th class="text-right">Precio</th>
+        	                    			<th class="text-right">Total</th>
+            	            			</tr>
+                	    			</thead>
+                    				<tbody>
+                        				<tr t-foreach="o.order_line" t-as="line">
+                        					<td>
+                								<span t-field="line.product_id.image_128"
+                      								t-options="{'widget': 'image', 'class': 'img-rounded'}"/>
+            								</td>
+                        					<td class="text-right">
+                                				<t t-if="o.state != 'cancel'">
+                                    				<span t-field="line.product_uom_qty"/>
+                                    				<!-- <span t-field="line.product_uom"/> -->
+                                				</t>
+	                            			</td>
+    	                        			<td><span t-field="line.product_id"/>
+        	                    				<!-- <t t-if="line.line_note">
+            	                					[<strong>Nota:<span t-field="line.line_note"/></strong>]
+                	            				</t> -->
+                    	        			</td>
+                        	    			<td class="text-right">
+                            					<!-- <span t-esc="'%.2f'%line['price_unit']" /> -->
+												<span t-field="line.price_unit"/>
+                            				</td>
+                            				<td class="text-right">
+                            					<!-- <span t-esc="'%.2f'%(line.price_subtotal)" />                                			 -->
+												<span t-field="line.price_subtotal" groups="account.group_show_line_subtotals_tax_excluded"/>
+	                            			</td>
+    	                    			</tr>
+        	            			</tbody>                    			
+            	    			</table>
+								
+                				<div class="table table-sm o_main_table">
+                    				<div class="col-xs-12 pull-right">
+                        				<table class="table table-condensed">
+                            				<!-- <tr class="border-black">
+                                				<td><strong>IVA</strong></td>
+                                				<td class="text-right">
+                                    				<strong t-esc="o.amount_tax"/>
+                                				</td>
+	                            			</tr> -->
+    	                        			<tr>
+        	                        			<td><strong>Total</strong></td>
+            	                    			<td class="text-right">                                				                	                    			
+                    	                			<strong t-esc="'%.2f'%(o.amount_total)"/>                                    			
+													<!-- <span t-field="o.amount_total"/> -->
+                        	        			</td>
+                            				</tr>                            				
+                        				</table>                        				
+                    				</div>
+                				</div>
+								<p/>
+                				<div><p><strong>NOTA:</strong></p><strong t-esc="o.note"/></div>								
+                			</a2>							
+                			<div><center><strong>Debido al dolar, los precios de esta cotización pueden variar en 24 horas.</strong></center></div>
+                			<div class="footer">
+        						<div class="text-center" style="border-top: 1px solid black;">        
+						            <ul class="list-inline">
+                						<li>Página: <span class="page"/>/<span class="topage"/></li>
+                						<li>Teléfonos: <span t-field="res_company.phone"/><t t-if="res_company.website"> - Web: <span t-field="res_company.website"/></t></li>
+            						</ul>
+        						</div>
+    						</div>                			
+                		</div>                 		               		
+            		</t>
+        		</t>
+    		</t>
+		</template>
+		
+		<template id="sale_print_image_256_template">
+			<t t-foreach="docs" t-as="o">
+    			<t t-call="web.html_container">        		
+            		<t t-call="web.external_layout">
+						<t t-set="o" t-value="o.with_context(lang=o.partner_id.lang)" />
+
+                		<div class="page">
+                			<div class="oe_structure" style="font:14px Helvetica,Arial !important; "/>
+                				<a2>
+								
+								<h2 class="col-xs-12 text-center">
+                					<t t-if="not (env.context.get('proforma', False) or is_pro_forma)">
+                    					<span t-if="o.state not in ['draft','sent']">Orden # </span>
+                    					<span t-if="o.state in ['draft','sent']">Cotizacion # </span>
+					                </t>
+					                <t t-if="env.context.get('proforma', False) or is_pro_forma">
+					                    <span>Pro-Forma Invoice # </span>
+					                </t>
+					                <span t-field="o.name"/>
+					            </h2>
+
+								<div class="table">
+                    				<div class="col-xs-12 text-center">                        		
+                        				<a1><strong>Cliente:</strong> <span t-field="o.partner_id"/></a1><br/>                        		
+                        				<a1><strong>Telefonos:</strong> <span t-field="o.partner_id.mobile"/> - <span t-field="o.partner_id.phone"/></a1><br/>                        		
+                    				</div>
+                				</div>
+
+					            <div class="row mt32 mb32" id="informations">
+					                <div t-if="o.client_order_ref" class="col-auto col-3 mw-100 mb-2">
+					                    <strong>Referencia:</strong>
+					                    <p class="m-0" t-field="o.client_order_ref"/>
+					                </div>
+					                <div t-if="o.date_order and o.state not in ['draft','sent']" class="col-auto col-3 mw-100 mb-2">
+					                    <strong>Fecha de Orden:</strong>
+					                    <p class="m-0" t-field="o.date_order"/>
+					                </div>
+					                <div t-if="o.date_order and o.state in ['draft','sent']" class="col-auto col-3 mw-100 mb-2">
+					                    <strong>Fecha de Presupuesto:</strong>
+					                    <p class="m-0" t-field="o.date_order" t-options='{"widget": "date"}'/>
+					                </div>
+					                <div t-if="o.validity_date and o.state in ['draft', 'sent']" class="col-auto col-3 mw-100 mb-2" name="expiration_date">
+					                    <strong>Expiracion:</strong>
+					                    <p class="m-0" t-field="o.validity_date"/>
+					                </div>
+					                <div t-if="o.user_id.name" class="col-auto col-3 mw-100 mb-2">
+					                    <!-- <strong>Usuario:</strong>
+					                    <p class="m-0" t-field="o.user_id"/> -->
+					                </div>
+					            </div>         
+                    			
+                				<div class="row">
+                				</div>
+                				<table class="table table-sm o_main_table">
+                    				<thead>
+                        				<tr>
+                            				<th style="width:30%" class="text-right">Imagen</th>
+                            				<th style="width:7%" class="text-right">Cant.</th>
+	                            			<th style="width:50%">Descripcion</th>             
+    	                        			<th class="text-right">Precio</th>
+        	                    			<th class="text-right">Total</th>
+            	            			</tr>
+                	    			</thead>
+                    				<tbody>
+                        				<tr t-foreach="o.order_line" t-as="line">
+                        					<td>
+                								<span t-field="line.product_id.image_256"
+                      								t-options="{'widget': 'image', 'class': 'img-rounded'}"/>
+            								</td>
+                        					<td class="text-right">
+                                				<t t-if="o.state != 'cancel'">
+                                    				<span t-field="line.product_uom_qty"/>
+                                    				<!-- <span t-field="line.product_uom"/> -->
+                                				</t>
+	                            			</td>
+    	                        			<td><span t-field="line.product_id"/>
+        	                    				<!-- <t t-if="line.line_note">
+            	                					[<strong>Nota:<span t-field="line.line_note"/></strong>]
+                	            				</t> -->
+                    	        			</td>
+                        	    			<td class="text-right">
+                            					<!-- <span t-esc="'%.2f'%line['price_unit']" /> -->
+												<span t-field="line.price_unit"/>
+                            				</td>
+                            				<td class="text-right">
+                            					<!-- <span t-esc="'%.2f'%(line.price_subtotal)" />                                			 -->
+												<span t-field="line.price_subtotal" groups="account.group_show_line_subtotals_tax_excluded"/>
+	                            			</td>
+    	                    			</tr>
+        	            			</tbody>                    			
+            	    			</table>
+								
+                				<div class="table table-sm o_main_table">
+                    				<div class="col-xs-12 pull-right">
+                        				<table class="table table-condensed">
+                            				<!-- <tr class="border-black">
+                                				<td><strong>IVA</strong></td>
+                                				<td class="text-right">
+                                    				<strong t-esc="o.amount_tax"/>
+                                				</td>
+	                            			</tr> -->
+    	                        			<tr>
+        	                        			<td><strong>Total</strong></td>
+            	                    			<td class="text-right">                                				                	                    			
+                    	                			<strong t-esc="'%.2f'%(o.amount_total)"/>                                    			
+													<!-- <span t-field="o.amount_total"/> -->
+                        	        			</td>
+                            				</tr>                            				
+                        				</table>                        				
+                    				</div>
+                				</div>
+								<p/>
+                				<div><p><strong>NOTA:</strong></p><strong t-esc="o.note"/></div>								
+                			</a2>
+							<div><center><strong>Debido al dolar, los precios de esta cotización pueden variar en 24 horas.</strong></center></div>
+                			<div class="footer">
+        						<div class="text-center" style="border-top: 1px solid black;">        
+						            <ul class="list-inline">
+                						<li>Página: <span class="page"/>/<span class="topage"/></li>
+                						<li>Teléfonos: <span t-field="res_company.phone"/><t t-if="res_company.website"> - Web: <span t-field="res_company.website"/></t></li>
+            						</ul>
+        						</div>
+    						</div>                			
+                		</div>                 		               		
+            		</t>
+        		</t>
+    		</t>
+		</template>
+		        
+    </data>
+</odoo>
+

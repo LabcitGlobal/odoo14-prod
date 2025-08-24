@@ -1,0 +1,14 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="lc_product_variant_pos.product_product">
+      <field name="name">lc_product_variant_pos.product_product</field>
+      <field name="model">product.product</field>
+      <field name="inherit_id" ref="product.product_variant_easy_edit_view"/>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='barcode']" position="after">
+        	<field name="product_pos_enabled"/>
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>

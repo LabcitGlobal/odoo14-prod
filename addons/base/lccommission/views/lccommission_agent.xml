@@ -1,0 +1,123 @@
+<odoo>
+  <data>
+
+    <record id="lccommission_agent_view_tree" model="ir.ui.view">
+      <field name="name">lccommission_agent.tree</field>
+      <field name="model">lccommission.agent</field>
+      <field name="arch" type="xml">
+          <tree>
+              <field name="name"/>              
+              <field name="type_id" groups="lccommission.lc_group_manager"/>
+              <field name="t_agent_id"/>
+              <field name="value_fixed" groups="lccommission.lc_group_manager"/>              
+              <field name="value_commission" groups="lccommission.lc_group_manager"/>                                        
+          </tree>
+      </field>
+    </record>
+
+    <record id="lccommission_agent_view_form" model="ir.ui.view">
+      <field name="name">lccommission_agent.form</field>
+      <field name="model">lccommission.agent</field>
+      <field name="arch" type="xml">
+      <form string="Datos de la Comision">      	
+      	<sheet>
+      		<group>
+              <field name="name"/>              
+              <field name="type_id" groups="lccommission.lc_group_manager"/>
+              <field name="t_agent_id"/>
+              <field name="value_fixed" groups="lccommission.lc_group_manager"/>              
+              <field name="value_commission" groups="lccommission.lc_group_manager"/>              
+              <field name="active"/>             
+          </group>          	          	
+      	</sheet>
+      </form>
+      </field>
+    </record>
+
+    <record id='lccommission_agent_action' model='ir.actions.act_window'>
+      <field name="name">Agentes</field>
+      <field name="res_model">lccommission.agent</field>      
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!--   Commission Type    -->
+
+    <record id="lccommission_type_view_tree" model="ir.ui.view">
+      <field name="name">lccommission_type.tree</field>
+      <field name="model">lccommission.type</field>
+      <field name="arch" type="xml">
+          <tree>
+              <field name="name"/>                            
+          </tree>
+      </field>
+    </record>
+
+    <record id="lccommission_type_view_form" model="ir.ui.view">
+      <field name="name">lccommission_type.form</field>
+      <field name="model">lccommission.type</field>
+      <field name="arch" type="xml">
+      <form string="Tipo de Comision">      	
+      	<sheet>
+      		<group>
+              <field name="name"/>                            
+              <field name="active"/>             
+          </group>          	          	
+      	</sheet>
+      </form>
+      </field>
+    </record>
+
+    <record id='lccommission_type_action' model='ir.actions.act_window'>
+      <field name="name">Tipo de Comision</field>
+      <field name="res_model">lccommission.type</field>      
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!--   Commission Type Agent  -->
+
+    <record id="lccommission_type_agent_view_tree" model="ir.ui.view">
+      <field name="name">lccommission_type_agent.tree</field>
+      <field name="model">lccommission.type.agent</field>
+      <field name="arch" type="xml">
+          <tree>
+              <field name="name"/>                            
+          </tree>
+      </field>
+    </record>
+
+    <record id="lccommission_type_agent_view_form" model="ir.ui.view">
+      <field name="name">lccommission_type_agent.form</field>
+      <field name="model">lccommission.type.agent</field>
+      <field name="arch" type="xml">
+      <form string="Tipo de Agente">      	
+      	<sheet>
+      		<group>
+              <field name="name"/>                            
+              <field name="active"/>             
+          </group>          	          	
+      	</sheet>
+      </form>
+      </field>
+    </record>
+
+    <record id='lccommission_type_agent_action' model='ir.actions.act_window'>
+      <field name="name">Tipo de Agente</field>
+      <field name="res_model">lccommission.type.agent</field>      
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="lccommission.menu_root" name="Agentes"  web_icon="lccommission,static/description/lccommission.png"/>
+    <menuitem id="lccommission.pos_menu" name="Pedidos" parent="lccommission.menu_root" sequence="8"/>
+    <menuitem id="lccommission.file_menu" name="Comprobantes" parent="lccommission.menu_root" sequence="9"/>
+    <menuitem name="Configuracion" id="lccommission.configuracion" parent="lccommission.menu_root" groups="lccommission.lc_group_manager"/>
+    
+    <menuitem id="lccommission_agent_menu" parent="lccommission.configuracion" action="lccommission_agent_action" sequence="10"/>
+    
+    <menuitem name="Tipo de Comision" id="lccommission.type" parent="lccommission.configuracion"
+                action="lccommission_type_action" sequence="10"/>
+
+    <menuitem name="Tipo de Agente" id="lccommission.type_agent" parent="lccommission.configuracion"
+              action="lccommission_type_agent_action"/>
+
+  </data>
+</odoo>

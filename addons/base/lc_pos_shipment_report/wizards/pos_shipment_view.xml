@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record model="ir.ui.view" id="lc_pos_shipment_report_form">
+    	<field name="name">Pos Shipment Report</field>
+        <field name="model">lc.pos.shipment.report</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+        	<form>
+            	<group>
+                	<field name="from_date" string="Desde"/>
+                    <field name="to_date" string="Hasta"/>
+                    <field name="user_id" string="Empleado"/>
+                </group>
+                <footer>
+                	<button name="print_shipment_report" string="Imprimir" type="object" class="highlight"/>
+                  <button string="Cerrar" class="btn-primary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="lc_pos_shipment_report_action_window">
+    	<field name="name">Reporte de envios</field>
+        <field name="res_model">lc.pos.shipment.report</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>        
+    </record> 
+    
+    <menuitem id="menu_lc_pos_shipment_report" name="Reporte de Envios"
+    	parent="point_of_sale.menu_point_rep" action="lc_pos_shipment_report_action_window"
+        sequence="101"/>    
+  
+</odoo>

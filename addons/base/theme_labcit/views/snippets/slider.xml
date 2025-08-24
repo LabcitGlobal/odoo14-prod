@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="slider_index" inherit_id="website.snippets" name="Index Slider">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+            <t t-snippet="theme_labcit.lc_slider"
+             t-thumbnail="/theme_labcit/static/src/img/snippets/slider.png" />
+        </xpath>
+    </template>
+    <template id="lc_slider" name="Labcit Slider">
+        <!-- Banner -->
+        <section class="slider">            
+            <div class="welcome">
+                <h1><span class="animation" data-text="Transformación">Transformación</span> digital para empresas</h1>
+                <div class="manifest">
+                    <p>Las empresas que actualmente trabajan con nosotros, se convirtieron en líderes del mercado, gracias a un proceso de innovación.</p>
+                    <div class="mobile">
+                        <p>Nuestras plataformas “Labcit ERP/CRM Cloud y Marketplace” están diseñadas para fortalecer el crecimiento de su empresa. Permitiéndole acelerar, expandir y maximizar de manera automatizada todas sus operaciones.</p>
+                        <p>Gracias a la experiencia obtenida tras un largo proceso de validación en el mercado, podemos establecer con seguridad que la transformación digital es su mejor opción para consolidar el crecimiento de su empresa.</p>
+                    </div>
+                    <div class="mobile-play">                        
+                        <div class="a-link"><a href="/nosotros">Leer más</a></div>
+                    </div>                    
+                    <br />
+                    <a href="/contactus" class="btn-consult" data-original-title="" title="" aria-describedby="tooltip930640">HACER CONSULTA </a>              
+                </div>
+            </div>
+            <div class="implement">
+                <h1>Implementación</h1>
+                <p>A lo largo de los años, nuestro recorrido en diferentes empresas, nos dio a conocer aspectos que son fundamentales para el desarrollo y crecimiento empresarial.</p>
+                <p>Implementamos tecnología creando y desarrollando herramientas digitales en Sistemas, Diseño, Marketing y Comunicación.</p>                
+            </div>
+            <div class="process">
+                <div style="color:#0000008A; font-weight: 900;">
+                    <strong>PROCESOS</strong>
+                </div>
+                <div id="block-process" class="owl-carousel">                   
+                    <div class="sli-dev">
+                        <div class="sli-content">
+                            <p>Sistemas</p>
+                            <hr class="linea"/>
+                            <p>Cuente con las herramientas estandarizadas, robustas y de alta escalabilidad.</p>
+                        </div>
+                    </div>
+                    <div class="sli-dis">
+                        <div class="sli-content">
+                            <p>Diseño</p>
+                            <hr class="linea"/>
+                            <p>Tenga presencia en el mercado, estableciendo una marca perdurable en el tiempo.</p>
+                        </div>
+                    </div>
+                    <div class="sli-mar">
+                        <div class="sli-content">
+                            <p>Marketing</p>
+                            <hr class="linea"/>
+                            <p>Comercialice de forma estratégica con herramientas digitales de últimas generación.</p>
+                        </div>
+                    </div>
+                    <div class="sli-com">
+                        <div class="sli-content">
+                            <p>Comunicación</p>
+                            <hr class="linea"/>
+                            <p>Disponga de esta herramienta para instaurar una comunicación efectiva con clientes potenciales.</p>                                                        
+                        </div>
+                    </div>                    
+                </div>
+            </div>            
+        </section>
+    </template>
+</odoo>

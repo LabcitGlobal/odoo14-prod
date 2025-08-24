@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    	<record id="paperformat_lowmargin" model="report.paperformat">
+    		<field name="name">European A4 low margin</field>
+    		<field name="default" eval="True" />
+    		<field name="format">A4</field>
+    		<field name="page_height">0</field>
+    		<field name="page_width">0</field>
+    		<field name="orientation">Landscape</field>
+    		<field name="margin_top">24</field>
+    		<field name="margin_bottom">8</field>
+    		<field name="margin_left">4</field>
+    		<field name="margin_right">4</field>
+    		<field name="header_line" eval="False" />
+    		<field name="header_spacing">22</field>
+    		<field name="dpi">90</field>
+		</record>    
+    
+        <report
+            id="lc_pos_session_report"
+            model="pos.session"
+            string="Informe resumido de la Sesion"
+            report_type="qweb-pdf"
+            name="lc_print_pos_session.pos_session_report_template"
+            file="lc_print_pos_session.pos_session_report_template"
+        />
+        <report
+            id="lc_pos_session_ruta"
+            model="pos.session"
+            string="Hoja de Ruta por Vendedor"
+            report_type="qweb-pdf"
+            name="lc_print_pos_session.pos_session_hoja_ruta"
+            file="lc_print_pos_session.pos_session_hoja_ruta"
+            paperformat="paperformat_lowmargin"
+        />
+        <report
+            id="lc_pos_session_rutanoprecio"
+            model="pos.session"
+            string="Hoja de Ruta sin Precios"
+            report_type="qweb-pdf"
+            name="lc_print_pos_session.pos_session_hoja_ruta_noprecio"
+            file="lc_print_pos_session.pos_session_hoja_ruta_noprecio"
+            paperformat="paperformat_lowmargin"
+        />
+    </data>
+</odoo>

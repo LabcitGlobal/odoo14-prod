@@ -1,0 +1,62 @@
+<odoo>
+  <data>
+    
+    <!-- Dosificacion -->
+    
+    <record model="ir.ui.view" id="lc_impuesto_dosificacion_tree">
+      <field name="name">lc_impuesto_dosificacion.tree</field>
+      <field name="model">lc.impuesto.dosificacion</field>
+      <field name="arch" type="xml">
+        <tree string="Datos de la dosificacion">          
+          <field name="nit_id"/>
+          <field name="fecha_emision"/>
+          <field name="limite_emision"/>          
+          <field name="name"/>
+          <field name="cantidad"/>    
+          <field name="desde"/>
+          <field name="hasta"/>          
+          <field name="talonarios"/>
+          <field name="observaciones"/>                            
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="lc_impuesto_dosificacion_form">
+      <field name="name">lc_impuesto_dosificacion.form</field>
+      <field name="model">lc.impuesto.dosificacion</field>
+      <field name="arch" type="xml">
+      <form string="Datos de la dosificacion">      	
+      	<sheet>
+      		<group>      			            		
+              <field name="nit_id"/>
+              <field name="fecha_emision"/>
+              <field name="limite_emision"/>
+              <field name="name"/>                        
+              <field name="cantidad"/>    
+              <field name="desde"/>
+              <field name="hasta"/>              
+              <field name="talonarios"/>
+              <field name="observaciones"/>              
+              <field name="dosificacion" widget="image"/>
+              <field name="active"/>
+          </group>          	          	
+      	</sheet>
+      </form>        
+      </field>
+    </record>
+        
+    <!-- Acciones -->
+    
+    <record model="ir.actions.act_window" id="lc_impuesto_dosificacion_action_window">
+      <field name="name">Dosificacion</field>
+      <field name="res_model">lc.impuesto.dosificacion</field>    
+      <field name="view_mode">tree,form</field>            
+    </record>
+    
+    <!-- actions -->
+    
+	  <menuitem name="Dosificacion" id="lc_impuesto_menu_dosificacion" parent="lc_impuesto.menu_root"
+              action="lc_impuesto_dosificacion_action_window"/>
+    
+  </data>
+</odoo>

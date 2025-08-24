@@ -1,0 +1,27 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="lc_pricelist_group.pos_config">
+      <field name="name">lc_pricelist_group.pos_config</field>
+      <field name="model">pos.config</field>
+      <field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+      <field name="arch" type="xml">
+        <xpath expr='//div[@id="inventory_location"]' position="after">
+          <h2>Precios por Grupo</h2>
+          <div class="row mt16 o_settings_container" id="pos_group_pricelist">
+            <div class="col-xs-12 col-md-6 o_setting_box" title="Update Pos Group Pricelist">
+              <div class="o_setting_left_pane">
+                <field name="pricelist_group"/>
+              </div>
+              <div class="o_setting_right_pane">
+                <label for="pricelist_group" string="Actualizar Precio por Grupo"></label>
+                <div class="text-muted">
+                  Marcar si desea que se actualice de forma automatica los precios
+                </div>
+              </div>
+            </div>
+          </div>
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>

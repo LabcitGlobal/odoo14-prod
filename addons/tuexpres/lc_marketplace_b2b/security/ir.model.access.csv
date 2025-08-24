@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_marketplace_b2b_admin,Lc Marketplace B2B Admin,model_marketplace_b2b,lc_marketplace_b2b.group_manager,1,1,1,0
+access_marketplace_b2b_user,Lc Marketplace B2B User,model_marketplace_b2b,lc_marketplace_b2b.group_user,1,0,0,0
+access_lc_investment_product_view_admin,Lc Investment Product Admin,model_lc_investment_product_view,lc_marketplace_b2b.group_manager,1,0,0,0
+access_lc_investment_product_view_user,Lc Investment Product User,model_lc_investment_product_view,lc_marketplace_b2b.group_user,1,0,0,0
+access_lc_investment_pos_view_admin,Lc Investment Pos Admin,model_lc_investment_pos_view,lc_marketplace_b2b.group_manager,1,0,0,0
+access_lc_investment_pos_view_user,Lc Investment Pos User,model_lc_investment_pos_view,lc_marketplace_b2b.group_user,1,0,0,0

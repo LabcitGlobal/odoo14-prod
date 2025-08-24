@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    	<record id="paperformat_lowmargin" model="report.paperformat">
+    		<field name="name">European A4 low margin</field>
+    		<field name="default" eval="True" />
+    		<field name="format">Letter</field>
+    		<field name="page_height">0</field>
+    		<field name="page_width">0</field>
+    		<field name="orientation">Portrait</field>
+    		<field name="margin_top">32</field>
+    		<field name="margin_bottom">15</field>
+    		<field name="margin_left">4</field>
+    		<field name="margin_right">4</field>
+    		<field name="header_line" eval="False" />
+    		<field name="header_spacing">32</field>
+    		<field name="dpi">90</field>
+		</record>
+		
+		<record id="paperformat_mediacarta" model="report.paperformat">
+    		<field name="name">Media Hoja Carta</field>
+    		<field name="default" eval="True" />
+    		<field name="format">custom</field>
+    		<field name="page_height">210</field>
+    		<field name="page_width">140</field>
+    		<field name="orientation">Portrait</field>
+    		<field name="margin_top">32</field>
+    		<field name="margin_bottom">15</field>
+    		<field name="margin_left">4</field>
+    		<field name="margin_right">4</field>
+    		<field name="header_line" eval="False" />
+    		<field name="header_spacing">32</field>
+    		<field name="dpi">90</field>
+		</record>    
+    
+        <report
+            id="sr_lccash_day_report"
+            model="lccash.change"
+            string="Informe Resumido"
+            report_type="qweb-pdf"
+            name="lccash.lccash_day_reports"
+            file="lccash.lccash_day_reports"
+            paperformat="paperformat_mediacarta"
+        />
+        <report
+            id="sr_lccash_detail_report"
+            model="lccash.change"
+            string="Informe Detallado"
+            report_type="qweb-pdf"
+            name="lccash.lccash_detail_reports"
+            file="lccash.lccash_detail_reports"
+            paperformat="paperformat_lowmargin"
+        />
+        
+    </data>
+</odoo>

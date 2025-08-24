@@ -1,0 +1,73 @@
+<odoo>
+  <data>        
+    
+    <record model="ir.ui.view" id="lc_posorder_shipping_form_view">      
+      <field name="model">pos.order</field>
+      <field name="inherit_id" ref="point_of_sale.view_pos_pos_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='partner_id']" position="after">          
+          <field name="shipping_date"/>
+        </xpath>
+
+      	<xpath expr="//page[@name='notes']" position="after">
+          <page string="Sobre el Envio" name="shipping">
+            <group string="Datos de Envio">
+              <field name="shipping_company"/>
+              <field name="shipping_partner"/>
+              <field name="destiny"/>
+              <field name="box_quantity"/>
+            </group>
+            <group string="Gastos de Envio">
+              <field name="passage"/>
+              <field name="shipping_cost"/>
+              <field name="shipping_payment"/>
+              <field name="shipping_note"/>
+            </group>
+          </page>
+          <page string="Depositos" name="Deposit">
+            <group string="Depositos">
+              <field name="deposit_account"/>
+              <field name="bank_account"/>
+              <field name="pos_photo1" widget="image"/>
+              <field name="pos_photo2" widget="image"/>              
+              <field name="deposit_file" widget="binary"/>              
+            </group>
+          </page>
+          <page string="Archivos de Respaldo" name="Files">
+            <group string="Documentos">              
+              <field name="office_guide" widget="binary"/>
+              <field name="pos_file" widget="binary"/>              
+              <field name="pos_photo3" widget="image"/>
+            </group>
+          </page>
+        </xpath>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_pos_order_shipping_payment_tree">      
+      <field name="model">pos.order</field>
+      <field name="inherit_id" ref="point_of_sale.view_pos_order_tree"/>
+      <field name="arch" type="xml">
+      		<xpath expr="//tree" position="attributes">
+      			<attribute name="decoration-warning">shipping_cost!=shipping_payment</attribute>      			      			
+      		</xpath>
+          <xpath expr="//field[@name='session_id']" position="replace">              
+              <field name="session_id" optional="hide"/>
+          </xpath>
+          <xpath expr="//field[@name='pos_reference']" position="replace">              
+              <field name="pos_reference" optional="hide"/>
+          </xpath>
+          <xpath expr="//field[@name='state']" position="before">              
+              <field name="deposit_account" optional="hide"/>            	            	
+              <field name="bank_account" optional="hide"/>            	            	
+          </xpath>
+      		<xpath expr="//field[@name='state']" position="after">                            
+            	<field name="shipping_cost" optional="hide"/>
+            	<field name="shipping_payment" optional="hide"/>              
+          </xpath>
+      </field>
+    </record> 
+
+
+  </data>
+</odoo>

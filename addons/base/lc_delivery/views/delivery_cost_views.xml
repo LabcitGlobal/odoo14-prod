@@ -1,0 +1,86 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="lc_delivery_cost_view">
+      <field name="name">lc.delivery.cost.tree</field>
+      <field name="model">lc.delivery.cost</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>  
+          <field name="agency"/>        
+          <field name="date"/>
+          <field name="pos_id"/>
+          <field name="sale_id"/>          
+          <field name="mount"/>
+          <field name="note"/>
+          <field name="state"/>
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="lc_delivery_cost_form">
+      <field name="name">lc.delivery.cost.form</field>
+      <field name="model">lc.delivery.cost</field>
+      <field name="arch" type="xml">
+      <form string="Payment">
+	  	<header>
+      		<button name="action_payment_delivery" type="object" string="Payment" class="btn-primary" 
+			  attrs="{'invisible':['|', ('state','not in', ['pending']),('id','=',False)]}"/>			
+      		<button name="action_pending_delivery" type="object" string="Set to Pending" 
+			  attrs="{'invisible': ['|', ('state', 'not in', ['payment']), ('id', '=', False)]}" groups="base.user_admin"/>
+      		<field name="state"  widget="statusbar" statusbar_visible="pending,payment"/>
+      	</header>
+      	<sheet>
+      		<group>
+      			<field name="name"/>
+      			<field name="agency"/>            
+      			<field name="pos_id"/>            
+      			<field name="sale_id"/>            
+      			<field name="number_of_boxes"/>            
+      			<field name="mount"/>       		
+          	<field name="note"/>
+          	<field name="date"/>          		          	
+          	</group>
+          	<notebook>          		
+          		<page string="Payment Detail">
+          			<group>
+          				<field name="payment_type"/>
+          				<field name="bank"/>
+          				<field name="payment_date"/>
+          				<field name="transaction_code"/>
+          			</group>
+          		</page>				
+				      <page string="Files">
+          			<group>
+          				<field name="photo" widget="image"/>          				
+          				<field name="file" widget="binary"/>          				
+          			</group>          			
+          		</page>          					
+          		<page string="Security">
+          			<group>           
+          				<field name="create_uid" string="Create UID"/>
+          				<field name="create_date" string="Create Date"/>
+          				<field name="write_uid" string="Update UID"/>
+          				<field name="write_date" string="Write Date"/>
+          			</group>
+          		</page>
+          	</notebook>                                        
+        </sheet>
+      </form>
+      </field>
+    </record>    
+
+    <!-- actions opening views on models -->
+    
+    <record model="ir.actions.act_window" id="lc_delivery_cost_action_window">
+      <field name="name">Transportation Payment</field>
+      <field name="res_model">lc.delivery.cost</field>
+      <field name="view_mode">tree,form</field>
+	  <field name="domain">[('company_id','=',allowed_company_ids[0])]</field>
+    </record>
+
+    <!-- Menu -->
+    
+    <menuitem name="Delivery" id="lc_delivery_cost" parent="contacts.menu_contacts"
+              action="lc_delivery_cost_action_window" sequence="4"/>
+  </data>
+</odoo>

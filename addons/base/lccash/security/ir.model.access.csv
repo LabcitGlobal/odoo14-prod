@@ -1,0 +1,15 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_lccash_change_admin,Lccash Change Admin,model_lccash_change,lccash.group_manager,1,1,1,0
+access_lccash_payment_admin,Lccash Payment Admin,model_lccash_payment,lccash.group_manager,1,1,1,0
+access_lccash_money_admin,Lccash Money Admin,model_lccash_money,lccash.group_manager,1,1,1,0
+access_lccash_detailchange_admin,Lccash Detailchange Admin,model_lccash_detailchange,lccash.group_manager,1,1,1,1
+access_lccash_detailpayment_admin,Lccash Detailpayment Admin,model_lccash_detailpayment,lccash.group_manager,1,1,1,1
+access_lccash_withdraw_admin,Lccash Withdraw Admin,model_lccash_withdraw,lccash.group_manager,1,1,1,0
+access_lccash_detailwithdraw_admin,Lccash Detailwithdraw Admin,model_lccash_detailwithdraw,lccash.group_manager,1,1,1,1
+access_lccash_change_user,Lccash Change User,model_lccash_change,lccash.group_user,1,0,0,0
+access_lccash_payment_user,Lccash Payment User,model_lccash_payment,lccash.group_user,1,0,0,0
+access_lccash_money_user,Lccash Money USer,model_lccash_money,lccash.group_user,1,0,0,0
+access_lccash_detailchange_user,Lccash Detailchange USer,model_lccash_detailchange,lccash.group_user,1,0,0,0
+access_lccash_detailpayment_user,Lccash Detailpayment USer,model_lccash_detailpayment,lccash.group_user,1,0,0,0
+access_lccash_withdraw_user,Lccash Withdraw User,model_lccash_withdraw,lccash.group_user,1,0,0,0
+access_lccash_detailwithdraw_user,Lccash Detailwithdraw User,model_lccash_detailwithdraw,lccash.group_user,1,0,0,0

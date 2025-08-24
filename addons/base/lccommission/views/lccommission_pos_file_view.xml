@@ -1,0 +1,49 @@
+<odoo>
+  <data>
+
+    <record id="lccommission_posfile_detail_tree" model="ir.ui.view">
+      <field name="name">lccommission_posfile_view.tree</field>
+      <field name="model">lccommission.posfile.view</field>
+      <field name="arch" type="xml">
+          <tree>
+              <field name="name" />
+              <field name="pos_id"/>              
+              <field name="note"/>
+              <field name="date_order"/>
+              <field name="user_id"/>
+              <field name="amount_total"/>
+              <field name="payment"/>
+          </tree>
+      </field>
+    </record>
+
+    <record id="lccommission_posfile_detail_form" model="ir.ui.view">
+      <field name="name">lccommission_posfile_view.form</field>
+      <field name="model">lccommission.posfile.view</field>
+      <field name="arch" type="xml">
+      <form string="Archivos de Boleta">      	
+      	<sheet>
+      		<group>
+              <field name="name"/>
+              <field name="pos_id"/>              
+              <field name="note"/>   
+              <field name="date_order"/>
+              <field name="user_id"/>
+              <field name="amount_total"/>
+              <field name="payment"/>                                     
+          </group>          	          	
+      	</sheet>
+      </form>
+      </field>
+    </record>
+
+    <record id='lccommission_posfile_view_action' model='ir.actions.act_window'>
+      <field name="name">Detalle y Comprobante de Pedidos</field>
+      <field name="res_model">lccommission.posfile.view</field>      
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="lccommission_posfile_view_menu" parent="lccommission.file_menu" action="lccommission_posfile_view_action" sequence="16"/>
+
+  </data>
+</odoo>

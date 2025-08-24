@@ -1,0 +1,13 @@
+<odoo>
+  <data>
+      <record id="search_all_customers" model="ir.ui.view">
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="base.view_res_partner_filter"/>
+      <field name="arch" type="xml">
+        <search>        
+          <filter name="marker_color" string="Ventas por Entregar" domain="[('marker_color', '=', 'red')]"/>        
+        </search>
+      </field>
+    </record>    
+  </data>
+</odoo>

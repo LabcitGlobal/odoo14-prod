@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="ProductScreen" t-inherit="point_of_sale.ProductScreen" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('pads')]" position="replace">
+            <div class='pads sh_pads'>
+                <t t-if='env.pos.config.enable_numpad'>
+                    <div class="sh_tgle_btn" style="border-top: solid 2px #6EC89B;">
+                        <i class="sh-numpad-viewer fa fa-angle-double-down fa-2x" style="cursor: pointer;transform: scale(2,1);color: #6EC89B;font-size: 18px;"></i>
+                    </div>
+                </t>
+                <div class="control-buttons">
+                    <t t-foreach="controlButtons" t-as="cb" t-key="cb.name">
+                        <t t-component="cb.component" t-key="cb.name" />
+                    </t>
+                </div>
+                <div class="subpads sh-numpad-data">
+                    <ActionpadWidget client="client" />
+                    <NumpadWidget activeMode="state.numpadMode" />
+                </div>
+            </div>
+        </xpath>
+    </t>
+</templates>

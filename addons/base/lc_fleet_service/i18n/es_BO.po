@@ -1,0 +1,1348 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* lc_fleet_service
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-13 18:48+0000\n"
+"PO-Revision-Date: 2021-08-13 18:48+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_quotation_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_report
+msgid "00/100"
+msgstr ""
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_quotation_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_report
+msgid "<strong><span>BY THE GROUND TRANSPORTATION SERVICE OF:</span></strong>"
+msgstr "<strong><span>POR EL SERVICIO DE TRANSPORTE TERRESTRE DE:</span></strong>"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_quotation_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_report
+msgid "<strong>AMOUNT</strong>"
+msgstr "<strong>FLETE</strong>"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_quotation_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_report
+msgid "<strong>CONSIGNEE:</strong>"
+msgstr "<strong>CONSIGNATARIO:</strong>"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_container_control_report
+msgid "<strong>Customer:</strong>"
+msgstr "<strong>Cliente</strong>"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_vehicle_parts_inventory_report
+msgid "<strong>DELIVERY AND RECEPTION INVENTORY OF TRANSPORT UNIT</strong>"
+msgstr "<strong>INVENTARIO DE ENTREGA Y RECEPCIÓN DE LA UNIDAD DE TRANSPORTE</strong>"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_quotation_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_report
+msgid "<strong>DETAIL</strong>"
+msgstr "<strong>DETALLE</strong>"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_container_control_report
+msgid "<strong>Date of Assignment:</strong>"
+msgstr "<strong>Fecha de Arribo:</strong>"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_vehicle_parts_inventory_report
+msgid "<strong>Date:</strong>"
+msgstr "<strong>Fecha:</strong>"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_container_control_report
+msgid "<strong>Drop off location:</strong>"
+msgstr "<strong>Lugar de Entrega:</strong>"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_container_control_report
+msgid "<strong>Expiration Date:</strong>"
+msgstr "<strong>Fecha de Vencimiento:</strong>"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_report
+msgid "<strong>INVOICE</strong>"
+msgstr "<strong>FACTURA</strong>"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_container_control_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_quotation_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_report
+msgid "<strong>LICENSE PLATE</strong>"
+msgstr "<strong>PLACA</strong>"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_vehicle_parts_inventory_report
+msgid "<strong>License Plate:</strong>"
+msgstr "<strong>Placa</strong>"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_vehicle_parts_inventory_report
+msgid "<strong>Note:</strong>"
+msgstr "<strong>Nota:</strong>"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_container_control_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_quotation_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_report
+msgid "<strong>ROUTE</strong>"
+msgstr "<strong>TRAMO</strong>"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_container_control_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_report
+msgid "<strong>Ref.: Remission and Delivery of Documents</strong>"
+msgstr "<strong>Ref .: Remisión y Entrega de Documentos</strong>"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_container_control_report
+msgid "<strong>Return Date: </strong>"
+msgstr "<strong>Fecha de Entrega: </strong>"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_container_control_report
+msgid "<strong>Return Note: </strong>"
+msgstr "<strong>Nota de Entrega: </strong>"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_quotation_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_report
+msgid "<strong>SIRS: </strong>"
+msgstr "<strong>Señores: </strong>"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_report
+msgid "<strong>THANK YOU TO PAY:</strong>"
+msgstr "<strong>AGRADECEREMOS ABONAR A:</strong>"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_quotation_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_report
+msgid "<strong>TOTAL, DEBIT NOTE</strong>"
+msgstr "<strong>TOTAL, NOTA DE DÉBITO</strong>"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_vehicle_parts_inventory_report
+msgid "<strong>Vehicle:</strong>"
+msgstr "<strong>Vehículo:</strong>"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_bank_account__name_account
+msgid "Account name"
+msgstr "Nombre de la cuenta"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_bank_account__number_account
+msgid "Account number"
+msgstr "Número de cuenta"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__active
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_file__active
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_route__active
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_file_category__active
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_bank_account__active
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_category_expenses__active
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_driver_expenses__active
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document__active
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_route__active
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__active
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_tracking__active
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_list__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_driver_expenses__amount
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__amount
+msgid "Amount"
+msgstr "Monto"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__apportionment
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_debit_note_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_form
+msgid "Apportionment"
+msgstr "Prorrateo"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_bank_account__name
+msgid "Bank"
+msgstr "Banco"
+
+#. module: lc_fleet_service
+#: model:ir.ui.menu,name:lc_fleet_service.menu_lc_fleet_bank_account
+msgid "Bank Account"
+msgstr "Cuenta Bancaria"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_report
+msgid "CITE: TSL"
+msgstr ""
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_container_control_report
+msgid "CODE:"
+msgstr "CÓDIGO"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_debit_note_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields.selection,name:lc_fleet_service.selection__lc_fleet_service__state__cancel
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_category_expenses__name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_driver_expenses__category_expenses_id
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_bank_account_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_bank_account_tree
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_category_expenses_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_category_expenses_tree
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_vehicle_parts_inventory_report
+msgid "Category"
+msgstr "Categoría"
+
+#. module: lc_fleet_service
+#: model:ir.model,name:lc_fleet_service.model_lc_fleet_category_expenses
+msgid "Category Expenses Driver"
+msgstr "Categoría de Gastos"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_report
+msgid "Cite N°"
+msgstr ""
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document__code
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service_code__name
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_code_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_code_tree
+msgid "Code"
+msgstr "Código"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_file__name
+msgid "Code/Number"
+msgstr "Código/Número"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_containter_control_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_debit_note_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_form
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_route__container_id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_vehicle__container_id
+#: model:ir.ui.menu,name:lc_fleet_service.menu_lc_container_control
+msgid "Container"
+msgstr "Contenedor"
+
+#. module: lc_fleet_service
+#: model:ir.actions.act_window,name:lc_fleet_service.lc_fleet_container_control_action
+#: model:ir.actions.report,name:lc_fleet_service.lc_container_control_reports
+#: model:ir.model,name:lc_fleet_service.model_lc_container_control
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_file__container_id
+#: model:ir.ui.menu,name:lc_fleet_service.submenu_lc_container_control
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_containter_control_form
+msgid "Container Control"
+msgstr "Control de Contenedores"
+
+#. module: lc_fleet_service
+#: model:ir.actions.act_window,name:lc_fleet_service.lc_container_control_file_action
+#: model:ir.ui.menu,name:lc_fleet_service.submenu_lc_container_control_file
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_containter_control_file_form
+msgid "Container Control File"
+msgstr "Archivo de control de contenedores"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_container_control_file_tree
+msgid "Container Control File list"
+msgstr "Lista de archivos de control de contenedores"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_container_control_tree
+msgid "Container Control list"
+msgstr "Lista de control de contenedores"
+
+#. module: lc_fleet_service
+#: model:ir.model,name:lc_fleet_service.model_lc_container_file
+msgid "Container Documents Files"
+msgstr "Documentos de contenedor"
+
+#. module: lc_fleet_service
+#: model:ir.model,name:lc_fleet_service.model_lc_container_vehicle
+msgid "Container Drivers and Vehicles"
+msgstr "Conductores y vehículos de contenedor"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__container_file_ids
+msgid "Container File"
+msgstr "Archivo de contenedor"
+
+#. module: lc_fleet_service
+#: model:ir.actions.act_window,name:lc_fleet_service.lc_container_file_category_action
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_file_category_containter_form
+msgid "Container File Category"
+msgstr "Categoría de archivo contenedor"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_containter_control_form
+msgid "Container Files"
+msgstr "Archivos de contenedor"
+
+#. module: lc_fleet_service
+#: model:ir.model,name:lc_fleet_service.model_lc_container_route
+msgid "Container Route"
+msgstr "Ruta de Contenedor"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,help:lc_fleet_service.field_lc_container_control__date_of_assignment
+msgid "Container arrival date"
+msgstr "Fecha de llegada"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,help:lc_fleet_service.field_lc_container_control__expiration_date
+msgid "Container return deadline"
+msgstr "Fecha límite de devolución de contenedores"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields.selection,name:lc_fleet_service.selection__lc_container_file__type__copia
+#: model:ir.model.fields.selection,name:lc_fleet_service.selection__lc_fleet_remission_document__type__copia
+msgid "Copy"
+msgstr "Copia"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__create_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_file__create_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_route__create_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_vehicle__create_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_file_category__create_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_bank_account__create_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_category_expenses__create_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_driver_expenses__create_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_localization__create_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission__create_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document__create_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document_type__create_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_route__create_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__create_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service_code__create_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service_vehicle__create_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_tracking__create_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory__create_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory_details__create_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_list__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__create_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_file__create_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_route__create_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_vehicle__create_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_file_category__create_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_bank_account__create_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_category_expenses__create_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_driver_expenses__create_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_localization__create_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission__create_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document__create_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document_type__create_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_route__create_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__create_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service_code__create_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service_vehicle__create_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_tracking__create_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory__create_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory_details__create_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_list__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_bank_account__currency_id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_driver_expenses__currency_id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__customer_id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__customer_id
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_report
+msgid "DEBIT NOTE"
+msgstr "NOTA DE DÉBITO"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_container_control_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_report
+msgid "DOCUMENT"
+msgstr "DOCUMENTO"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__date_today
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_file__date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission__date_today
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__date_today
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__debit_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__debit_date_today
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_tracking__date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory__date_today
+msgid "Date"
+msgstr "Fecha"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_driver_expenses__date
+msgid "Date and Time"
+msgstr "Fecha"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__date_of_assignment
+msgid "Date of Assignment"
+msgstr "Fecha de Asignación"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,help:lc_fleet_service.field_lc_container_control__expires_in
+msgid "Days on which the container delivery time ends"
+msgstr "Días en los que finaliza el plazo de entrega del contenedor"
+
+#. module: lc_fleet_service
+#: model:ir.actions.report,name:lc_fleet_service.lc_fleet_service_reports
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_form
+msgid "Debit Note"
+msgstr "Nota de Débito"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_vehicle_parts_inventory_report
+msgid "Delivery as (Administrator)"
+msgstr "Entregue Conforme"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_debit_note_form
+msgid "Description"
+msgstr "Descripción"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_route__destination
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_route__destination
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_container_control_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_quotation_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_report
+msgid "Destination"
+msgstr "Destino"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__notes
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_driver_expenses__name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__notes
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_containter_control_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_driver_expenses_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_tracking_form
+msgid "Detail"
+msgstr "Detalle"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields.selection,name:lc_fleet_service.selection__lc_fleet_service_code__state__disable
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_code_form
+msgid "Disable"
+msgstr "Deshabilitado"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_fleet_vehicle__display_name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__display_name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_file__display_name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_route__display_name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_vehicle__display_name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_file_category__display_name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_bank_account__display_name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_category_expenses__display_name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_driver_expenses__display_name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_localization__display_name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission__display_name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document__display_name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document_type__display_name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_route__display_name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__display_name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service_code__display_name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service_vehicle__display_name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_tracking__display_name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory__display_name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory_details__display_name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_list__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document__document_type_id
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_form
+msgid "Document"
+msgstr "Documento"
+
+#. module: lc_fleet_service
+#: model:ir.ui.menu,name:lc_fleet_service.menu_lc_fleet_remission_document_type
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_document_type_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_document_type_tree
+msgid "Document Type"
+msgstr "Tipo de Documento"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission__remission_document_ids
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_containter_control_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_form
+msgid "Documents"
+msgstr "Documentos"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_vehicle__driver_id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service_vehicle__driver_id
+#: model:ir.ui.menu,name:lc_fleet_service.menu_lc_fleet_driver_expenses
+msgid "Driver"
+msgstr "Conductor"
+
+#. module: lc_fleet_service
+#: model:ir.actions.act_window,name:lc_fleet_service.lc_fleet_category_expenses_action
+#: model:ir.ui.menu,name:lc_fleet_service.menu_lc_driver_category_expenses
+msgid "Driver Category Expenses"
+msgstr "Categoría de Gasto"
+
+#. module: lc_fleet_service
+#: model:ir.actions.act_window,name:lc_fleet_service.lc_fleet_driver_expenses_action
+#: model:ir.ui.menu,name:lc_fleet_service.menu_lc_fleet_driver_expenses_contract
+msgid "Driver Expenses"
+msgstr "Gastos del Conductor"
+
+#. module: lc_fleet_service
+#: model:ir.model,name:lc_fleet_service.model_lc_fleet_driver_expenses
+msgid "Driver Expenses Fleet"
+msgstr "Gastos del Conductor"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__drop_off_location
+msgid "Drop off location"
+msgstr "Lugar de entrega"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_container_control_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_quotation_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_report
+msgid "El Alto,"
+msgstr ""
+
+#. module: lc_fleet_service
+#: model:ir.model.fields.selection,name:lc_fleet_service.selection__lc_fleet_service_code__state__enable
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_code_form
+msgid "Enable"
+msgstr "Habilitado"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_driver_expenses_tree
+msgid "Expense List"
+msgstr "Lista de Gastos"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__driver_expenses_total
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__expenses_ids
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_driver_expenses_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_debit_note_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_tracking_form
+msgid "Expenses"
+msgstr "Gastos"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__expiration_date
+msgid "Expiration Date"
+msgstr "Fecha de caducidad"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__expires_in
+msgid "Expires in"
+msgstr "Expira en"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_driver_expenses__file
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_tracking__file
+msgid "File"
+msgstr "Archivo"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory__file
+msgid "File (Pdf)"
+msgstr "Archivo (Pdf)"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_file__file1
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document__file1
+msgid "File 1"
+msgstr "Archivo 1"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_file__file2
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document__file2
+msgid "File 2"
+msgstr "Archivo 2"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_file__file3
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document__file3
+msgid "File 3"
+msgstr "Archivo 3"
+
+#. module: lc_fleet_service
+#: model:ir.model,name:lc_fleet_service.model_lc_file_category
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_file__file_category_id
+#: model:ir.ui.menu,name:lc_fleet_service.submenu_lc_container_file_category
+msgid "File Category"
+msgstr "Categoría de Archivos"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_file_category_container_tree
+msgid "File Category list"
+msgstr "Lista de Categorías de Archivos"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__container_control_file
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_containter_control_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_tracking_form
+msgid "Files"
+msgstr "Archivos"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields.selection,name:lc_fleet_service.selection__lc_container_control__state__finished
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_containter_control_form
+msgid "Finished"
+msgstr "Finalizado"
+
+#. module: lc_fleet_service
+#: model:ir.actions.act_window,name:lc_fleet_service.lc_fleet_bank_account_action
+msgid "Fleet Bank Account"
+msgstr "Cuenta Bancaria"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_fleet_vehicle__fleet_check_availability
+msgid "Fleet Check Availability"
+msgstr "Comprobar Disponibilidad"
+
+#. module: lc_fleet_service
+#: model:ir.ui.menu,name:lc_fleet_service.menu_lc_fleet_remission
+msgid "Fleet Remissions"
+msgstr "Remisiones"
+
+#. module: lc_fleet_service
+#: model:ir.actions.act_window,name:lc_fleet_service.lc_fleet_service_action
+msgid "Fleet Service"
+msgstr "Servicios"
+
+#. module: lc_fleet_service
+#: model:ir.actions.act_window,name:lc_fleet_service.lc_fleet_service_code_action
+msgid "Fleet Service Code"
+msgstr "Código de Servicios"
+
+#. module: lc_fleet_service
+#: model:ir.actions.act_window,name:lc_fleet_service.lc_fleet_service_debit_note_action
+msgid "Fleet Service Debit Note"
+msgstr "Nota de débito"
+
+#. module: lc_fleet_service
+#: model:ir.ui.menu,name:lc_fleet_service.menu_lc_fleet_service_contract
+msgid "Fleet Services"
+msgstr "Servicios"
+
+#. module: lc_fleet_service
+#: model:ir.actions.act_window,name:lc_fleet_service.lc_fleet_tracking_action
+msgid "Fleet Tracking"
+msgstr "Seguimiento"
+
+#. module: lc_fleet_service
+#: model:ir.actions.act_window,name:lc_fleet_service.lc_fleet_remission_action
+msgid "Fleet remission"
+msgstr "Remisiones"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_report
+msgid "For this reason, we greet you very kindly.,"
+msgstr "Con este motivo, saludamos a ustedes muy atentamente.,"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_report
+msgid "Hereby we send by the transport service of:"
+msgstr "Mediante el presente hacemos llagar por el servicio de transporte de:"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_vehicle_parts_inventory_report
+msgid "I received as (Driver)"
+msgstr "Recibí Conforme"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_fleet_vehicle__id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_file__id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_route__id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_vehicle__id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_file_category__id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_bank_account__id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_category_expenses__id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_driver_expenses__id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_localization__id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission__id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document__id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document_type__id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_route__id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service_code__id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service_vehicle__id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_tracking__id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory__id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory_details__id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_list__id
+msgid "ID"
+msgstr ""
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__invoice_number
+msgid "Invoice Number"
+msgstr "Número de factura"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_fleet_vehicle____last_update
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control____last_update
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_file____last_update
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_route____last_update
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_vehicle____last_update
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_file_category____last_update
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_bank_account____last_update
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_category_expenses____last_update
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_driver_expenses____last_update
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_localization____last_update
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission____last_update
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document____last_update
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document_type____last_update
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_route____last_update
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service____last_update
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service_code____last_update
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service_vehicle____last_update
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_tracking____last_update
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory____last_update
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory_details____last_update
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_list____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__write_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_file__write_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_route__write_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_vehicle__write_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_file_category__write_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_bank_account__write_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_category_expenses__write_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_driver_expenses__write_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_localization__write_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission__write_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document__write_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document_type__write_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_route__write_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__write_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service_code__write_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service_vehicle__write_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_tracking__write_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory__write_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory_details__write_uid
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_list__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__write_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_file__write_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_route__write_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_vehicle__write_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_file_category__write_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_bank_account__write_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_category_expenses__write_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_driver_expenses__write_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_localization__write_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission__write_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document__write_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document_type__write_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_route__write_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__write_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service_code__write_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service_vehicle__write_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_tracking__write_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory__write_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory_details__write_date
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_list__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_tracking__tracking_latitude
+msgid "Latitude"
+msgstr "Latitud"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_tree
+msgid "List of Services"
+msgstr "Lista de Servicios"
+
+#. module: lc_fleet_service
+#: model:ir.actions.act_window,name:lc_fleet_service.lc_fleet_localization_action
+#: model:ir.ui.menu,name:lc_fleet_service.menu_lc_fleet_localizations
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_localization_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_localization_tree
+msgid "Localizations"
+msgstr "Localizaciones"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_localization__name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_tracking__localization
+msgid "Location"
+msgstr "Localización"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_tracking__tracking_longitude
+msgid "Longitude"
+msgstr "Longitud"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__margin
+msgid "Margin"
+msgstr "Margen"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_file_category__name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document_type__name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory__name
+msgid "Name"
+msgstr "Documento"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_vehicle_parts_inventory_report
+msgid "Name:"
+msgstr "Nombre:"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_vehicle_parts_inventory_report
+msgid "No Identification:"
+msgstr "C.I."
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_container_control_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_report
+msgid "No. Document"
+msgstr "No. Documento"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service_code__note
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_tracking__name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory__note
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory_details__part_note
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_vehicle_parts_inventory_report
+msgid "Note"
+msgstr "Nota"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_container_control_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_report
+msgid "Observation"
+msgstr "Observación"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_report
+msgid "Of our consideration"
+msgstr "De nuestra consideración"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields.selection,name:lc_fleet_service.selection__lc_container_file__type__original
+#: model:ir.model.fields.selection,name:lc_fleet_service.selection__lc_fleet_remission_document__type__original
+msgid "Original"
+msgstr ""
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_containter_control_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_debit_note_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_form
+msgid "Other (Security)"
+msgstr "Otro (seguridad)"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_list__parent_id
+msgid "Parent Part Category"
+msgstr "Categoría de pieza principal"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__parent_path
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_list__parent_path
+msgid "Parent Path"
+msgstr "Nodo Padre"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__parent_id
+msgid "Parent Service"
+msgstr "Servicio Padre"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_vehicle_parts_inventory_report
+msgid "Part"
+msgstr "Parte"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory__part_list_ids
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory_details__part_id
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_vehicle_parts_inventory_form
+msgid "Part List"
+msgstr "Lista de Partes"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_list__name
+msgid "Part Name"
+msgstr "Nombre de Pieza"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_vehicle_parts_inventory_form
+msgid "Parts Lists"
+msgstr "Listas de Partes"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields.selection,name:lc_fleet_service.selection__lc_fleet_service__state__payed
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_debit_note_form
+msgid "Payed"
+msgstr "Pagado"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__payment
+msgid "Payment"
+msgstr "Pago"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_file__photo
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_driver_expenses__photo
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_tracking__photo
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_driver_expenses_form
+msgid "Photo"
+msgstr "Foto"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields.selection,name:lc_fleet_service.selection__lc_container_file__type__photocopy
+#: model:ir.model.fields.selection,name:lc_fleet_service.selection__lc_fleet_remission_document__type__photocopy
+msgid "Photocopy"
+msgstr "Fotocopia"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_container_control_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_report
+msgid "Present.-"
+msgstr "Presente.-"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_debit_note_form
+msgid "Prorate Now"
+msgstr "Prorratear Gastos Ahora"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__proration_percentage
+msgid "Proration Percentage"
+msgstr "Porcentaje para Prorratear Gastos"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_quotation_report
+msgid "QUOTATION ORDER"
+msgstr "ORDEN DE COTIZACIÓN"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_container_control_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_report
+msgid "Qty."
+msgstr "Cant."
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_file__quantity
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document__quantity
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_vehicle_parts_inventory_report
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory_details__quantity_parts
+msgid "Quantity Parts"
+msgstr "Cantidad"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields.selection,name:lc_fleet_service.selection__lc_container_control__state__draft
+#: model:ir.model.fields.selection,name:lc_fleet_service.selection__lc_fleet_service__state__draft
+msgid "Quotation"
+msgstr "Cotización"
+
+#. module: lc_fleet_service
+#: model:ir.actions.report,name:lc_fleet_service.lc_fleet_service_quotation_reports
+msgid "Quotation Order"
+msgstr "Cotización"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_tree
+msgid "Referral List"
+msgstr "Lista de referencias"
+
+#. module: lc_fleet_service
+#: model:ir.actions.report,name:lc_fleet_service.lc_fleet_remission_reports
+msgid "Referral Note"
+msgstr "Nota de remisión"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document__remission_id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__fleet_remission_count
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_debit_note_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_form
+msgid "Remission"
+msgstr "Remisión"
+
+#. module: lc_fleet_service
+#: model:ir.model,name:lc_fleet_service.model_lc_fleet_remission_document
+msgid "Remission Document"
+msgstr "Documentos de Remisión"
+
+#. module: lc_fleet_service
+#: model:ir.actions.act_window,name:lc_fleet_service.lc_fleet_remission_document_type_action
+#: model:ir.model,name:lc_fleet_service.model_lc_fleet_remission_document_type
+msgid "Remission Document Type"
+msgstr "Tipo de documento de Remisión"
+
+#. module: lc_fleet_service
+#: model:ir.model,name:lc_fleet_service.model_lc_fleet_remission
+msgid "Remission Fleet"
+msgstr "Remisiones"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_form
+msgid "Remissions"
+msgstr "Remisiones"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__return_date
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_containter_control_form
+msgid "Return Date"
+msgstr "Fecha de Finalización"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__return_note
+msgid "Return Note"
+msgstr "Nota de Finalización"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__route_ids
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__route_ids
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_containter_control_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_debit_note_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_form
+msgid "Route"
+msgstr "Tramo"
+
+#. module: lc_fleet_service
+#: model:ir.model,name:lc_fleet_service.model_lc_fleet_route
+msgid "Route Fleet"
+msgstr "Tramos"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_containter_control_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_debit_note_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_form
+msgid "Routes"
+msgstr "Tramos"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__user_id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__user_id
+msgid "Salesperson"
+msgstr "Usuario"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_driver_expenses__service_id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission__name
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_route__service_id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service_vehicle__service_id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_tracking__service_id
+msgid "Service"
+msgstr "Servicio"
+
+#. module: lc_fleet_service
+#: model:ir.ui.menu,name:lc_fleet_service.menu_lc_fleet_service_code
+msgid "Service Code"
+msgstr "Codigo de Servicio"
+
+#. module: lc_fleet_service
+#: model:ir.model,name:lc_fleet_service.model_lc_fleet_service_vehicle
+msgid "Service Drivers and Vehicles"
+msgstr "Conductores y vehículos"
+
+#. module: lc_fleet_service
+#: model:ir.model,name:lc_fleet_service.model_lc_fleet_service
+msgid "Service Fleet"
+msgstr "Servicio"
+
+#. module: lc_fleet_service
+#: model:ir.model,name:lc_fleet_service.model_lc_fleet_service_code
+msgid "Service Fleet Code"
+msgstr "Codigo de Servicio"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields.selection,name:lc_fleet_service.selection__lc_container_control__state__service
+#: model:ir.model.fields.selection,name:lc_fleet_service.selection__lc_fleet_service__state__service
+msgid "Service Order"
+msgstr "Orden de servicio"
+
+#. module: lc_fleet_service
+#: model:ir.ui.menu,name:lc_fleet_service.menu_lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_debit_note_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_form
+msgid "Services"
+msgstr "Servicios"
+
+#. module: lc_fleet_service
+#: model:ir.ui.menu,name:lc_fleet_service.menu_lc_fleet_service_debit
+msgid "Services Debit Note"
+msgstr "Nota de débito"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_containter_control_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_debit_note_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_form
+msgid "Set to Quotation"
+msgstr "Cotización"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_container_control_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_report
+msgid "Sirs:"
+msgstr "Señores:"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_route__source
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_route__source
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_container_control_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_quotation_report
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_report
+msgid "Source"
+msgstr "Origen"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission__state
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service_code__state
+msgid "State"
+msgstr "Estado"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__state
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__state
+msgid "Status"
+msgstr "Estado"
+
+#. module: lc_fleet_service
+#: code:addons/lc_fleet_service/models/fleet_service.py:0
+#, python-format
+msgid "The amount of the service is different from the amount paid"
+msgstr "El monto del servicio es diferente al monto pagado"
+
+#. module: lc_fleet_service
+#: code:addons/lc_fleet_service/models/container_control.py:0
+#, python-format
+msgid ""
+"The following fields are required to finished case.\n"
+"Complete the data.\n"
+"- Date in port"
+msgstr ""
+"Los siguientes campos son obligatorios para finalizar el caso.\n"
+"Completa los datos.\n"
+"- Fecha en puerto"
+
+#. module: lc_fleet_service
+#: code:addons/lc_fleet_service/models/fleet_service.py:0
+#, python-format
+msgid ""
+"The following fields are required to generate a debit note.\n"
+"Complete the data in the debit note tab.\n"
+"- Code\n"
+"- Customer\n"
+"- Note\n"
+"- Amount\n"
+"- Currency"
+msgstr ""
+"Los siguientes campos son obligatorios para generar una nota de débito.\n"
+"Complete los datos en la pestaña de la nota de débito.\n"
+"- Código\n"
+"- Cliente\n"
+"- Nota\n"
+"- Monto\n"
+"- Moneda"
+
+#. module: lc_fleet_service
+#: code:addons/lc_fleet_service/models/fleet_service.py:0
+#, python-format
+msgid ""
+"The following fields are required to generate the apportionment of this service.\n"
+"Complete the data in the Apportionment note tab.\n"
+"- Parent Service\n"
+"- Proration Percentage"
+msgstr ""
+"Los siguientes campos son obligatorios para generar el prorrateo de este servicio.\n"
+"Complete los datos en la pestaña (PRORRATEO).\n"
+"- Servicio Padre\n"
+"- Porcentaje de prorrateo"
+
+#. module: lc_fleet_service
+#: code:addons/lc_fleet_service/models/container_control.py:0
+#, python-format
+msgid ""
+"The following fields are required to services case.\n"
+"Complete the data.\n"
+"- Vehicle ID"
+msgstr ""
+"Los siguientes campos son obligatorios para confirmar el caso.\n"
+"Completa los datos.\n"
+"- Vehículo"
+
+#. module: lc_fleet_service
+#: code:addons/lc_fleet_service/models/fleet_service.py:0
+#, python-format
+msgid "This service has already been prorated for your expenses."
+msgstr "Este servicio ya ha sido prorrateado para sus gastos."
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__fleet_tracking_count
+#: model:ir.ui.menu,name:lc_fleet_service.menu_lc_fleet_tracking_contract
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_debit_note_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_tracking_tree
+msgid "Tracking"
+msgstr "Seguimiento"
+
+#. module: lc_fleet_service
+#: model:ir.model,name:lc_fleet_service.model_lc_fleet_tracking
+msgid "Tracking Fleet"
+msgstr "Seguimiento"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_file__type
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_remission_document__type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service_code__user_id
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_driver_expenses_tree
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_tracking_tree
+msgid "User"
+msgstr "Usuario"
+
+#. module: lc_fleet_service
+#: model:ir.model,name:lc_fleet_service.model_fleet_vehicle
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_vehicle__vehicle_id
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service_vehicle__vehicle_id
+msgid "Vehicle"
+msgstr "Vehículo"
+
+#. module: lc_fleet_service
+#: model:ir.actions.report,name:lc_fleet_service.lc_vehicle_parts_inventory_reports
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_vehicle_parts_inventory_details__part_inventory_id
+msgid "Vehicle Inventory"
+msgstr "Vehículo y Conductor"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_vehicle_parts_list_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_vehicle_parts_list_tree
+msgid "Vehicle Part"
+msgstr "Partes de Vehículo"
+
+#. module: lc_fleet_service
+#: model:ir.actions.act_window,name:lc_fleet_service.lc_vehicle_parts_inventory_action
+#: model:ir.ui.menu,name:lc_fleet_service.submenu_lc_vehicle_parts_inventory
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_vehicle_parts_inventory_form
+msgid "Vehicle Parts Inventory"
+msgstr "Inventario de Partes de Vehículo"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_vehicle_parts_inventory_tree
+msgid "Vehicle Parts Inventory list"
+msgstr "Lista de inventario de piezas de vehículos"
+
+#. module: lc_fleet_service
+#: model:ir.actions.act_window,name:lc_fleet_service.lc_vehicle_parts_list_action
+#: model:ir.model,name:lc_fleet_service.model_lc_vehicle_parts_list
+#: model:ir.ui.menu,name:lc_fleet_service.submenu_lc_vehicle_parts_lists
+msgid "Vehicle Parts List"
+msgstr "Lista de piezas de vehículos"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_containter_control_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_debit_note_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_form
+msgid "Vehicle and Driver"
+msgstr "Vehículo y conductor"
+
+#. module: lc_fleet_service
+#: model:ir.model,name:lc_fleet_service.model_lc_vehicle_parts_inventory_details
+msgid "Vehicle parts inventory details information"
+msgstr "Información detalleda del inventario de piezas de vehículos"
+
+#. module: lc_fleet_service
+#: model:ir.model,name:lc_fleet_service.model_lc_vehicle_parts_inventory
+msgid "Vehicle parts inventory information"
+msgstr "Información de inventario de piezas de vehículos"
+
+#. module: lc_fleet_service
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_container_control__vehicle_ids
+#: model:ir.model.fields,field_description:lc_fleet_service.field_lc_fleet_service__vehicle_ids
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_containter_control_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_debit_note_form
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_service_form
+msgid "Vehicles"
+msgstr "Vehículos"
+
+#. module: lc_fleet_service
+#: model_terms:ir.ui.view,arch_db:lc_fleet_service.lc_fleet_remission_report
+msgid "according to the following detail:"
+msgstr "según el siguiente detalle:"
+
+#. module: lc_fleet_service
+#: model:ir.model,name:lc_fleet_service.model_lc_fleet_bank_account
+msgid "lc.fleet.bank.account"
+msgstr ""
+
+#. module: lc_fleet_service
+#: model:ir.model,name:lc_fleet_service.model_lc_fleet_localization
+msgid "lc.fleet.localization"
+msgstr ""

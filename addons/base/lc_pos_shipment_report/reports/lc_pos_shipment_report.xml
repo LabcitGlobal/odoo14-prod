@@ -1,0 +1,28 @@
+<odoo>
+	<data>
+        <record id="paperformat_lowmargin" model="report.paperformat">
+    		<field name="name">European A4 low margin</field>
+    		<field name="default" eval="True" />
+    		<field name="format">Letter</field>
+    		<field name="page_height">0</field>
+    		<field name="page_width">0</field>
+    		<field name="orientation">Landscape</field>
+    		<field name="margin_top">32</field>
+    		<field name="margin_bottom">15</field>
+    		<field name="margin_left">4</field>
+    		<field name="margin_right">4</field>
+    		<field name="header_line" eval="False" />
+    		<field name="header_spacing">32</field>
+    		<field name="dpi">90</field>
+		</record>
+    	<report id="lc_pos_shipment_report_print"
+                model="lc.pos.shipment.report"
+                string="Imprimir Lista de Envios"
+                report_type="qweb-pdf"
+                name="lc_pos_shipment_report.print_lc_pos_shipment_report_template"
+                file="lc_pos_shipment_report.print_lc_pos_shipment_report_template"
+                paperformat="paperformat_lowmargin"
+                menu="False"
+        />
+    </data>
+</odoo>

@@ -1,0 +1,9 @@
+<odoo>
+  <data>
+    <template id="index" name="reprint index" inherit_id="web.external_layout">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/lc_posreprint/static/src/css/reprint.css"/>
+            </xpath>
+    </template>
+  </data>
+</odoo>

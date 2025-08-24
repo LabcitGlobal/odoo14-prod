@@ -1,0 +1,16 @@
+<odoo>
+  <data>
+    
+    <record model="ir.ui.view" id="lc_attendance_comment_form_view">
+      <field name="name">lc_attendance_comment</field>
+      <field name="model">hr.attendance</field>
+      <field name="inherit_id" ref="hr_attendance.hr_attendance_view_form"/>
+        <field name="arch" type="xml">
+        <xpath expr="//field[@name='check_out']" position="after">
+        	<field name="comment"/>   	        	           
+        </xpath>
+      </field>
+    </record>
+    
+  </data>
+</odoo>

@@ -1,0 +1,181 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* lc_marketplace_b2b
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-06 17:58+0000\n"
+"PO-Revision-Date: 2022-07-06 17:58+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: lc_marketplace_b2b
+#: model_terms:ir.ui.view,arch_db:lc_marketplace_b2b.print_consignment_report_template
+msgid "<strong>Code:</strong>"
+msgstr "<strong>Boleta:</strong>"
+
+#. module: lc_marketplace_b2b
+#: model_terms:ir.ui.view,arch_db:lc_marketplace_b2b.print_consignment_report_template
+msgid "<strong>Date:</strong>"
+msgstr "<strong>Fecha:</strong>"
+
+#. module: lc_marketplace_b2b
+#: model_terms:ir.ui.view,arch_db:lc_marketplace_b2b.print_consignment_report_template
+msgid "<strong>Owner:</strong>"
+msgstr "<strong>Propietario:</strong>"
+
+#. module: lc_marketplace_b2b
+#: model_terms:ir.ui.view,arch_db:lc_marketplace_b2b.print_consignment_report_template
+msgid "<strong>Reception Manager:</strong> Ivan Manolo Carvajal Antiñapa"
+msgstr "<strong>Responsable Resp.:</strong> Ivan Manolo Carvajal Antiñapa"
+
+#. module: lc_marketplace_b2b
+#: model_terms:ir.ui.view,arch_db:lc_marketplace_b2b.print_consignment_report_template
+msgid "<strong>Total</strong>"
+msgstr ""
+
+#. module: lc_marketplace_b2b
+#: model_terms:ir.ui.view,arch_db:lc_marketplace_b2b.print_consignment_report_template
+msgid "Qty."
+msgstr "Cant"
+
+#. module: lc_marketplace_b2b
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_pos_view__commission
+msgid "Commission"
+msgstr "Comisión"
+
+#. module: lc_marketplace_b2b
+#: model_terms:ir.ui.view,arch_db:lc_marketplace_b2b.print_consignment_report_template
+msgid "Consignment Ticket"
+msgstr "Boleta de Consignación"
+
+#. module: lc_marketplace_b2b
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_product_view__cost
+msgid "Cost"
+msgstr "Costo"
+
+#. module: lc_marketplace_b2b
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_pos_view__marketplace_seller_id
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_product_view__marketplace_seller_id
+msgid "Customer"
+msgstr "Vendedor"
+
+#. module: lc_marketplace_b2b
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_pos_view__create_date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: lc_marketplace_b2b
+#: model_terms:ir.ui.view,arch_db:lc_marketplace_b2b.print_consignment_report_template
+msgid "Description"
+msgstr "Descripción"
+
+#. module: lc_marketplace_b2b
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_pos_view__display_name
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_product_view__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: lc_marketplace_b2b
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_pos_view__id
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_product_view__id
+msgid "ID"
+msgstr ""
+
+#. module: lc_marketplace_b2b
+#: model:ir.actions.act_window,name:lc_marketplace_b2b.lc_investment_product_action
+msgid "Inventory"
+msgstr "Inventario"
+
+#. module: lc_marketplace_b2b
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_pos_view__investment
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_product_view__investment
+#: model:ir.ui.menu,name:lc_marketplace_b2b.lc_investment_product_menu
+msgid "Investment"
+msgstr "Inversión"
+
+#. module: lc_marketplace_b2b
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_pos_view____last_update
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_product_view____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: lc_marketplace_b2b
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_pos_view__margin
+msgid "Margin"
+msgstr "Margen"
+
+#. module: lc_marketplace_b2b
+#: model:ir.ui.menu,name:lc_marketplace_b2b.lc_investment_menu
+msgid "POS Agent"
+msgstr "Agentes"
+
+#. module: lc_marketplace_b2b
+#: model:ir.ui.menu,name:lc_marketplace_b2b.lc_investment_pos_menu
+msgid "Point of Sale"
+msgstr "Punto de Venta"
+
+#. module: lc_marketplace_b2b
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_pos_view__price_unit
+#: model_terms:ir.ui.view,arch_db:lc_marketplace_b2b.print_consignment_report_template
+msgid "Price"
+msgstr "Precio"
+
+#. module: lc_marketplace_b2b
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_pos_view__price_subtotal
+msgid "Price Subtotal"
+msgstr "Subtotal"
+
+#. module: lc_marketplace_b2b
+#: model:ir.actions.report,name:lc_marketplace_b2b.print_consignment_report
+msgid "Print consignment slip"
+msgstr "Boleta de Consignación"
+
+#. module: lc_marketplace_b2b
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_pos_view__name
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_pos_view__product_id
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_product_view__name
+msgid "Product"
+msgstr "Producto"
+
+#. module: lc_marketplace_b2b
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_pos_view__purchase_price
+msgid "Purchase"
+msgstr "Compra"
+
+#. module: lc_marketplace_b2b
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_pos_view__qty
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_product_view__quantity
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: lc_marketplace_b2b
+#: model:ir.actions.act_window,name:lc_marketplace_b2b.lc_investment_pos_action
+msgid "Sale in Point of Sale"
+msgstr "Ventas del POS"
+
+#. module: lc_marketplace_b2b
+#: model:ir.model.fields,field_description:lc_marketplace_b2b.field_lc_investment_pos_view__seller_commision
+msgid "Seller Commission"
+msgstr "Comisión del Vendedor"
+
+#. module: lc_marketplace_b2b
+#: model_terms:ir.ui.view,arch_db:lc_marketplace_b2b.print_consignment_report_template
+msgid "Total"
+msgstr "Total"
+
+#. module: lc_marketplace_b2b
+#: model:ir.model,name:lc_marketplace_b2b.model_lc_investment_pos_view
+msgid "lc.investment.pos.view"
+msgstr ""
+
+#. module: lc_marketplace_b2b
+#: model:ir.model,name:lc_marketplace_b2b.model_lc_investment_product_view
+msgid "lc.investment.product.view"
+msgstr ""

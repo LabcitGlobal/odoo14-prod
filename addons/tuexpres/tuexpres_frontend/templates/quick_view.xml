@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--=================== Product ========================-->
+    <template id="products_quick_pricelist_view" inherit_id="emipro_theme_base.quick_view_container" name="Quick View Templat Pricelist">        
+        <xpath expr="//div[hasclass('quick_view_content')]" position="after">                                  
+            <t t-call="tuexpres_frontend.product_pricelist_container"/>              
+        </xpath>   
+    </template>
+</odoo>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="quotation" xml:space="preserve">
+    <t t-name="LoadQuotationButton" owl="1">
+        <div class="control-button set-quotation" t-on-click="trigger('click-quotation-load-icon')">
+            <t t-esc="get_quotation()" />
+        </div>
+    </t>
+    <t t-name="QuotationListScreenWidget" owl="1">
+        <div class="quotationlist-screen screen">
+            <div class="screen-content">
+                <section class="top-content">
+                    <div class="button back" t-on-click="back">
+                        <t t-if="!env.isMobile">Discard</t>
+                        <t t-else="">
+                            <i class="fa fa-undo"></i>
+                        </t>
+                    </div>
+                    <div class="button highlight load_quotation" t-on-click="trigger('click-save')">
+                        <t t-if="!env.isMobile"> <span> Load Quotation</span> <i class="fa fa-angle-double-right" /> </t>
+                        <t t-else="">
+                            <i class="fa fa-angle-double-right" />
+                        </t>
+                    </div>
+                    <div class="searchbox-client top-content-center">
+                        <input placeholder="Search Quotation" size="1" t-on-keyup="updateTemplateList" />
+                        <span class="search-clear-template"></span>
+                    </div>
+                </section>
+                <section class="full-content">
+                    <div class="window">
+                        <section class="subwindow">
+                            <div class="subwindow-container">
+                                <div class="subwindow-container-fix touch-scrollable scrollable-y order-list-scroll">
+                                    <table class="quotation-list">
+                                        <thead>
+                                            <tr>
+                                                <th>Quotation Number</th>
+                                                <th>Quotation Date</th>
+                                                <th>Customer</th>
+                                                <th>Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="quotation-list-contents">
+                                            <t t-foreach="quotationlistcontents" t-as="quotation" t-key="quotation.id">
+                                                <QuotationLine quotation="quotation" selectedQuotation="state.selectedQuotation" t-on-click-quotation="clickLine" />
+                                            </t>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </t>
+    <t t-name="QuotationLine" owl="1">
+        <tr t-attf-class="quotation-line {{highlight}}" t-att-data-id="props.quotation.id" t-on-click="trigger('click-quotation', {quotation: props.quotation})">
+            <td><t t-esc="props.quotation.name" /></td>
+            <td><t t-esc="getDate(props.quotation)" /></td>
+            <td><t t-esc="props.quotation.partner_id[0,1]" /></td>
+            <td><t t-esc='env.pos.format_currency(props.quotation.amount_total) or ""' /></td>
+        </tr>
+    </t>
+</templates>

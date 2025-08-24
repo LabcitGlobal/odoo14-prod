@@ -1,0 +1,98 @@
+<odoo>
+  <data>
+
+    <!-- Vehicle Parts Inventory -->
+
+    <record model="ir.ui.view" id="lc_vehicle_parts_inventory_tree">
+      <field name="name">Vehicle Parts Inventory Tree</field>
+      <field name="model">lc.vehicle.parts.inventory</field>
+      <field name="arch" type="xml">
+        <tree string="Vehicle Parts Inventory list">
+          <field name="name"/>
+          <field name="date_today"/>
+          <field name="note"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="lc_vehicle_parts_inventory_form">
+      <field name="name">Vehicle Parts Inventory Form</field>
+      <field name="model">lc.vehicle.parts.inventory</field>
+      <field name="arch" type="xml">
+      		<form string="Vehicle Parts Inventory">
+      			<sheet>
+      				<group>
+      		    	<field name="name"/>
+      		    	<field name="date_today"/>
+      		    	<field name="note"/>
+      		    	<field name="file"/>      		    	
+      		    </group>
+              <notebook>
+      		    	<page string="Parts Lists">
+						      <group>    		      		    				
+      		    			<field name="part_list_ids">
+          		    			<tree string="Part List" editable="bottom">          				
+	          	    				<field name="part_id"/>
+	          	    				<field name="quantity_parts"/>
+	          	    				<field name="part_note"/>
+          		    			</tree>
+          		    	</field>
+                  </group>
+                </page>
+              </notebook>
+      			</sheet>
+      		</form>
+      </field>
+    </record>
+
+	<record id="lc_vehicle_parts_inventory_action" model="ir.actions.act_window">
+            <field name="name">Vehicle Parts Inventory</field>
+            <field name="res_model">lc.vehicle.parts.inventory</field>
+            <field name="view_mode">tree,form</field>
+  </record>
+
+  <!-- Vehicle Parts List -->
+
+  <record model="ir.ui.view" id="lc_vehicle_parts_list_tree">
+      <field name="name">Vehicle Parts List Tree</field>
+      <field name="model">lc.vehicle.parts.list</field>
+      <field name="arch" type="xml">
+        <tree string="Vehicle Part">
+          <field name="parent_id"/>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="lc_vehicle_parts_list_form">
+      <field name="name">Vehicle Parts List Form</field>
+      <field name="model">lc.vehicle.parts.list</field>
+      <field name="arch" type="xml">
+      		<form string="Vehicle Part">
+      			<sheet>
+      				<group>
+      		    	<field name="parent_id"/>
+      		    	<field name="name"/>
+      		    </group>
+      			</sheet>
+      		</form>
+      </field>
+    </record>
+
+	<record id="lc_vehicle_parts_list_action" model="ir.actions.act_window">
+            <field name="name">Vehicle Parts List</field>
+            <field name="res_model">lc.vehicle.parts.list</field>
+            <field name="view_mode">tree,form</field>
+  </record>
+
+  <!-- End Vehicle Parts -->
+
+
+	<menuitem id="submenu_lc_vehicle_parts_inventory" parent="fleet.fleet_vehicles" name="Vehicle Parts Inventory"
+                  action="lc_vehicle_parts_inventory_action" groups="fleet.fleet_group_user" sequence="11"/>
+
+	<menuitem id="submenu_lc_vehicle_parts_lists" parent="fleet.fleet_configuration" name="Vehicle Parts List"
+                  action="lc_vehicle_parts_list_action" groups="base.group_no_one" sequence="11"/>
+
+  </data>
+</odoo>

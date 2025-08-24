@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+    <t t-name="StockErrorPopup" owl="1">
+        <div class="modal-dialog">
+            <div class="popup popup-text">
+                <header class="title">
+                    <p class="title">Error: Out of Stock</p>
+                </header>
+
+                <div class="main-body touch-scrollable scrollable-y" style="max-height: 305px;">
+                    <t t-set="product" t-value="props.product"/>
+                    <t t-if="product">
+                        <table style="width: 90%; border: 1px solid black; margin: 8px; font-size:12px;">
+                            <thead style="border:1px solid black;">
+                                <th>Product</th>
+                                <th>Qty on Hand</th>
+                                <th>Order</th>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="product" t-as="line" style="border:1px solid black">
+                                    <td><t t-esc="line.product"/></td>
+                                    <td><t t-esc="line.qty_available"/></td>
+                                    <td><t t-esc="line.quantity"/></td>
+                                </tr>
+                            </tbody>
+                        </table>                        
+                    </t>
+                </div>
+
+                <footer class="footer">                    
+                    <div class="button cancel" t-on-click="cancel">
+                        Cancel
+                    </div>
+                </footer>                
+            </div>
+        </div>
+    </t>
+
+</templates>

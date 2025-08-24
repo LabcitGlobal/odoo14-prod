@@ -1,5 +1,7 @@
 # Dependencias Python adicionales para Odoo 14
-# Descomenta las que necesites
+
+# Para módulo wk_backup_restore
+python-crontab==2.6.0
 
 # Para reportes avanzados
 # xlsxwriter==3.0.3

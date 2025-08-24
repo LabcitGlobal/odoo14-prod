@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record id="group_show_t_ex" model="res.groups">
+        <field name="name">Generate Row Tex</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+        <field name="comment">Generate Row Tex</field>
+    </record>
+  </data>
+</odoo>

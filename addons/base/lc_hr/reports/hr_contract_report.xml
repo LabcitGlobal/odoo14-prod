@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="lc_hr_contract_report">
+        	<t t-foreach="docs" t-as="doc">            
+				<t t-call="web.html_container">
+					<t t-call="web.external_layout">
+						<div style="font:17px Helvetica,Arial !important;">
+            				<div class="page">    
+	            				<center><h2>CONTRATO DE TRABAJO</h2></center>								
+								<p align="justify">
+								Conste por el presente contrato  de trabajo que surtirá los efectos de ley entre partes, al tenor de las cláusulas que se  detallan a continuación:
+								<br/><strong>PRIMERA.-</strong> (De las partes).- Concurren a la celebración del presente contrato los señores.
+								<br/>1.1.-  El  Sr. <span t-field="doc.employee_id.parent_id"/> con C.I. <span t-field="doc.employee_id.parent_id.identification_id"/> <span t-field="doc.employee_id.parent_id.place_of_birth" style="text-transform:uppercase;"/>. Representante legal de  la empresa <span t-field="doc.company_id" style="text-transform:uppercase;"/>. Que en adelante se denominara  EMPLEADOR.
+								<br/>1.2.- El Sr. <span t-field="doc.employee_id"/> C.I <span t-field="doc.employee_id.identification_id"/> <span t-field="doc.employee_id.place_of_birth" style="text-transform:uppercase;"/>. que en adelante se denominara EMPLEADO. Domiciliado en: <span t-field="doc.employee_id.address_home_id.street"/>. 
+								<br/><strong>SEGUNDA.-</strong> (Antecedentes) En calidad de  representante de la empresa contrato como Chófer profesional internacional de larga distancia al ciudadano ya arriba mencionado, con Licencia de conducir  categoría “<span t-field="doc.driver_license"/>” según las formalidades previstas por reglamento interno de la empresa. Se le entregara el <span t-field="doc.vehicle_model"/> con placa <span t-field="doc.vehicle_license_plate"/> color <span t-field="doc.color"/> con chasis Nº <span t-field="doc.chassis"/>. EL EMPLEADO debe cumplir con todas las tareas encomendadas, cuidar la unidad que se le entregue, el descuido o mal trato a la unidad que se le asigne esta bajo la responsabilidad del EMPLEADO, pudiendo el EMPLEADOR tomar acciones por el mal trato a la unidad asignada. 
+								<br/><strong>TERCERA.-</strong> (Tiempo).- La duración de dicho contrato será 3 meses de prueba a partir del <span t-esc="doc.first_contract_date.strftime('%d de %B del %Y')"/>, pudiéndose ampliar a Un Año automáticamente  según antecedentes y la aplicación en el trabajo.
+								<br/><strong>CUARTA.-</strong>(Remuneración).- Por los servicios prestados el EMPLEADOR cancelara al EMPLEADO la suma mensual de Bs. <span t-field="doc.wage"/> (<span t-esc="doc.currency_id.amount_to_text(doc.wage)"  style="text-transform:uppercase;"/>).
+								<br/><strong>SEXTA.-</strong> (Jornada de trabajo).- El horario de trabajo, será establecido por el EMPLEADOR de acuerdo al requerimiento en coordinación con el EMPLEADO. 
+								<br/><strong>SÉPTIMA.-</strong> (Prohibido).- Esta totalmente prohibido conducir en estado inconveniente, bajo efecto de alcohol, o algún estupefaciente, en caso contrario será de la entera responsabilidad del EMPLEADO.
+								<br/>También se prohíbe permitir la conducción de segundas personas sin el consentimiento del EMPLEADOR, el desacato de la  mencionada cláusula será de la responsabilidad del EMPLEADO.
+								<br/><strong>OCTAVO.-</strong> (Finalidad).- El mencionado camión, tendrá la finalidad de transportar carga del territorio nacional a puertos de Chile, Perú y viceversa. EL EMPLEADO está prohibido manejar cargas prohibidas por Ley 1008, contrabando u otros similares, caso contrario será de entera responsabilidad del EMPLEADO. 
+								<br/><strong>NOVENO.-</strong> (Cumplimiento y Garantía) El empleado cumplirá con todas las tareas que se le asigne  con toda <strong>Responsabilidad, Dedicación y Honestidad</strong> al mismo tiempo garantiza con todos sus bienes habidos y por haber en caso de incumplimiento o desacato en que incurra el empleado; debiendo el EMPLEADOR tomar acciones legales que conciernan al caso.
+								<br/><strong>DÉCIMO.-</strong> (Seguro).- El EMPLEADOR asegurara al EMPLEADO pasado un año, quedando en común acuerdo de ambas partes.
+								<br/><strong>DÉCIMO PRIMERO.-</strong> (Aceptación).- Las partes firman el presente contrato de entera aceptación y plena  conformidad, en fecha <span t-esc="doc.date_start.strftime('%d de %B del %Y')"/>.
+								</p>
+								<br/>
+								<br/>
+								<br/>
+								<br/>								
+								<table style="width:100%; align:center">
+									<tr>									
+										<td style="width:50%"><center><span t-field="doc.employee_id.parent_id" style="text-transform:uppercase;"/></center></td>
+										<td style="width:50%"><center><span t-field="doc.employee_id" style="text-transform:uppercase;"/></center></td>
+									</tr>									
+									<tr>									
+										<td><center><strong>EMPLEADOR</strong></center></td>
+										<td><center><strong>EMPLEADO</strong></center></td>
+									</tr>
+								</table>
+							</div>
+            			</div>
+            		</t>
+            	</t>          		
+            </t>
+        </template>
+    </data>
+</odoo>

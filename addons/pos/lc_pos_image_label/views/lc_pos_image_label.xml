@@ -1,0 +1,30 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="product_product_label_form_view">
+    	<field name="name">product.product.label</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">        
+        <notebook>
+        	<page string="Etiquetas POS">
+        		<group name="Label">
+        			<group name="left">
+ 	       				<field name="label1" string="Etiqueta 1"/>
+        			</group>
+        			<group name="right">
+        				<field name="label2" string="Etiqueta 2"/>
+        			</group>
+        		</group>
+				<group name="Label">
+        			<group name="left">
+ 	       				<field name="top" string="Producto Top"/>
+        			</group>
+        			<group name="right">
+        			</group>
+        		</group>
+        	</page>
+        </notebook>
+        </field>
+    </record>
+  </data>
+</odoo>

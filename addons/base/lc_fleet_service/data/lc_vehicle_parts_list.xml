@@ -1,0 +1,519 @@
+<openerp>
+    <data>
+		<!-- Data Tracto Camión -->
+        <record id="lc_vehicle_part_list_1" model="lc.vehicle.parts.list">
+	    	<field name="name">Tracto - Camión</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_2" model="lc.vehicle.parts.list">
+	    	<field name="name">Herramientas</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_3" model="lc.vehicle.parts.list">
+	    	<field name="name">Chata</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_4" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Aire Acondicionado</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_5" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Antena</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_6" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Asientos</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_7" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Baterías</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_8" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Bicera</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_9" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Bocina</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_10" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Botones de tablero</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_11" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Calefacción</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_12" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Ceniceros</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_13" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Cerebro</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_14" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Cinturón de seguridad</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_15" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Cortinas</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_16" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Emblemas</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_17" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Encendedor</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_18" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Espejo interior</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_19" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Espejos laterales</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_20" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Faroles delanteros</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_21" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Gata de cabina</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_22" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Guardabarros</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_23" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Guiñadores</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_24" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Intercooler</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_25" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Limpia parabrisas</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_26" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Llaves de contacto</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_27" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Luz interior</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_28" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Manivelas</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_29" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Mascara</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_30" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Mascarilla</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_31" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Media luz</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_32" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Medidor de aceite</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_33" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Motor de arranque</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_34" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Panel eléctrico</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_35" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Parachoques</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_36" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Parlantes</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_37" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Perillas de caja</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_38" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Pestañas de puerta</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_39" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Pisos</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_40" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Quitasoles</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_41" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Radio</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_42" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Relojes de tablero</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_43" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Rompe vientos</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_44" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Sistema de inyección</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_45" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Stops</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_46" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Tapa de batería</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_47" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Tapa de radiador</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_48" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Tapa de tanque</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_49" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Tapa ruedas</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_50" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Tocabocinas</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_51" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Vidrio delantero</field>
+			<field name="active" eval="True"/>
+	    </record>
+        <record id="lc_vehicle_part_list_52" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Tracto - Camión')]"/>
+	    	<field name="name">Vidrios laterales</field>
+			<field name="active" eval="True"/>
+	    </record>
+		<!-- Data Herramientas -->
+        <record id="lc_vehicle_part_list_53" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Acordion eléctrico</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_54" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Adaptadores</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_55" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Alicate</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_56" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Barrenos</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_57" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Botiquín</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_58" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Cachimba</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_59" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Casco</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_60" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Catalogo</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_61" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Chaleco reflectivo</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_62" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Cintas para tesar</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_63" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Conos</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_64" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Crezen</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_65" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Cuña</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_66" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Desarmadores</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_67" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Extintores</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_68" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Gata botella</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_69" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Guantes</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_70" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Linterna</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_71" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Llave  de rueda</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_72" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Llave alen</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_73" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Luz de altura</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_74" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Mangueras de aires</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_75" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Manguera de aire</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_76" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Muela</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_77" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Pala</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_78" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Paño absorbente</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_79" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Picotas</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_80" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Piñas</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_81" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Pitas</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_82" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Placas</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_83" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Ponchillo</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_84" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Set de llaves</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_85" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Sobre aros</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_86" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Tiro de barra</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_87" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Triangulo</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_88" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Tubo de fuerza</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_89" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Valdés</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_90" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Varillas de cobre</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_91" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Herramientas')]"/>
+	    	<field name="name">Cinta reflectivo</field>
+			<field name="active" eval="True"/>
+	    </record>  
+		<!-- Data Chata       -->
+        <record id="lc_vehicle_part_list_92" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Chata')]"/>
+	    	<field name="name">Caja de herramientas</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_93" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Chata')]"/>
+	    	<field name="name">Carpas</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_94" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Chata')]"/>
+	    	<field name="name">Guarda barros</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_95" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Chata')]"/>
+	    	<field name="name">Llanta de auxilio</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_96" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Chata')]"/>
+	    	<field name="name">Llantas</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_97" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Chata')]"/>
+	    	<field name="name">Luces laterales</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_98" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Chata')]"/>
+	    	<field name="name">Mataburros</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_99" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Chata')]"/>
+	    	<field name="name">Pitas</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_100" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Chata')]"/>
+	    	<field name="name">Plataforma</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_101" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Chata')]"/>
+	    	<field name="name">Porta auxilio</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_102" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Chata')]"/>
+	    	<field name="name">Stops</field>
+			<field name="active" eval="True"/>
+	    </record>        
+        <record id="lc_vehicle_part_list_103" model="lc.vehicle.parts.list">
+	    	<field model="lc.vehicle.parts.list" name="parent_id" search="[('name','=','Chata')]"/>
+	    	<field name="name">Barandas</field>
+			<field name="active" eval="True"/>
+	    </record>        
+    </data>
+</openerp>

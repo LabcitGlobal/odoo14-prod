@@ -1,0 +1,685 @@
+<openerp>
+  <data>
+    <record id="res_country_province_H_101" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-H')]" />
+		<field name="name">Oropeza</field>
+		<field name="code">101</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_H_102" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-H')]" />
+		<field name="name">Azurduy</field>
+		<field name="code">102</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_H_103" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-H')]" />
+		<field name="name">Zudañez</field>
+		<field name="code">103</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_H_104" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-H')]" />
+		<field name="name">Tomina</field>
+		<field name="code">104</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_H_105" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-H')]" />
+		<field name="name">Hernando Siles</field>
+		<field name="code">105</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_H_106" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-H')]" />
+		<field name="name">Yamparaez</field>
+		<field name="code">106</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_H_107" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-H')]" />
+		<field name="name">Nor Cinti</field>
+		<field name="code">107</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_H_108" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-H')]" />
+		<field name="name">Belisario Boeto</field>
+		<field name="code">108</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_H_109" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-H')]" />
+		<field name="name">Sud Cinti</field>
+		<field name="code">109</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_H_110" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-H')]" />
+		<field name="name">Luis Calvo</field>
+		<field name="code">110</field>
+		<field name="active" eval="True"/>		
+	</record>
+	
+    <record id="res_country_province_L_201" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-L')]" />
+		<field name="name">Murillo</field>
+		<field name="code">201</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_202" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-L')]" />
+		<field name="name">Omasuyos</field>
+		<field name="code">202</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_203" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-L')]" />
+		<field name="name">Pacajes</field>
+		<field name="code">203</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_204" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-L')]" />
+		<field name="name">Camacho</field>
+		<field name="code">204</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_205" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-L')]" />
+		<field name="name">Muñecas</field>
+		<field name="code">205</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_206" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-L')]" />
+		<field name="name">Larecaja</field>
+		<field name="code">206</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_207" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-L')]" />
+		<field name="name">Franz Tamayo</field>
+		<field name="code">207</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_208" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-L')]" />
+		<field name="name">Ingavi</field>
+		<field name="code">208</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_209" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-L')]" />
+		<field name="name">Loayza</field>
+		<field name="code">209</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_210" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-L')]" />
+		<field name="name">Inquisivi</field>
+		<field name="code">210</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_211" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-L')]" />
+		<field name="name">Sur Yungas</field>
+		<field name="code">211</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_212" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-L')]" />
+		<field name="name">Los Andes</field>
+		<field name="code">212</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_213" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-L')]" />
+		<field name="name">Aroma</field>
+		<field name="code">213</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_214" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-L')]" />
+		<field name="name">Nor Yungas</field>
+		<field name="code">214</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_215" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-L')]" />
+		<field name="name">Abel Iturralde</field>
+		<field name="code">215</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_216" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-L')]" />
+		<field name="name">Bautista Saavedra</field>
+		<field name="code">216</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_217" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-L')]" />
+		<field name="name">Manco Kapac</field>
+		<field name="code">217</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_218" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-L')]" />
+		<field name="name">Gualberto Villarroel</field>
+		<field name="code">218</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_219" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-L')]" />
+		<field name="name">Gral. J. Manuel Pando</field>
+		<field name="code">219</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_220" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-L')]" />
+		<field name="name">Caranavi</field>
+		<field name="code">220</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_province_L_301" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-C')]" />
+		<field name="name">Cercado</field>
+		<field name="code">301</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_302" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-C')]" />
+		<field name="name">Campero</field>
+		<field name="code">302</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_303" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-C')]" />
+		<field name="name">Ayopaya</field>
+		<field name="code">303</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_304" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-C')]" />
+		<field name="name">Esteban Arce</field>
+		<field name="code">304</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_305" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-C')]" />
+		<field name="name">Arani</field>
+		<field name="code">305</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_306" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-C')]" />
+		<field name="name">Arque</field>
+		<field name="code">306</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_307" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-C')]" />
+		<field name="name">Capinota</field>
+		<field name="code">307</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_308" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-C')]" />
+		<field name="name">German Jordan</field>
+		<field name="code">308</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_309" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-C')]" />
+		<field name="name">Quillacollo</field>
+		<field name="code">309</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_310" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-C')]" />
+		<field name="name">Chapare</field>
+		<field name="code">310</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_311" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-C')]" />
+		<field name="name">Tapacari</field>
+		<field name="code">311</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_312" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-C')]" />
+		<field name="name">Carrasco</field>
+		<field name="code">312</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_313" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-C')]" />
+		<field name="name">Mizque</field>
+		<field name="code">313</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_314" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-C')]" />
+		<field name="name">Punata</field>
+		<field name="code">314</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_315" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-C')]" />
+		<field name="name">Bolivar</field>
+		<field name="code">315</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_316" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-C')]" />
+		<field name="name">Tiraque</field>
+		<field name="code">316</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_province_L_401" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-O')]" />
+		<field name="name">Cercado</field>
+		<field name="code">401</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_402" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-O')]" />
+		<field name="name">Abaroa</field>
+		<field name="code">402</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_403" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-O')]" />
+		<field name="name">Carangas</field>
+		<field name="code">403</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_404" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-O')]" />
+		<field name="name">Sajama</field>
+		<field name="code">404</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_405" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-O')]" />
+		<field name="name">Litoral</field>
+		<field name="code">405</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_406" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-O')]" />
+		<field name="name">Poopo</field>
+		<field name="code">406</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_407" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-O')]" />
+		<field name="name">Pantaleon Dalence</field>
+		<field name="code">407</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_408" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-O')]" />
+		<field name="name">Ladislao Cabrera</field>
+		<field name="code">408</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_409" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-O')]" />
+		<field name="name">Sabaya</field>
+		<field name="code">409</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_410" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-O')]" />
+		<field name="name">Saucari</field>
+		<field name="code">410</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_411" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-O')]" />
+		<field name="name">Tomas Barron</field>
+		<field name="code">411</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_412" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-O')]" />
+		<field name="name">Sur Carangas</field>
+		<field name="code">412</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_413" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-O')]" />
+		<field name="name">S. Pedro de Totora</field>
+		<field name="code">413</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_414" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-O')]" />
+		<field name="name">Sebastian Pagador</field>
+		<field name="code">414</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_415" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-O')]" />
+		<field name="name">Mejillones</field>
+		<field name="code">415</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_416" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-O')]" />
+		<field name="name">Nor Carangas</field>
+		<field name="code">416</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_province_L_501" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-P')]" />
+		<field name="name">Tomas Frias</field>
+		<field name="code">501</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_502" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-P')]" />
+		<field name="name">Rafael Bustillos</field>
+		<field name="code">502</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_503" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-P')]" />
+		<field name="name">Cornelio Saavedra</field>
+		<field name="code">503</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_504" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-P')]" />
+		<field name="name">Chayanta</field>
+		<field name="code">504</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_505" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-P')]" />
+		<field name="name">Charcas</field>
+		<field name="code">505</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_506" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-P')]" />
+		<field name="name">Nor Chichas</field>
+		<field name="code">506</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_507" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-P')]" />
+		<field name="name">Alonzo de Ibañez</field>
+		<field name="code">507</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_508" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-P')]" />
+		<field name="name">Sur Chichas</field>
+		<field name="code">508</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_509" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-P')]" />
+		<field name="name">Nor Lipez</field>
+		<field name="code">509</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_510" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-P')]" />
+		<field name="name">Sur Lipez</field>
+		<field name="code">510</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_511" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-P')]" />
+		<field name="name">Jose Maria Linares</field>
+		<field name="code">511</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_512" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-P')]" />
+		<field name="name">Antonio Quijarro</field>
+		<field name="code">512</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_513" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-P')]" />
+		<field name="name">Gral. B. Bilbao</field>
+		<field name="code">513</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_514" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-P')]" />
+		<field name="name">Daniel Campos</field>
+		<field name="code">514</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_515" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-P')]" />
+		<field name="name">Modesto Omiste</field>
+		<field name="code">515</field>
+		<field name="active" eval="True"/>		
+	</record>	
+	<record id="res_country_province_L_516" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-P')]" />
+		<field name="name">Enrique Baldiviezo</field>
+		<field name="code">516</field>
+		<field name="active" eval="True"/>		
+	</record>	
+
+	<record id="res_country_province_L_601" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-T')]" />
+		<field name="name">Cercado</field>
+		<field name="code">601</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_602" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-T')]" />
+		<field name="name">Arce</field>
+		<field name="code">602</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_603" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-T')]" />
+		<field name="name">Gran Chaco</field>
+		<field name="code">603</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_604" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-T')]" />
+		<field name="name">Avilez</field>
+		<field name="code">604</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_605" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-T')]" />
+		<field name="name">Mendez</field>
+		<field name="code">605</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_606" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-T')]" />
+		<field name="name">Burnet O'Connor</field>
+		<field name="code">606</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_province_L_701" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-S')]" />
+		<field name="name">Andres Ibañez</field>
+		<field name="code">701</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_702" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-S')]" />
+		<field name="name">Warnes</field>
+		<field name="code">702</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_703" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-S')]" />
+		<field name="name">Velasco</field>
+		<field name="code">703</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_704" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-S')]" />
+		<field name="name">Ichilo</field>
+		<field name="code">704</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_705" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-S')]" />
+		<field name="name">Chiquitos</field>
+		<field name="code">705</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_706" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-S')]" />
+		<field name="name">Sara</field>
+		<field name="code">706</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_707" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-S')]" />
+		<field name="name">Cordillera</field>
+		<field name="code">707</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_708" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-S')]" />
+		<field name="name">Vallegrande</field>
+		<field name="code">708</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_709" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-S')]" />
+		<field name="name">Florida</field>
+		<field name="code">709</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_710" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-S')]" />
+		<field name="name">Obispo Santiestevan</field>
+		<field name="code">710</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_711" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-S')]" />
+		<field name="name">Ñuflo de Chavez</field>
+		<field name="code">711</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_712" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-S')]" />
+		<field name="name">Angel Sandoval</field>
+		<field name="code">712</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_713" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-S')]" />
+		<field name="name">Caballero</field>
+		<field name="code">713</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_714" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-S')]" />
+		<field name="name">German Bush</field>
+		<field name="code">714</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_715" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-S')]" />
+		<field name="name">Guarayos</field>
+		<field name="code">715</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_province_L_801" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-B')]" />
+		<field name="name">Cercado</field>
+		<field name="code">801</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_802" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-B')]" />
+		<field name="name">Vaca Diez</field>
+		<field name="code">802</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_803" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-B')]" />
+		<field name="name">Gral. J. Ballivian</field>
+		<field name="code">803</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_804" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-B')]" />
+		<field name="name">Yacuma</field>
+		<field name="code">804</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_805" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-B')]" />
+		<field name="name">Moxos</field>
+		<field name="code">805</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_806" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-B')]" />
+		<field name="name">Marban</field>
+		<field name="code">806</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_807" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-B')]" />
+		<field name="name">Mamore</field>
+		<field name="code">807</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_808" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-B')]" />
+		<field name="name">Itenez</field>
+		<field name="code">808</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+	<record id="res_country_province_L_901" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-N')]" />
+		<field name="name">Nicolas Suarez</field>
+		<field name="code">901</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_902" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-N')]" />
+		<field name="name">Manuripi</field>
+		<field name="code">902</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_903" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-N')]" />
+		<field name="name">Madre de Dios</field>
+		<field name="code">903</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_904" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-N')]" />
+		<field name="name">Abuna</field>
+		<field name="code">904</field>
+		<field name="active" eval="True"/>		
+	</record>
+	<record id="res_country_province_L_905" model="res.country.province">
+    	<field model="res.country.state" name="department_id" search="[('code','=','BO-N')]" />
+		<field name="name">Gral. Federico Roman</field>
+		<field name="code">905</field>
+		<field name="active" eval="True"/>		
+	</record>
+
+  </data>
+</openerp>

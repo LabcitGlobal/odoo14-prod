@@ -1,0 +1,9 @@
+<odoo>
+  <data>
+        
+    <record id="point_of_sale.action_pos_pos_form" model="ir.actions.act_window">
+      <field name="domain">[('date_order', '&gt;', ((context_today()-relativedelta(months=24)).strftime('%Y-%m-%d')))]</field>
+    </record>
+
+  </data>
+</odoo>

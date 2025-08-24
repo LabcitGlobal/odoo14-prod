@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="labcit_header" inherit_id="website.layout" name="Labcit Header" active="False">
+      <xpath expr="//header//nav" position="replace">
+        <!-- nav -->
+        <nav-menu class="lcmenu">
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="/"><img src="/theme_labcit/static/src/img/logo.svg" alt="Logo de Labcit"/></a>
+                </div>                
+                <input type="radio" name="slide" id="menu-btn"/>
+                <input type="radio" name="slide" id="cancel-btn"/>
+                <ul class="nav-links">
+                    <label for="cancel-btn" class="btn cancel-btn"><span class="bot"><i class="fa fa-times"></i></span></label>                    
+                    <li>
+                        <div class="mobile-logo">
+                            <a href="/"><img src="/theme_labcit/static/src/img/logo.svg" alt="Logo de Labcit"/></a>
+                        </div>
+                        <a class="link-a" href="#">Tecnología</a>
+                        <input type="checkbox" id="showDev"/>
+                        <label for="showDev" class="mobile-item">Tecnología</label>
+                        <div class="link-box">
+                            <div class="content">
+                                <div class="row">
+                                    <img src="/theme_labcit/static/src/img/sistemas.svg" alt="Area de Sistemas"/>
+                                </div>
+                                <div class="row">
+                                    <header>Software</header>
+                                    <ul class="sub-links">
+                                        <li><a href="/recursos-empresariales-erp-crm-cloud">Recursos Empresariales</a></li>
+                                        <li><a href="/comercio-electronico">Comercio B2B</a></li>
+                                        <li><a href="/modulos-esenciales">Módulos Esenciales</a></li>
+                                        <li><a href="/inteligencia-de-negocios">Inteligencia de Negocios</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Soluciones</header>
+                                    <ul class="sub-links">
+                                        <li><a href="/industria-comercio">Punto de Venta</a></li>
+                                        <li><a href="/manufactura">Inventarios</a></li>
+                                        <li><a href="/servicios">Contactos</a></li>
+                                        <li><a href="/educacion">Contabilidad</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Funcionalidades</header>
+                                    <ul class="sub-links">
+                                        <li><a href="/automatizacion-de-la-ti">Geolozalizacion</a></li>
+                                        <li><a href="/soporte">Agentes Comerciales</a></li>
+                                        <li><a href="/slides/sistema-de-planificacion-de-recursos-empresariales-1">Recursos Humanos</a></li>
+                                        <li><a href="/forum/sistema-de-planificacion-de-recursos-empresariales-2">RMA - Servicio Tecnico</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>                    
+                    <li>
+                        <a class="link-a" href="#">Precios</a>
+                        <input type="checkbox" id="showStd"/>
+                        <label for="showStd" class="mobile-item">Modalidades</label>
+                        <div class="link-box">
+                            <div class="content">                                 
+                                <div class="row">
+                                    <header>Corporativo</header>                               
+                                    <ul class="sub-links">
+                                        <li><a href="/gestion-de-marca">Planes Mensuales</a></li>
+                                        <li><a href="/ilustracion">Plan Crecimiento Escalonado</a></li>
+                                        <!-- <li><a href="/identidad-visual">Identidad Visual</a></li>
+                                        <li><a href="/diseno-ui-ux">UI/UX</a></li> -->
+                                    </ul>
+                                </div>
+                                <!-- <div class="row">
+                                    <header>Web/Móvil</header>                               
+                                    <ul class="sub-links">
+                                        <li><a href="#">UX Experiencia</a></li>
+                                        <li><a href="#">UI Interface</a></li>
+                                        <li><a href="#">Diseño Web</a></li>
+                                        <li><a href="#">Langing Pages</a></li>
+                                    </ul>
+                                </div> -->
+                                <div class="row">
+                                    <img src="/theme_labcit/static/src/img/diseno.svg" alt="Area de Diseño"/>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="link-a" href="#">Marketing</a>
+                        <input type="checkbox" id="showMar"/>
+                        <label for="showMar" class="mobile-item">Marketing</label>
+                        <div class="link-box">
+                            <div class="content">                                 
+                                <div class="row">
+                                    <header>Digital</header>                               
+                                    <ul class="sub-links">
+                                        <li><a href="/inbound-marketing">Inbound</a></li>
+                                        <li><a href="/marketing-de-contenidos">Marketing de contenidos</a></li>
+                                        <li><a href="/redes-sociales">Redes Sociales</a></li>
+                                        <li><a href="/optimizacion-para-motores-de-busqueda">SEO</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- <li>
+                        <a class="link-a" href="#">Comunicación</a>
+                        <input type="checkbox" id="showCom"/>
+                        <label for="showCom" class="mobile-item">Comunicación</label>
+                        <div class="link-box">
+                            <div class="content">                                 
+                                <div class="row">
+                                    <header>Audiovisual</header>                               
+                                    <ul class="sub-links">
+                                        <li><a href="/produccion-audio-visual">Producción</a></li>
+                                        <li><a href="/periodismo-digital">Periodismo Digital</a></li>
+                                        <li><a href="/canal-digital">Canal Digital</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li> -->
+                    <li>
+                        <a class="link-a" href="#">Labcit</a>
+                        <input type="checkbox" id="showAbo"/>
+                        <label for="showAbo" class="mobile-item">Labcit</label>
+                        <div class="link-box">
+                            <div class="content">                                 
+                                <div class="row">
+                                    <header>Acerca</header>                               
+                                    <ul class="sub-links">
+                                        <li><a href="/nosotros">Nosotros</a></li>
+                                        <li><a href="/servicios">Servicios</a></li>
+                                        <li><a href="/slides">Cursos</a></li>
+                                        <li><a href="/blog">Blog</a></li>
+                                        <li><a href="/forum">Ayuda</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>     
+                    <li>
+                        <div class="nav-footer">
+                            <ul class="nav-footer-links">
+                                <li><a href="/servicios">Servicios</a></li>
+                                <li><a href="/nosotros">Acerca de</a></li>
+                            </ul>
+                            <ul class="nav-footer-phone">
+                                <li><a href="tel://22843786"><i class="fa fa-whatsapp"></i> +591 (2) 2843786</a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=59173023223" target="_blank"><i class="fa fa-phone"></i> +591 73023223</a></li>
+                            </ul>
+                            <ul class="nav-footer-icons">
+                                <li><a href="https://www.facebook.com/100073481191647/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/labcitglobal/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://twitter.com/LabcitGlogal" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UC-383SEz9qA_XevmE4mGSaQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="https://github.com/LabcitGlobal" target="_blank"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/labcit-global-397966221/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>               
+                </ul>                                
+                <div class="nav-icons">
+                    <!-- Sign In -->
+                    <t t-call="portal.placeholder_user_sign_in">
+                        <t t-set="_item_class" t-value="'nav-item ml-lg-auto'"/>
+                        <t t-set="_link_class" t-value="'nav-link'"/>
+                    </t>
+                    <!-- User Dropdown -->
+                    <t t-call="portal.user_dropdown">
+                        <t t-set="_user_name" t-value="True"/>
+                        <t t-set="_item_class" t-value="'nav-item dropdown ml-lg-auto'"/>
+                        <t t-set="_link_class" t-value="'nav-link'"/>
+                    </t>
+                </div>                
+                <label for="menu-btn" class="btn menu-btn"><i class="fa fa-bars"></i></label> 
+            </div>
+        </nav-menu>
+      </xpath>
+    </template>
+</odoo>

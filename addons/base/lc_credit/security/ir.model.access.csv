@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_lc_credit_partner_view,lc_credit_partner_view,model_lc_credit_partner_view,group_lc_credit,1,0,0,0
+access_lc_credit_pos_view,lc_credit_pos_view,model_lc_credit_pos_view,group_lc_credit,1,0,0,0

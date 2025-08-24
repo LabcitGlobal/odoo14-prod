@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- REPORT STYLE 1 -->
+
+    <template id="report_product_list_style1">
+        <t t-if="line.image_1920">
+            <tr width="100%" style="font-size:15px;">
+                <!-- <td style="text-align:center;"> 
+                    <span t-esc="count"/>                    
+                </td> -->
+                <t t-if="data.get('image_check')">
+                    <td style="text-align:center;">
+                        <t t-if="data.get('image_size') == 'small'"> 
+                            <img t-if="line.image_1920" t-att-src="image_data_uri(line.image_1920)" style="height:100px;width:115px;text-align:center;" alt="image"/>
+                        </t>
+                        <t t-if="data.get('image_size') == 'medium'"> 
+                            <img t-if="line.image_1920" t-att-src="image_data_uri(line.image_1920)" style="height:125px;width:150px;text-align:center;" alt="image"/>
+                        </t>
+                        <t t-if="data.get('image_size') == 'large'"> 
+                            <img t-if="line.image_1920" t-att-src="image_data_uri(line.image_1920)" style="height:150px;width:200px;text-align:center;" alt="image"/>
+                        </t>
+                    </td>
+                </t>
+                <!-- <td style="text-align:center;"> 
+                    <span t-field="line.default_code"/>
+                </td> -->
+                <td style="text-align:left;">
+                    <span t-field='line.display_name'/>                                        
+                </td>
+                <t t-if="data.get('category_check')">
+                    <td> 
+                        <span t-field="line.categ_id.complete_name"/>
+                    </td>
+                </t>
+                <t t-if="data.get('price_check')">
+                    <td style="text-align:right;"> 
+                        <t t-if="data.get('currency_id')">
+                            <span t-esc="line.list_price" t-options="{'widget': 'monetary', 'display_currency':data.get('currency_id')}"/>
+                        </t>
+                        <t t-else="">
+                            <span t-esc="line.list_price" />
+                        </t>
+                    </td>
+                </t>
+                <t t-if="data.get('description_check')">
+                    <td> 
+                        <span t-field="line.description_sale"/>
+                    </td>
+                </t>
+            </tr>
+        </t>
+    </template>
+
+    <template id="report_page_style1">
+        <div class="page" style="font-size:13px;font-family:Arial">
+                <div class="oe_structure"/>
+                <table width="100%" style="font-size:21px;border-style: none;margin-bottom:15px;">
+                    <tr style="border-style: none;">
+                        <td style="border-style: none;text-transform: uppercase;"><center><strong>Generate Product Catalog Style</strong></center></td>
+                    </tr>
+                </table>                
+                <table width="100%" class="table table-sm o_main_table">
+                    <thead>
+                        <tr style="font-size:15px;background:#e6e6e6;color:#000000;" width="100%">
+                            <!-- <td style="padding-left:5px;font-weight:bold;">
+                                <center>
+                                    No.
+                                </center>
+                            </td> -->
+                            <t t-if="data.get('image_check')">
+                                <td style="padding-left:5px;font-weight:bold;">
+                                    <center>
+                                        Image
+                                    </center>
+                                </td>
+                            </t>
+                            <!-- <td style="padding-left:5px;font-weight:bold;">
+                                <center>
+                                    Internal Referance
+                                </center>
+                            </td> -->
+                            <td style="padding-left:5px;font-weight:bold;width: 60%;">
+                                <center>
+                                    Product Name
+                                </center>
+                            </td>
+                            <t t-if="data.get('category_check')">
+                                <td style="padding-left:5px;font-weight:bold;">
+                                    <center>
+                                        Category Name
+                                    </center>
+                                </td>
+                            </t>
+                            <t t-if="data.get('price_check')">
+                                <td style="padding-left:5px;font-weight:bold;">
+                                    <center>
+                                        Price
+                                    </center>
+                                </td>
+                            </t>
+                            <t t-if="data.get('description_check')">
+                                <td style="padding-left:5px;font-weight:bold;">
+                                    <center>
+                                        Description
+                                    </center>
+                                </td>
+                            </t>
+                        </tr>
+                    </thead>                    
+                    <tbody>
+                        <t t-foreach="get_product_details(data)" t-as="line">
+                            <t t-if="data.get('quant_stock_check')">
+                                <t t-if="line.virtual_available &gt; 0.0">                                    
+                                    <t t-call="lc_product_catalog.report_product_list_style1"/>
+                                </t>                                                                
+                            </t>
+                            <t t-else="">                                
+                                <t t-call="lc_product_catalog.report_product_list_style1"/>
+                            </t>
+                        </t>
+                    </tbody>
+                </table>
+            </div>
+    </template>
+
+	<template id="report_product_catalog_document_style_1">
+        <t t-if="data.get('watermark_check')">
+            <t t-call="lc_product_catalog.report_page_style1"/>                   
+        </t>
+        <t t-else="">
+            <t t-call="web.external_layout">        
+                <t t-call="lc_product_catalog.report_page_style1"/>       
+            </t>
+        </t>     
+    </template>
+
+    <template id="report_product_style_1">
+        <t t-call="web.html_container">
+            <t t-call="lc_product_catalog.report_product_catalog_document_style_1"/>
+        </t>
+    </template>
+
+    <!-- END REPORT STYLE 1 -->
+
+    <!-- END REPORT STYLE 6 -->
+
+    <template id="report_product_catalog_document_style_6">        
+        <t t-call="lc_product_catalog.report_page_style1"/>       
+    </template>
+
+    <template id="report_product_style_6">
+        <t t-call="web.html_container">
+            <t t-call="lc_product_catalog.report_product_catalog_document_style_6"/>
+        </t>
+    </template>
+
+    <!-- END REPORT STYLE 6 -->
+
+    <!-- REPORT STYLE 2 -->
+
+    <!-- Two Box Style 2 -->
+    <template id="report_product_product_list_two_box_style_2">
+        <t t-if="product.image_1920">
+            <div style="display: inline-table; 
+                height: 3.75in;
+                border:1px solid black;
+                width:4.25in;">
+                <table style="height: 3.75in;;width:4.25in;">
+                    <tr style="text-align:center;">
+                        <td style="padding-bottom:20px;padding-top:10px;" colspan="2">
+                            <t t-if="data.get('image_size') == 'small'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:100px;width:115px;text-align:center;" />
+                            </t>
+                            <t t-if="data.get('image_size') == 'medium'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:125px;width:150px;text-align:center;" />
+                            </t>
+                            <t t-if="data.get('image_size') == 'large'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:150px;width:200px;text-align:center;" />
+                            </t>
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:15px;border:none;padding-bottom:10px;" colspan="2">
+                            [<span style="font-weight:bold;font-size:12px;background:#e6e6e6;color:#000000;"
+                            t-esc='product.default_code' />]                            
+                            <t t-if="data.get('category_check')">
+                                &#160;&#160;&#160;
+                                [<span style="font-weight:bold;font-size:12px;background:#e6e6e6;color:#000000;"
+                                t-esc='product.categ_id.complete_name' />]                                
+                            </t>
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:15px;padding-bottom:15px;" colspan="2">
+                            <span style="font-weight:bold;font-size:18px;"
+                            t-esc='product.name' /><br />
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:15px;padding-bottom:15px;">
+                            <t t-if="data.get('description_check')">
+                                <div style="width:65%;">
+                                    <t t-if="product.description_sale">
+                                        <span style="font-weight:bold;font-size:12px;" t-esc='product.description_sale' />
+                                    </t>
+                                    <t t-else="">
+                                        &#160;&#160;&#160;&#160;
+                                    </t>
+                                </div>
+                            </t>
+                            <t t-if="data.get('price_check')">
+                                <div style="float:right;margin-right:20px;margin-top:-25px;width:30%;height:65px;text-align:center;background:#e6e6e6;">
+                                    <br/>
+                                    <t t-if="data.get('currency_id')">
+                                        <span style="font-weight:bold;font-size:16px;" t-esc="product.list_price" t-options="{'widget': 'monetary', 'display_currency':data.get('currency_id')}"/>
+                                    </t>
+                                    <t t-else="">
+                                        <span style="font-weight:bold;font-size:16px;" t-field='product.list_price' />
+                                    </t>
+                                </div>
+                            </t>
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:15px;padding-bottom:15px;">
+                            <div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </t>
+    </template>
+
+    <!-- Three Box Style 2 -->
+    <template id="report_product_product_list_three_box_style_2">
+        <t t-if="product.image_1920">
+            <div style="display: inline-table; 
+                height: 4.50in;
+                border:1px solid black;
+                width: 2.92in;">
+                <table style="width:2.92in;height: 4.50in;">
+                    <tr style="text-align:center;">
+                        <td style="padding-bottom:20px;padding-top:10px;" colspan="2">
+                            <t t-if="data.get('image_size') == 'small'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:100px;width:115px;text-align:center;" />
+                            </t>
+                            <t t-if="data.get('image_size') == 'medium'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:125px;width:150px;text-align:center;" />
+                            </t>
+                            <t t-if="data.get('image_size') == 'large'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:150px;width:200px;text-align:center;" />
+                            </t>
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:10px;border:none;padding-bottom:10px;" colspan="2">
+                            [<span style="font-weight:bold;font-size:12px;background:#e6e6e6;color:#000000;"
+                            t-esc='product.default_code' />]
+                            <t t-if="data.get('category_check')">
+                                &#160;
+                                [<span style="font-weight:bold;font-size:12px;background:#e6e6e6;color:#000000;"
+                                t-esc='product.categ_id.complete_name' />]                    
+                            </t>
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:10px;padding-bottom:15px;" colspan="2">
+                            <span style="font-weight:bold;font-size:20px;"
+                            t-esc='product.name' /><br />
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:10px;padding-bottom:15px;">
+                            <t t-if="data.get('description_check')">
+                                <div style="width:65%;">
+                                    <t t-if="product.description_sale">
+                                        <span style="font-weight:bold;font-size:12px;" t-esc='product.description_sale' />
+                                    </t>
+                                    <t t-else="">
+                                        &#160;&#160;&#160;&#160;
+                                    </t>
+                                </div>
+                            </t>
+                            <t t-if="data.get('price_check')">
+                                <div style="float:right;margin-right:20px;margin-top:-25x;width:30%;height:65px;text-align:center;background:#e6e6e6;">
+                                    <br/>
+                                    <t t-if="data.get('currency_id')">
+                                        <span style="font-weight:bold;font-size:16px;" t-esc="product.list_price" t-options="{'widget': 'monetary', 'display_currency':data.get('currency_id')}"/>
+                                    </t>
+                                    <t t-else="">
+                                        <span style="font-weight:bold;font-size:16px;" t-field='product.list_price' />
+                                    </t>
+                                </div>
+                            </t>
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:15px;padding-bottom:15px;">
+                            <div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </t>
+    </template>
+
+    <!-- Four Box Style 2 -->
+    <template id="report_product_product_list_four_box_style_2">
+        <t t-if="product.image_1920">
+            <div style="display: inline-table; 
+                height: 4.50in;
+                border:1px solid black;
+                width: 2.15in;">
+                <table style="height: 4.50in;width: 2.15in;">
+                    <tr style="text-align:center;height:170px;">
+                        <td style="padding-top:10px;padding-bottom:10px;" colspan="2">
+                            <t t-if="data.get('image_size') == 'small'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:65px;width:75px;text-align:center;" />
+                            </t>
+                            <t t-if="data.get('image_size') == 'medium'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:115px;width:115px;text-align:center;" />
+                            </t>
+                            <t t-if="data.get('image_size') == 'large'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:135px;width:150px;text-align:center;" />
+                            </t>
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;height:80px;">
+                        <td style="padding-left:10px;border:none;padding-bottom:10px;" colspan="2">
+                            [<span style="font-weight:bold;font-size:12px;background:#e6e6e6;color:#000000;"
+                            t-esc='product.default_code' />]
+                            <t t-if="data.get('category_check')">                    
+                                &#160;
+                                [<span style="font-weight:bold;font-size:12px;background:#e6e6e6;color:#000000;"
+                                t-esc='product.categ_id.complete_name' />]
+                            </t>
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;height:50px;">
+                        <td style="padding-left:10px;" colspan="2">
+                            <span style="font-weight:bold;font-size:14px;"
+                            t-esc='product.name' /><br />
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:10px;padding-bottom:10px;">
+                            <t t-if="data.get('description_check')">
+                                <div style="width:65%;">
+                                    <t t-if="product.description_sale">
+                                        <span style="font-weight:bold;font-size:12px;" t-esc='product.description_sale' />
+                                    </t>
+                                    <t t-else="">
+                                        &#160;&#160;&#160;&#160;
+                                    </t>
+                                </div>
+                            </t>
+                            <t t-if="data.get('price_check')">
+                                <t t-if="product.description_sale">
+                                    <div style="float:right;margin-right:10px;margin-top:-20px;width:40%;height:65px;text-align:center;background:#e6e6e6;">
+                                        <br/>
+                                        <t t-if="data.get('currency_id')">
+                                            <span style="font-weight:bold;font-size:16px;" t-esc="product.list_price" t-options="{'widget': 'monetary', 'display_currency':data.get('currency_id')}"/>
+                                        </t>
+                                        <t t-else="">
+                                            <span style="font-weight:bold;font-size:16px;" t-field='product.list_price' />
+                                        </t>
+                                    </div>
+                                </t>
+                                <t t-else="">
+                                    <div style="float:right;margin-right:20px;margin-top:5px;width:40%;height:65px;text-align:center;background:#e6e6e6;">
+                                        <br/>
+                                        <t t-if="data.get('currency_id')">
+                                            <span style="font-weight:bold;font-size:16px;" t-esc="product.list_price" t-options="{'widget': 'monetary', 'display_currency':data.get('currency_id')}"/>
+                                        </t>
+                                        <t t-else="">
+                                            <span style="font-weight:bold;font-size:16px;" t-field='product.list_price' />
+                                        </t>
+                                    </div>
+                                </t>
+                            </t>
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:15px;padding-bottom:15px;">
+                            <div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </t>
+    </template>
+
+    <template id="report_product_catalog_document_style_2">
+        <t t-call="web.external_layout">
+            <div class="page">
+                <div class="oe_structure"/>
+                <table width="100%" style="font-size:24px;border-style: none;margin-bottom:20px;margin-top:-55px;">
+                    <tr style="border-style: none;">
+                        <td style="border-style: none;text-transform: uppercase;"><center><strong>Generate Product Catalog Style</strong></center></td>
+                    </tr>
+                </table>
+                
+                <t t-if="data.get('print_box_per_row') == 'two_box_per_row'">
+                    <div style="width:100%;">
+                        <t t-foreach="get_product_details(data)" t-as='product'>
+                            <t t-if="data.get('quant_stock_check')">
+                                <t t-if="product.virtual_available &gt; 0.0">
+                                    <t t-call="lc_product_catalog.report_product_product_list_two_box_style_2"/>
+                                </t>                                                                
+                            </t>
+                            <t t-else="">
+                                <t t-call="lc_product_catalog.report_product_product_list_two_box_style_2"/>
+                            </t>
+                        </t>
+                    </div>
+                </t>
+
+                <t t-if="data.get('print_box_per_row') == 'three_box_per_row'">
+                    <div style="width:100%;">
+                        <t t-foreach="get_product_details(data)" t-as='product'>
+                            <t t-if="data.get('quant_stock_check')">
+                                <t t-if="product.virtual_available &gt; 0.0">
+                                    <t t-call="lc_product_catalog.report_product_product_list_three_box_style_2"/>
+                                </t>                                                                
+                            </t>
+                            <t t-else="">
+                                <t t-call="lc_product_catalog.report_product_product_list_three_box_style_2"/>
+                            </t>                            
+                        </t>
+                    </div>
+                </t>
+
+                <t t-if="data.get('print_box_per_row') == 'four_box_per_row'">
+                    <div style="width:100%;">
+                        <t t-foreach="get_product_details(data)" t-as='product'>
+                            <t t-if="data.get('quant_stock_check')">
+                                <t t-if="product.virtual_available &gt; 0.0">
+                                    <t t-call="lc_product_catalog.report_product_product_list_four_box_style_2"/>
+                                </t>                                                                
+                            </t>
+                            <t t-else="">
+                                <t t-call="lc_product_catalog.report_product_product_list_four_box_style_2"/>
+                            </t>
+                        </t>
+                    </div>
+                </t>
+            </div>
+        </t>
+    </template>
+
+                         
+    <template id="report_product_style_2">
+        <t t-call="web.html_container">
+            <t t-call="lc_product_catalog.report_product_catalog_document_style_2"/>
+        </t>
+    </template>
+
+    <!-- END REPORT STYLE 2 -->
+
+    <!-- REPORT STYLE 3 -->
+
+    <template id="report_product_list_style_3">
+        <t t-if="product.image_1920">
+            <div class="row">
+                <div class="col-lg-4" style="border:1px solid #e6e6e6;">
+                    <div class="row">
+                        <div class="col-xs-10" style="width:15%;margin-top:20px;margin-left:30px;height:2in;text-align:center;">
+                            <t t-if="data.get('image_size') == 'small'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:100px;width:115px;text-align:center;border: 5px solid #e6e6e6;border-radius: 5px;padding:5px;" />
+                            </t>
+                            <t t-if="data.get('image_size') == 'medium'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:125px;width:150px;text-align:center;border: 5px solid #e6e6e6;border-radius: 5px;padding:5px;" />
+                            </t>
+                            <t t-if="data.get('image_size') == 'large'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:165px;width:200px;text-align:center;border: 5px solid #e6e6e6;border-radius: 5px;padding:5px;" />
+                            </t>
+                        </div>
+                        <div class="col-lg-4" style="width:85%;margin-top:17px;margin-left:25px;height:2in;text-align:center;">
+                            <span style="font-weight:bold;font-size:28px;margin-left:20px;padding-top:10px;text-transform: uppercase;" t-esc='product.name' />
+                            <br />
+                            <span style="margin-left:20px;font-weight:bold;font-size:18px;background:#e6e6e6;color:#000000;">
+                            [<t t-esc='product.default_code' />]</span>&#160;
+                            <t t-if="data.get('category_check')">
+                                <span style="font-weight:bold;font-size:20px;background:#e6e6e6;color:#000000;">
+                                [<t t-esc='product.categ_id.complete_name' />]</span>                    
+                            </t>
+                            <br />
+                            <t t-if="data.get('description_check')">
+                                <t t-if="product.description_sale">
+                                    <span style="font-size:20px;margin-left:20px;" t-esc='product.description_sale' />
+                                    <br />
+                                </t>
+                            </t>
+                            <t t-if="data.get('price_check')">
+                                <t t-if="data.get('currency_id')">
+                                    <span style="font-weight:bold;font-size:20px;" t-esc="product.list_price" t-options="{'widget': 'monetary', 'display_currency':data.get('currency_id')}"/>
+                                </t>
+                                <t t-else="">
+                                    <span style="font-weight:bold;font-size:20px;" t-field='product.list_price' />
+                                </t>
+                                <br />
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="report_product_catalog_document_style_3">
+        <t t-call="web.external_layout">
+            <div class="page">
+                <div class="oe_structure"/>
+                <table width="100%" style="font-size:24px;border-style: none;margin-bottom:20px;margin-top:-55px;">
+                    <tr style="border-style: none;">
+                        <td style="border-style: none;text-transform: uppercase;"><center><strong>Generate Product Catalog Style</strong></center></td>
+                    </tr>
+                </table>
+                <div style="width:100%;">
+                    <t t-foreach="get_product_details(data)" t-as='product'>
+                        <t t-if="data.get('quant_stock_check')">
+                            <t t-if="product.virtual_available &gt; 0.0">
+                                <t t-call="lc_product_catalog.report_product_list_style_3"/>
+                            </t>                                                                
+                        </t>
+                        <t t-else="">
+                            <t t-call="lc_product_catalog.report_product_list_style_3"/>
+                        </t>
+                    </t>
+                </div>
+            </div>
+        </t>
+    </template>
+
+                         
+    <template id="report_product_style_3">
+        <t t-call="web.html_container">
+            <t t-call="lc_product_catalog.report_product_catalog_document_style_3"/>
+        </t>
+    </template>
+
+    <!-- END REPORT STYLE 3 -->
+
+    <!-- REPORT STYLE 4 -->
+
+    <template id="report_product_list_style_4">
+        <t t-if="product.image_1920">
+            <div style="display: inline-table; 
+                height: 4.4in;
+                border:1px solid black;
+                width:4.25in;
+                padding-left:5px;
+                box-shadow: 0 0 2px 2px rgb(153, 153, 153);">
+                <table style="width:4.25in;">
+                    <tr style="text-align:center;">
+                        <td style="padding-bottom:20px;padding-top:10px;" colspan="2">
+                            <t t-if="data.get('image_size') == 'small'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:100px;width:115px;text-align:center;border-radius: 50%;border:2px solid #999999;" />
+                            </t>
+                            <t t-if="data.get('image_size') == 'medium'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:125px;width:150px;text-align:center;border-radius: 50%;border:2px solid #999999;" />
+                            </t>
+                            <t t-if="data.get('image_size') == 'large'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:150px;width:200px;text-align:center;border-radius: 50%;border:2px solid #999999;" />
+                            </t>
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:15px;border:none;padding-bottom:10px;" colspan="2">
+                            <span style="font-weight:bold;font-size:14px;background:#e6e6e6;color:#000000;border:1px solid black;border-radius:12px;background-color:black;color:white;"
+                            t-esc='product.default_code' />&#160;&#160;&#160;
+                            <t t-if="data.get('category_check')">
+                                <span style="font-weight:bold;font-size:14px;background:#e6e6e6;color:#000000;border:1px solid black;border-radius:12px;background-color:black;color:white;"
+                                t-esc='product.categ_id.complete_name' />                    
+                            </t>
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:15px;padding-bottom:15px;" colspan="2">
+                            <span style="font-weight:bold;font-size:25px;"
+                            t-esc='product.name' /><br /><br />
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:15px;padding-bottom:15px;">
+                            <t t-if="data.get('description_check')">
+                                <div style="width:65%;">
+                                    <t t-if="product.description_sale">
+                                        <span style="font-weight:bold;font-size:14px;" t-esc='product.description_sale' />
+                                    </t>
+                                    <t t-else="">
+                                        &#160;&#160;&#160;&#160;
+                                    </t>
+                                </div>
+                            </t>
+                            <t t-if="data.get('price_check')">
+                                <div style="float:right;margin-right:20px;margin-top:-25px;width:30%;height:75px;text-align:center;background:#e6e6e6;border-radius:12px;">
+                                    <br/>
+                                    <t t-if="data.get('currency_id')">
+                                        <span style="font-weight:bold;font-size:20px;" t-esc="product.list_price" t-options="{'widget': 'monetary', 'display_currency':data.get('currency_id')}"/>
+                                    </t>
+                                    <t t-else="">
+                                        <span style="font-weight:bold;font-size:20px;" t-field='product.list_price' />
+                                    </t>
+                                </div>
+                            </t>
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:15px;padding-bottom:15px;">
+                            <div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </t>
+    </template>
+
+    <template id="report_product_catalog_document_style_4">
+        <t t-call="web.external_layout">
+            <div class="page">
+                <div class="oe_structure"/>
+                <table width="100%" style="font-size:24px;border-style: none;margin-bottom:20px;margin-top:-55px;">
+                    <tr style="border-style: none;">
+                        <td style="border-style: none;text-transform: uppercase;"><center><strong>Generate Product Catalog Style</strong></center></td>
+                    </tr>
+                </table>
+                <t t-foreach="get_product_details(data)" t-as='product'>
+                    <t t-if="data.get('quant_stock_check')">
+                        <t t-if="product.virtual_available &gt; 0.0">
+                            <t t-call="lc_product_catalog.report_product_list_style_4"/>
+                        </t>                                                                
+                    </t>
+                    <t t-else="">
+                        <t t-call="lc_product_catalog.report_product_list_style_4"/>
+                    </t>
+                </t>
+            </div>
+        </t>
+    </template>
+
+                         
+    <template id="report_product_style_4">
+        <t t-call="web.html_container">
+            <t t-call="lc_product_catalog.report_product_catalog_document_style_4"/>
+        </t>
+    </template>
+
+    <!-- END REPORT STYLE 4 -->
+
+    <!-- REPORT STYLE 5 -->
+
+    <!-- Two Box Style 5 -->
+    <template id="report_product_product_list_two_box_style_5">
+        <t t-if="product.image_1920">
+            <div style="display: inline-table; 
+                height: 4.5in;
+                border:5px solid #999999;
+                border-radius:15px;
+                width:4.25in;">
+                <table style="height: 4.5in;width:4.25in;">
+                    <tr style="text-align:center;">
+                        <td style="padding-bottom:20px;padding-top:10px;" colspan="2">
+                            <t t-if="data.get('image_size') == 'small'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:100px;width:115px;text-align:center;" />
+                            </t>
+                            <t t-if="data.get('image_size') == 'medium'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:125px;width:150px;text-align:center;" />
+                            </t>
+                            <t t-if="data.get('image_size') == 'large'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:150px;width:200px;text-align:center;" />
+                            </t>
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:15px;padding-right:10px;border:none;padding-bottom:10px;" colspan="2">
+                            [<span style="font-weight:bold;font-size:12px;background:#e6e6e6;color:#000000;"
+                            t-esc='product.default_code' />]&#160;&#160;&#160;
+                            <t t-if="data.get('category_check')">
+                                [<span style="font-weight:bold;font-size:12px;background:#e6e6e6;color:#000000;"
+                                t-esc='product.categ_id.complete_name' />]                    
+                            </t>
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:15px;padding-bottom:15px;" colspan="2">
+                            <span style="font-weight:bold;font-size:18px;"
+                            t-esc='product.name' /><br />
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:15px;padding-bottom:15px;">
+                            <t t-if="data.get('description_check')">
+                                <div style="width:65%;">
+                                    <t t-if="product.description_sale">
+                                        <span style="font-weight:bold;font-size:12px;" t-esc='product.description_sale' />
+                                    </t>
+                                    <t t-else="">
+                                        &#160;&#160;&#160;&#160;
+                                    </t>
+                                </div>
+                            </t>
+                            <t t-if="data.get('price_check')">
+                                <div style="float:right;margin-right:20px;margin-top:-25px;width:30%;height:75px;text-align:center;background:#e6e6e6;">
+                                    <br/>
+                                    <t t-if="data.get('currency_id')">
+                                        <span style="font-weight:bold;font-size:16px;" t-esc="product.list_price" t-options="{'widget': 'monetary', 'display_currency':data.get('currency_id')}"/>
+                                    </t>
+                                    <t t-else="">
+                                        <span style="font-weight:bold;font-size:16px;" t-esc='product.list_price' />
+                                    </t>
+                                </div>
+                            </t>
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:15px;padding-bottom:15px;">
+                            <div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </t>
+    </template>
+
+    <!-- Three Box Style 5 -->
+    <template id="report_product_product_list_three_box_style_5">
+        <t t-if="product.image_1920">
+            <div style="display: inline-table; 
+            height: 4.50in;
+            border:3px solid #999999;
+            border-radius:15px;
+            width: 2.87in;">
+                <table style="width:2.87in;height: 4.50in;">
+                    <tr style="text-align:center;">
+                        <td style="padding-bottom:20px;padding-top:10px;" colspan="2">
+                            <t t-if="data.get('image_size') == 'small'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:100px;width:115px;text-align:center;" />
+                            </t>
+                            <t t-if="data.get('image_size') == 'medium'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:125px;width:150px;text-align:center;" />
+                            </t>
+                            <t t-if="data.get('image_size') == 'large'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:150px;width:200px;text-align:center;" />
+                            </t>
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:10px;padding-right:10px;border:none;padding-bottom:10px;" colspan="2">
+                            [<span style="font-weight:bold;font-size:12px;background:#e6e6e6;color:#000000;"
+                            t-esc='product.default_code' />]&#160;
+                            <t t-if="data.get('category_check')">                    
+                                [<span style="font-weight:bold;font-size:12px;background:#e6e6e6;color:#000000;"
+                                t-esc='product.categ_id.complete_name' />]
+                            </t>
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:10px;padding-bottom:15px;" colspan="2">
+                            <span style="font-weight:bold;font-size:18px;"
+                            t-esc='product.name' /><br />
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:10px;padding-bottom:15px;">
+                            <t t-if="data.get('description_check')">
+                                <div style="width:65%;">
+                                    <t t-if="product.description_sale">
+                                        <span style="font-weight:bold;font-size:12px;" t-esc='product.description_sale' />
+                                    </t>
+                                    <t t-else="">
+                                        &#160;&#160;&#160;&#160;
+                                    </t>
+                                </div>
+                            </t>
+                            <t t-if="data.get('price_check')">
+                                <t t-if="product.description_sale">
+                                    <div style="float:right;margin-right:20px;margin-top:-10px;width:35%;height:75px;text-align:center;background:#e6e6e6;">
+                                        <br/>
+                                        <t t-if="data.get('currency_id')">
+                                            <span style="font-weight:bold;font-size:16px;" t-esc="product.list_price" t-options="{'widget': 'monetary', 'display_currency':data.get('currency_id')}"/>
+                                        </t>
+                                        <t t-else="">
+                                            <span style="font-weight:bold;font-size:16px;" t-field='product.list_price' />
+                                        </t>
+                                    </div>
+                                </t>
+                                <t t-else="">
+                                    <div style="float:right;margin-right:20px;margin-top:10px;width:35%;height:75px;text-align:center;background:#e6e6e6;">
+                                        <br/>
+                                        <t t-if="data.get('currency_id')">
+                                            <span style="font-weight:bold;font-size:16px;" t-esc="product.list_price" t-options="{'widget': 'monetary', 'display_currency':data.get('currency_id')}"/>
+                                        </t>
+                                        <t t-else="">
+                                            <span style="font-weight:bold;font-size:16px;" t-field='product.list_price' />
+                                        </t>
+                                    </div>
+                                </t>
+                            </t>
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:15px;padding-bottom:15px;">
+                            <div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </t>
+    </template>
+
+    <!-- Four Box Style 5 -->
+    <template id="report_product_product_list_four_box_style_5">
+        <t t-if="product.image_1920">
+            <div style="display: inline-table; 
+                height: 4.50in;
+                border:2px solid #999999;
+                border-radius:15px;
+                width: 2.15in;">
+                <table style="height: 4.50in;width: 2.15in;">
+                    <tr style="text-align:center;height:170px;">
+                        <td style="padding-top:10px;padding-bottom:10px;" colspan="2">
+                            <t t-if="data.get('image_size') == 'small'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:65px;width:75px;text-align:center;" />
+                            </t>
+                            <t t-if="data.get('image_size') == 'medium'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:115px;width:115px;text-align:center;" />
+                            </t>
+                            <t t-if="data.get('image_size') == 'large'"> 
+                                <img t-if="product.image_1920" t-att-src="image_data_uri(product.image_1920)" style="height:135px;width:150px;text-align:center;" />
+                            </t>
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;height:80px;">
+                        <td style="padding-left:10px;border:none;padding-bottom:10px;" colspan="2">
+                            [<span style="font-weight:bold;font-size:12px;background:#e6e6e6;color:#000000;"
+                            t-esc='product.default_code' />]&#160;
+                            <t t-if="data.get('category_check')">
+                                [<span style="font-weight:bold;font-size:12px;background:#e6e6e6;color:#000000;"
+                                t-esc='product.categ_id.complete_name' />]                    
+                            </t>
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;height:50px;">
+                        <td style="padding-left:10px;" colspan="2">
+                            <span style="font-weight:bold;font-size:14px;"
+                            t-esc='product.name' /><br />
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:10px;padding-bottom:10px;">
+                            <t t-if="data.get('description_check')">
+                                <div style="width:65%;">
+                                    <t t-if="product.description_sale">
+                                        <span style="font-weight:bold;font-size:12px;" t-esc='product.description_sale' />
+                                    </t>
+                                    <t t-else="">
+                                        &#160;&#160;&#160;&#160;
+                                    </t>
+                                </div>
+                            </t>
+                            <t t-if="data.get('price_check')">
+                                <t t-if="product.description_sale">
+                                    <div style="float:right;margin-right:10px;margin-top:-20px;width:40%;height:75px;text-align:center;background:#e6e6e6;">
+                                        <br/>
+                                        <t t-if="data.get('currency_id')">
+                                            <span style="font-weight:bold;font-size:16px;" t-esc="product.list_price" t-options="{'widget': 'monetary', 'display_currency':data.get('currency_id')}"/>
+                                        </t>
+                                        <t t-else="">
+                                            <span style="font-weight:bold;font-size:16px;" t-field='product.list_price' />
+                                        </t>
+                                    </div>
+                                </t>
+                                <t t-else="">
+                                    <div style="float:right;margin-right:20px;margin-top:5px;width:40%;height:75px;text-align:center;background:#e6e6e6;">
+                                        <br/>
+                                        <t t-if="data.get('currency_id')">
+                                            <span style="font-weight:bold;font-size:16px;" t-esc="product.list_price" t-options="{'widget': 'monetary', 'display_currency':data.get('currency_id')}"/>
+                                        </t>
+                                        <t t-else="">
+                                            <span style="font-weight:bold;font-size:16px;" t-field='product.list_price' />
+                                        </t>
+                                    </div>
+                                </t>
+                            </t>
+                        </td>
+                    </tr>
+                    <tr style="text-align:left;">
+                        <td style="padding-left:15px;padding-bottom:15px;">
+                            <div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </t>
+    </template>
+
+    <template id="report_product_catalog_document_style_5">
+        <t t-call="web.external_layout">
+            <div class="page">
+                <div class="oe_structure"/>
+                <table width="100%" style="font-size:21px;border-style: none;margin-bottom:20px;margin-top:-55px;">
+                    <tr style="border-style: none;">
+                        <td style="border-style: none;text-transform: uppercase;"><center><strong>Generate Product Catalog Style</strong></center></td>
+                    </tr>
+                </table>
+
+                <t t-if="data.get('print_box_per_row') == 'two_box_per_row'">
+                    <div style="width:100%;">
+                        <t t-foreach="get_product_details(data)" t-as='product'>
+                            <t t-if="data.get('quant_stock_check')">
+                                <t t-if="product.virtual_available &gt; 0.0">
+                                    <t t-call="lc_product_catalog.report_product_product_list_two_box_style_5"/>
+                                </t>                                                                
+                            </t>
+                            <t t-else="">
+                                <t t-call="lc_product_catalog.report_product_product_list_two_box_style_5"/>
+                            </t>
+                        </t>
+                    </div>
+                </t>
+
+                <t t-if="data.get('print_box_per_row') == 'three_box_per_row'">
+                    <div style="width:100%;">
+                        <t t-foreach="get_product_details(data)" t-as='product'>
+                            <t t-if="data.get('quant_stock_check')">
+                                <t t-if="product.virtual_available &gt; 0.0">
+                                    <t t-call="lc_product_catalog.report_product_product_list_three_box_style_5"/>
+                                </t>                                                                
+                            </t>
+                            <t t-else="">
+                                <t t-call="lc_product_catalog.report_product_product_list_three_box_style_5"/>
+                            </t>
+                        </t>
+                    </div>
+                </t>
+
+                <t t-if="data.get('print_box_per_row') == 'four_box_per_row'">
+                    <div style="width:100%;">
+                        <t t-foreach="get_product_details(data)" t-as='product'>
+                            <t t-if="data.get('quant_stock_check')">
+                                <t t-if="product.virtual_available &gt; 0.0">
+                                    <t t-call="lc_product_catalog.report_product_product_list_four_box_style_5"/>
+                                </t>                                                                
+                            </t>
+                            <t t-else="">
+                                <t t-call="lc_product_catalog.report_product_product_list_four_box_style_5"/>
+                            </t>
+                        </t>
+                    </div>
+                </t>
+            </div>
+        </t>
+    </template>
+
+    <template id="report_product_style_5">
+        <t t-call="web.html_container">
+            <t t-call="lc_product_catalog.report_product_catalog_document_style_5"/>
+        </t>
+    </template>
+
+    <!-- END REPORT STYLE 5 -->
+
+</odoo>

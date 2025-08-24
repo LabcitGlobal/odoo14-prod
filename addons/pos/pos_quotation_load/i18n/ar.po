@@ -1,0 +1,141 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pos_quotation_load
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.1alpha1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-31 10:21+0000\n"
+"PO-Revision-Date: 2020-10-31 10:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: pos_quotation_load
+#. openerp-web
+#: code:addons/pos_quotation_load/static/src/xml/pos_custom_view.xml:0
+#, python-format
+msgid "Customer"
+msgstr "الزبون"
+
+#. module: pos_quotation_load
+#. openerp-web
+#: code:addons/pos_quotation_load/static/src/xml/pos_custom_view.xml:0
+#, python-format
+msgid "Discard"
+msgstr "تجاهل"
+
+#. module: pos_quotation_load
+#: model:ir.model.fields,field_description:pos_quotation_load.field_pos_config__display_name
+#: model:ir.model.fields,field_description:pos_quotation_load.field_pos_order__display_name
+#: model:ir.model.fields,field_description:pos_quotation_load.field_sale_order__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: pos_quotation_load
+#: model:ir.model.fields,field_description:pos_quotation_load.field_pos_config__sh_enable_quotation_load
+msgid "Enable Quotation Load"
+msgstr "تفعيل تحميل الاقتباس"
+
+#. module: pos_quotation_load
+#: model_terms:ir.ui.view,arch_db:pos_quotation_load.sh_pos_res_config_settings_enable_quotation_load
+msgid "Enable Quotation Load Feature"
+msgstr "تفعيل ميزة تحميل الاقتباس"
+
+#. module: pos_quotation_load
+#: model:ir.model.fields,field_description:pos_quotation_load.field_pos_config__id
+#: model:ir.model.fields,field_description:pos_quotation_load.field_pos_order__id
+#: model:ir.model.fields,field_description:pos_quotation_load.field_sale_order__id
+msgid "ID"
+msgstr "هوية شخصية"
+
+#. module: pos_quotation_load
+#: model:ir.model.fields,field_description:pos_quotation_load.field_pos_config____last_update
+#: model:ir.model.fields,field_description:pos_quotation_load.field_pos_order____last_update
+#: model:ir.model.fields,field_description:pos_quotation_load.field_sale_order____last_update
+msgid "Last Modified on"
+msgstr "تاريخ آخر تعديل"
+
+#. module: pos_quotation_load
+#. openerp-web
+#: code:addons/pos_quotation_load/static/src/xml/pos_custom_view.xml:0
+#, python-format
+msgid "Load Quotation"
+msgstr "تحميل الاقتباس"
+
+#. module: pos_quotation_load
+#: model_terms:ir.ui.view,arch_db:pos_quotation_load.sale_order_inherit_search_view
+msgid "Not Pos Sync"
+msgstr "لا تزامن الموضع"
+
+#. module: pos_quotation_load
+#: model:ir.model,name:pos_quotation_load.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "تكوين نقطة البيع"
+
+#. module: pos_quotation_load
+#: model:ir.model,name:pos_quotation_load.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "أوامر نقاط البيع"
+
+#. module: pos_quotation_load
+#: model:ir.model.fields,field_description:pos_quotation_load.field_sale_order__pos_order_ref
+msgid "Pos Order Reference"
+msgstr "مرجع طلب نقاط البيع"
+
+#. module: pos_quotation_load
+#: model:ir.model.fields,field_description:pos_quotation_load.field_sale_order__pos_sync
+msgid "Pos Order Sync"
+msgstr "مزامنة ترتيب نقاط البيع"
+
+#. module: pos_quotation_load
+#: model_terms:ir.ui.view,arch_db:pos_quotation_load.sale_order_inherit_search_view
+msgid "Pos Sync"
+msgstr "تزامن نقاط البيع"
+
+#. module: pos_quotation_load
+#. openerp-web
+#: code:addons/pos_quotation_load/static/src/xml/pos_custom_view.xml:0
+#, python-format
+msgid "Quotation Date"
+msgstr "تاريخ الاقتباس"
+
+#. module: pos_quotation_load
+#. openerp-web
+#: code:addons/pos_quotation_load/static/src/xml/pos_custom_view.xml:0
+#, python-format
+msgid "Quotation Number"
+msgstr "رقم الإقتباس"
+
+#. module: pos_quotation_load
+#: model:ir.model.fields,field_description:pos_quotation_load.field_pos_order__sale_order_name
+msgid "Sale Order"
+msgstr "أمر بيع"
+
+#. module: pos_quotation_load
+#: model:ir.model.fields,field_description:pos_quotation_load.field_pos_order__sale_order_id
+msgid "Sale Order Reference"
+msgstr "مرجع أمر البيع"
+
+#. module: pos_quotation_load
+#: model:ir.model,name:pos_quotation_load.model_sale_order
+msgid "Sales Order"
+msgstr "طلب المبيعات"
+
+#. module: pos_quotation_load
+#. openerp-web
+#: code:addons/pos_quotation_load/static/src/xml/pos_custom_view.xml:0
+#, python-format
+msgid "Search Quotation"
+msgstr "اقتباس البحث"
+
+#. module: pos_quotation_load
+#. openerp-web
+#: code:addons/pos_quotation_load/static/src/xml/pos_custom_view.xml:0
+#, python-format
+msgid "Total"
+msgstr "مجموع"

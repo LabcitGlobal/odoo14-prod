@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>  
+    <record model="ir.ui.view" id="lc_pos_disable_options_view">
+      <field name="name">lc.pos.disable.options</field>
+      <field name="model">pos.config</field>
+      <field name='inherit_id' ref='point_of_sale.pos_config_view_form' />
+        <field type='xml' name='arch'>
+            <xpath expr="//div[4]" position="after">
+                <h2>Enable/Disable Buttons</h2>
+                <div class="row o_settings_container">
+                    <div class="col-md-6 col-lg-6 col-xl-6 col-6 o_setting_box">
+                        <div class="o_setting_left_pane">
+                            <field name="disable_discount" />
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="disable_discount"></label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6 col-6 o_setting_box">
+                        <div class="o_setting_left_pane">
+                            <field name="disable_price" />
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="disable_price"></label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6 col-6 o_setting_box">
+                        <div class="o_setting_left_pane">
+                            <field name="disable_payment" />
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="disable_payment"></label>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-6 col-lg-6 col-xl-6 col-6 o_setting_box">
+                        <div class="o_setting_left_pane">
+                            <field name="disable_quantity" />
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="disable_quantity"></label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6 col-6 o_setting_box">
+                        <div class="o_setting_left_pane">
+                            <field name="disable_payment" />
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="disable_payment"></label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6 col-6 o_setting_box">
+                        <div class="o_setting_left_pane">
+                            <field name="disable_customer" />
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="disable_customer"></label>
+                        </div>
+                    </div> -->
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

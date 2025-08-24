@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="1">    	
+        <record model="lccash.money" id="lccash_money_data_1">        	
+			<field name="name">200</field>
+			<field name="active">True</field>			
+		</record>
+		<record model="lccash.money" id="lccash_money_data_2">        	
+			<field name="name">100</field>
+			<field name="active">True</field>			
+		</record>
+		<record model="lccash.money" id="lccash_money_data_3">        	
+			<field name="name">50</field>
+			<field name="active">True</field>			
+		</record>
+		<record model="lccash.money" id="lccash_money_data_4">        	
+			<field name="name">20</field>
+			<field name="active">True</field>			
+		</record>
+		<record model="lccash.money" id="lccash_money_data_5">        	
+			<field name="name">10</field>
+			<field name="active">True</field>			
+		</record>
+		<record model="lccash.money" id="lccash_money_data_6">        	
+			<field name="name">5</field>
+			<field name="active">True</field>			
+		</record>
+		<record model="lccash.money" id="lccash_money_data_7">        	
+			<field name="name">2</field>
+			<field name="active">True</field>			
+		</record>
+		<record model="lccash.money" id="lccash_money_data_8">        	
+			<field name="name">1</field>
+			<field name="active">True</field>			
+		</record>
+		<record model="lccash.money" id="lccash_money_data_9">        	
+			<field name="name">0.5</field>
+			<field name="active">True</field>			
+		</record>
+		<record model="lccash.money" id="lccash_money_data_10">        	
+			<field name="name">0.2</field>
+			<field name="active">True</field>			
+		</record>
+		<record model="lccash.money" id="lccash_money_data_11">        	
+			<field name="name">0.1</field>
+			<field name="active">True</field>			
+		</record>
+	</data>
+</odoo>

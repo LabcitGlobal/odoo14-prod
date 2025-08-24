@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="stock_quant_product_template" model="ir.ui.view">
+            <field name="name">res.partner.form</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='image_1920']" position="before">
+                    <div class="oe_button_box" name="button_box">
+                        <button name="stock_quant_product_template" string="Stock Quant" type="object" class="oe_stat_button" icon="fa-magic" groups="lc_stock_quant_multicompany.group_show_stock_quantity_per_multicompany"/>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

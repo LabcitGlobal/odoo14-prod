@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_lc_impuesto_nit,lc_impuesto_nit,model_lc_impuesto_nit,account.group_account_manager,1,1,1,0
+access_lc_impuesto_dosificacion,lc_impuesto_dosificacion,model_lc_impuesto_dosificacion,account.group_account_manager,1,1,1,0
+access_lc_impuesto_talonario,lc_impuesto_talonario,model_lc_impuesto_talonario,account.group_account_manager,1,1,1,0
+access_lc_impuesto_venta,lc_impuesto_venta,model_lc_impuesto_venta,account.group_account_manager,1,1,1,0
+access_lc_impuesto_compra,lc_impuesto_compra,model_lc_impuesto_compra,account.group_account_manager,1,1,1,0

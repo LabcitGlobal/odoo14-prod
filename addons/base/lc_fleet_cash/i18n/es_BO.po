@@ -1,0 +1,119 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* lc_fleet_cash
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-01 04:05+0000\n"
+"PO-Revision-Date: 2021-07-01 04:05+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: lc_fleet_cash
+#: model_terms:ir.ui.view,arch_db:lc_fleet_cash.payment_fleet_service_report
+msgid "00/100"
+msgstr ""
+
+#. module: lc_fleet_cash
+#: model_terms:ir.ui.view,arch_db:lc_fleet_cash.payment_fleet_service_report
+msgid "<strong>Aprobed</strong>"
+msgstr "<strong>Contador</strong>"
+
+#. module: lc_fleet_cash
+#: model_terms:ir.ui.view,arch_db:lc_fleet_cash.payment_fleet_service_report
+msgid "<strong>By concept of</strong>"
+msgstr "<strong>Por concepto de</strong>"
+
+#. module: lc_fleet_cash
+#: model_terms:ir.ui.view,arch_db:lc_fleet_cash.payment_fleet_service_report
+msgid "<strong>Date</strong>"
+msgstr "<strong>Fecha</strong>"
+
+#. module: lc_fleet_cash
+#: model_terms:ir.ui.view,arch_db:lc_fleet_cash.payment_fleet_service_report
+msgid "<strong>Invoice</strong>"
+msgstr "<strong>Factura</strong>"
+
+#. module: lc_fleet_cash
+#: model_terms:ir.ui.view,arch_db:lc_fleet_cash.payment_fleet_service_report
+msgid "<strong>License plate</strong>"
+msgstr "<strong>Placa</strong>"
+
+#. module: lc_fleet_cash
+#: model_terms:ir.ui.view,arch_db:lc_fleet_cash.payment_fleet_service_report
+msgid "<strong>Received from</strong>"
+msgstr "<strong>Recibido de</strong>"
+
+#. module: lc_fleet_cash
+#: model_terms:ir.ui.view,arch_db:lc_fleet_cash.payment_fleet_service_report
+msgid "<strong>Signature and Seal of the Beneficiary</strong>"
+msgstr "<strong>Gerencia</strong>"
+
+#. module: lc_fleet_cash
+#: model_terms:ir.ui.view,arch_db:lc_fleet_cash.payment_fleet_service_report
+msgid "<strong>The sum in letters</strong>"
+msgstr "<strong>La suma en letras</strong>"
+
+#. module: lc_fleet_cash
+#: model_terms:ir.ui.view,arch_db:lc_fleet_cash.payment_fleet_service_report
+msgid "<strong>User: </strong>"
+msgstr "<strong>Elaborado: </strong>"
+
+#. module: lc_fleet_cash
+#: model_terms:ir.ui.view,arch_db:lc_fleet_cash.payment_fleet_service_report
+msgid "Amount"
+msgstr "Monto"
+
+#. module: lc_fleet_cash
+#: model:ir.model.fields,field_description:lc_fleet_cash.field_lc_fleet_service__display_name
+#: model:ir.model.fields,field_description:lc_fleet_cash.field_lccash_payment__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: lc_fleet_cash
+#: model:ir.model.fields,field_description:lc_fleet_cash.field_lc_fleet_service__id
+#: model:ir.model.fields,field_description:lc_fleet_cash.field_lccash_payment__id
+msgid "ID"
+msgstr ""
+
+#. module: lc_fleet_cash
+#: model:ir.model.fields,field_description:lc_fleet_cash.field_lc_fleet_service____last_update
+#: model:ir.model.fields,field_description:lc_fleet_cash.field_lccash_payment____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: lc_fleet_cash
+#: model:ir.model,name:lc_fleet_cash.model_lccash_payment
+msgid "Modelo para gestion de Depositos"
+msgstr ""
+
+#. module: lc_fleet_cash
+#: model_terms:ir.ui.view,arch_db:lc_fleet_cash.payment_fleet_service_report
+msgid "PROOF OF INCOME"
+msgstr "COMPROBANTE DE INGRESO"
+
+#. module: lc_fleet_cash
+#: model:ir.model.fields,field_description:lc_fleet_cash.field_lc_fleet_service__payment
+msgid "Payment"
+msgstr "Pagado"
+
+#. module: lc_fleet_cash
+#: model:ir.actions.report,name:lc_fleet_cash.payment_fleet_service_reports
+msgid "Proof of payment"
+msgstr "Comprobante de Pago"
+
+#. module: lc_fleet_cash
+#: model:ir.model.fields,field_description:lc_fleet_cash.field_lccash_payment__fleet_service_id
+msgid "Service"
+msgstr "Servicio"
+
+#. module: lc_fleet_cash
+#: model:ir.model,name:lc_fleet_cash.model_lc_fleet_service
+msgid "Service Fleet"
+msgstr "Servicios"

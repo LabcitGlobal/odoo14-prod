@@ -1,0 +1,52 @@
+<odoo>
+  <data>
+
+    <record id="lccommission_possubagent_detail_view_tree" model="ir.ui.view">
+      <field name="name">lccommission_possubagent_view.tree</field>
+      <field name="model">lccommission.possubagent.view</field>
+      <field name="arch" type="xml">
+          <tree>
+              <field name="name"/>
+              <field name="agent_id"/>
+              <field name="note"/>
+              <field name="date_order"/>
+              <field name="user_id"/>
+              <field name="partner_id"/>
+              <field name="amount_total"/>
+              <field name="payment"/>
+              <field name="margin" groups="lccommission.lc_group_manager"/>
+          </tree>
+      </field>
+    </record>
+
+    <record id="lccommission_possubagent_detail_view_form" model="ir.ui.view">
+      <field name="name">lccommission_possubagent_view.form</field>
+      <field name="model">lccommission.possubagent.view</field>
+      <field name="arch" type="xml">
+      <form string="Asignacion de Orden y Agente">      	
+      	<sheet>
+      		<group>
+              <field name="name"/>              
+              <field name="agent_id"/>
+              <field name="note"/>              
+              <field name="date_order"/>
+              <field name="user_id"/>
+              <field name="partner_id"/>
+              <field name="amount_total"/>
+              <field name="payment"/>             
+          </group>          	          	
+      	</sheet>
+      </form>
+      </field>
+    </record>
+
+    <record id='lccommission_possubagent_view_action' model='ir.actions.act_window'>
+      <field name="name">Detalle de Pedidos por Sub Agente</field>
+      <field name="res_model">lccommission.possubagent.view</field>      
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="lccommission_possubagent_view_menu" parent="lccommission.pos_menu" action="lccommission_possubagent_view_action" groups="group_show_subagent" sequence="16"/>
+
+  </data>
+</odoo>

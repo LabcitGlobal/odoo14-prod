@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_lc_type_supplier_commission,lc_type_supplier_commission,model_lc_type_supplier_commission,base.group_user,1,1,1,1
+access_lc_type_supplier_purchase,lc_type_supplier_purchase,model_lc_type_supplier_purchase,base.group_user,1,1,1,1

@@ -1,0 +1,49 @@
+<openerp>
+  <data>
+    <record id="res_country_state_BO_L" model="res.country.state">
+      <field model="res.country" name="country_id" search="[('code','=','BO')]" />
+      <field name="name">La Paz</field>
+      <field name="code">BO-L</field>
+    </record>
+    <record id="res_country_state_BO_P" model="res.country.state">
+      <field model="res.country" name="country_id" search="[('code','=','BO')]" />
+      <field name="name">Potosi</field>
+	  <field name="code">BO-P</field>
+    </record>
+    <record id="res_country_state_BO_O" model="res.country.state">
+      <field model="res.country" name="country_id" search="[('code','=','BO')]" />
+      <field name="name">Oruro</field>
+      <field name="code">BO-O</field>
+    </record>    
+    <record id="res_country_state_BO_H" model="res.country.state">
+      <field model="res.country" name="country_id" search="[('code','=','BO')]" />
+      <field name="name">Chuquisaca</field>
+	  <field name="code">BO-H</field>
+    </record>
+    <record id="res_country_state_BO_C" model="res.country.state">
+      <field model="res.country" name="country_id" search="[('code','=','BO')]" />
+      <field name="name">Cochabamba</field>
+	  <field name="code">BO-C</field>
+    </record>
+    <record id="res_country_state_BO_B" model="res.country.state">
+      <field model="res.country" name="country_id" search="[('code','=','BO')]" />
+      <field name="name">Beni</field>
+	  <field name="code">BO-B</field>
+    </record>
+    <record id="res_country_state_BO_N" model="res.country.state">
+      <field model="res.country" name="country_id" search="[('code','=','BO')]" />
+      <field name="name">Pando</field>
+	  <field name="code">BO-N</field>
+    </record>
+    <record id="res_country_state_BO_S" model="res.country.state">
+      <field model="res.country" name="country_id" search="[('code','=','BO')]" />
+      <field name="name">Santa Cruz</field>
+	  <field name="code">BO-S</field>
+    </record>
+    <record id="res_country_state_BO_T" model="res.country.state">
+      <field model="res.country" name="country_id" search="[('code','=','BO')]" />
+      <field name="name">Tarija</field>
+	  <field name="code">BO-T</field>
+    </record>
+  </data>
+</openerp>

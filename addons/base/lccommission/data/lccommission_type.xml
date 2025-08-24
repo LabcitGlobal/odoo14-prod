@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="1">    	
+        <record model="lccommission.type" id="lccommission_type_data_1">        	
+			<field name="name">Margen</field>
+			<field name="active">True</field>			
+		</record>
+		<record model="lccommission.type" id="lccommission_type_data_2">        	
+			<field name="name">Total</field>
+			<field name="active">True</field>			
+		</record>
+		<record model="lccommission.type" id="lccommission_type_data_3">        	
+			<field name="name">Fijo</field>
+			<field name="active">True</field>			
+		</record>
+		<record model="lccommission.type" id="lccommission_type_data_4">        	
+			<field name="name">Fijo + Porcentaje</field>
+			<field name="active">True</field>			
+		</record>		
+	</data>
+</odoo>

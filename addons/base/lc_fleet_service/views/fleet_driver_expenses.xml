@@ -1,0 +1,98 @@
+<odoo>
+  <data>
+    
+    <!-- Driver Expenses -->
+    
+    <record model="ir.ui.view" id="lc_fleet_driver_expenses_tree">
+      <field name="name">Fleet Driver Expenses Tree</field>
+      <field name="model">lc.fleet.driver.expenses</field>
+      <field name="arch" type="xml">
+        <tree string="Expense List">
+          <field name="service_id"/>
+          <field name="date"/>
+          <field name="category_expenses_id"/>                    
+          <field name="amount"/>
+          <field name="currency_id"/>
+          <field name="create_uid" string="User"/>
+        </tree>
+      </field>
+    </record>
+	
+    <record model="ir.ui.view" id="lc_fleet_driver_expenses_form">
+      <field name="name">Fleet Driver Expenses Form</field>
+      <field name="model">lc.fleet.driver.expenses</field>
+      <field name="arch" type="xml">
+      		<form string="Expenses">      			
+      			<sheet>
+      				<group>
+      		    		<field name="service_id"/>
+      		    		<field name="date"/>
+                  <field name="category_expenses_id"/>
+      		    		<field name="amount"/>          		
+      		    		<field name="currency_id"/>          		
+      		    	</group>          	
+      		    	<notebook>      		    		
+      		    		<page string="Detail">
+						        <group>    		
+      		    		  		<field name="name"/>
+      		    		  </group>
+      		    		</page>
+                  <page string="Photo">
+						        <group>    		
+      		    		  		<field name="photo" widget="image"/>
+      		    		  		<field name="file" widget="binary"/>
+      		    		  </group>
+      		    		</page>          		          		
+					      </notebook>			
+      			</sheet>
+      		</form>        
+      </field>
+    </record>
+
+	<record id="lc_fleet_driver_expenses_action" model="ir.actions.act_window">
+            <field name="name">Driver Expenses</field>
+            <field name="res_model">lc.fleet.driver.expenses</field>
+            <field name="view_mode">tree,form</field>
+    </record>
+
+  <!-- Category Expenses -->
+    
+    <record model="ir.ui.view" id="lc_fleet_category_expenses_tree">
+      <field name="name">Driver Category Expenses Tree</field>
+      <field name="model">lc.fleet.category.expenses</field>
+      <field name="arch" type="xml">
+        <tree string="Category">
+          <field name="name"/>          
+        </tree>
+      </field>
+    </record>
+	
+    <record model="ir.ui.view" id="lc_fleet_category_expenses_form">
+      <field name="name">Driver Category Expenses Form</field>
+      <field name="model">lc.fleet.category.expenses</field>
+      <field name="arch" type="xml">
+      		<form string="Category">      			
+      			<sheet>
+      				<group>
+      		    	<field name="name"/>      		    		
+      		    </group>          	      		    			
+      			</sheet>
+      		</form>        
+      </field>
+    </record>
+
+	<record id="lc_fleet_category_expenses_action" model="ir.actions.act_window">
+            <field name="name">Driver Category Expenses</field>
+            <field name="res_model">lc.fleet.category.expenses</field>
+            <field name="view_mode">tree,form</field>
+    </record>
+
+	<menuitem id="menu_lc_fleet_driver_expenses" sequence="1" name="Driver" parent="fleet.menu_root"/>
+	<menuitem id="menu_lc_fleet_driver_expenses_contract" parent="menu_lc_fleet_driver_expenses" name="Driver Expenses"
+                  action="lc_fleet_driver_expenses_action" sequence="1"/>
+
+  <menuitem id="menu_lc_driver_category_expenses" parent="fleet.fleet_configuration" name="Driver Category Expenses"
+                  action="lc_fleet_category_expenses_action" groups="base.group_no_one" sequence="20"/>
+
+  </data>
+</odoo>

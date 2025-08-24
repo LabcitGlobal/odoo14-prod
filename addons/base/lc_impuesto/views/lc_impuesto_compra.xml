@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    
+    <!-- Factura Compra -->
+    
+    <record model="ir.ui.view" id="lc_impuesto_compra_tree">
+      <field name="name">lc_impuesto_compra.tree</field>
+      <field name="model">lc.impuesto.compra</field>
+      <field name="arch" type="xml">
+        <tree string="Datos de la Factura de Compra">                    
+          <field name="fecha"/>                    
+          <field name="nit_id"/>
+          <field name="numero"/>                    
+          <field name="proveedor"/>    
+          <field name="name"/>    
+          <field name="razon_social"/>
+          <field name="total"/>          
+          <field name="observacion"/>                    
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="lc_impuesto_compra_form">
+      <field name="name">lc_impuesto_compra.form</field>
+      <field name="model">lc.impuesto.compra</field>
+      <field name="arch" type="xml">
+      <form string="Datos de la Factura de Compra">      	
+      	<sheet>
+      		<group>      			            		
+              <field name="fecha"/>                    
+              <field name="nit_id"/>
+              <field name="numero"/>                    
+              <field name="proveedor"/>    
+              <field name="name"/>    
+              <field name="razon_social"/>
+              <field name="total"/>          
+              <field name="observacion"/>
+              <field name="active"/>
+              <field name="foto" widget="image"/>
+          </group>          	          	
+      	</sheet>
+      </form>        
+      </field>
+    </record>
+        
+    <!-- Acciones -->
+    
+    <record model="ir.actions.act_window" id="lc_impuesto_compra_action_window">
+      <field name="name">Factura de Compra</field>
+      <field name="res_model">lc.impuesto.compra</field>    
+      <field name="view_mode">tree,form</field>            
+    </record>
+    
+    <!-- actions -->
+    
+	  <menuitem name="Factura de Compra" id="lc_impuesto_menu_compra" parent="lc_impuesto.menu_root"
+              action="lc_impuesto_compra_action_window"/>
+    
+  </data>
+</odoo>

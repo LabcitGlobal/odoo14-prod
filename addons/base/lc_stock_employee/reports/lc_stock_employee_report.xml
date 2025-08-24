@@ -1,0 +1,12 @@
+<odoo>
+	<data>
+    	<report id="lc_stock_employee_report_print"
+                model="lc_stock_employee_report"
+                string="Imprimir Stock por Empleado"
+                name="lc_stock_employee.print_lc_stock_employee_report_template"
+                file="lc_stock_employee.print_lc_stock_employee_report_template"
+                report_type="qweb-pdf"
+                menu="False"
+        />
+    </data>
+</odoo>

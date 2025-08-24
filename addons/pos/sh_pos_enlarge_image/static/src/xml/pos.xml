@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="ProductEnlargePopup" owl="1">
+        <div role="dialog" class="modal-dialog" style="padding-left:0;">
+            <div class="popup popup-textinput sh_enlarge_popup" style="font-size: 16px; width: 100%; height: auto; max-width: 700px;">
+                <header class="title">
+                    <t t-esc="props.title" />
+                </header>
+                <div>
+                    <t t-esc="props.description" />
+                </div>
+                <div class="main-body touch-scrollable scrollable-y" style="max-height: 305px;">
+                    <div class="product_image">
+                        <img t-att-src="props.image_url" style="height: 250px;" />
+                    </div>
+                    <t t-if="props.desc_sale">
+                        <h4 style="font-size: 14px;"><t t-esc="props.desc_sale" /></h4>
+                    </t>
+                </div>
+                <div>
+                    <t t-if="props.pricelist">
+                        <table style="width: 90%; border: 1px solid black; margin: 8px; font-size:12px;">
+                            <thead style="border:1px solid black;">
+                                <th>Cantidad Minima</th>
+                                <th>Precio</th>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="props.pricelist" t-as="line" style="border:1px solid black">
+                                    <td><t t-esc="line.min_quantity"/></td>
+                                    <td><t t-esc="line.fixed_price"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </t>
+                </div>
+                <t t-if="(env.pos.config.sh_enable_stock_multicompany and props.stock_quant)">
+                    <div>
+                        <p>Stock por Compañia</p>
+                    </div>
+                    <div>
+                        <table style="width: 90%; border: 1px solid black; margin: 8px; font-size:12px;">
+                            <thead style="border:1px solid black;">
+                                <th>Compañia</th>
+                                <th>Ubicacion</th>
+                                <th>Cantidad</th>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="props.stock_quant" t-as="qline" style="border:1px solid black">
+                                    <td><t t-esc="qline.company_name"/></td>
+                                    <td><t t-esc="qline.location_name"/></td>
+                                    <td><t t-esc="qline.quantity"/></td>
+                                </tr>
+                            </tbody>
+                        </table>                    
+                    </div>
+                </t>
+                <footer class="footer">
+                    <div class="button cancel" t-on-click="cancel">
+                        Close
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </t>
+    <t t-extend="ProductItem" t-inherit="point_of_sale.ProductItem" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('product-name')]" position="after">
+            <t t-if="env.pos.config.sh_enable_image">
+                <span
+                    class="product-image-icon"
+                    style="position: absolute; bottom: 0px; font-size: 20px; right: 0px; line-height: 13px; border-radius: 2px; z-index: 1000; color: #7f82ac;"
+                    t-on-click.stop="trigger('click-product-enlarge-icon',props.product)"
+                >
+                    <i class="fa fa-picture-o" aria-hidden="true"></i>
+                </span>
+            </t>
+        </xpath>
+    </t>
+</templates>

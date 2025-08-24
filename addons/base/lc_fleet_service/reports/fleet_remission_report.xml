@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="lc_fleet_remission_report">
+        	<t t-foreach="docs" t-as="doc">            
+				<t t-call="web.html_container">
+					<t t-call="web.external_layout">
+						<div style="font:17px Helvetica,Arial !important;">
+            				<div class="page">   
+								<table style="width:100%">                    				
+                    				<tbody>
+                        				<tr>                        					
+                        					<td style="width:50%, text-align:left">
+                            					El Alto, <span t-esc="doc.date_today.strftime('%d de %B del %Y')"/>												
+                            				</td>
+                            				<td style="text-align:right">
+                            					<strong>CITE: <span t-field="doc.name"/></strong>                                			
+	                        				</td>                            				
+    	                    			</tr>
+        	            			</tbody>                    			
+            	    			</table>
+								<br/><br/>
+								<p>Sirs:</p>
+								<p><strong><span t-field="doc.name.customer_id"/></strong></p>
+								<p>Present.-</p>
+								<p style="text-align:right"><strong>Ref.: Remission and Delivery of Documents</strong></p>
+								<p>Of our consideration</p>
+								<p>Hereby we send by the transport service of: <span t-field="doc.name.notes"/></p>
+
+								<table class="table table-bordered">
+									<tbody>
+										<tr>
+											<td style="width:35%"><strong>ROUTE</strong></td>
+											<td>											
+												<table class="table table-sm o_main_table">
+                    								<thead>
+                        								<tr>
+                            								<th class="text-center">Source</th>
+    	                        							<th class="text-center">Destination</th>
+            	            							</tr>
+                	    							</thead>
+                    								<tbody>
+                        								<tr t-foreach="doc.name.route_ids" t-as="line">                        					
+                        	    							<td class="text-center">
+                            									<span t-field="line.source" />
+                            								</td>
+                            								<td class="text-center">
+                            									<span t-field="line.destination" />                                			
+	                            							</td>
+    	                    							</tr>
+        	            							</tbody>                    			
+            	    							</table>
+											</td>									
+										</tr>										
+										<tr>
+											<td><strong>LICENSE PLATE</strong></td>
+											<td>
+												<t t-foreach="doc.name.vehicle_ids" t-as="vehicle">
+													<span t-field="vehicle.vehicle_id.license_plate"/><span> </span>
+												</t>
+											</td>
+										</tr>										
+									</tbody>
+								</table>
+								<p>according to the following detail:</p>
+								<table class="table table-bordered table-sm o_main_table">
+                    				<thead>
+                        				<tr>
+                            				<th class="text-center">DOCUMENT</th>
+    	                    				<th class="text-center">No. Document</th>
+    	                    				<th class="text-center">Qty.</th>
+											<th class="text-center">Observation</th>
+            	            			</tr>
+                	    			</thead>
+                    				<tbody>
+                        				<tr t-foreach="doc.remission_document_ids" t-as="line">                        					
+                        					<td>
+                            					<span t-field="line.document_type_id" />
+                            				</td>
+                            				<td class="text-center">
+                            					<span t-field="line.code" />                                			
+	                        				</td>
+                            				<td class="text-center">
+                            					<span t-field="line.quantity" />                                			
+	                        				</td>
+                            				<td class="text-center">
+                            					<span t-field="line.type" />                                			
+	                        				</td>
+    	                    			</tr>
+        	            			</tbody>                    			
+            	    			</table>
+								<p>For this reason, we greet you very kindly.,</p>								
+
+								
+							</div>
+            			</div>
+            		</t>
+            	</t>          		
+            </t>
+        </template>
+    </data>
+</odoo>

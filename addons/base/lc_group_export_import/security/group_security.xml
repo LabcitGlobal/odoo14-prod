@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="group_import" model="res.groups">
+            <field name="name">Enable Import</field>
+        </record>
+        <record id="group_export" model="res.groups">
+            <field name="name">Enable Export</field>
+        </record>
+    </data>
+</odoo>

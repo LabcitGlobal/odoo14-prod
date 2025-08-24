@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <template id="report_header_custom" inherit_id="report.report_invoice_document">
+        <xpath expr="//div[@class='page']" position="replace">
+            <span>Boleta</span>
+        </xpath>
+    </template>
+  </data>
+</odoo>

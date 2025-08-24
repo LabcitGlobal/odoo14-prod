@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+	    
+	    <record id="lc_generate_product_catalog_wizard" model="ir.ui.view">
+	        <field name="name">lc.product.catalog.wizard</field>
+	        <field name="model">lc.product.catalog</field>
+	        <field name="arch" type="xml">
+	            <form>
+	                <sheet>
+	                    <group>
+	                        <group>
+	                            <field name="catalog_type" widget="radio"/>
+	                            <field name="product_ids" widget="many2many_tags" attrs="{'invisible': [('catalog_type', '=', 'category')],'required': [('catalog_type', '=', 'product')]}"/>
+	                            <field name="categories_ids" widget="many2many_tags" attrs="{'invisible': [('catalog_type', '=', 'product')],'required': [('catalog_type', '=', 'category')]}"/>
+	                            <field name="image_size" widget="radio" options="{'horizontal': true}" required="1"/>
+	                            <field name="currency_id" required="1"/>
+	                            <field name="price"/>
+	                        </group>
+	                        <group>
+	                            <field name="report_style" widget="radio"/>
+	                            <field name="print_box_per_row" widget="radio" attrs="{'invisible': [('report_style', '!=', 'style_2'),('report_style', '!=', 'style_5')]}"/>
+	                            <field name="description"/>
+	                            <field name="category_name"/>
+	                            <field name="quant_stock_check"/>
+	                            <field name="image_check" attrs="{'invisible': [('report_style', '!=', 'style_1'),('report_style', '!=', 'style_6')]}"/>
+	                            <field name="pdf_watermark" attrs="{'invisible': [('report_style', '!=', 'style_1'),('report_style', '!=', 'style_6')]}"/>
+	                        </group>
+	                    </group>
+	                    <footer>
+	                        <button name="print_style_catalog" string="Print" type="object" class="oe_highlight"/>
+	                        OR
+	                        <button string="Cancel" special="cancel"/>
+	                    </footer>
+	                </sheet>
+	            </form>
+	        </field>
+	    </record>
+
+	    <record id='lc_generate_product_catalog_wizard_action' model='ir.actions.act_window'>
+	        <field name="name">Generate Product Catalog Style</field>
+	        <field name='type'>ir.actions.act_window</field>
+	        <field name="res_model">lc.product.catalog</field>
+	        <field name="view_mode">form</field>
+	        <field name="view_id" ref="lc_generate_product_catalog_wizard"/>
+	        <field name="target">new</field>
+	    </record>
+		
+	    <menuitem name="Catalog" id="lc_menu_product_catalog" parent="point_of_sale.menu_point_root" sequence="1"/>
+		<menuitem name="Generate Catalog" id="menu_generate_product_catalog" parent="lc_menu_product_catalog" action="lc_generate_product_catalog_wizard_action" sequence="2"/>
+
+    </data>
+</odoo>

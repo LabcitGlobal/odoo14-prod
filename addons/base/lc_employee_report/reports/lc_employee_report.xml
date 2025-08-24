@@ -1,0 +1,20 @@
+<odoo>
+	<data>
+    	<report id="lc_employee_report_hr_attendance"
+                model="lc.employee.report"
+                string="Print Employee Attendance Report"
+                name="lc_employee_report.print_lc_employee_report_template"
+                file="lc_employee_report.print_lc_employee_report_template"
+                report_type="qweb-pdf"
+                menu="False"
+        />
+        <report id="lc_employee_report_hr_detail_attendance"
+                model="lc.employee.report"
+                string="Print Employee Attendance Report Detail"
+                name="lc_employee_report.lc_employee_report_detail_template"
+                file="lc_employee_report.print_lc_employee_report_template"
+                report_type="qweb-pdf"
+                menu="False"
+        />
+    </data>
+</odoo>

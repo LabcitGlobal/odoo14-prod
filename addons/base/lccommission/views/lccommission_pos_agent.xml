@@ -1,0 +1,42 @@
+<odoo>
+  <data>
+
+    <record id="lccommission_posagent_view_tree" model="ir.ui.view">
+      <field name="name">lccommission_posagent.tree</field>
+      <field name="model">lccommission.posagent</field>
+      <field name="arch" type="xml">
+          <tree>
+              <field name="name"/>
+              <field name="agent_id"/>
+              <field name="note"/>
+          </tree>
+      </field>
+    </record>
+
+    <record id="lccommission_posagent_view_form" model="ir.ui.view">
+      <field name="name">lccommission_posagent.form</field>
+      <field name="model">lccommission.posagent</field>
+      <field name="arch" type="xml">
+      <form string="Asignacion de Orden y Agente">      	
+      	<sheet>
+      		<group>
+              <field name="name"/>              
+              <field name="agent_id"/>
+              <field name="note"/>              
+              <field name="active"/>             
+          </group>          	          	
+      	</sheet>
+      </form>
+      </field>
+    </record>
+
+    <record id='lccommission_posagent_action' model='ir.actions.act_window'>
+      <field name="name">Pedidos por Agente</field>
+      <field name="res_model">lccommission.posagent</field>      
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="lccommission_posagent_menu" parent="lccommission.pos_menu" action="lccommission_posagent_action" sequence="10"/>
+
+  </data>
+</odoo>

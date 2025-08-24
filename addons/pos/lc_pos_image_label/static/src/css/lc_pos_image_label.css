@@ -1,0 +1,123 @@
+.product_label1{
+    background: #024A86;
+    position: absolute;
+    top: 38px;
+    vertical-align: top;
+    color: white;
+    line-height: 15px;
+    padding: 2px 2px;
+    border-radius: 0px;
+    opacity: 1;
+    width: 100%;
+    font-size: 15px;
+}
+.product_label2{
+    background: #C60861;;
+    position: absolute;
+    top: 57px;
+    vertical-align: top;
+    color: white;
+    line-height: 15px;
+    padding: 2px 2px;
+    border-radius: 0px;
+    opacity: 1;
+    width: 100%;
+    font-size: 15px;
+}
+
+.product_top1{
+    position: absolute;
+    top: 0px;
+    border-radius: 1px;
+    width: 100%;
+    height: 93px;
+    border-top: 1px solid #62ff00;
+    border-right: 1px solid #62ff00;
+    border-bottom: 0px solid #62ff00;
+    border-left: 1px solid #62ff00;
+    z-index: 1000;
+}
+.product_top1_span{
+    position: absolute;
+    top: 20px;
+    right: 1px;
+    vertical-align: top;
+    line-height: 13px;
+    background: #015708;
+    padding: 2px 5px;
+    border-radius: 2px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.product_top2{
+    position: absolute;
+    top: 0px;
+    border-radius: 1px;
+    width: 100%;
+    height: 93px;
+    border-top: 1px solid #f9d102;
+    border-right: 1px solid #f9d102;
+    border-bottom: 0px solid #f9d102;
+    border-left: 1px solid #f9d102;
+    z-index: 1000;
+}
+.product_top2_span{
+    position: absolute;
+    top: 20px;
+    right: 1px;
+    vertical-align: top;
+    line-height: 13px;
+    background: #ca1153;
+    padding: 2px 5px;
+    border-radius: 2px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.product_top3{
+    position: absolute;
+    top: 0px;
+    border-radius: 1px;
+    width: 100%;
+    height: 93px;
+    border-top: 1px solid #0112fd;
+    border-right: 1px solid #0112fd;
+    border-bottom: 0px solid #0112fd;
+    border-left: 1px solid #0112fd;
+    z-index: 1000;
+}
+.product_top3_span{
+    position: absolute;
+    top: 20px;
+    right: 1px;
+    vertical-align: top;
+    line-height: 13px;
+    background: #0903c4;
+    padding: 2px 5px;
+    border-radius: 2px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.product_top4{
+    position: absolute;
+    top: 0px;
+    border-radius: 1px;
+    width: 100%;
+    height: 93px;
+    border-top: 1px solid #ff0000;
+    border-right: 1px solid #ff0000;
+    border-bottom: 0px solid #ff0000;
+    border-left: 1px solid #ff0000;
+    z-index: 1000;
+}
+.product_top4_span{
+    position: absolute;
+    top: 20px;
+    right: 1px;
+    vertical-align: top;
+    line-height: 13px;
+    background: #990202;
+    padding: 2px 5px;
+    border-radius: 2px;
+    font-weight: bold;
+    color: #ffffff;
+}

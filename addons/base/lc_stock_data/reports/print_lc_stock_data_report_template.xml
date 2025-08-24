@@ -1,0 +1,116 @@
+<odoo>
+    <data>
+        <template id="print_lc_stock_data_cost_report_template">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">                    
+                    <h2 class="text-center">INVENTORY REPORT + COST</h2>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>                                                                                  
+                                <th class="text-center">
+                                    <strong>ID</strong>
+                                </th>                                
+                                <th class="text-center">
+                                    <strong>Product</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>Code</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>Cost</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>Quantity</strong>
+                                </th>                                
+                                <th class="text-center">
+                                    <strong>Total</strong>
+                                </th>                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="form.get('stock')" t-as="l">
+                                <td>
+                                    <span t-esc="l.get('product_id')"/>
+                                </td>                                
+                                <td>
+                                    <span t-esc="l.get('product_name')"/>
+                                </td>
+                                <td>
+                                    <span t-esc="l.get('default_code')"/>
+                                </td>                                
+                                <td class="text-right">
+                                    <span t-esc="l.get('cost')"/>
+                                </td>                                
+                                <td class="text-right">
+                                    <span t-esc="l.get('quantity')"/>
+                                </td>                                
+                                <td class="text-right">
+                                    <span t-esc="l.get('total')"/>
+                                </td>                                
+                            </tr>
+                        </tbody>                        
+                    </table>
+                    <h4 class="text-center">TOTAL: <span t-esc="form.get('total')"/></h4>                                        
+                    <div class="footer">
+        				<div class="text-center" style="border-top: 1px solid black;">        
+							<ul class="list-inline">
+                				<li>Page: <span class="page"/>/<span class="topage"/></li>
+                				<li>Phone: <span t-field="res_company.phone"/><t t-if="res_company.website"> - Web: <span t-field="res_company.website"/></t></li>
+            				</ul>
+        				</div>
+    				</div>
+                </t>
+            </t>
+        </template>
+
+        <template id="print_lc_stock_data_report_template">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">                    
+                    <h2 class="text-center">INVENTORY REPORT</h2>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>                                                                                  
+                                <th class="text-center">
+                                    <strong>ID</strong>
+                                </th>                                
+                                <th class="text-center">
+                                    <strong>Product</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>Code</strong>
+                                </th>                                
+                                <th class="text-center">
+                                    <strong>Quantity</strong>
+                                </th>                                                                           
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="form.get('stock')" t-as="l">
+                                <td>
+                                    <span t-esc="l.get('product_id')"/>
+                                </td>                                
+                                <td>
+                                    <span t-esc="l.get('product_name')"/>
+                                </td>
+                                <td>
+                                    <span t-esc="l.get('default_code')"/>
+                                </td>                                                                                        
+                                <td class="text-right">
+                                    <span t-esc="l.get('quantity')"/>
+                                </td>                                                                
+                            </tr>
+                        </tbody>                        
+                    </table>                    
+                    <div class="footer">
+        				<div class="text-center" style="border-top: 1px solid black;">        
+							<ul class="list-inline">
+                				<li>Page: <span class="page"/>/<span class="topage"/></li>
+                				<li>Phone: <span t-field="res_company.phone"/><t t-if="res_company.website"> - Web: <span t-field="res_company.website"/></t></li>
+            				</ul>
+        				</div>
+    				</div>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

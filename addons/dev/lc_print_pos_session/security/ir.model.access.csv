@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_lc_print_pos_session_lc_print_pos_session,lc_print_pos_session.lc_print_pos_session,model_lc_print_pos_session_lc_print_pos_session,,1,0,0,0

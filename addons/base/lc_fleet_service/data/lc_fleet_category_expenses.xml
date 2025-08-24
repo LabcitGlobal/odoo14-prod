@@ -1,0 +1,52 @@
+<openerp>
+    <data>
+        <record id="lc_fleet_category_expenses_1" model="lc.fleet.category.expenses">
+	    	<field name="name">Combustible</field>
+	    </record>
+        <record id="lc_fleet_category_expenses_2" model="lc.fleet.category.expenses">
+	    	<field name="name">Peaje</field>
+	    </record>
+        <record id="lc_fleet_category_expenses_3" model="lc.fleet.category.expenses">
+	    	<field name="name">Albo</field>
+	    </record>
+        <record id="lc_fleet_category_expenses_4" model="lc.fleet.category.expenses">
+	    	<field name="name">Gastos</field>
+	    </record>
+        <record id="lc_fleet_category_expenses_5" model="lc.fleet.category.expenses">
+	    	<field name="name">Viático Nacional</field>
+	    </record>
+        <record id="lc_fleet_category_expenses_6" model="lc.fleet.category.expenses">
+	    	<field name="name">Viático Extranjero</field>
+	    </record>
+        <record id="lc_fleet_category_expenses_7" model="lc.fleet.category.expenses">
+	    	<field name="name">Viático Interior</field>
+	    </record>        
+        <record id="lc_fleet_category_expenses_8" model="lc.fleet.category.expenses">
+	    	<field name="name">Comision Representante</field>
+	    </record>
+        <record id="lc_fleet_category_expenses_9" model="lc.fleet.category.expenses">
+	    	<field name="name">Mantenimiento</field>
+	    </record>
+        <record id="lc_fleet_category_expenses_10" model="lc.fleet.category.expenses">
+	    	<field name="name">Memorización</field>
+	    </record>
+        <record id="lc_fleet_category_expenses_11" model="lc.fleet.category.expenses">
+	    	<field name="name">Cargio</field>
+	    </record>
+        <record id="lc_fleet_category_expenses_12" model="lc.fleet.category.expenses">
+	    	<field name="name">Descargio</field>
+	    </record>
+        <record id="lc_fleet_category_expenses_13" model="lc.fleet.category.expenses">
+	    	<field name="name">Respuestos</field>
+	    </record>
+        <record id="lc_fleet_category_expenses_14" model="lc.fleet.category.expenses">
+	    	<field name="name">PCR</field>
+	    </record>
+        <record id="lc_fleet_category_expenses_15" model="lc.fleet.category.expenses">
+	    	<field name="name">Reporte RIAS</field>
+	    </record>
+        <record id="lc_fleet_category_expenses_16" model="lc.fleet.category.expenses">
+	    	<field name="name">General</field>
+	    </record>
+    </data>
+</openerp>

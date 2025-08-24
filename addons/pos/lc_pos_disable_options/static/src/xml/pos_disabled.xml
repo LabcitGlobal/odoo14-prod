@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="pos_disabled_template" xml:space="preserve">    
+    <t t-inherit="point_of_sale.NumpadWidget" t-inherit-mode="extension" owl="1">        
+        <xpath expr="//button[@class='mode-button'][@t-att-disabled='!hasManualDiscount']" position="replace">
+            <t t-if="env.pos.config.disable_discount">
+                <button class="mode-button enabled-mode" t-att-class="{
+                        'selected-mode': props.activeMode === 'discount',
+                        'disabled-mode': !hasManualDiscount
+                    }"
+                    t-att-disabled="!hasManualDiscount"
+                    t-on-click="changeMode('discount')">Disc</button>
+            </t>
+            <t t-else="">
+                <button class="mode-button disabled-mode">Disc</button>                
+            </t>
+        </xpath>
+        <xpath expr="//button[@class='mode-button'][@t-att-disabled='!hasPriceControlRights']" position="replace">
+            <t t-if="env.pos.config.disable_price">
+                <button class="mode-button enabled-mode" t-att-class="{
+                    'selected-mode': props.activeMode === 'price',
+                    'disabled-mode': !hasPriceControlRights
+                }" t-att-disabled="!hasPriceControlRights"
+                    t-on-click="changeMode('price')">Price</button>
+            </t>
+            <t t-else="">
+                <button class="mode-button disabled-mode">Price</button>                
+            </t>
+        </xpath>        
+    </t>
+    <t t-inherit="point_of_sale.ActionpadWidget" t-inherit-mode="extension" owl="1">                
+        <xpath expr="//button[@class='button pay']" position="replace">
+            <t t-if="env.pos.config.disable_payment">
+                <button class="button pay" t-on-click="trigger('click-pay')">
+                    <div class="pay-circle">
+                        <i class="fa fa-chevron-right" role="img" aria-label="Pay" title="Pay" />
+                    </div>
+                    Payment
+                </button>
+            </t>
+            <t t-else="">
+                <button class="button pay disabled-mode">                    
+                </button>
+            </t>
+        </xpath>
+    </t>
+</templates>

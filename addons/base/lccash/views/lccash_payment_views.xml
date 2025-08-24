@@ -1,0 +1,99 @@
+<odoo>
+  <data>
+    
+    <record model="ir.ui.view" id="lccash_payment_view">
+      <field name="name">lccash.payment.tree</field>
+      <field name="model">lccash.payment</field>
+      <field name="arch" type="xml">
+        <tree decoration-success="mount == paid" decoration-danger="mount != paid">
+          <field name="name"/>  
+          <field name="sale_id"/>        
+          <field name="date"/>
+          <field name="mount"/>
+          <field name="paid"/>
+          <field name="change"/>
+          <field name="note"/>
+          <field name="payment_type" string="Tipo de Pago"/>
+          <field name="state"/>
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="lccash_payment_form">
+      <field name="name">lccash.payment.form</field>
+      <field name="model">lccash.payment</field>
+      <field name="arch" type="xml">
+      <form string="Cambio">
+      	<sheet>
+      		<group>
+      			<field name="name"/>
+      			<field name="mount"/>       		
+          		<field name="date"/>          		
+          		<field name="paid"/>
+          		<field name="change"/>
+          		<field name="note"/>
+          		<field name="active"/>          		          		
+          	</group>
+          	<notebook>          		
+          		<page string="Detalle del Pago">
+          			<group>
+          				<field name="payment_type" string="Tipo de Pago"/>
+          				<field name="bank" string="Banco"/>
+          				<field name="payment_date" string="Fecha de Pago"/>
+          				<field name="transaction_code" string="No. Transaccion"/>
+          			</group>
+          		</page>
+				<page string="Otros motivos de Pago">
+          			<group>
+          				<field name="sale_id"/>
+          				<field name="partner_id"/>
+          				<field name="employee_id"/>
+          			</group>
+          		</page>
+				<page string="Respaldo">
+          			<group>
+          				<field name="photo" widget="image"/>          				
+          				<field name="file" widget="binary"/>          				
+          			</group>          			
+          		</page>
+          		<page string="Detalle del Ingreso">
+          			<group>           
+          				<field name="detailpayment_ids">
+          					<tree string="Detalle" editable="bottom">          				
+	          					<field name="name"/>
+    	      					<field name="cant"/>        	  					
+    	      					<field name="note"/>
+          					</tree>
+          				</field>
+          			</group>          			
+          		</page>				
+          		<page string="Seguridad">
+          			<group>           
+          				<field name="create_uid" string="Creado por"/>
+          				<field name="create_date" string="Fecha de Creacion"/>
+          				<field name="write_uid" string="Actualizado por"/>
+          				<field name="write_date" string="Fecha de Actualizacion"/>
+          			</group>
+          		</page>
+          	</notebook>                                        
+        </sheet>
+      </form>
+      </field>
+    </record>    
+
+    <!-- actions opening views on models -->
+    
+    <record model="ir.actions.act_window" id="lccash_payment_action_window">
+      <field name="name">Depositos</field>
+      <field name="res_model">lccash.payment</field>
+      <field name="view_mode">tree,form</field>
+	  <field name="domain">[('company_id','=',allowed_company_ids[0])]</field>
+    </record>
+
+    <!-- Menu -->
+    
+    <menuitem name="Depositos" id="lccash.payment" parent="lccash.submenu"
+              action="lccash_payment_action_window" sequence="4"/>
+    
+  </data>
+</odoo>

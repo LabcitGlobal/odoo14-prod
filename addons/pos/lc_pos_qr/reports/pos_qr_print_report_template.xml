@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+		<template id="pos_qr_print_report_template">
+			<t t-foreach="docs" t-as="o">
+    			<t t-call="web.html_container">        		
+            		<t t-call="web.external_layout">
+                		<div class="page">
+                			<div class="oe_structure" style="font:14px Helvetica,Arial !important; ">
+                				<a2>                    		
+                    			<div class="table">
+                    				<div class="col-xs-12 text-center">
+                        				<h2 t-esc="o.user_id.company_id.name"/>                        				
+                    				</div>
+                				</div>
+								<table class="table table-sm o_main_table">
+									<tr>
+										<td><a1><strong>Partner:</strong> <span t-field="o.partner_id"/></a1></td>
+										<td><a1><strong>Phone:</strong> <span t-field="o.partner_id.mobile"/> - <span t-field="o.partner_id.phone"/></a1></td>
+									</tr>
+									<tr>
+										<td><a1><strong>Date:</strong> <span t-field="o.date_order"/></a1></td>
+										<td><a1><strong>User:</strong> <span t-field="o.user_id"/></a1></td>
+									</tr>
+								</table>
+                				<div class="row">
+                				</div>
+                				<table class="table table-sm o_main_table">
+                    				<thead>
+                        				<tr>
+                            				<th class="text-right">Qty.</th>
+	                            			<th>Description</th>             
+    	                        			<th class="text-right">Price</th>
+        	                    			<th class="text-right">Total</th>
+            	            			</tr>
+                	    			</thead>
+                    				<tbody>
+                        				<tr t-foreach="o.lines" t-as="line">
+                        					<td class="text-right">
+                                				<t t-if="o.state != 'cancel'">
+                                    				<span t-field="line.qty"/>
+                                				</t>
+	                            			</td>
+    	                        			<td><span t-field="line.product_id"/>
+        	                    				<t t-if="line.line_note">
+            	                					[<strong>Note:<span t-field="line.line_note"/></strong>]
+                	            				</t>
+                    	        			</td>
+                        	    			<td class="text-right">
+                            					<span t-esc="'%.2f'%line['price_unit']" />
+                            				</td>
+                            				<td class="text-right">
+                            					<span t-esc="'%.2f'%(line.price_subtotal)" />                                			
+	                            			</td>
+    	                    			</tr>
+        	            			</tbody>                    			
+            	    			</table>
+                				<div class="table table-sm o_main_table">
+                    				<div class="col-xs-12 pull-right">
+                        				<table class="table table-condensed">
+                            				<tr class="border-black">
+                                				<td><strong>IVA</strong></td>
+                                				<td class="text-right">
+                                    				<strong t-esc="o.amount_tax"/>
+                                				</td>
+	                            			</tr>
+    	                        			<tr>
+        	                        			<td><strong>Total</strong></td>
+            	                    			<td class="text-right">                                				
+                    	                			<strong t-esc="'%.2f'%(o.amount_total)"/>                                    			
+                        	        			</td>
+                            				</tr>                            				
+                        				</table>
+                    				</div>
+                				</div>
+								<div class="table table-sm o_main_table">
+									<t t-if="o.note">
+                        				<strong>NOTE:</strong> <strong t-esc="o.note"/>
+									</t>
+								</div>
+								<t t-foreach="request.env['lc.pos.qr'].search([('state','=','enable')])" t-as="obj">
+									<t t-if="obj.qr_code_image">
+										<table class="table table-sm o_main_table">
+											<tr>
+												<td>
+													<center>
+													<div style="width:100px;height:100px;">
+														<span t-field="obj.qr_code_image"  t-options='{"widget": "image"}' />
+													</div>
+													</center>
+												</td>
+												<td>
+													<br />
+													<strong>Bank:</strong> <span t-field="obj.bank_id"/>
+													<br />
+											  		<strong>Account name:</strong> <span t-field="obj.name"/>
+													<br />
+											  		<strong>Account number:</strong> <span t-field="obj.number_account"/>
+													<br />
+											  		<strong>Currency:</strong> <span t-field="obj.currency_id"/>
+												</td>
+											</tr>												
+										</table>											
+									</t>
+								</t>
+                			</a2>
+                			<div class="footer">
+        						<div class="text-center" style="border-top: 1px solid black;">        
+						            <ul class="list-inline">
+                						<li>Page: <span class="page"/>/<span class="topage"/></li>
+                						<li>Phone: <span t-field="res_company.phone"/><t t-if="res_company.website"> - Web: <span t-field="res_company.website"/></t></li>
+            						</ul>
+        						</div>
+    						</div>                			
+                			</div> 
+                		</div>               		
+            		</t>
+        		</t>
+    		</t>
+		</template>        
+    </data>
+</odoo>
+

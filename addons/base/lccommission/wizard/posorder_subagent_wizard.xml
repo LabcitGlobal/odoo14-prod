@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id='posorder_subagent_wizard_form' model='ir.ui.view'>
+    <field name='name'>pos sub order agent wizard form view</field>
+    <field name='model'>lccommission.possubagent.wizard</field>
+    <field name='arch' type='xml'>
+        <form string="Pedidos del Pos">
+            <sheet>
+                <group>
+                    <field name='agent_id'/>
+                </group>
+                <group>
+                    <field name='posorder_ids'/>
+                </group>
+            </sheet>
+            <footer>
+                <button string='Asignar' name='add_posorder_subagent' class='btn-primary' type='object'/>
+                <button string='Cancelar' class='btn-default' special='cancel'/>
+            </footer>
+        </form>
+    </field>
+</record>
+
+<act_window id="action_wizard_posorder_subagent" name="Asignar Sub Agente a Pedidos" res_model="lccommission.possubagent.wizard" view_mode="form" target="new" />
+<menuitem id="menu_wizard_posorder_subagent" parent="lccommission.pos_menu" action="action_wizard_posorder_subagent" groups="group_show_subagent" sequence="21" />
+
+</odoo>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="payment_fleet_service_report">
+        	<t t-foreach="docs" t-as="doc">            
+				<t t-call="web.html_container">
+					<t t-call="web.external_layout">
+						<div style="font:17px Helvetica,Arial !important;">
+            				<div class="page">    
+	            				<table style="width:100%;">
+									<tr>
+										<td>
+											<center><h2>PROOF OF INCOME</h2></center>
+										</td>
+										<td>
+											<h5 style="text-align:right">N° <strong><span t-field="doc.id"/></strong></h5>
+										</td>
+									</tr>
+								</table>        												
+								<h5 style="text-align:right">Amount <strong><span t-field="doc.fleet_service_id.currency_id"/> <span t-field="doc.paid"/></strong></h5>
+								<hr style="height:2px;border-width:0;color:gray;background-color:gray"/>
+    	        				<table class="table table-bordered" style="width:100%">
+        	    					<tbody>            							
+										<tr>
+											<td width="20%"><strong>Date</strong></td>
+											<td><span t-esc="doc.fleet_service_id.date_today.strftime('%d de %B del %Y')"/></td>
+										</tr>										            							
+										<tr>
+											<td><strong>Received from</strong></td>
+											<td><span t-field="doc.fleet_service_id.customer_id"/></td>
+										</tr>
+										<tr>
+											<td><strong>By concept of</strong></td>
+											<td><span t-field="doc.fleet_service_id.notes"/></td>
+										</tr>
+										<tr>
+											<td><strong>License plate</strong></td>
+											<td>
+												<t t-foreach="doc.fleet_service_id.vehicle_ids" t-as="vehicle">
+													<span t-field="vehicle.vehicle_id.license_plate"/><span> </span>
+												</t>
+											</td>
+											<!-- <td><span t-field="doc.fleet_service_id.vehicle_id.license_plate"/></td> -->
+										</tr>
+										<tr>
+											<td><strong>Invoice</strong></td>
+											<td><span t-field="doc.fleet_service_id.invoice_number"/></td>
+										</tr>
+            						</tbody>            					
+            					</table>								
+    	        				
+								<table class="table table-bordered">
+        	    					<tbody>
+										<tr>
+											<td width="20%"><strong>The sum in letters</strong></td>
+											<td style="text-transform: uppercase;"><span t-esc="doc.amount_to_tex(doc.paid)"/> 00/100 <span t-field="doc.fleet_service_id.currency_id"/></td>
+										</tr>
+										<tr>
+											<td><strong>Date</strong></td>
+											<td><span t-esc="doc.date.strftime('%d de %B del %Y')"/></td>
+										</tr>            							            							
+            						</tbody>            					
+            					</table>
+								<table class="table table-bordered">
+        	    					<tbody>
+										<tr>
+											<td width="30%"><strong>User: </strong><span t-field="doc.create_uid"/><br/><br/><br/><br/></td>											
+											<td width="30%"><strong>Aprobed</strong></td>
+											<td width="40%"><strong>Signature and Seal of the Beneficiary</strong></td>
+										</tr>										
+            						</tbody>            					
+            					</table>
+							</div>
+            			</div>
+            		</t>
+            	</t>          		
+            </t>
+        </template>
+
+    </data>
+</odoo>

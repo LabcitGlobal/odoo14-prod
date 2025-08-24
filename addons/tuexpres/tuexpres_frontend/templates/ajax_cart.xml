@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--=================== Product ========================-->
+    <template id="ajax_cart_template_pricelist" inherit_id="emipro_theme_base.ajax_cart_container" name="Ajax Cart Template Pricelist">
+        <xpath expr="//div[hasclass('ajax_cart_content')]" position="after">                                  
+            <t t-call="tuexpres_frontend.product_pricelist_container"/>              
+        </xpath>   
+    </template>
+</odoo>

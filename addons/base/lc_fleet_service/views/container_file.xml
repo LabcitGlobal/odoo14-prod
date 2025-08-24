@@ -1,0 +1,92 @@
+<odoo>
+  <data>
+
+    <!-- Container File -->
+
+    <record model="ir.ui.view" id="lc_container_control_file_tree">
+      <field name="name">File Container Control Tree</field>
+      <field name="model">lc.container.file</field>
+      <field name="arch" type="xml">
+        <tree string="Container Control File list">
+          <field name="container_id"/>
+          <field name="date"/>
+          <field name="file_category_id"/>
+          <field name="name"/>
+          <field name="quantity"/>
+          <field name="type"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="lc_containter_control_file_form">
+      <field name="name">Container Control File Form</field>
+      <field name="model">lc.container.file</field>
+      <field name="arch" type="xml">
+      		<form string="Container Control File">
+      			<sheet>
+      				<group>
+      		    	<field name="container_id"/>
+      		    	<field name="date"/>
+      		    	<field name="file_category_id"/>
+      		    	<field name="name"/>
+      		    	<field name="quantity"/>
+      		    	<field name="type"/>
+      		    	<field name="photo" widget="image"/>
+      		    	<field name="file1" widget="binary"/>
+      		    	<field name="file2" widget="binary"/>
+      		    	<field name="file3" widget="binary"/>
+      		    </group>
+      			</sheet>
+      		</form>
+      </field>
+    </record>
+
+	<record id="lc_container_control_file_action" model="ir.actions.act_window">
+            <field name="name">Container Control File</field>
+            <field name="res_model">lc.container.file</field>
+            <field name="view_mode">tree,form</field>
+  </record>
+
+  <!-- Category File -->
+
+  <record model="ir.ui.view" id="lc_file_category_container_tree">
+      <field name="name">Container File Category Tree</field>
+      <field name="model">lc.file.category</field>
+      <field name="arch" type="xml">
+        <tree string="File Category list">
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="lc_file_category_containter_form">
+      <field name="name">File Category ontainer Form</field>
+      <field name="model">lc.file.category</field>
+      <field name="arch" type="xml">
+      		<form string="Container File Category">
+      			<sheet>
+      				<group>
+      		    	<field name="name"/>
+      		    </group>
+      			</sheet>
+      		</form>
+      </field>
+    </record>
+
+	<record id="lc_container_file_category_action" model="ir.actions.act_window">
+            <field name="name">Container File Category</field>
+            <field name="res_model">lc.file.category</field>
+            <field name="view_mode">tree,form</field>
+  </record>
+
+  <!-- End Category File -->
+
+
+	<menuitem id="submenu_lc_container_control_file" parent="menu_lc_container_control" name="Container Control File"
+                  action="lc_container_control_file_action" sequence="1"/>
+
+	<menuitem id="submenu_lc_container_file_category" parent="fleet.fleet_configuration" name="File Category"
+                  action="lc_container_file_category_action" sequence="1"/>
+
+  </data>
+</odoo>

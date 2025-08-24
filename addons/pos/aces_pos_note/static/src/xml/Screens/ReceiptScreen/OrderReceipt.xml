@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="OrderReceipt" t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension" owl="1">
+        <xpath expr="//WrappedProductNameLines" position="after">
+            <t t-if="env.pos.config.is_productnote_receipt and orderline.line_note">
+                <div class="pos-receipt-left-padding">                    
+                        <span>[ Nota: </span>
+                        <t t-esc="orderline.line_note"/>                    
+                        <span> ]</span>
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//div[hasclass('pos-receipt-order-data')]" position="inside">
+            <t t-if="env.pos.config.is_ordernote_receipt and receipt.order_note !== false">
+                <br/>
+                <div style='text-align:left'>
+                    <span><b>Nota:</b>   <t t-esc="receipt.order_note" /></span>
+                </div>
+            </t>
+        </xpath>
+    </t>
+</templates>

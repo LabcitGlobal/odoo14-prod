@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets_frontend" inherit_id="web.assets_frontend" name="web_menu_categories">
+            <xpath expr="." position="inside">
+                <link href="/lc_web_frontend/static/src/css/web_frontend.css" rel="stylesheet" type="text/css"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>

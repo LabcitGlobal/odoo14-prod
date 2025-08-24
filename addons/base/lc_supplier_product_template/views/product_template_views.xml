@@ -1,0 +1,28 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="product_template_form_view">
+    	<field name="name">product_template_commission</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">        
+        <xpath expr="//field[@name='description']" position="after">
+          <separator string="Supplier Information" groups="lc_hide_margin_pos.sec_lc_hide_margin_pos"/>
+          <group name="Supplier Information" colspan="4" groups="lc_hide_margin_pos.sec_lc_hide_margin_pos">
+            <group>
+              <field name="supplier_id"/>          
+              <field name="supplier_commission_type_id"/>          
+              <field name="supplier_commission"/>          
+              <field name="supplier_purchase_type_id"/>
+            </group>
+            <group>
+              <field name="supplier_cost"/>          
+              <field name="supplier_selling_price"/>          
+              <field name="supplier_real_commission"/>          
+              <field name="supplier_new_sale_price"/>
+            </group>
+          </group>
+        </xpath>
+        </field>
+    </record>    
+  </data>
+</odoo>

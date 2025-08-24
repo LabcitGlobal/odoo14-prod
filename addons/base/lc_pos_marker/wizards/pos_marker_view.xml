@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record model="ir.ui.view" id="lc_pos_marker_form">
+    	<field name="name">Pos Order Marker</field>
+        <field name="model">lc.pos.marker</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+        	<form>
+            	<group>
+                	<field name="from_date"/>
+                    <field name="to_date"/>
+                    <field name="users_id" widget="many2many_tags"/>
+                </group>
+                <footer>
+                    <button name="marker_pos_order" string="Mark Delivery Points" type="object" class="btn-success"/>
+                    <button name="marker_end_pos_order" string="Unmark Points" type="object" class="btn-danger"/>
+                    <button string="Close" class="btn-primary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="lc_pos_marker_action_window">
+    	<field name="name">Mark Shipping Points</field>
+        <field name="res_model">lc.pos.marker</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>        
+    </record>
+    
+    <menuitem id="menu_lc_pos_marker" name="Shipping Points"
+    	parent="contacts.menu_contacts"
+        sequence="10"/>
+
+    <menuitem id="menu_pos_marker_wizard" name="Mark Shipping Points"
+    	parent="menu_lc_pos_marker" action="lc_pos_marker_action_window"
+        sequence="11"/>
+    
+</odoo>

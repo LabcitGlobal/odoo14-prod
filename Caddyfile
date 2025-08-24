@@ -1,6 +1,29 @@
-# Configuración para producción con subdominio
+Configuración para desarrollo local - puerto 9080
+:80 {
+    reverse_proxy odoo:8014 {
+        header_up X-Real-IP {remote_host}
+        header_up X-Forwarded-For {remote_host}
+        header_up X-Forwarded-Proto {scheme}
+        header_up X-Forwarded-Host {host}
+    }
+    
+    # Logs de acceso para desarrollo
+    log {
+        output file /var/log/caddy/access_local.log
+        level INFO
+    }
+    
+    # Headers básicos para desarrollo
+    header {
+        X-Content-Type-Options nosniff
+        X-Frame-Options SAMEORIGIN
+    }
+}
+
+Configuración para producción (comentada para desarrollo local)
+Descomenta y ajusta cuando migres al VPS
 multiacceso.labcit.com {
-    reverse_proxy odoo:8069 {
+    reverse_proxy odoo:8014 {
         header_up X-Real-IP {remote_host}
         header_up X-Forwarded-For {remote_host}
         header_up X-Forwarded-Proto {scheme}
@@ -15,7 +38,7 @@ multiacceso.labcit.com {
     # Compresión
     encode gzip
     
-    # Headers de seguridad
+    # Headers de seguridad para producción
     header {
         Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
         X-Content-Type-Options nosniff
@@ -24,23 +47,9 @@ multiacceso.labcit.com {
         Referrer-Policy strict-origin-when-cross-origin
     }
     
-    # Logs de acceso
+    # Logs de acceso para producción
     log {
         output file /var/log/caddy/access.log
         format json
-    }
-}
-
-# Configuración adicional para desarrollo local (opcional)
-localhost {
-    reverse_proxy odoo:8069 {
-        header_up X-Real-IP {remote_host}
-        header_up X-Forwarded-For {remote_host}
-        header_up X-Forwarded-Proto {scheme}
-    }
-    
-    # Logs de acceso
-    log {
-        output file /var/log/caddy/access_local.log
     }
 }

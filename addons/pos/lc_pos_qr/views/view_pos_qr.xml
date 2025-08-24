@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="lc_pos_qr_code_tree">
+          <field name="name">POS Qr Code Tree</field>
+          <field name="model">lc.pos.qr</field>
+          <field name="arch" type="xml">
+            <tree string="Code">              
+              <field name="name"/>
+              <field name="bank_id"/>
+              <field name="number_account"/>
+              <field name="currency_id"/>
+              <field name="date"/>
+              <field name="user_id"/>
+              <field name="note"/>
+              <field name="qr_code_image"/>
+              <field name="create_uid" widget="many2one_avatar_user"/>
+              <field name="state" decoration-danger="state == 'disable'" decoration-success="state == 'enable'" widget="badge" optional="show"/>          
+            </tree>
+          </field>
+        </record>
+    
+        <record model="ir.ui.view" id="lc_pos_qr_code_form">
+          <field name="name">POS QR Code Form</field>
+          <field name="model">lc.pos.qr</field>
+          <field name="arch" type="xml">
+          		<form string="Code">
+                  <header>
+          		    	<button name="action_disable_qr_code" id="action_disable_qr_code" 
+	    				      string="Disable" class="btn-primary" type="object"
+	    				      attrs="{'invisible':['|', ('state','not in', ['enable']),('id','=',False)]}"/>
+          		    	<button name="action_enable_qr_code" type="object" string="Enable" 
+	    				      attrs="{'invisible': ['|', ('state', 'in', ['enable']), ('id', '=', False)]}" groups="point_of_sale.group_pos_manager"/>
+          				<field name="state"  widget="statusbar" statusbar_visible="enable,disable"/>
+          			</header>      			
+          			<sheet>
+          				<group>
+                    <field name="name"/>
+                    <field name="bank_id"/>
+                    <field name="number_account"/>
+                    <field name="currency_id"/>
+                    <field name="user_id"/>          
+                    <field name="date"/>          
+                    <field name="note"/>          
+                    <field name="qr_code_image" widget="image" class="oe_avatar"/>          
+          		    </group>          	      		    			
+          			</sheet>
+          		</form>        
+          </field>
+        </record>
+
+	    <record id="lc_pos_qr_code_action" model="ir.actions.act_window">
+                <field name="name">QR Code</field>
+                <field name="res_model">lc.pos.qr</field>
+                <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_lc_pos_qr_code" parent="point_of_sale.menu_point_config_product" name="QR Code"
+                  action="lc_pos_qr_code_action" sequence="20"/>
+    </data>
+</odoo>

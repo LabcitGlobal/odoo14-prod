@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="partner_index" inherit_id="website.snippets" name="Index Partner">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+            <t t-snippet="theme_labcit.lc_partner"
+             t-thumbnail="/theme_labcit/static/src/img/snippets/partner.png" />
+        </xpath>
+    </template>
+    <template id="lc_partner" name="Labcit Partner">
+        <!-- Partner -->
+        <section class="section-partner">
+            <div class="partner-title">
+                <div class="title-mobile">
+                    <b>Empresas que confían en nosotros.</b>
+                </div>                                
+                <p>Únete a nuestra comunidad empresarial ¡te esperamos!</p>
+            </div>
+            <div class="partner-line">                
+            </div>
+            <div class="partner-logo">
+                <div id="slider-logo" class="owl-carousel">
+                    <div class="part-log"><img src="/theme_labcit/static/src/img/cetic.png" id="img-cetic" alt="Cetic"/></div>
+                    <div class="part-log"><img src="/theme_labcit/static/src/img/multiacceso.png" id="img-multiacceso" alt="Multiacceso"/></div>
+                    <div class="part-log"><img src="/theme_labcit/static/src/img/laselva.png" id="img-laselva" alt="La Selva"/></div>
+                    <div class="part-log"><img src="/theme_labcit/static/src/img/ingco.png" id="img-ingco" alt="Ingco Bolivia"/></div>
+                    <div class="part-log"><img src="/theme_labcit/static/src/img/sanluis.png"  id="img-sanluis" alt="San Luis Express"/></div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

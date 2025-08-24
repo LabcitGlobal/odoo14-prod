@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+	<div class="row oe_export" t-name="ExportPasswordView">
+		<div class="col-md-4">
+			Password
+		</div>
+		<div class="col-md-4">
+			<input type="password" id="export_password"/>
+		</div>
+	</div>
+
+
+</templates>

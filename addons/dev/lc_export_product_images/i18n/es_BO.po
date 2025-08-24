@@ -1,0 +1,93 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* lc_export_product_images
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20231106\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-30 03:41+0000\n"
+"PO-Revision-Date: 2025-05-30 03:41+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: lc_export_product_images
+#: model:ir.model.fields,field_description:lc_export_product_images.field_product_export__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: lc_export_product_images
+#: model:ir.model.fields,field_description:lc_export_product_images.field_product_export__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: lc_export_product_images
+#: model:ir.model.fields,field_description:lc_export_product_images.field_product_export__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: lc_export_product_images
+#: model:ir.model,name:lc_export_product_images.model_product_export
+msgid "Export Images from Products."
+msgstr "Exportar imágenes de productos."
+
+#. module: lc_export_product_images
+#: model:ir.actions.server,name:lc_export_product_images.action_export_product_images
+#: model:ir.actions.server,name:lc_export_product_images.action_export_product_template_images
+msgid "Export Product Images"
+msgstr "Exportar imágenes de productos"
+
+#. module: lc_export_product_images
+#: model:res.groups,name:lc_export_product_images.group_product_export
+msgid "Export products Images"
+msgstr "Exportar imágenes de productos"
+
+#. module: lc_export_product_images
+#: model:ir.model.fields,field_description:lc_export_product_images.field_product_export__id
+msgid "ID"
+msgstr "ID"
+
+#. module: lc_export_product_images
+#: model:ir.model.fields,field_description:lc_export_product_images.field_product_export____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: lc_export_product_images
+#: model:ir.model.fields,field_description:lc_export_product_images.field_product_export__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: lc_export_product_images
+#: model:ir.model.fields,field_description:lc_export_product_images.field_product_export__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: lc_export_product_images
+#: model:ir.model.fields,field_description:lc_export_product_images.field_product_export__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: lc_export_product_images
+#: model:ir.model.fields,help:lc_export_product_images.field_product_export__name
+msgid "Name of the record"
+msgstr "Nombre del registro"
+
+#. module: lc_export_product_images
+#: model:ir.model.fields,help:lc_export_product_images.field_product_export__product_ids
+msgid "Product variants for exporting"
+msgstr "Variantes de producto para exportar"
+
+#. module: lc_export_product_images
+#: model:ir.model.fields,field_description:lc_export_product_images.field_product_export__product_ids
+#: model:ir.model.fields,field_description:lc_export_product_images.field_product_export__product_tmp_ids
+msgid "Products"
+msgstr "Productos"
+
+#. module: lc_export_product_images
+#: model:ir.model.fields,help:lc_export_product_images.field_product_export__product_tmp_ids
+msgid "Products for exporting"
+msgstr "Productos para exportar"

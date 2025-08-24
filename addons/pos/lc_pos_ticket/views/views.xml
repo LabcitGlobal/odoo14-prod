@@ -1,0 +1,9 @@
+<odoo>
+  <data>
+    <template id="index" name="pos_b index" inherit_id="point_of_sale.index">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/lc_pos_ticket/static/src/css/pos.css" id="pos-stylesheet"/>
+            </xpath>
+    </template>
+  </data>
+</odoo>

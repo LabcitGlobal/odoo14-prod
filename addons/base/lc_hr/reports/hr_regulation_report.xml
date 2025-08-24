@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="lc_hr_internal_regulation">
+        	<t t-foreach="docs" t-as="doc">            
+				<t t-call="web.html_container">
+					<t t-call="web.external_layout">
+						<div style="font:18px Helvetica,Arial !important;">
+            				<div class="page">    
+	            				<center><h2>MANUAL DE FUNCIONES DE LOS CONDUCTORES</h2></center>								
+								<p align="justify">
+    								<br/>1. Mantener el camión en perfectas condiciones operable para cualquier momento y/o reportar cualquier situación a la administración para su inmediata solución al problema.
+    								<br/>2. El conductor debe llevar la unidad de transporte al taller indicado e ir a cotizar los repuestos que se necesitan para su arreglo.
+    								<br/>3. Cualquier daño por falta de control al camión será de responsabilidad entera del conductor.
+    								<br/>4. El cambio de aceite es responsabilidad del conductor de realizar cada 7000 km y de esta manera tener el camión cuidado.
+    								<br/>5. Las cabinas deben estar limpias y ordenadas de lo contrario se hará una llamada de atención al conductor.
+    								<br/>6. El conductor está en la obligación de viajar en la fecha indicada acorde instrucciones de oficina y debe cumplir horarios establecidos para los carguíos.
+    								<br/>7. El conductor debe recoger documentos de la oficina, debe revisar los documentos al detalle y firmar la hoja de ruta (MIC/DTA), documentos de exportación y recoger gastos y viatico.
+    								<br/>8. Cualquier pérdida económica o carga, generada por el conductor se descontará del sueldo mensual.
+    								<br/>9. El conductor debe reportar cuando este en frontera y una vez llegue a puerto de destino llamando a la oficina central o watsap o reportarse con el representante en el exterior.
+    								<br/>10. El conductor debe estar al tanto de la planificación de importación hasta el carguío.
+    								<br/>11. El conductor debe informar de su partida de puerto de origen mediante el representante y debe llamar a oficina central una vez este en frontera.
+    								<br/>12. El conductor debe reportar su llegada a La Paz una vez arribado en aduana de destino.
+    								<br/>13. El conductor debe entregar la documentación de exportación realizada a oficina central hasta 24 Hrs. una vez arribado a destino, juntamente con la factura de diésel, peajes y otros descargos.
+    								<br/>14. El conductor debe hacer el trámite en aduana de destino, estando puntualmente todos los días.
+    								<br/>15. El conductor no debe entregar documentación a cliente sin autorización de oficina central.
+    								<br/>16. El conductor una vez salga de aduana debe entregar la documentación de importación a oficina central.
+    								<br/>17. El fumigado y lavado del camión debe realizarse cada 2 viajes impostergablemente, cuyo control estará a cargo del conductor.
+    								<br/>18. El conductor no debe ni puede dejar el camión en cualquier lugar, la perdida de algún objeto o daño que sufra la unidad será de entera responsabilidad del mismo.
+    								<br/>19. El conductor no puede dar a terceros el camión ni manejar en estado de ebriedad.
+    								<br/>20. El conductor debe respetar las señalizaciones de tránsito en el país donde se encuentre.
+    								<br/>21. El conductor está obligado a entregar la mercadería tal como recibió en origen y en fecha indicada reportar de inmediato cualquier percance.
+    								<br/>22. El conductor debe estar al pendiente del funcionamiento minucioso de la unidad de transporte verificando: llantas, luces externas e internas, aceite, líquidos, nivel de agua, equipo de seguridad herramientas, etc.
+    								<br/>23. Todo lo entregado bajo inventario es de entera responsabilidad del conductor.
+    								<br/>24. El conductor debe firmar la hoja de ruta para entregar la documentación.
+    								<br/>25. El conductor debe reportarse mínimo TRES veces al día mediante cualquier medio de comunicación informando la actividad que está realizando para coordinar labores del día.
+    								<br/>26. El conductor debe portar obligatoriamente celular y debe estar encendido este las 24 hrs.
+    								<br/>27. El conductor debe entregar la unidad de transporte bajo inventario, cualquiera perdida será entera responsabilidad del mismo.
+									<br/>
+									<br/>
+									<br/><strong>Nota:</strong> Todos los puntos indicados deben ser cumplidos en su totalidad para evitar llamadas de atención verbal, memorándum, por parte de Administración y Gerencia General.								
+									<br/>El Alto, <span t-esc="doc.create_date.strftime('%d de %B del %Y')"/>
+								</p>
+								<br/>
+								<br/>
+								<br/>
+								<br/>								
+								<table style="width:100%; align:center">
+									<tr>									
+										<td style="width:50%"><center><span t-field="doc.parent_id" style="text-transform:uppercase;"/></center></td>
+										<td style="width:50%"><center><span t-field="doc.name" style="text-transform:uppercase;"/></center></td>
+									</tr>									
+									<tr>									
+										<td><center><strong>ENTREGADO</strong></center></td>
+										<td><center><strong>RECIBIDO</strong></center></td>
+									</tr>
+								</table>
+							</div>
+            			</div>
+            		</t>
+            	</t>          		
+            </t>
+        </template>
+    </data>
+</odoo>

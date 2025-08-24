@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="labcit_footer" inherit_id="website.layout" name="Labcit Footer">
+      <xpath expr="//div[@id='footer']" position="replace">
+        <!-- Footer -->
+        <div class="div-footer">
+        <section class="section-footer">
+            <div class="fcontainer">
+                <div class="footer-logo"><img src="/theme_labcit/static/src/img/logo.svg" alt="Labcit"/></div>
+                <div class="footer-nav">
+                    <ul class="footer-nav-links">
+                        <li><a href="/nosotros">Acerca</a></li>
+                        <li><a href="/shop">Productos</a></li>
+                        <li><a href="/contactus">Contactos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <ul class="footer-nav-phone">
+                        <li><a href="tel://22843786"><i class="fa fa-phone"></i> +591 (2) 2843786</a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=59173023223" target="_blank"><i class="fa fa-whatsapp"></i> +591 73023223</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <ul class="footer-nav-icons">
+                        <li>Síguenos</li>
+                        <li><a href="https://www.facebook.com/Labcit-109907821490453" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/labcitbo/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/LabcitGlogal" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC-383SEz9qA_XevmE4mGSaQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://github.com/LabcitGlobal" target="_blank"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/labcit-global-397966221/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        </div>
+      </xpath>
+    </template>
+</odoo>

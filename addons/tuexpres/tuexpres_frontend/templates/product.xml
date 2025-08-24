@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--=================== Product ========================-->
+    <template id="product_ept" inherit_id="website_sale.product" name="product" priority="15">               
+        
+        <xpath expr="//div[@id='product_details']/p[last()]" position="after">                                  
+            <t t-call="tuexpres_frontend.product_pricelist_container"/>            
+        </xpath>
+        
+        
+    </template>
+    
+    
+    <!--=================== Product page brand block =====================-->
+    <template id="product_pricelist_container">
+        <t t-set="product_tmpl_pricelist" t-value="product._get_pricelist_item()"/>
+        <t t-if="product_tmpl_pricelist">
+        <div id="tx_product_pricelist">            
+            <div>Tarifas</div>            
+            <t t-set="prlist" t-value="website.get_current_pricelist()"/>            
+            <div>
+                <t t-foreach="product_tmpl_pricelist" t-as="item">                                                   
+                    <t t-set="margin" t-value="round(product.list_price-item.fixed_price,2)"/>
+                    <t t-set="margin_percent" t-value="round((margin/product.list_price)*100,2)"/>
+                    <div>                        
+                        <t t-if="prlist.id == item.pricelist_id.id">                            
+                            <a href="#" t-att-onclick="'tx_pricelist('+str(item.min_quantity)+')'">                        
+                                <div class="te_prod_label" style="background-color:#034c76;color:">                                    
+                                    <div class="te_label_tag"><span t-esc="item.pricelist_id.name"/> ≥ <b><span t-esc="item.min_quantity"/></b> unidades: <strong><span t-esc="item.fixed_price"/></strong> Bs. [Gane <span t-esc="margin"/> Bs. = <span t-esc="margin_percent"/>%]</div>
+                                </div>                                        
+                            </a>
+                        </t>
+                        <t t-else="">                            
+                            <div class="te_prod_label" style="background-color:#076251;color:">                                    
+                                <div class="te_label_tag"><span t-esc="item.pricelist_id.name"/> ≥ <b><span t-esc="item.min_quantity"/></b> unidades: <strong><span t-esc="item.fixed_price"/></strong> Bs. [Gane <span t-esc="margin"/> Bs. = <span t-esc="margin_percent"/>%]</div>
+                            </div>                                                                    
+                        </t>
+                    </div>                                                  
+                </t>
+            </div>
+            <div>  
+                <a t-attf-href="https://api.whatsapp.com/send/?phone=59161116422&amp;text=Hola, precio por Caja de #{product.name}" target="_blank">                      
+                    <div class="te_prod_label" style="background-color:#C20099;color:">                                    
+                        <div class="te_label_tag"><b>Comuníquese para mejor precio en pedidos por Volumen/Caja</b></div>
+                    </div>
+                </a>                                                                                            
+            </div>            
+        </div>
+        </t>
+    </template>
+        
+    
+</odoo>

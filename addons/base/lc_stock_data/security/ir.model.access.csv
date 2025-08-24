@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_lc_view_stock_data,lc_view_stock_data,model_lc_view_stock_data,,1,1,1,0
+access_lc_stock_data_report,lc_stock_data_report,model_lc_stock_data_report,base.group_user,1,1,1,0

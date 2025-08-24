@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <templates id="pos_create_sales_order_template" inherit_id="point_of_sale.template" xml:space="preserve">
+
+
+  
+  <!-- CreateSalesOrderButtonWidget -->
+   
+      <t t-name="CreateSalesOrderButtonWidget" name="Create Sales Order Button Widget" owl="1">
+          <div class="control-button button confirm" id="create_sales_order" style="background-color: #0075AC; color: #fff; width:90%;" t-on-click="renderElement">
+           <i class="fa fa-shopping-cart"></i> Crear Cotizacion 
+        </div>
+   	 </t>
+
+     <t t-name="ProductScreen" t-inherit="point_of_sale.ProductScreen" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('subpads')]" position="before">
+            <!-- <div style="width:94%;"> -->
+                <CreateSalesOrderButtonWidget   />
+            <!-- </div> -->
+        </xpath>
+    </t>
+
+
+    <t t-name="noCustomerPopup" owl="1">
+            <div role="dialog" class="modal-dialog">
+                <Draggable>
+                    <div class="popup popup-error">
+                        <header class="title drag-handle">
+                            <t t-esc="props.title" />
+                        </header>
+                        <main class="body traceback" style="font-size: 24px;text-align: center;"><t t-esc="props.body"/></main>
+                        <footer class="footer">
+                            <div class="button go_back_screen" t-on-click="go_back_screen">
+                                Confirm
+                            </div>
+                        </footer>
+                    </div>
+                </Draggable>
+            </div>
+        </t>
+
+    <t t-name="CustomErrorPopup" owl="1">
+            <div role="dialog" class="modal-dialog">
+                <Draggable>
+                    <div class="popup popup-error">
+                        <header class="title drag-handle">
+                            <t t-esc="props.title" />
+                        </header>
+                        <main class="body traceback" style="font-size: 24px;text-align: center;"><t t-esc="props.body"/></main>
+                        <footer class="footer">
+                            <div class="button go_back_screen" t-on-click="go_back_screen">
+                                Confirm
+                            </div>
+                        </footer>
+                    </div>
+                </Draggable>
+            </div>
+        </t>
+ 
+    
+  	</templates>
+  	
+  	

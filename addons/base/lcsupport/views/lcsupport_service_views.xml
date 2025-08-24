@@ -1,0 +1,174 @@
+<odoo>
+  <data>
+    
+    <!-- Servicios -->
+    
+    <record model="ir.ui.view" id="lcsupport_service_tree">
+      <field name="name">lcsupport.service.tree</field>
+      <field name="model">lcsupport.service</field>
+      <field name="arch" type="xml">
+        <tree string="Lista de Servicios">
+          <field name="machine_id"/>
+          <field name="name"/>
+          <field name="employee_id"/>
+          <field name="date_reception"/>
+          <field name="date_delivery"/>    
+          <field name="state"/>
+          <field name="price"/>
+          <field name="tax"/>
+          <field name="technical_diagnosis"/>
+          <field name="customer_problem"/>
+          <field name="accessories"/>
+          <field name="solution"/>                                  
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="lcsupport_service_form">
+      <field name="name">lcsupport.service.form</field>
+      <field name="model">lcsupport.service</field>
+      <field name="arch" type="xml">
+      <form string="Servicios">
+      	<header>
+      		<button name="pendin" string="Pendiente" state="closed,expired" type="object" />
+      		<button name="close" string="Finalizar" state="pending,expired" type="object" />
+      		<button name="expire" string="Expirado" state="pending,closed" type="object" />      		
+      		<field name="state"  widget="statusbar" clickable="True"/>
+      	</header>
+      	<sheet>
+      		<group>
+      			<field name="machine_id"/>
+          		<field name="name"/>
+          		<field name="employee_id"/>
+          		<field name="date_reception"/>
+          		<field name="date_delivery"/>          
+          		<field name="price"/>
+          		<field name="tax"/>
+          		<field name="active"/>
+          	</group>          	
+          	<notebook>
+          		<page string="Diagnostico">
+          			<group>          		
+          				<field name="customer_problem"/>
+          				<field name="technical_diagnosis"/>
+          			</group>
+          		</page>
+          		<page string="Otros Datos">
+					      <group>    		
+          				<field name="accessories"/>
+          			</group>
+          		</page>
+          		<page string="Caracteristicas">
+          			<group>           
+          				<field name="detailservice_ids">
+          					<tree string="Servicios" editable="bottom">          				
+	          					<field name="name"/>
+    	      					<field name="price"/>        	  					
+          					</tree>
+          				</field>
+          			</group>          			
+          		</page>
+          		<page name="final" string="Solucion Final">
+					      <group>    		
+          				<field name="solution"/>
+          			</group>
+              </page>              				
+			      </notebook>			
+      	</sheet>
+      </form>        
+      </field>
+    </record>
+    
+    <!-- Categoria del Servicio-->
+    
+    <record model="ir.ui.view" id="lcsupport_servicecategory_tree">
+      <field name="name">lcsupport.servicecategory.tree</field>
+      <field name="model">lcsupport.servicecategory</field>
+      <field name="arch" type="xml">
+        <tree string="Lista de Categorias">
+          <field name="name"/>          
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="lcsupport_servicecategory_form">
+      <field name="name">lcsupport.servicecategory.form</field>
+      <field name="model">lcsupport.servicecategory</field>
+      <field name="arch" type="xml">
+        <tree string="Lista de Categorias">
+          <field name="name"/>          
+        </tree>
+      </field>
+    </record>    
+    
+    <!-- Tipo de Servicio -->
+    
+    <record model="ir.ui.view" id="lcsupport_servicetype_tree">
+      <field name="name">lcsupport.servicetype.tree</field>
+      <field name="model">lcsupport.servicetype</field>
+      <field name="arch" type="xml">
+        <tree string="Tipos de Servicios">
+          <field name="servicecategory_id"/>          
+          <field name="name"/>
+          <field name="price"/>          
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="lcsupport_servicetype_form">
+      <field name="name">lcsupport.servicetype.form</field>
+      <field name="model">lcsupport.servicetype</field>
+      <field name="arch" type="xml">
+        <form string="Tipos de Servicios">
+        	<sheet>
+        		<group>
+	          		<field name="servicecategory_id"/>          
+    	      		<field name="name"/>
+        	  		<field name="price"/>
+          		</group>
+          	</sheet>
+        </form>
+      </field>
+    </record>
+    
+    <!-- Acciones -->
+    
+    <record model="ir.actions.act_window" id="lcsupport_servicecategory_action_window">
+      <field name="name">Categorias</field>
+      <field name="res_model">lcsupport.servicecategory</field>
+      <!-- <field name="field_parent">child_id</field> -->
+      <field name="view_mode">tree,form</field>            
+    </record>
+    
+    <record model="ir.actions.act_window" id="lcsupport_servicetype_action_window">
+      <field name="name">Tipos de Servicio</field>
+      <field name="res_model">lcsupport.servicetype</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="lcsupport_service_action_window">
+      <field name="name">Servicios</field>
+      <field name="res_model">lcsupport.service</field>
+      <field name="view_mode">tree,form</field>
+      <field name="domain">[('company_id','=',allowed_company_ids[0])]</field>
+    </record>
+
+    <!-- Top menu item -->
+    
+    <!-- <menuitem name="Soporte" id="lcsupport.menu_root"/> -->
+    
+    <!-- menu categories -->
+    
+    <menuitem name="Servicios" id="lcsupport.service" parent="lcsupport.menu_root" sequence="1"/>    
+    
+    <!-- actions -->
+    
+	<menuitem name="Servicios" id="lcsupport.menu_service" parent="lcsupport.service"
+              action="lcsupport_service_action_window"/>              
+    <menuitem name="Categoria de Servicios" id="lcsupport.menu_servicecategory" parent="lcsupport.config"
+              action="lcsupport_servicecategory_action_window"/>
+    <menuitem name="Tipos de Servicio" id="lcsupport.menu_servicetype" parent="lcsupport.config"
+              action="lcsupport_servicetype_action_window"/>
+    
+  </data>
+</odoo>

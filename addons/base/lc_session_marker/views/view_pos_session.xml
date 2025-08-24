@@ -1,0 +1,14 @@
+<odoo>
+  <data>
+    <record id="view_pos_session_marker_form" model="ir.ui.view">
+        <field name="name">pos.session.marker.form.view</field>
+        <field name="model">pos.session</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_session_form"/>
+        <field name="arch" type="xml">            
+            <header>
+              <button name="make_pos_session" string="Actualizar Marcadores" type="object"/>
+            </header>            
+        </field>
+    </record>
+  </data>
+</odoo>

@@ -1,0 +1,135 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* lc_supplier_product_template
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20231106\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-15 23:19+0000\n"
+"PO-Revision-Date: 2025-03-15 23:19+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: lc_supplier_product_template
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_lc_type_supplier_commission__create_uid
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_lc_type_supplier_purchase__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: lc_supplier_product_template
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_lc_type_supplier_commission__create_date
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_lc_type_supplier_purchase__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: lc_supplier_product_template
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_lc_type_supplier_commission__display_name
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_lc_type_supplier_purchase__display_name
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_product_template__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: lc_supplier_product_template
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_lc_type_supplier_commission__id
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_lc_type_supplier_purchase__id
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_product_template__id
+msgid "ID"
+msgstr ""
+
+#. module: lc_supplier_product_template
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_lc_type_supplier_commission____last_update
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_lc_type_supplier_purchase____last_update
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_product_template____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: lc_supplier_product_template
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_lc_type_supplier_commission__write_uid
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_lc_type_supplier_purchase__write_uid
+msgid "Last Updated by"
+msgstr "Actualizado por última vez por"
+
+#. module: lc_supplier_product_template
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_lc_type_supplier_commission__write_date
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_lc_type_supplier_purchase__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: lc_supplier_product_template
+#: model:ir.model,name:lc_supplier_product_template.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: lc_supplier_product_template
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_product_product__supplier_id
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_product_template__supplier_id
+msgid "Supplier"
+msgstr "Proveedor"
+
+#. module: lc_supplier_product_template
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_product_product__supplier_commission
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_product_template__supplier_commission
+msgid "Supplier Commission"
+msgstr "Comisión del proveedor"
+
+#. module: lc_supplier_product_template
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_product_product__supplier_cost
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_product_template__supplier_cost
+msgid "Supplier Cost"
+msgstr "Precio de Compra del proveedor"
+
+#. module: lc_supplier_product_template
+#: model_terms:ir.ui.view,arch_db:lc_supplier_product_template.product_template_form_view
+msgid "Supplier Information"
+msgstr "Información del Proveedor"
+
+#. module: lc_supplier_product_template
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_product_product__supplier_new_sale_price
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_product_template__supplier_new_sale_price
+msgid "Supplier New Sale Price"
+msgstr "Nuevo Precio de Compra"
+
+#. module: lc_supplier_product_template
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_product_product__supplier_real_commission
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_product_template__supplier_real_commission
+msgid "Supplier Real Commission"
+msgstr "Comisión real del Proveedor"
+
+#. module: lc_supplier_product_template
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_product_product__supplier_selling_price
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_product_template__supplier_selling_price
+msgid "Supplier Selling Price"
+msgstr "Precio de venta del Proveedor"
+
+#. module: lc_supplier_product_template
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_lc_type_supplier_commission__name
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_lc_type_supplier_purchase__name
+msgid "Type"
+msgstr "Tipo"
+
+#. module: lc_supplier_product_template
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_product_product__supplier_commission_type_id
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_product_template__supplier_commission_type_id
+msgid "Type of Supplier Commission"
+msgstr "Tipo de Comisión de Proveedor"
+
+#. module: lc_supplier_product_template
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_product_product__supplier_purchase_type_id
+#: model:ir.model.fields,field_description:lc_supplier_product_template.field_product_template__supplier_purchase_type_id
+msgid "Type of Supplier Purchase"
+msgstr "Tipo de compra de Proveedor"
+
+#. module: lc_supplier_product_template
+#: model:ir.model,name:lc_supplier_product_template.model_lc_type_supplier_commission
+msgid "lc.type.supplier.commission"
+msgstr "Tipo de Comisión de Proveedor"
+
+#. module: lc_supplier_product_template
+#: model:ir.model,name:lc_supplier_product_template.model_lc_type_supplier_purchase
+msgid "lc.type.supplier.purchase"
+msgstr "Tipo de compra de Proveedor"
